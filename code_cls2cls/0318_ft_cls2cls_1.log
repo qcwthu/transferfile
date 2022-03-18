@@ -1,0 +1,89 @@
+nohup: ignoring input
+Task: superglue-cb, Checkpoint: None, Identifier: T5-large-ft-cls2cls
+03/18/2022 15:28:11 - INFO - __main__ - Namespace(task_dir='data/superglue-cb/', task_name='superglue-cb', identifier='T5-large-ft-cls2cls', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-ft-cls2cls/singletask-superglue-cb', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='None', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=32, learning_rate=3e-05, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=300.0, warmup_steps=50, total_steps=1000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.0005, 0.0003, 0.0002, 0.0001], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=0, log_step=10, model='google/t5-v1_1-large', cuda='4,5')
+03/18/2022 15:28:11 - INFO - __main__ - models/T5-large-ft-cls2cls/singletask-superglue-cb
+03/18/2022 15:28:11 - INFO - __main__ - Namespace(task_dir='data/superglue-cb/', task_name='superglue-cb', identifier='T5-large-ft-cls2cls', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-ft-cls2cls/singletask-superglue-cb', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='None', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=32, learning_rate=3e-05, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=300.0, warmup_steps=50, total_steps=1000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.0005, 0.0003, 0.0002, 0.0001], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=1, log_step=10, model='google/t5-v1_1-large', cuda='4,5')
+03/18/2022 15:28:11 - INFO - __main__ - models/T5-large-ft-cls2cls/singletask-superglue-cb
+03/18/2022 15:28:11 - INFO - root - Added key: store_based_barrier_key:1 to store for rank: 1
+03/18/2022 15:28:11 - INFO - root - Added key: store_based_barrier_key:1 to store for rank: 0
+03/18/2022 15:28:11 - INFO - __main__ - args.device: cuda:0
+03/18/2022 15:28:11 - INFO - __main__ - Using 2 gpus
+03/18/2022 15:28:11 - INFO - __main__ - Fine-tuning the following samples: ['superglue-cb_16_100', 'superglue-cb_16_13', 'superglue-cb_16_21', 'superglue-cb_16_42', 'superglue-cb_16_87']
+03/18/2022 15:28:11 - INFO - __main__ - args.device: cuda:1
+03/18/2022 15:28:11 - INFO - __main__ - Using 2 gpus
+03/18/2022 15:28:11 - INFO - __main__ - Fine-tuning the following samples: ['superglue-cb_16_100', 'superglue-cb_16_13', 'superglue-cb_16_21', 'superglue-cb_16_42', 'superglue-cb_16_87']
+03/18/2022 15:28:17 - INFO - __main__ - Running ... prefix=superglue-cb_16_100, lr=0.0005, bsz=8 ...
+03/18/2022 15:28:18 - INFO - __main__ - Start tokenizing ... 48 instances
+03/18/2022 15:28:18 - INFO - __main__ - Start tokenizing ... 48 instances
+03/18/2022 15:28:18 - INFO - __main__ - Printing 3 examples
+03/18/2022 15:28:18 - INFO - __main__ - Printing 3 examples
+03/18/2022 15:28:18 - INFO - __main__ -  [superglue-cb] premise: If there are spirits at work at the time, they come only from yourself, not from the fume of the incense. Why should spirits aid living beings? What arrogance is it that drives people to believe they can have power over them? [SEP] hypothesis: people can have power over spirits
+03/18/2022 15:28:18 - INFO - __main__ -  [superglue-cb] premise: If there are spirits at work at the time, they come only from yourself, not from the fume of the incense. Why should spirits aid living beings? What arrogance is it that drives people to believe they can have power over them? [SEP] hypothesis: people can have power over spirits
+03/18/2022 15:28:18 - INFO - __main__ - ['contradiction']
+03/18/2022 15:28:18 - INFO - __main__ - ['contradiction']
+03/18/2022 15:28:18 - INFO - __main__ -  [superglue-cb] premise: ``Ely,'' I said (that was her name and the first time I 'd ever used it), ``I want to be free.'' She looked stunned. I don't think she 'd considered this. [SEP] hypothesis: Ely had considered him wanting to be free
+03/18/2022 15:28:18 - INFO - __main__ -  [superglue-cb] premise: ``Ely,'' I said (that was her name and the first time I 'd ever used it), ``I want to be free.'' She looked stunned. I don't think she 'd considered this. [SEP] hypothesis: Ely had considered him wanting to be free
+03/18/2022 15:28:18 - INFO - __main__ - ['contradiction']
+03/18/2022 15:28:18 - INFO - __main__ - ['contradiction']
+03/18/2022 15:28:18 - INFO - __main__ -  [superglue-cb] premise: B: you know, sometimes I would go over, but you know, it wouldn't hit me in a big way because I knew that, uh, I would have it covered in that respect. A: Right.  Right. That's good. I don't think we've gone that far, to pay it you know, in advance before we spend it, [SEP] hypothesis: they've gone that far
+03/18/2022 15:28:18 - INFO - __main__ -  [superglue-cb] premise: B: you know, sometimes I would go over, but you know, it wouldn't hit me in a big way because I knew that, uh, I would have it covered in that respect. A: Right.  Right. That's good. I don't think we've gone that far, to pay it you know, in advance before we spend it, [SEP] hypothesis: they've gone that far
+03/18/2022 15:28:18 - INFO - __main__ - ['contradiction']
+03/18/2022 15:28:18 - INFO - __main__ - ['contradiction']
+03/18/2022 15:28:18 - INFO - __main__ - Tokenizing Input ...
+03/18/2022 15:28:18 - INFO - __main__ - Tokenizing Input ...
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+/opt/conda/envs/meta/lib/python3.9/site-packages/transformers/tokenization_utils_base.py:2105: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+/opt/conda/envs/meta/lib/python3.9/site-packages/transformers/tokenization_utils_base.py:2105: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+03/18/2022 15:28:18 - INFO - __main__ - Tokenizing Output ...
+03/18/2022 15:28:18 - INFO - __main__ - Tokenizing Output ...
+03/18/2022 15:28:18 - INFO - __main__ - Loaded 48 examples from train data
+use DistributedSampler
+03/18/2022 15:28:18 - INFO - __main__ - Start tokenizing ... 32 instances
+03/18/2022 15:28:18 - INFO - __main__ - Printing 3 examples
+03/18/2022 15:28:18 - INFO - __main__ -  [superglue-cb] premise: A: I do too. I believe about ten years ago that we went through a terrible time, but I don't, I believe that they're better now, you know, wh-, B: I think so. I don't think they're shoddy [SEP] hypothesis: they're shoddy
+03/18/2022 15:28:18 - INFO - __main__ - ['contradiction']
+03/18/2022 15:28:18 - INFO - __main__ -  [superglue-cb] premise: She swallowed hard, unsure if she had the nerve to go ahead. The memory of the pain in Tara's eyes last night decided her. Did he really expect her to believe that Tara was only the housekeeper? [SEP] hypothesis: Tara was only the housekeeper
+03/18/2022 15:28:18 - INFO - __main__ - ['contradiction']
+03/18/2022 15:28:18 - INFO - __main__ -  [superglue-cb] premise: B: All right, well. A: Um, short term, I don't think anything's going to be done about it or probably should be done about it. [SEP] hypothesis: something's going to be done about it
+03/18/2022 15:28:18 - INFO - __main__ - ['contradiction']
+03/18/2022 15:28:18 - INFO - __main__ - Tokenizing Input ...
+03/18/2022 15:28:18 - INFO - __main__ - Loaded 48 examples from train data
+use DistributedSampler
+03/18/2022 15:28:18 - INFO - __main__ - Start tokenizing ... 32 instances
+03/18/2022 15:28:18 - INFO - __main__ - Printing 3 examples
+03/18/2022 15:28:18 - INFO - __main__ -  [superglue-cb] premise: A: I do too. I believe about ten years ago that we went through a terrible time, but I don't, I believe that they're better now, you know, wh-, B: I think so. I don't think they're shoddy [SEP] hypothesis: they're shoddy
+03/18/2022 15:28:18 - INFO - __main__ - ['contradiction']
+03/18/2022 15:28:18 - INFO - __main__ -  [superglue-cb] premise: She swallowed hard, unsure if she had the nerve to go ahead. The memory of the pain in Tara's eyes last night decided her. Did he really expect her to believe that Tara was only the housekeeper? [SEP] hypothesis: Tara was only the housekeeper
+03/18/2022 15:28:18 - INFO - __main__ - ['contradiction']
+03/18/2022 15:28:18 - INFO - __main__ -  [superglue-cb] premise: B: All right, well. A: Um, short term, I don't think anything's going to be done about it or probably should be done about it. [SEP] hypothesis: something's going to be done about it
+03/18/2022 15:28:18 - INFO - __main__ - ['contradiction']
+03/18/2022 15:28:18 - INFO - __main__ - Tokenizing Input ...
+03/18/2022 15:28:18 - INFO - __main__ - Tokenizing Output ...
+03/18/2022 15:28:18 - INFO - __main__ - Tokenizing Output ...
+03/18/2022 15:28:18 - INFO - __main__ - Loaded 32 examples from dev data
+03/18/2022 15:28:18 - INFO - __main__ - Loaded 32 examples from dev data
+03/18/2022 15:28:31 - INFO - root - ShardedDDP bucket size: 8.00M parameters, model size 746.87M parameters
+03/18/2022 15:28:31 - INFO - root - ShardedDDP bucket size: 8.00M parameters, model size 746.87M parameters
+03/18/2022 15:28:31 - INFO - __main__ - Starting training!
+03/18/2022 15:28:31 - INFO - __main__ - Starting training!
+03/18/2022 15:28:36 - INFO - __main__ - Step 10 Global step 10 Train loss 24.380905 on epoch=3
+03/18/2022 15:28:40 - INFO - __main__ - Step 20 Global step 20 Train loss 16.753994 on epoch=6
+03/18/2022 15:28:45 - INFO - __main__ - Step 30 Global step 30 Train loss 12.093635 on epoch=9
+03/18/2022 15:28:50 - INFO - __main__ - Step 40 Global step 40 Train loss 9.559935 on epoch=13
+03/18/2022 15:28:56 - INFO - __main__ - Step 50 Global step 50 Train loss 8.371121 on epoch=16
+03/18/2022 15:28:56 - INFO - __main__ - Global step 50 Train loss 14.231916 ACC 0.0 on epoch=16
+03/18/2022 15:29:03 - INFO - __main__ - Step 60 Global step 60 Train loss 7.926928 on epoch=19
+03/18/2022 15:29:08 - INFO - __main__ - Step 70 Global step 70 Train loss 6.556070 on epoch=23
+03/18/2022 15:29:13 - INFO - __main__ - Step 80 Global step 80 Train loss 5.325913 on epoch=26
+03/18/2022 15:29:18 - INFO - __main__ - Step 90 Global step 90 Train loss 3.157629 on epoch=29
+03/18/2022 15:29:23 - INFO - __main__ - Step 100 Global step 100 Train loss 2.824237 on epoch=33
+03/18/2022 15:29:24 - INFO - __main__ - Global step 100 Train loss 5.158155 ACC 0.0 on epoch=33
+03/18/2022 15:29:29 - INFO - __main__ - Step 110 Global step 110 Train loss 2.510618 on epoch=36
+03/18/2022 15:29:34 - INFO - __main__ - Step 120 Global step 120 Train loss 1.845361 on epoch=39
+03/18/2022 15:29:39 - INFO - __main__ - Step 130 Global step 130 Train loss 2.219876 on epoch=43
+03/18/2022 15:29:44 - INFO - __main__ - Step 140 Global step 140 Train loss 2.520507 on epoch=46
+03/18/2022 15:29:49 - INFO - __main__ - Step 150 Global step 150 Train loss 1.534117 on epoch=49
+03/18/2022 15:29:50 - INFO - __main__ - Global step 150 Train loss 2.126096 ACC 0.5 on epoch=49
