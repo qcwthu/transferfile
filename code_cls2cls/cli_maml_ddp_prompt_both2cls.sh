@@ -11,12 +11,12 @@ do
 		do
 			for outerlr in ${alloutlr[@]}
 			do
-            python cli_maml_ddp_prompt_tune1.py \
-              --output_dir models/upstream-maml-cls2cls-$onelr-$oneg-$onestep-$outerlr \
-              --custom_tasks_splits ./dataloader/custom_tasks_splits/train_classification_test_classification.json \
+            python cli_maml_ddp_prompt_tune_both2cls.py \
+              --output_dir models/upstream-maml-both2cls-$onelr-$oneg-$onestep-$outerlr \
+              --custom_tasks_splits ./dataloader/custom_tasks_splits/train_halfhalf_test_classification.json \
               --do_train \
               --prompt_number 100 \
-              --cuda 7 \
+              --cuda 4 \
               --inner_bsz 2 \
               --inner_lr $onelr \
               --gradient_accumulation_steps $oneg \
