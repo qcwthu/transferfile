@@ -1,0 +1,48 @@
+premise: The consistency of Israeli policy made the difference. [SEP] hypothesis: Israel's policy made absolutely no difference.	contradiction
+premise: The editors of the Baffler , a little magazine of cultural criticism, have coined an extremely handy term to describe the spirit of stores like Restoration Hardware and Trader Joe' Commodify your dissent. [SEP] hypothesis: The baffler have never coined any new terms. 	contradiction
+premise: It would seem, Sergeant, he remarked, "that there was a book involved. [SEP] hypothesis: He denied that there was any book involved.	contradiction
+premise: Well, I'm sure as hell not buying Jumbo anymore! [SEP] hypothesis: I've always bought Jumbo and will never stop buying Jumbo.	contradiction
+premise: where do you get most of your news [SEP] hypothesis: You don't watch news.	contradiction
+premise: What we have to look at is what the facts are (DeWine). [SEP] hypothesis: There are no facts.	contradiction
+premise: That butler's an old friend of mine I bet he knew who I was, though he didn't let on. [SEP] hypothesis: The butler and I have never met.	contradiction
+premise: yeah i know did is it easy to find painters uh painters to do this for you [SEP] hypothesis: It was hard to find a painter.	contradiction
+premise: While we are used to secular types such as Trent Lott weighing in with their views on sin, it's harder to swallow when the folks at WWJD? [SEP] hypothesis: Trent Lott has opinions that are very biased towards his own religion.	contradiction
+premise: (Cohen 1993) One reason for being concerned about this issue is the possibility that, were the Private Express Statutes to be relaxed, competitors would take the profitable routes and leave the incumbent administration with the unprofitable routes. [SEP] hypothesis: There's no reason to worry about this issue at all even if the Private Express Statutes were to be modified.	contradiction
+premise: A short distance from the palace toward the city centre, you come upon the Ayuntamiento (Town Hall), with its fine Renaissance faaade and Gothic door. [SEP] hypothesis: The Ayuntamiento does not have a fine Renaissance facade and Gothic door.	contradiction
+premise: You quit and I'll see you never get another job. [SEP] hypothesis: I want you to be free to make the choices you desire.	contradiction
+premise: Maybe, maybe not. [SEP] hypothesis: I know we will for sure.	contradiction
+premise: This won't work, says Stephanopoulos, speaking  You can [avoid questions] in one press conference. [SEP] hypothesis: Stephanopolous believed this was bound to work.	contradiction
+premise: My room was in the left wing, and looked out over the park.  [SEP] hypothesis: My room overlooked a fountain.	contradiction
+premise:  Not all the slaves got up. [SEP] hypothesis: Every one of the slaves snapped to their feet in an instant.	contradiction
+premise: um the majority of the actual gang crimes like the  the drive by shootings and stuff stays in the neighborhoods but the crime spreads out into the more affluent divisions through robberies rape and uh car crime there's a very large uh or very high percentage of car theft and San Antonio San Antonio's not far from the border to Mexico so a a lot of the uh cars go to uh you know hack shops and they take them apart and a lot of them go over the border especially like Mercedes a lot of those those in the the Z uh the Z cars the Datsun cars end up over the border and uh [SEP] hypothesis: A lot of cars and trucks end up over the border.	neutral
+premise: Krugman responded to my e-mail in his Dialogue with Galbraith (Who's the Real Economist? [SEP] hypothesis: The author had questions about economics.	neutral
+premise: If no problems were observed, problems in other sites were unlikely. [SEP] hypothesis: The sites were practically identical.	neutral
+premise: Like the Hatch Act, however, these laws have never been enforced against the White House. [SEP] hypothesis: The Hatch Act has never been enforced against the White House until now.	neutral
+premise: i know i we're in Maryland but my i from Pennsylvania and my parents how are forced recycling [SEP] hypothesis: i liked Pennsylvania a lot better than Maryland	neutral
+premise: Despite its romantic name Mount Zion is actually little more than a hill immediately south of the Old Citywalls. [SEP] hypothesis: The hill is small and covered in grass. 	neutral
+premise: He passed on to the subject of the note.  [SEP] hypothesis: The next item on his agenda was the subject of the note.	neutral
+premise: Some monuments celebrate heroes, commemorate victories, honor kings or saints. [SEP] hypothesis: There are no monuments for politicians.  	neutral
+premise: Reporting supplementary stewardship information in two categories will not be deemed double counting. [SEP] hypothesis: It is acceptable practice to report the stewardship in two categories.	neutral
+premise: Someone, maybe a family counselor, needs to deal with the alienation the youngster feels and the hostility harbored by your husband. [SEP] hypothesis: He should probably go to jail.	neutral
+premise: That is not going to be proven true. [SEP] hypothesis: It is impossible to prove that.	neutral
+premise: In addition, other revisions were made to make the final rule less prescriptive and to allow establishments greater flexibility in meeting the requirements. [SEP] hypothesis: The final rule was drawn up weeks after the revisions were suggested.	neutral
+premise: The building's exterior, interior and exhibit displays are triumphs of design and harmony between old and new, East and West, simplicity and complexity. [SEP] hypothesis: The building's exterior features mossy gardens and shiny steel.	neutral
+premise: The study will allocate resources to promote adherence to the treatment protocol and monitor treatment fidelity. [SEP] hypothesis: This study will only allocate a small amount of resources.	neutral
+premise: Near the coast at the northern end of the Crocker Range is Mount Kinabalu, at 4,100 m (13,450 ft) the highest peak in Southeast Asia and a favorite with climbers, both professional and amateur. [SEP] hypothesis: Professional climbers often climb Mount Kinabalu multiple times because they like it so much. 	neutral
+premise: The client might lose at cards, and the gold cigarette case with sapphires would be sold back to Cartier, who would promptly sell it the next year to another gentleman. [SEP] hypothesis: This is a lesson as to why cards should always be avoided.	neutral
+premise: You then swing across the volcanic Owakudani valley and down the other side for a boat cruise acroseLake Ashi to Hakone-machi. [SEP] hypothesis: The valley has volcanoes.	entailment
+premise: His voice 8 was rather deep and unctuous.  [SEP] hypothesis: His voice was rather flattering and deep.  	entailment
+premise: Were they in there? [SEP] hypothesis: Were they in that?	entailment
+premise: We would like to thank members of GAOas Executive Council on Information Management and Technology for their comments and suggestions in the development of this guide. [SEP] hypothesis: Members of GAOas Executive Council must be thanked for their help in the development of this guide.	entailment
+premise: Is that right?" [SEP] hypothesis: Is that correct?	entailment
+premise: yeah and want to develop that [SEP] hypothesis: We should develop that.	entailment
+premise: That overseer has his eyes on you. [SEP] hypothesis: That overseer is looking at you.	entailment
+premise: When the findings do not converge, the case study reconciles or explains the differences as far as possible. [SEP] hypothesis: Explanations are included for why findings do not agree.	entailment
+premise: He saw Jon draw a flintlock pistol from his belt and fire. [SEP] hypothesis: Jon drew a pistol and fired it.	entailment
+premise: Horton told Playboy magazine in 1989 that a woman who identified herself as working for an organization affiliated with the Bush campaign phoned him and wrote letters to him up in prison trying to get him to endorse Dukakis. [SEP] hypothesis: Horton said someone tried to get him to support a certain political candidate.	entailment
+premise: The network said the movie would provide instructive lessons about the issues teen-agers face. [SEP] hypothesis: The network commented on the value of the movie for the teenage demographic	entailment
+premise: It was a strong argument. [SEP] hypothesis: It was a firm point.	entailment
+premise: For a new perspective on the wonders of the deep, all you need is a mask and breathing tube; the fins are optional. [SEP] hypothesis: If you want to look at the wonders of the deep in a different way, fins are optional, all you need is a breathing tube and a mask.	entailment
+premise: Virtually all the fans with whom I have spoken over the years (quite a friendly bunch, actually) consider the absence of big wrecks, injuries, etc., a key component of a good race. [SEP] hypothesis: A key component of a good race is the absence of big wrecks, injuries, etc. according to virtually all the fans with whom I have spoken over the years.	entailment
+premise: Meanwhile, Heian court life blossomed in an effusion of aesthetic expression. [SEP] hypothesis: Heian court life overflowed with artistic expression and creativity.	entailment
+premise: The problem is, little else in his book suggests that this dream will become reality. [SEP] hypothesis: It is unlikely that this dream will become reality.	entailment

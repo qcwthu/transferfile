@@ -1,0 +1,32 @@
+sentence 1: Lipids perform many important roles. [SEP] sentence 2: Lipids play several important roles in the human body.	entailment
+sentence 1: The small intestine further breaks down the fats through the bile in the gall bladder, which wears out quicker with the large amount of fats. [SEP] sentence 2: To solubilize the fats so that they can be absorbed, the gall bladder secretes a fluid called bile into the small intestine.	entailment
+sentence 1: Hydrogen is also the simplest and most abundant element in existence. [SEP] sentence 2: Hydrogen is the most abundant element in the universe.	entailment
+sentence 1: When a migraine headache is triggered, the trigeminal nerve releases neuropeptides, causing inflammation and dilation of the blood vessels. [SEP] sentence 2: When blood vessels in the head dilate, a migraine, a severe headache, can occur.	entailment
+sentence 1: Quarks are thought to be the fundamental building blocks of matter, from which protons and neutrons (members of the hadron family) are constructed. [SEP] sentence 2: Protons and neutrons are made of quarks, which are fundamental particles of matter.	entailment
+sentence 1: Leukocyte A white blood cell or corpuscle. [SEP] sentence 2: Leukocytes blood cells are white.	entailment
+sentence 1: This is usually followed by cell division or cytokinesis in which the cytoplasm is also divided to give two daughter cells. [SEP] sentence 2: The cytoplasm is divided during cytokinesis.	entailment
+sentence 1: A scientific theory however, is a well-substantiated explanation of some aspect of the natural world based on a body of facts that have been repeatedly confirmed through observation and experiment. [SEP] sentence 2: All scientific explanations and interpretations based on facts.	entailment
+sentence 1: The sound waves damage the hair cells which line the cochlea of the inner ear, and cause a condition known as sensorineural hearing loss. [SEP] sentence 2: Loud sounds that cause hearing loss damage the hair cells in the inner ear.	entailment
+sentence 1: The value of pH determines how acidic or basic a solution is. [SEP] sentence 2: The ph scale is used to succinctly communicate the acidity or basicity of a solution.	entailment
+sentence 1: deposition occurs where the water slows down. [SEP] sentence 2: Deposition occurs where the water motion slows.	entailment
+sentence 1: pH is a scale that measures how acidic or basic a solution is. [SEP] sentence 2: The ph scale is used to succinctly communicate the acidity or basicity of a solution.	entailment
+sentence 1: White blood cells are known as Leukocytes. [SEP] sentence 2: Leukocytes blood cells are white.	entailment
+sentence 1: The earth's rotation is 24 hours. [SEP] sentence 2: It takes 24 hours for the earth to make a complete rotation of its axis.	entailment
+sentence 1: Convergent Boundaries Regions where plates come together. [SEP] sentence 2: A convergent plate boundary is created when two plates come toward each other.	entailment
+sentence 1: And due to the dumping of industrial poisons, Love Canal was rendered unlivable. [SEP] sentence 2: The love canal tragedy was an infamous example of industrial waste dumping.	entailment
+sentence 1: We developed an enzymatic amplification staining procedure that amplifies the fluorescent signal by 10- to 100-fold. [SEP] sentence 2: Enzymatic cascades help amplify the effects of extracellular signals.	neutral
+sentence 1: Several Black advocacy groups have voiced opposition to a proposed ban on menthol in cigarettes. [SEP] sentence 2: Antismoking groups have proposed that cigarette advertising in all media be banned entirely.	neutral
+sentence 1: Circulatory System - [SEP] sentence 2: Echinoderms possess a water-based circulatory system.	neutral
+sentence 1: As preventive measures, attenuated live virus vaccines are available. [SEP] sentence 2: Vaccine is a preventative measure that is often delivered by injection into the arm.	neutral
+sentence 1: The California Power Exchange operates the electricity commodities market and provides real-time pricing for energy consumers. [SEP] sentence 2: Electrical energy consumed can be expressed as the product of power multiplied by time.	neutral
+sentence 1: By this I mean that about three months after I transplanted my new plant a Drosera seedling sprouted at it's base. [SEP] sentence 2: New plants start sprouting two months later after a forest fire.	neutral
+sentence 1: There are three main types of emission nebulae, and all have very low gas densities. [SEP] sentence 2: Gases have the lowest density.	neutral
+sentence 1: Endoskeleton , and Exoskeleton . [SEP] sentence 2: Humans possess a(n) endoskeleton.	neutral
+sentence 1: Salivary Measurement of Hormones is Useful, Accurate, and Reliable Hormones are the body's natural messengers and deliver signals between tissues such as breast, muscle, brain, and skin. [SEP] sentence 2: Hormones send signals through your body.	neutral
+sentence 1: turbulent flow) air flow rate The mass/volume of air moved per unit of time through a space opening or duct. [SEP] sentence 2: The best explanation for how air masses move across the united states is that the prevailing westerlies move air masses from west to east across the united states but may be deflected by the jet stream.	neutral
+sentence 1: Six levels with many different types of hostile spacecrafts. [SEP] sentence 2: There are six types of leptons.	neutral
+sentence 1: the innermost core of his being. [SEP] sentence 2: The the core is the innermost layer of the sun.	neutral
+sentence 1: A Summary of Some Nonmetal Bonding Patterns Nonmetal Element Periodic Group Valence Electrons Lewis Dot Structure No. [SEP] sentence 2: Nonmetals have the highest attraction for electrons.	neutral
+sentence 1: Explain why the temperature increases as the altitude increases in the stratosphere. [SEP] sentence 2: As altitude rises, the temperature increases in the thermosphere.	neutral
+sentence 1: Ridge A [SEP] sentence 2: Iceland sits on the mid-atlantic ridge.	neutral
+sentence 1: During the day, the balloons were heated by the sun, and at night, they were heated by trapping thermal radiation from the warmer, lower Earth surface. [SEP] sentence 2: Heat travels from the sun to the earth thermal radiation from the sun.	neutral

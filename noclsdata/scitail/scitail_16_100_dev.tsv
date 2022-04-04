@@ -1,0 +1,32 @@
+sentence 1: Nucleotide excision repair (NER) is the primary DNA repair mechanism that removes the therapeutic platinum-DNA adducts from the tumor DNA. [SEP] sentence 2: Deletions remove one or more nucleotides from the dna	neutral
+sentence 1: This was the Triassic period of the Cambrian era. [SEP] sentence 2: The first period of the paleozoic era was called cambrian.	neutral
+sentence 1: Hence the unit of kinetic energy is joules, kilojoules etc. [SEP] sentence 2: Kilojoules are typically used to measure heats of reaction.	neutral
+sentence 1: Most arthropods sexually reproduce [SEP] sentence 2: Vertebrates reproduce sexually.	neutral
+sentence 1: neurotransmitter release and deactivation in single cells; [SEP] sentence 2: Hair cells in the cochlea release neurotransmitters when they bend.	neutral
+sentence 1: The energy pyramid describing trophic level relationships can't be inverted, but the biomass and numbers pyramids can, as seen in lecture 22 . [SEP] sentence 2: Ecological pyramids can demonstrate the decrease in energy, biomass or numbers within an ecosystem.	neutral
+sentence 1: By the law of the Almighty, the ship floated in water. [SEP] sentence 2: Archimedes' law explains why a ship weighing thousands of metric tons floats on water.	neutral
+sentence 1: This car was a &quot;pull back&quot; car, using elastic potential energy. [SEP] sentence 2: The term elastic potential energy is used to describe potential energy due to an object’s shape.	neutral
+sentence 1: Key Concepts The solar system is large when compared with the size of the sun and planets. [SEP] sentence 2: The sun is the largest body in the solar system.	neutral
+sentence 1: Dermal tissue, vascular tissue and ground tissue were examined, as well as any special anatomical features. [SEP] sentence 2: The ground tissue system has neither dermal nor vascular tissues.	neutral
+sentence 1: For instance, you can shorten the light path in Figure 1b by using a concave lens instead of a convex lens ( see figure ). [SEP] sentence 2: Concave lenses can correct myopia.	neutral
+sentence 1: Berdeen Falls is a series of three waterfalls located in Whatcom County, Washington. [SEP] sentence 2: Iguassu falls is the largest waterfall on the planet.	neutral
+sentence 1: It is significant to note that Lee s childhood life was not easy. [SEP] sentence 2: Childhood is typically easier for learning multiple languages.	neutral
+sentence 1: The competition is divided into three stages. [SEP] sentence 2: Adulthood is divided into three stages.	neutral
+sentence 1: During the subsequent pregnancy, fetal blood was sampled 19 weeks after the last menstrual period; [SEP] sentence 2: The fetal period lasts approximately 30 weeks weeks.	neutral
+sentence 1: There are two types of EODs, pulse type and wave type. [SEP] sentence 2: There are two types of surface waves.	neutral
+sentence 1: All solutions consist of some kind of a Solvent (such as water or other liquid) which dissolves another substance, usually a solid. [SEP] sentence 2: Water plus other substances makes a(n) solution.	entailment
+sentence 1: Weak There are six kinds of quarks and six kinds of leptons. [SEP] sentence 2: There are six types of leptons.	entailment
+sentence 1: If an organism fails to maintain                    homeostasis, this may result in disease or death. [SEP] sentence 2: If an organism's homeostasis is not maintained, the effect will be death or disease.	entailment
+sentence 1: Division of the Cytoplasm (Cytokinesis) A. [SEP] sentence 2: The cytoplasm is divided during cytokinesis.	entailment
+sentence 1: Loudness of sound is measured in decibels (dB) which is a logarithmic comparison of two intensities. [SEP] sentence 2: Decibel is the term used to measure the intensity of sound waves.	entailment
+sentence 1: Because all amino acids contain amine and carboxylic acid functional groups, they share amphiprotic properties. [SEP] sentence 2: Amino acids contain both a carboxylic acid group and a(n) amine group.	entailment
+sentence 1: Science Objectives The Pioneer 11 and Voyager 1 and 2 spacecraft observed Saturn in 1979, 1980 and 1981. [SEP] sentence 2: The voyager 1 spacecraft visited saturn in 1980.	entailment
+sentence 1: Roughly 1 per cent of the interstellar medium is dust, the rest hydrogen gas (80 [SEP] sentence 2: Interstellar medium consists of thinly spread gas and dust.	entailment
+sentence 1: This is usually followed by cell division or cytokinesis in which the cytoplasm is also divided to give two daughter cells. [SEP] sentence 2: The cytoplasm is divided during cytokinesis.	entailment
+sentence 1: Atomic Mass The Atomic Mass of an atom is the total number of protons and neutrons which are present in the nucleus of the atom. [SEP] sentence 2: The mass of atoms is based on the number of protons and neutrons in nucleus.	entailment
+sentence 1: Continued high blood pressure can cause damage to the artery walls and increase the cholesterol build up causing plaque (atherosclerosis) in the artery. [SEP] sentence 2: An increase in the body's cholesterol levels can lead to your arteries filling with plaque.	entailment
+sentence 1: An ion that has lost electrons will have a positive charge. [SEP] sentence 2: Remember electrons are negatively charged, so ions with a positive charge have lost a(n) electron.	entailment
+sentence 1: We can only see electromagnetic radiation in the visible light spectrum (which is why it's called the visible light spectrum), so microwaves are invisible. [SEP] sentence 2: We call the only light that people can see visible light.	entailment
+sentence 1: Herbivores feed only on plants, carnivores on other animals and omnivores on both plants and animals. [SEP] sentence 2: You call an animal that feeds on other animals a(n) carnivore.	entailment
+sentence 1: A CARNIVORE is an animal that mostly eats the flesh of other animals. [SEP] sentence 2: You call an animal that feeds on other animals a(n) carnivore.	entailment
+sentence 1: Because electrons have a negative charge, atoms stripped of them become positively charged ions. [SEP] sentence 2: Remember electrons are negatively charged, so ions with a positive charge have lost a(n) electron.	entailment
