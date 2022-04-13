@@ -1,8 +1,8 @@
 
-TASKS=("multi_news" "superglue-copa" "quail" "search_qa" "squad-with_context"
-"blimp-anaphor_gender_agreement" "blimp-ellipsis_n_bar_1" "common_gen" "acronym_identification" "aeslc")
+#TASKS=("multi_news" "superglue-copa" "quail" "search_qa" "squad-with_context"
+#"blimp-anaphor_gender_agreement" "blimp-ellipsis_n_bar_1" "common_gen" "acronym_identification" "aeslc")
 
-###"squad-with_context" "aeslc"
+TASKS=("quoref" "wiki_split" "ai2_arc" "break-QDMR" "crawl_domain" "samsum")
 
 allinnerlr=(3e-5)
 allgradient=(2)
@@ -18,12 +18,12 @@ do
                 do
                         for outerlr in ${alloutlr[@]}
                         do
-                            CHECKPOINT="models/upstream-fomaml-nocls2nocls-"$onelr"-"$oneg"-"$onestep"-"$outerlr"/last-model.pt"
-                            IDENTIFIER="T5-"$size"-fomaml-nocls2nocls-"$onelr"-"$oneg"-"$onestep"-"$outerlr
+                            CHECKPOINT="models/upstream-fomaml-both2nocls-"$onelr"-"$oneg"-"$onestep"-"$outerlr"/last-model.pt"
+                            IDENTIFIER="T5-"$size"-fomaml-both2nocls-"$onelr"-"$oneg"-"$onestep"-"$outerlr
                             for TASK in ${TASKS[@]}
                             do
                               echo "Task: $TASK, Checkpoint: $CHECKPOINT, Identifier: $IDENTIFIER"
-                              python -m torch.distributed.launch --nproc_per_node 2 --master_port 24573 singletask_from_fomaml_nocls2nocls.py \
+                              python -m torch.distributed.launch --nproc_per_node 2 --master_port 24572 singletask_from_fomaml_both2nocls.py \
                                   --task_dir data/${TASK}/ \
                                   --task_name ${TASK} \
                                   --identifier $IDENTIFIER \
@@ -44,7 +44,7 @@ do
                                   --model google/t5-v1_1-$size \
                                   --prompt_number 100
                                   echo "++++++++++++++++++++++++++++++"
-                                  ps aux | grep singletask_from_fomaml_nocls2nocls.py | awk '{print $2}' | xargs kill -9
+                                  ps aux | grep singletask_from_fomaml_both2nocls.py | awk '{print $2}' | xargs kill -9
 				                    done
 			                done
                 done

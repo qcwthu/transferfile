@@ -1,8 +1,10 @@
 
-TASKS=("multi_news" "superglue-copa" "quail" "search_qa" "squad-with_context"
-"blimp-anaphor_gender_agreement" "blimp-ellipsis_n_bar_1" "common_gen" "acronym_identification" "aeslc")
+#TASKS=("multi_news" "superglue-copa" "quail" "search_qa" "squad-with_context"
+#"blimp-anaphor_gender_agreement" "blimp-ellipsis_n_bar_1" "common_gen" "acronym_identification" "aeslc")
 
 ###"squad-with_context" "aeslc"
+
+TASKS=("quoref" "wiki_split" "ai2_arc" "break-QDMR" "crawl_domain" "samsum")
 
 allinnerlr=(3e-5)
 allgradient=(2)

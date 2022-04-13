@@ -1,13 +1,15 @@
 
-TASKS=("multi_news" "superglue-copa" "quail" "search_qa" "squad-with_context"
-"blimp-anaphor_gender_agreement" "blimp-ellipsis_n_bar_1" "common_gen" "acronym_identification" "aeslc")
+#TASKS=("multi_news" "superglue-copa" "quail" "search_qa" "squad-with_context"
+#"blimp-anaphor_gender_agreement" "blimp-ellipsis_n_bar_1" "common_gen" "acronym_identification" "aeslc")
 
-###"squad-with_context" "aeslc"
+TASKS=("quoref" "wiki_split" "ai2_arc" "break-QDMR" "crawl_domain" "samsum")
 
 allinnerlr=(3e-5)
 allgradient=(2)
 allstep=(5000)
 alloutlr=(5e-1)
+allreptilestep=(10)
+
 
 size="large"
 for onelr in ${allinnerlr[@]}
@@ -18,12 +20,14 @@ do
                 do
                         for outerlr in ${alloutlr[@]}
                         do
-                            CHECKPOINT="models/upstream-fomaml-nocls2nocls-"$onelr"-"$oneg"-"$onestep"-"$outerlr"/last-model.pt"
-                            IDENTIFIER="T5-"$size"-fomaml-nocls2nocls-"$onelr"-"$oneg"-"$onestep"-"$outerlr
+                            for onerep in ${allreptilestep[@]}
+                            do
+                            CHECKPOINT="models/upstream-reptile-both2nocls-"$onelr"-"$oneg"-"$onestep"-"$outerlr"-"$onerep"/last-model.pt"
+                            IDENTIFIER="T5-"$size"-reptile-both2nocls-"$onelr"-"$oneg"-"$onestep"-"$outerlr"-"$onerep
                             for TASK in ${TASKS[@]}
                             do
                               echo "Task: $TASK, Checkpoint: $CHECKPOINT, Identifier: $IDENTIFIER"
-                              python -m torch.distributed.launch --nproc_per_node 2 --master_port 24573 singletask_from_fomaml_nocls2nocls.py \
+                              python -m torch.distributed.launch --nproc_per_node 2 --master_port 26559 singletask_from_reptile_both2nocls.py \
                                   --task_dir data/${TASK}/ \
                                   --task_name ${TASK} \
                                   --identifier $IDENTIFIER \
@@ -39,24 +43,17 @@ do
                                   --num_train_epochs 1000.0 \
                                   --gradient_accumulation_steps 1 \
                                   --output_dir models/${IDENTIFIER}/singletask-${TASK} \
-                                  --cuda 0,1 \
+                                  --cuda 6,7 \
                                   --lm_adapted_path /export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/$size/pytorch_model.bin \
                                   --model google/t5-v1_1-$size \
                                   --prompt_number 100
                                   echo "++++++++++++++++++++++++++++++"
-                                  ps aux | grep singletask_from_fomaml_nocls2nocls.py | awk '{print $2}' | xargs kill -9
-				                    done
-			                done
+                                  ps aux | grep singletask_from_reptile_both2nocls.py | awk '{print $2}' | xargs kill -9
+                            done
+			                  done
+			              done
                 done
         done
 done
-
-
-
-
-
-
-
-
 
 
