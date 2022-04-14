@@ -53,7 +53,6 @@
         "tweet_eval-stance_climate",
         "tweet_eval-stance_feminist",
         "tweet_eval-stance_hillary",
-        "wiki_auto",
         "wiki_qa",
         "yahoo_answers_topics",
         "yelp_polarity"
