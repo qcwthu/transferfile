@@ -19,7 +19,7 @@ do
 					      --custom_tasks_splits ./dataloader/custom_tasks_splits/train_qa_test_qa.json \
 					      --do_train \
         				--prompt_number 100 \
-        				--cuda 3 \
+        				--cuda 7 \
         				--inner_bsz 4 \
 					      --reptile_step $onerep \
 					      --inner_lr $onelr \

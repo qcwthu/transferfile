@@ -18,7 +18,7 @@ do
                           --num_train_epochs $oneepoch \
                           --learning_rate $onelr \
                           --gradient_accumulation_steps 1 \
-                          --cuda 2 \
+                          --cuda 6 \
                           --model google/t5-v1_1-$size \
                           --lm_adapted_path /export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/$size/pytorch_model.bin
                     ps aux | grep cli_multitask_ddp_prompt_noqa2qa.py | awk '{print $2}' |xargs kill -9

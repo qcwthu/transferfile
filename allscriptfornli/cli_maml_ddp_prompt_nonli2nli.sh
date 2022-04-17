@@ -16,7 +16,7 @@ do
               --custom_tasks_splits ./dataloader/custom_tasks_splits/train_non_nli_test_nli.json \
               --do_train \
               --prompt_number 100 \
-              --cuda 0 \
+              --cuda 4 \
               --inner_bsz 2 \
               --inner_lr $onelr \
               --gradient_accumulation_steps $oneg \
