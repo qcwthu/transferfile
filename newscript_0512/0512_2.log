@@ -1,0 +1,523 @@
+nohup: ignoring input
+mkdir: cannot create directory ‘/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit/allres_0512’: File exists
+handle nocls
+Something wrong with task aeslc
+
+
+                       task  ... test_performance
+0    acronym_identification  ...         0.840499
+1    acronym_identification  ...         0.821082
+2    acronym_identification  ...         0.839112
+3    acronym_identification  ...         0.879334
+4    acronym_identification  ...         0.871012
+..                      ...  ...              ...
+112              wiki_split  ...         0.886301
+113              wiki_split  ...         0.894347
+114              wiki_split  ...         0.879921
+115              wiki_split  ...         0.012174
+116                          ...                 
+
+[117 rows x 4 columns]
+Something wrong with task aeslc
+
+
+                       task  ... test_performance
+0    acronym_identification  ...         0.718447
+1    acronym_identification  ...         0.707351
+2    acronym_identification  ...         0.821082
+3    acronym_identification  ...         0.765603
+4    acronym_identification  ...         0.815534
+..                      ...  ...              ...
+112              wiki_split  ...         0.719603
+113              wiki_split  ...         0.720534
+114              wiki_split  ...         0.716134
+115              wiki_split  ...         0.007761
+116                          ...                 
+
+[117 rows x 4 columns]
+Something wrong with task aeslc
+
+
+                       task  ... test_performance
+0    acronym_identification  ...         0.840499
+1    acronym_identification  ...         0.840499
+2    acronym_identification  ...          0.87656
+3    acronym_identification  ...         0.879334
+4    acronym_identification  ...         0.848821
+..                      ...  ...              ...
+112              wiki_split  ...         0.879334
+113              wiki_split  ...          0.88016
+114              wiki_split  ...         0.872325
+115              wiki_split  ...         0.011041
+116                          ...                 
+
+[117 rows x 4 columns]
+Something wrong with task aeslc
+
+
+                       task  ... test_performance
+0    acronym_identification  ...         0.830791
+1    acronym_identification  ...         0.805825
+2    acronym_identification  ...         0.808599
+3    acronym_identification  ...         0.837725
+4    acronym_identification  ...         0.787795
+..                      ...  ...              ...
+112              wiki_split  ...         0.871202
+113              wiki_split  ...         0.881256
+114              wiki_split  ...         0.871247
+115              wiki_split  ...         0.011481
+116                          ...                 
+
+[117 rows x 4 columns]
+Something wrong with task aeslc
+
+
+                       task  ... test_performance
+0    acronym_identification  ...         0.840499
+1    acronym_identification  ...         0.862691
+2    acronym_identification  ...         0.828017
+3    acronym_identification  ...         0.841886
+4    acronym_identification  ...         0.839112
+..                      ...  ...              ...
+112              wiki_split  ...         0.880806
+113              wiki_split  ...         0.881005
+114              wiki_split  ...         0.876112
+115              wiki_split  ...         0.008726
+116                          ...                 
+
+[117 rows x 4 columns]
+Something wrong with task aeslc
+
+
+                       task  ... test_performance
+0    acronym_identification  ...         0.857143
+1    acronym_identification  ...         0.864078
+2    acronym_identification  ...          0.85853
+3    acronym_identification  ...         0.868239
+4    acronym_identification  ...          0.84466
+..                      ...  ...              ...
+112              wiki_split  ...         0.887546
+113              wiki_split  ...         0.886042
+114              wiki_split  ...          0.88225
+115              wiki_split  ...          0.00593
+116                          ...                 
+
+[117 rows x 4 columns]
+Something wrong with task aeslc
+
+
+                       task  ... test_performance
+0    acronym_identification  ...         0.840499
+1    acronym_identification  ...         0.851595
+2    acronym_identification  ...         0.846047
+3    acronym_identification  ...         0.861304
+4    acronym_identification  ...         0.847434
+..                      ...  ...              ...
+112              wiki_split  ...         0.862729
+113              wiki_split  ...         0.875823
+114              wiki_split  ...         0.872509
+115              wiki_split  ...         0.008856
+116                          ...                 
+
+[117 rows x 4 columns]
+Something wrong with task aeslc
+
+
+                       task  ... test_performance
+0    acronym_identification  ...          0.84466
+1    acronym_identification  ...         0.833564
+2    acronym_identification  ...         0.790569
+3    acronym_identification  ...         0.841886
+4    acronym_identification  ...         0.828017
+..                      ...  ...              ...
+112              wiki_split  ...         0.884953
+113              wiki_split  ...         0.870542
+114              wiki_split  ...         0.870122
+115              wiki_split  ...         0.008898
+116                          ...                 
+
+[117 rows x 4 columns]
+Something wrong with task aeslc
+
+
+                       task  ... test_performance
+0    acronym_identification  ...         0.880721
+1    acronym_identification  ...         0.869626
+2    acronym_identification  ...         0.891817
+3    acronym_identification  ...          0.89043
+4    acronym_identification  ...         0.871012
+..                      ...  ...              ...
+112              wiki_split  ...         0.873568
+113              wiki_split  ...         0.889648
+114              wiki_split  ...         0.879543
+115              wiki_split  ...         0.006624
+116                          ...                 
+
+[117 rows x 4 columns]
+Something wrong with task aeslc
+
+
+                       task  ... test_performance
+0    acronym_identification  ...         0.886269
+1    acronym_identification  ...         0.864078
+2    acronym_identification  ...         0.891817
+3    acronym_identification  ...         0.883495
+4    acronym_identification  ...         0.864078
+..                      ...  ...              ...
+112              wiki_split  ...         0.882841
+113              wiki_split  ...         0.887898
+114              wiki_split  ...         0.878332
+115              wiki_split  ...         0.007483
+116                          ...                 
+
+[117 rows x 4 columns]
+Something wrong with task aeslc
+
+
+                       task  ... test_performance
+0    acronym_identification  ...         0.893204
+1    acronym_identification  ...         0.883495
+2    acronym_identification  ...         0.872399
+3    acronym_identification  ...         0.893204
+4    acronym_identification  ...         0.884882
+..                      ...  ...              ...
+112              wiki_split  ...         0.869252
+113              wiki_split  ...         0.891632
+114              wiki_split  ...         0.877252
+115              wiki_split  ...         0.009759
+116                          ...                 
+
+[117 rows x 4 columns]
+Something wrong with task aeslc
+
+
+                       task  ... test_performance
+0    acronym_identification  ...         0.588072
+1    acronym_identification  ...          0.73509
+2    acronym_identification  ...         0.833564
+3    acronym_identification  ...         0.662968
+4    acronym_identification  ...         0.628294
+..                      ...  ...              ...
+112              wiki_split  ...         0.888811
+113              wiki_split  ...         0.884763
+114              wiki_split  ...         0.884909
+115              wiki_split  ...         0.004719
+116                          ...                 
+
+[117 rows x 4 columns]
+Something wrong with task aeslc
+
+
+                       task  ... test_performance
+0    acronym_identification  ...         0.843273
+1    acronym_identification  ...         0.833564
+2    acronym_identification  ...         0.818308
+3    acronym_identification  ...         0.840499
+4    acronym_identification  ...         0.793343
+..                      ...  ...              ...
+112              wiki_split  ...         0.890003
+113              wiki_split  ...         0.883332
+114              wiki_split  ...         0.877144
+115              wiki_split  ...         0.013572
+116                          ...                 
+
+[117 rows x 4 columns]
+Something wrong with task aeslc
+
+
+                       task  ... test_performance
+0    acronym_identification  ...         0.847434
+1    acronym_identification  ...         0.851595
+2    acronym_identification  ...         0.854369
+3    acronym_identification  ...         0.848821
+4    acronym_identification  ...         0.851595
+..                      ...  ...              ...
+112              wiki_split  ...         0.887969
+113              wiki_split  ...         0.878865
+114              wiki_split  ...         0.876745
+115              wiki_split  ...         0.009367
+116                          ...                 
+
+[117 rows x 4 columns]
+handle qa
+        task           entry dev_performance test_performance
+0    ai2_arc  ai2_arc_32_100         0.34375         0.234114
+1    ai2_arc   ai2_arc_32_13         0.34375         0.257525
+2    ai2_arc   ai2_arc_32_21          0.4375         0.234114
+3    ai2_arc   ai2_arc_32_42         0.40625          0.22408
+4    ai2_arc   ai2_arc_32_87         0.34375          0.19398
+..       ...             ...             ...              ...
+123     wiqa      wiqa_32_42             0.5            0.385
+124     wiqa      wiqa_32_87         0.46875            0.343
+125     wiqa            mean             0.5           0.3578
+126     wiqa             std        0.019764         0.027382
+127                                                          
+
+[128 rows x 4 columns]
+        task           entry dev_performance test_performance
+0    ai2_arc  ai2_arc_32_100         0.09375         0.110368
+1    ai2_arc   ai2_arc_32_13         0.15625         0.140468
+2    ai2_arc   ai2_arc_32_21         0.15625         0.170569
+3    ai2_arc   ai2_arc_32_42         0.21875         0.056856
+4    ai2_arc   ai2_arc_32_87         0.15625         0.153846
+..       ...             ...             ...              ...
+123     wiqa      wiqa_32_42           0.375            0.347
+124     wiqa      wiqa_32_87             0.5            0.313
+125     wiqa            mean         0.45625           0.3434
+126     wiqa             std         0.04239         0.021341
+127                                                          
+
+[128 rows x 4 columns]
+        task           entry dev_performance test_performance
+0    ai2_arc  ai2_arc_32_100         0.28125         0.173913
+1    ai2_arc   ai2_arc_32_13         0.21875         0.207358
+2    ai2_arc   ai2_arc_32_21         0.28125          0.26087
+3    ai2_arc   ai2_arc_32_42          0.3125         0.177258
+4    ai2_arc   ai2_arc_32_87         0.34375         0.210702
+..       ...             ...             ...              ...
+123     wiqa      wiqa_32_42           0.375            0.353
+124     wiqa      wiqa_32_87         0.46875            0.339
+125     wiqa            mean          0.4375           0.3374
+126     wiqa             std        0.034233         0.015001
+127                                                          
+
+[128 rows x 4 columns]
+Something wrong with task quarel
+
+
+Something wrong with task quartz-no_knowledge
+
+
+Something wrong with task quartz-with_knowledge
+
+
+       task           entry dev_performance test_performance
+0   ai2_arc  ai2_arc_32_100          0.3125         0.250836
+1   ai2_arc   ai2_arc_32_13           0.375         0.270903
+2   ai2_arc   ai2_arc_32_21          0.4375         0.200669
+3   ai2_arc   ai2_arc_32_42         0.40625         0.177258
+4   ai2_arc   ai2_arc_32_87          0.3125          0.22408
+..      ...             ...             ...              ...
+95     wiqa      wiqa_32_42          0.4375             0.37
+96     wiqa      wiqa_32_87         0.53125            0.392
+97     wiqa            mean         0.50625            0.366
+98     wiqa             std        0.036443          0.01631
+99                                                          
+
+[100 rows x 4 columns]
+        task           entry dev_performance test_performance
+0    ai2_arc  ai2_arc_32_100          0.3125         0.257525
+1    ai2_arc   ai2_arc_32_13          0.4375         0.257525
+2    ai2_arc   ai2_arc_32_21         0.40625         0.274247
+3    ai2_arc   ai2_arc_32_42          0.4375          0.22408
+4    ai2_arc   ai2_arc_32_87           0.375         0.237458
+..       ...             ...             ...              ...
+123     wiqa      wiqa_32_42          0.5625            0.405
+124     wiqa      wiqa_32_87          0.5625            0.446
+125     wiqa            mean         0.55625           0.4252
+126     wiqa             std        0.045928         0.031295
+127                                                          
+
+[128 rows x 4 columns]
+        task           entry dev_performance test_performance
+0    ai2_arc  ai2_arc_32_100          0.3125         0.244147
+1    ai2_arc   ai2_arc_32_13         0.28125         0.277592
+2    ai2_arc   ai2_arc_32_21           0.375         0.270903
+3    ai2_arc   ai2_arc_32_42         0.34375         0.214047
+4    ai2_arc   ai2_arc_32_87           0.375         0.237458
+..       ...             ...             ...              ...
+123     wiqa      wiqa_32_42             0.5            0.389
+124     wiqa      wiqa_32_87         0.53125            0.367
+125     wiqa            mean         0.49375            0.397
+126     wiqa             std        0.036443         0.020308
+127                                                          
+
+[128 rows x 4 columns]
+        task           entry dev_performance test_performance
+0    ai2_arc  ai2_arc_32_100           0.375         0.250836
+1    ai2_arc   ai2_arc_32_13           0.375         0.240803
+2    ai2_arc   ai2_arc_32_21         0.34375          0.29097
+3    ai2_arc   ai2_arc_32_42          0.4375         0.214047
+4    ai2_arc   ai2_arc_32_87           0.375         0.227425
+..       ...             ...             ...              ...
+123     wiqa      wiqa_32_42         0.53125            0.364
+124     wiqa      wiqa_32_87         0.59375            0.443
+125     wiqa            mean            0.55           0.4326
+126     wiqa             std           0.025         0.035189
+127                                                          
+
+[128 rows x 4 columns]
+        task           entry dev_performance test_performance
+0    ai2_arc  ai2_arc_32_100         0.21875         0.250836
+1    ai2_arc   ai2_arc_32_13         0.46875         0.240803
+2    ai2_arc   ai2_arc_32_21         0.28125         0.244147
+3    ai2_arc   ai2_arc_32_42         0.40625         0.284281
+4    ai2_arc   ai2_arc_32_87           0.375         0.254181
+..       ...             ...             ...              ...
+123     wiqa      wiqa_32_42          0.4375            0.367
+124     wiqa      wiqa_32_87             0.5            0.367
+125     wiqa            mean             0.5           0.3652
+126     wiqa             std        0.044194         0.025095
+127                                                          
+
+[128 rows x 4 columns]
+        task           entry dev_performance test_performance
+0    ai2_arc  ai2_arc_32_100          0.3125         0.217391
+1    ai2_arc   ai2_arc_32_13         0.34375         0.230769
+2    ai2_arc   ai2_arc_32_21           0.375         0.257525
+3    ai2_arc   ai2_arc_32_42          0.4375         0.183946
+4    ai2_arc   ai2_arc_32_87           0.375         0.227425
+..       ...             ...             ...              ...
+123     wiqa      wiqa_32_42         0.53125            0.352
+124     wiqa      wiqa_32_87         0.46875            0.377
+125     wiqa            mean         0.51875            0.366
+126     wiqa             std        0.031869         0.013667
+127                                                          
+
+[128 rows x 4 columns]
+        task           entry dev_performance test_performance
+0    ai2_arc  ai2_arc_32_100          0.3125         0.187291
+1    ai2_arc   ai2_arc_32_13         0.40625         0.244147
+2    ai2_arc   ai2_arc_32_21         0.40625         0.247492
+3    ai2_arc   ai2_arc_32_42         0.40625         0.220736
+4    ai2_arc   ai2_arc_32_87          0.3125         0.214047
+..       ...             ...             ...              ...
+123     wiqa      wiqa_32_42         0.46875            0.335
+124     wiqa      wiqa_32_87         0.46875            0.336
+125     wiqa            mean         0.48125           0.3438
+126     wiqa             std        0.015309         0.010685
+127                                                          
+
+[128 rows x 4 columns]
+handle nli
+Something wrong with task superglue-rte
+
+
+         task             entry dev_performance test_performance
+0        anli       anli_16_100        0.473851         0.109903
+1        anli        anli_16_13        0.565745         0.101547
+2        anli        anli_16_21        0.453757         0.132035
+3        anli        anli_16_42        0.372222         0.154403
+4        anli        anli_16_87        0.479734         0.239335
+5        anli              mean        0.469062         0.147444
+6        anli               std        0.061801         0.049489
+7                                                               
+8   glue-mnli  glue-mnli_16_100        0.541667            0.302
+9   glue-mnli   glue-mnli_16_13        0.583333            0.398
+10  glue-mnli   glue-mnli_16_21        0.604167            0.373
+11  glue-mnli   glue-mnli_16_42          0.4375            0.346
+12  glue-mnli   glue-mnli_16_87          0.4375            0.345
+13  glue-mnli              mean        0.520833           0.3528
+14  glue-mnli               std        0.070956         0.032059
+15                                                              
+16  glue-qnli  glue-qnli_16_100         0.78125            0.506
+17  glue-qnli   glue-qnli_16_13            0.75            0.566
+18  glue-qnli   glue-qnli_16_21          0.6875            0.505
+19  glue-qnli   glue-qnli_16_42            0.75            0.557
+20  glue-qnli   glue-qnli_16_87           0.625            0.469
+21  glue-qnli              mean         0.71875           0.5206
+22  glue-qnli               std        0.055902          0.03607
+23                                                              
+24   glue-rte   glue-rte_16_100         0.71875         0.462094
+25   glue-rte    glue-rte_16_13          0.6875         0.610108
+26   glue-rte    glue-rte_16_21         0.59375         0.425993
+27   glue-rte    glue-rte_16_42         0.59375         0.472924
+28   glue-rte    glue-rte_16_87         0.71875         0.505415
+29   glue-rte              mean          0.6625         0.495307
+30   glue-rte               std        0.057282         0.062754
+31                                                              
+32  glue-wnli  glue-wnli_16_100            0.75         0.408451
+33  glue-wnli   glue-wnli_16_13         0.65625         0.591549
+34  glue-wnli   glue-wnli_16_21         0.71875         0.507042
+35  glue-wnli   glue-wnli_16_42           0.875         0.464789
+36  glue-wnli   glue-wnli_16_87         0.65625         0.478873
+37  glue-wnli              mean         0.73125         0.490141
+38  glue-wnli               std        0.080526          0.06002
+39                                                              
+40    scitail    scitail_16_100        0.647648          0.50149
+41    scitail     scitail_16_13        0.676113         0.334289
+42    scitail     scitail_16_21        0.746032         0.570715
+43    scitail     scitail_16_42        0.775776         0.240781
+44    scitail     scitail_16_87          0.8125         0.320173
+45    scitail              mean        0.731614         0.393489
+46    scitail               std         0.06137         0.122697
+47                                                              
+48       sick       sick_16_100        0.772958         0.175053
+49       sick        sick_16_13        0.660466         0.307175
+50       sick        sick_16_21        0.702451         0.208451
+51       sick        sick_16_42         0.72409         0.148045
+52       sick        sick_16_87        0.785765         0.535728
+53       sick              mean        0.729146          0.27489
+54       sick               std        0.046001         0.141103
+55                                                              
+             task                entry dev_performance test_performance
+0            anli          anli_16_100         0.44371         0.332322
+1            anli           anli_16_13        0.371742         0.235035
+2            anli           anli_16_21        0.415789         0.311275
+3            anli           anli_16_42          0.4384         0.304668
+4            anli           anli_16_87        0.433013         0.366159
+..            ...                  ...             ...              ...
+67  superglue-rte  superglue-rte_16_42         0.59375         0.462094
+68  superglue-rte  superglue-rte_16_87         0.59375         0.512635
+69  superglue-rte                 mean         0.60625         0.505415
+70  superglue-rte                  std        0.050775         0.031223
+71                                                                     
+
+[72 rows x 4 columns]
+             task                entry dev_performance test_performance
+0            anli          anli_16_100        0.445472         0.122062
+1            anli           anli_16_13        0.398225         0.185256
+2            anli           anli_16_21        0.335219         0.056518
+3            anli           anli_16_42        0.284877         0.076785
+4            anli           anli_16_87        0.387376         0.107906
+..            ...                  ...             ...              ...
+67  superglue-rte  superglue-rte_16_42           0.625         0.516245
+68  superglue-rte  superglue-rte_16_87         0.78125         0.494585
+69  superglue-rte                 mean         0.66875         0.501083
+70  superglue-rte                  std        0.070156         0.012996
+71                                                                     
+
+[72 rows x 4 columns]
+             task                entry dev_performance test_performance
+0            anli          anli_16_100        0.431105         0.036576
+1            anli           anli_16_13         0.44212         0.256928
+2            anli           anli_16_21        0.435851         0.046938
+3            anli           anli_16_42        0.361179         0.157359
+4            anli           anli_16_87        0.377179         0.157603
+..            ...                  ...             ...              ...
+67  superglue-rte  superglue-rte_16_42         0.59375         0.494585
+68  superglue-rte  superglue-rte_16_87         0.65625         0.505415
+69  superglue-rte                 mean         0.65625         0.496029
+70  superglue-rte                  std        0.052291         0.009303
+71                                                                     
+
+[72 rows x 4 columns]
+             task                entry dev_performance test_performance
+0            anli          anli_16_100        0.453968         0.031481
+1            anli           anli_16_13        0.419382         0.034225
+2            anli           anli_16_21         0.42577         0.024257
+3            anli           anli_16_42        0.441927         0.020596
+4            anli           anli_16_87         0.39946         0.032282
+..            ...                  ...             ...              ...
+67  superglue-rte  superglue-rte_16_42           0.625         0.555957
+68  superglue-rte  superglue-rte_16_87            0.75         0.516245
+69  superglue-rte                 mean           0.675         0.527798
+70  superglue-rte                  std         0.04239         0.033354
+71                                                                     
+
+[72 rows x 4 columns]
+             task                entry dev_performance test_performance
+0            anli          anli_16_100        0.425963         0.168759
+1            anli           anli_16_13        0.429797         0.193126
+2            anli           anli_16_21        0.368056         0.165538
+3            anli           anli_16_42        0.394525         0.272902
+4            anli           anli_16_87        0.419202         0.078689
+..            ...                  ...             ...              ...
+67  superglue-rte  superglue-rte_16_42          0.5625         0.472924
+68  superglue-rte  superglue-rte_16_87          0.6875         0.512635
+69  superglue-rte                 mean          0.6125         0.490253
+70  superglue-rte                  std        0.050775         0.014691
+71                                                                     
+
+[72 rows x 4 columns]
+/export/share/sjoty/continual-learning/temp/transferfile/newscript_0512
