@@ -1,5 +1,5 @@
 ########first, we delete json files
-rm -f /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit/data/*/*.json
+#rm -f /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit/data/*/*.json
 rm -f /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFitFT/data/*/*.json
 rm -f /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data/*/*.json
 rm -f /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_fomaml/data/*/*.json
