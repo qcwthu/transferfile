@@ -174,7 +174,7 @@ cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/models/
 cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/models/T5-large-maml-cls2cls-3e-5-2-5000-5e-1-up32shot /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/models/T5-base-maml-cls2cls-3e-5-2-5000-5e-1 -r
 cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/models/T5-large-maml-cls2cls-3e-5-2-5000-5e-1-up32shot /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_fomaml/models/T5-base-fomaml-cls2cls-3e-5-2-5000-5e-1 -r
 cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/models/T5-large-maml-cls2cls-3e-5-2-5000-5e-1-up32shot /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_multi/models/T5-base-multitask-cls2cls-5e-1-4-20 -r
-cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/models/T5-large-maml-cls2cls-3e-5-2-5000-5e-1-up32shot /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_reptile/models/T5-base-reptile-cls2cls-3e-5-2-5000-5e-1-10
+cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/models/T5-large-maml-cls2cls-3e-5-2-5000-5e-1-up32shot /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_reptile/models/T5-base-reptile-cls2cls-3e-5-2-5000-5e-1-10 -r
 
 
 
