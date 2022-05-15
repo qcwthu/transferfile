@@ -17,19 +17,19 @@ rm -f /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit/data/*/*.
 cd ..
 
 
-cd CrossFit/
-echo "pt 32shot downstream"
-bash tune_hps_singletask_ddp_prompt_cls2cls_down32shot.sh
-rm -f /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit/data_32/*/*.json
-
-echo "pt 64shot downstream"
-bash tune_hps_singletask_ddp_prompt_cls2cls_down64shot.sh
-rm -f /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit/data_64/*/*.json
-
-echo "pt 128shot downstream"
-bash tune_hps_singletask_ddp_prompt_cls2cls_down128shot.sh
-rm -f /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit/data_128/*/*.json
-cd ..
+#cd CrossFit/
+#echo "pt 32shot downstream"
+#bash tune_hps_singletask_ddp_prompt_cls2cls_down32shot.sh
+#rm -f /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit/data_32/*/*.json
+#
+#echo "pt 64shot downstream"
+#bash tune_hps_singletask_ddp_prompt_cls2cls_down64shot.sh
+#rm -f /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit/data_64/*/*.json
+#
+#echo "pt 128shot downstream"
+#bash tune_hps_singletask_ddp_prompt_cls2cls_down128shot.sh
+#rm -f /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit/data_128/*/*.json
+#cd ..
 
 
 cd CrossFit_reptile/

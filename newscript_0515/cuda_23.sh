@@ -17,19 +17,19 @@ rm -f /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFitFT/data/*/
 cd ..
 
 
-cd CrossFitFT/
-echo "ft 32shot downstream"
-bash tune_singletask_cls2cls_down32shot.sh
-rm -f /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFitFT/data_32/*/*.json
-
-echo "ft 64shot downstream"
-bash tune_singletask_cls2cls_down64shot.sh
-rm -f /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFitFT/data_64/*/*.json
-
-echo "ft 128shot downstream"
-bash tune_singletask_cls2cls_down128shot.sh
-rm -f /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFitFT/data_128/*/*.json
-cd ..
+#cd CrossFitFT/
+#echo "ft 32shot downstream"
+#bash tune_singletask_cls2cls_down32shot.sh
+#rm -f /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFitFT/data_32/*/*.json
+#
+#echo "ft 64shot downstream"
+#bash tune_singletask_cls2cls_down64shot.sh
+#rm -f /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFitFT/data_64/*/*.json
+#
+#echo "ft 128shot downstream"
+#bash tune_singletask_cls2cls_down128shot.sh
+#rm -f /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFitFT/data_128/*/*.json
+#cd ..
 
 
 cd CrossFit_fomaml/
