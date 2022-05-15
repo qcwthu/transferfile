@@ -16,25 +16,25 @@ do
   rm -f /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data_128/$name/*test*
 done
 ########first, we copy new data to different folders
-cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data_32 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit -r
-cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data_64 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit -r
-cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data_128 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit -r
-
-cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data_32 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFitFT -r
-cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data_64 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFitFT -r
-cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data_128 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFitFT -r
-
-cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data_32 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_fomaml -r
-cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data_64 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_fomaml -r
-cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data_128 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_fomaml -r
-
-cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data_32 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_multi -r
-cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data_64 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_multi -r
-cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data_128 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_multi -r
-
-cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data_32 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_reptile -r
-cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data_64 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_reptile -r
-cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data_128 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_reptile -r
+#cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data_32 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit -r
+#cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data_64 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit -r
+#cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data_128 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit -r
+#
+#cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data_32 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFitFT -r
+#cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data_64 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFitFT -r
+#cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data_128 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFitFT -r
+#
+#cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data_32 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_fomaml -r
+#cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data_64 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_fomaml -r
+#cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data_128 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_fomaml -r
+#
+#cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data_32 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_multi -r
+#cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data_64 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_multi -r
+#cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data_128 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_multi -r
+#
+#cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data_32 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_reptile -r
+#cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data_64 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_reptile -r
+#cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data_128 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_reptile -r
 
 ########we delete json files
 rm -f /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit/data/*/*.json
