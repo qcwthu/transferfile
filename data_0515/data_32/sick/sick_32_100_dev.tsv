@@ -1,0 +1,96 @@
+sentence 1: A snowboarder is doing a flip over a mound of snow [SEP] sentence 2: There is nobody jumping in the air on a board	neutral
+sentence 1: A boy is playing on a toy phone [SEP] sentence 2: The man is handling a gun	neutral
+sentence 1: A man is shaking a drink [SEP] sentence 2: A man is mowing a lawn	neutral
+sentence 1: A man is removing some food from a box [SEP] sentence 2: A man is putting some food in a box	neutral
+sentence 1: The cats are not playing with each other [SEP] sentence 2: Two cats are fighting each other	neutral
+sentence 1: The motorcycle racer is riding a red and black bike [SEP] sentence 2: A man is leaning on a racing motorcycle	neutral
+sentence 1: A boy wearing red shorts is jumping into a paddling pool [SEP] sentence 2: A young boy wearing a red swimsuit is jumping out of a blue kiddies pool	neutral
+sentence 1: A woman is putting some sticky goo in a bowl [SEP] sentence 2: The woman is putting pasta into a dish	neutral
+sentence 1: A father is pushing his daughter on a go-kart and another girl is watching [SEP] sentence 2: A white dog is standing on fallen leaves	neutral
+sentence 1: A little girl is smiling and running outside [SEP] sentence 2: A bride in a white dress is running	neutral
+sentence 1: Two people are sitting with laden baskets and blankets [SEP] sentence 2: Two people are walking with laden baskets and blankets	neutral
+sentence 1: Some men are running a race [SEP] sentence 2: Racers are running down a track	neutral
+sentence 1: The dog with the black coat is walking along a tree trunk bridge over water [SEP] sentence 2: A dog is crossing a river on a bridge made from a fallen tree	neutral
+sentence 1: A horse is running [SEP] sentence 2: A woman is cutting an onion	neutral
+sentence 1: The patient is helping the doctor [SEP] sentence 2: Two teams are playing soccer	neutral
+sentence 1: The woman is not handling a frog [SEP] sentence 2: A man is holding a frog	neutral
+sentence 1: A girl is riding a horse [SEP] sentence 2: The person is trotting on the horse	neutral
+sentence 1: A cowgirl is riding a horse and corners a barrel [SEP] sentence 2: The brown horse is near a red barrel at the rodeo	neutral
+sentence 1: A man is slicing a red tomato [SEP] sentence 2: A man is slicing a bun	neutral
+sentence 1: A woman is wearing an Egyptian hat on her head [SEP] sentence 2: The woman is wearing glasses and a black headdress	neutral
+sentence 1: A man is falling off a mechanical bull [SEP] sentence 2: A man is riding a mechanical bull	neutral
+sentence 1: A big dog and a small white dog are playing together [SEP] sentence 2: Two construction workers are sitting up on the top of a building	neutral
+sentence 1: A dog in a colored coat is running across the yard [SEP] sentence 2: A dog and a black man are running through brown leaves	neutral
+sentence 1: A man is mowing a lawn [SEP] sentence 2: A black and white dog is playing with a tattered volleyball in a brown field	neutral
+sentence 1: Runners are racing down a track [SEP] sentence 2: Men are running a race	neutral
+sentence 1: A little girl is smiling and running out of the house [SEP] sentence 2: A girl in a white dress is running	neutral
+sentence 1: A cheetah is chasing its prey across a field [SEP] sentence 2: The cheetah is running quickly behind its prey	neutral
+sentence 1: A man is skateboarding on a half pipe [SEP] sentence 2: A skateboarder is falling off a half pipe	neutral
+sentence 1: A man with a shirt is holding a football [SEP] sentence 2: A man with no shirt is holding a football	neutral
+sentence 1: A man is sitting comfortably at a table [SEP] sentence 2: A man wearing a dyed black shirt is sitting at the table and laughing	neutral
+sentence 1: A big group of people are standing and two are sitting on the couch [SEP] sentence 2: A group of five young adults are lounging indoors	neutral
+sentence 1: Two people are kissing near a crowd [SEP] sentence 2: A woman is being kissed by a man	neutral
+sentence 1: Two people are in the snow, wearing clothes that provide camouflage [SEP] sentence 2: Some people are in the snow, wearing clothes that provide camouflage	entailment
+sentence 1: A white dog is wearing a Christmas reindeer headband and is playing with a brown dog in the grass [SEP] sentence 2: The white dog wearing reindeer ears is near a brown dog	entailment
+sentence 1: A homeless man is holding up a sign and is begging for money [SEP] sentence 2: A homeless man is holding up a sign and is pitifully begging for money	entailment
+sentence 1: A horse is being ridden by a girl [SEP] sentence 2: A girl is riding a horse	entailment
+sentence 1: A woman is placing skewers onto a rack [SEP] sentence 2: Skewers are being placed onto a rack by a woman	entailment
+sentence 1: A tiger is walking outside a cage [SEP] sentence 2: A tiger is walking around a cage	entailment
+sentence 1: A man is drinking orange juice and walking on a sunny day [SEP] sentence 2: A man is drinking orange juice and walking	entailment
+sentence 1: A man is slowly dancing on the road [SEP] sentence 2: A man is dancing on the road	entailment
+sentence 1: A dog, which is small, is playing tirelessly on the green grass [SEP] sentence 2: A dog, which is small, is playing on the green grass	entailment
+sentence 1: A girl is jumping rope on a sidewalk near a parking garage [SEP] sentence 2: A girl is skipping rope on a sidewalk	entailment
+sentence 1: A man is playing a flute [SEP] sentence 2: A man is playing the flute	entailment
+sentence 1: A man is phoning [SEP] sentence 2: A man is talking on the phone	entailment
+sentence 1: A squirrel is crazily spinning around in circles [SEP] sentence 2: A squirrel is running around in circles	entailment
+sentence 1: The man is doing a handstand on the wet sand at the edge of the water at the beach [SEP] sentence 2: A handstand is being performed by a man on the beach	entailment
+sentence 1: Two teams are enthusiastically playing soccer [SEP] sentence 2: Different teams are playing football on a field	entailment
+sentence 1: Adults and children standing and playing in front of steps near a wooded area [SEP] sentence 2: Adults and children standing and playing in front of a stair near a wooded area	entailment
+sentence 1: An airplane is taking off [SEP] sentence 2: A plane is taking off	entailment
+sentence 1: The small boy is standing in the forest [SEP] sentence 2: A young child is standing in front of some trees	entailment
+sentence 1: A man is eating a pizza [SEP] sentence 2: Some food is being eaten by a man	entailment
+sentence 1: A bearded man is standing by a shopping cart and is holding a cardboard sign [SEP] sentence 2: One bearded man is standing by a shopping cart and is holding a cardboard sign	entailment
+sentence 1: A hurdle is being leapt by a horse that has a rider on its back [SEP] sentence 2: A horse is leaping a hurdle and has a rider on its back	entailment
+sentence 1: A woman is frying fish [SEP] sentence 2: Fish is being fried by a woman	entailment
+sentence 1: The brown dog is jumping in the air [SEP] sentence 2: A brown dog is jumping in the air	entailment
+sentence 1: A person is cutting a capsicum into pieces [SEP] sentence 2: The person is not slicing a clove of garlic into pieces	entailment
+sentence 1: A man is cutting tomatoes [SEP] sentence 2: A man is slicing tomatoes	entailment
+sentence 1: A couple standing on the curb [SEP] sentence 2: A man and a woman are standing on the curb	entailment
+sentence 1: One brown and black dog is running through the leaves [SEP] sentence 2: A brown and black dog is running through the leaves	entailment
+sentence 1: A big cat is opening a drawer made of plastic with its paws and is jumping inside [SEP] sentence 2: A cat is opening a drawer and climbing inside	entailment
+sentence 1: The man is talking on the phone [SEP] sentence 2: The man is speaking on the telephone	entailment
+sentence 1: The turtle is following the red fish [SEP] sentence 2: The turtle is following the fish	entailment
+sentence 1: The man in a hat suited for cowboys is walking through a market and is putting a hand in his pocket [SEP] sentence 2: The man in a cowboy hat is walking through a market and is putting a hand in his pocket	entailment
+sentence 1: A woman is wearing sunglasses of large size and is holding newspapers in both hands [SEP] sentence 2: The woman is wearing sunglasses of large size and is holding newspapers in both hands	entailment
+sentence 1: There is no man doing back flips on a trampoline [SEP] sentence 2: A man is doing back flips on a trampoline	contradiction
+sentence 1: A girl is playing the guitar [SEP] sentence 2: A girl is not playing the guitar	contradiction
+sentence 1: The man in the purple hat isn't operating a camera that makes videos [SEP] sentence 2: The man in the purple hat is operating a camera that makes videos	contradiction
+sentence 1: There is no man singing and playing a guitar [SEP] sentence 2: A man is singing and playing a guitar	contradiction
+sentence 1: There is no young boy playing a wind instrument [SEP] sentence 2: A young boy is playing a wind instrument	contradiction
+sentence 1: There is no man on a boat in front of the sunset [SEP] sentence 2: A man is on a boat in front of the sunset	contradiction
+sentence 1: The guitar is being played by the man [SEP] sentence 2: The guitar is being played by nobody	contradiction
+sentence 1: A woman is eating a cupcake [SEP] sentence 2: A woman is not eating a cupcake	contradiction
+sentence 1: A woman is wearing a blue helmet and is riding a bicycle in a parking lot [SEP] sentence 2: There is no woman wearing a blue helmet and riding a bicycle in a parking lot	contradiction
+sentence 1: The woman is picking up a baby kangaroo [SEP] sentence 2: The woman is not picking up a baby kangaroo	contradiction
+sentence 1: The cat is licking milk from a saucer [SEP] sentence 2: There is no cat hungrily drinking milk	contradiction
+sentence 1: The potato is being peeled by a woman [SEP] sentence 2: The potato isn't being peeled by a woman	contradiction
+sentence 1: The food on the trays isn't being eaten by the kittens [SEP] sentence 2: Some kittens are eating	contradiction
+sentence 1: Some bikers are getting airborne on a track near water and a skyline [SEP] sentence 2: Some bikers are not getting airborne on a track near water and a skyline	contradiction
+sentence 1: The woman is dancing [SEP] sentence 2: The woman is not dancing	contradiction
+sentence 1: The man in a cowboy hat is walking through a market and is putting a hand in his pocket [SEP] sentence 2: The man in a cowboy hat is not walking through a market and is not putting a hand in his pocket	contradiction
+sentence 1: Nobody is drilling a hole in a strip of wood with a power drill [SEP] sentence 2: Someone is drilling a hole in a strip of wood with a power drill	contradiction
+sentence 1: The cat is playing with a watermelon [SEP] sentence 2: There is no cat playing with a watermelon	contradiction
+sentence 1: No dog is in the sand that is blowing in the wind [SEP] sentence 2: A dog is in the sand that is blowing in the wind	contradiction
+sentence 1: A yellow dog is drinking water from the faucet [SEP] sentence 2: A yellow dog is not drinking water from the faucet	contradiction
+sentence 1: No dog is emerging from a lake [SEP] sentence 2: A dog is emerging from a lake	contradiction
+sentence 1: There is no basketball player on the court floor and no one is grabbing the ball [SEP] sentence 2: Two basketball players are scrambling for the ball on the court	contradiction
+sentence 1: The woman is stirring meat in a bowl [SEP] sentence 2: There is no lady mixing a meat mixture in a bowl	contradiction
+sentence 1: A child is sitting in a red and yellow toy car [SEP] sentence 2: There is no child sitting in a red and yellow toy car	contradiction
+sentence 1: A lot of people are in an ice skating park [SEP] sentence 2: Not a lot of people are in an ice skating park	contradiction
+sentence 1: A small guinea pig is gnawing and eating a piece of carrot on the floor [SEP] sentence 2: There is no small guinea pig gnawing and eating a piece of carrot on the floor	contradiction
+sentence 1: A kitten is drinking fresh milk [SEP] sentence 2: There is no kitten drinking milk	contradiction
+sentence 1: There is no white dog standing on the leaves on the ground [SEP] sentence 2: A white dog is standing on the leaves on the ground	contradiction
+sentence 1: There is no cyclist on a yellow bike airborne [SEP] sentence 2: A person on a yellow dirt bike is taking a jump	contradiction
+sentence 1: There is no family posing by the mantel and the Christmas tree [SEP] sentence 2: A family is posing by the mantel and the Christmas tree	contradiction
+sentence 1: Nobody is stirring a pot of chili with a spoon [SEP] sentence 2: Someone is stirring a pot of chili with a spoon	contradiction
+sentence 1: There is no woman cooking a breaded pork chop [SEP] sentence 2: A woman is cooking a breaded pork chop	contradiction

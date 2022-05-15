@@ -1,0 +1,96 @@
+sentence 1: Two dogs are running through the beach [SEP] sentence 2: Two dogs are running through the park	neutral
+sentence 1: The group of people is not sitting on a rocky ledge with a scenic view behind them [SEP] sentence 2: Four people are sitting on a low cement ledge	neutral
+sentence 1: Someone is taking the okra out of a pot [SEP] sentence 2: Someone is cooking okra in a pan	neutral
+sentence 1: A man and a woman are standing in front of an art gallery and are looking at a signboard [SEP] sentence 2: A couple is looking at a map	neutral
+sentence 1: A photographer is being surrounded by men [SEP] sentence 2: A man in a suit is being surrounded by photographers	neutral
+sentence 1: A group of women is playing with a ball on the beach [SEP] sentence 2: A group of men is playing soccer on the beach	neutral
+sentence 1: A group of children is playing in the house and there is no man standing in the background [SEP] sentence 2: A group of kids is playing in a yard and an old man is standing in the background	neutral
+sentence 1: A person is wrapping up an onion [SEP] sentence 2: A person is cutting an onion	neutral
+sentence 1: A small girl is getting out of a toy car [SEP] sentence 2: A child is sitting in a red and yellow toy car	neutral
+sentence 1: A young boy in a helmet is riding a bike on the road [SEP] sentence 2: The little girl is riding a bicycle in a race	neutral
+sentence 1: A man is standing bare-chested beside a yellow canoe on some rocks with water in the background [SEP] sentence 2: A man is wearing a red jacket and standing beside a yellow canoe on some rocks with water in the background	neutral
+sentence 1: A person on a bike is jumping through the air and the sun is flaring through the bike frame [SEP] sentence 2: The person is not flying through the air on a bicycle	neutral
+sentence 1: The man is training [SEP] sentence 2: The man is doing exercises	neutral
+sentence 1: A person is climbing a rock with a rope, which is pink [SEP] sentence 2: One man is descending a cliff with a rope	neutral
+sentence 1: The man is stirring oil [SEP] sentence 2: The man is cooking sauce for the meat	neutral
+sentence 1: A man is fishing in the river [SEP] sentence 2: A man is singing and walking down the sidewalk	neutral
+sentence 1: There is no large group of cheerleaders walking in a parade [SEP] sentence 2: The cheerleaders are parading and wearing black, pink and white uniforms	neutral
+sentence 1: A man is playing an instrument [SEP] sentence 2: A woman is putting on lipstick	neutral
+sentence 1: A father is pulling his daughter on a go-kart and another girl is looking away [SEP] sentence 2: Two small children are playing with a toy car in the street	neutral
+sentence 1: A boy is being knocked into the water by the dog [SEP] sentence 2: A person in a motocross uniform is wearing a helmet and rides a red motorcycle	neutral
+sentence 1: A person is being kicked by a monkey [SEP] sentence 2: A monkey is practicing martial arts	neutral
+sentence 1: An officer is talking to the recruits [SEP] sentence 2: An officer is talking to the soldiers	neutral
+sentence 1: A dog is standing on one leg and is waiting for a soccer ball [SEP] sentence 2: The black and white dog is jumping for the ball	neutral
+sentence 1: A biker with a blue jacket, black pants and a white helmet is driving on dirt and people are watching [SEP] sentence 2: The motocross rider is wearing blue and black pants	neutral
+sentence 1: A brown and white dog with a brown and black bandanna is running very fast [SEP] sentence 2: A small white dog is running in a lawn	neutral
+sentence 1: Some women are sitting together near woven walls [SEP] sentence 2: Three women are sitting in a village	neutral
+sentence 1: Runners are racing down a track [SEP] sentence 2: Men are running a race	neutral
+sentence 1: A large group of Asian people is eating at a restaurant [SEP] sentence 2: Various customers are eating in a crowded restaurant with purple lights	neutral
+sentence 1: Two football players are scrambling for the ball on the court [SEP] sentence 2: Two basketball players are scrambling for the ball on the court	neutral
+sentence 1: A white car is being driven by the man [SEP] sentence 2: A person playing football is running past an official carrying a football	neutral
+sentence 1: Two small boys dressed in tuxedos are sitting on a red carpeted floor [SEP] sentence 2: Some boys being dressed with a carpet are sitting on two red tuxedos	neutral
+sentence 1: A person is pouring cooking oil into a pot [SEP] sentence 2: A person is pouring olive oil into the stove from a pot	neutral
+sentence 1: The oriental lady is cutting a carrot into pieces that are thin [SEP] sentence 2: A woman is slicing a carrot	entailment
+sentence 1: A young female is dancing [SEP] sentence 2: A young girl is dancing	entailment
+sentence 1: Butter is being chopped into a container by a man [SEP] sentence 2: A man is chopping butter into a container	entailment
+sentence 1: An onion is being sliced by a woman [SEP] sentence 2: A woman is slicing an onion	entailment
+sentence 1: A boy is jumping off a platform and two other boys are standing and watching [SEP] sentence 2: A boy is jumping off a platform and two other boys are standing and staring at him	entailment
+sentence 1: A man dressed in black and white is holding up the tennis racket and is waiting for the ball [SEP] sentence 2: A player dressed in black and white is holding up the tennis racket and is waiting for the ball	entailment
+sentence 1: Three men are dancing [SEP] sentence 2: A few men are dancing	entailment
+sentence 1: The kid is happily sliding in the snow [SEP] sentence 2: The kid is sliding in the snow	entailment
+sentence 1: A man in a shirt dyed purple is looking at a man in a black shirt who is doing a funny face [SEP] sentence 2: A man in a shirt dyed purple is looking at a man in a black shirt who is doing a face which looks funny	entailment
+sentence 1: The piece of paper is being cut [SEP] sentence 2: Some paper is being cut	entailment
+sentence 1: A woman is clumsily putting meat in a pan [SEP] sentence 2: A woman is putting meat in a pan	entailment
+sentence 1: The man is typing on a machine used for stenography [SEP] sentence 2: The man is operating a stenograph	entailment
+sentence 1: A few people are dancing [SEP] sentence 2: A group of people are dancing	entailment
+sentence 1: A black sheep is standing near three white dogs [SEP] sentence 2: A black sheep is standing close to three white dogs	entailment
+sentence 1: A man is doing a skateboard trick on an outdoor park porch [SEP] sentence 2: A person is doing a trick on a skateboard	entailment
+sentence 1: A man is holding up an electronic device [SEP] sentence 2: A person is holding up an electronic device	entailment
+sentence 1: Paper is being cut with scissors [SEP] sentence 2: The piece of paper is being cut	entailment
+sentence 1: A person is buttering a tray [SEP] sentence 2: A person is spreading butter on a tray	entailment
+sentence 1: A large group of cheerleaders is walking in a parade [SEP] sentence 2: Many cheerleaders are walking in a parade	entailment
+sentence 1: A white dog is wearing a Christmas reindeer headband and is playing with a brown dog in the grass [SEP] sentence 2: The white dog wearing reindeer ears is near a brown dog	entailment
+sentence 1: A person is riding a jetski in the waves [SEP] sentence 2: The person is riding a jetski in the waves	entailment
+sentence 1: A kid is singing and playing a guitar [SEP] sentence 2: A kid is playing the guitar	entailment
+sentence 1: A married couple is walking up the aisle [SEP] sentence 2: A married couple is walking down the aisle	entailment
+sentence 1: The man is doing a wheelie with a motorbike in a field which is mostly barren [SEP] sentence 2: The man is doing a wheelie with a motorcycle on ground which is mostly barren	entailment
+sentence 1: A dirty soccer ball is rolling into a goal net [SEP] sentence 2: A soccer ball is rolling into a goal net	entailment
+sentence 1: A white race car is driving through a puddle [SEP] sentence 2: A white racing vehicle is driving through a puddle	entailment
+sentence 1: The girl in the blue and white uniform is cheering [SEP] sentence 2: Some cheers are being performed by the girl in the blue and white uniform	entailment
+sentence 1: The baby is being put into a trash can by a woman [SEP] sentence 2: A woman is putting the baby into a trash can	entailment
+sentence 1: A man is wearing a straw hat and smoking a cigarette [SEP] sentence 2: The man in the straw hat is smoking a cigarette	entailment
+sentence 1: A dog is chasing a ball in the grass [SEP] sentence 2: A ball is being chased by a dog on the grass	entailment
+sentence 1: Four people are walking on a bridge over a river [SEP] sentence 2: Four people are walking on a bridge over a body of water	entailment
+sentence 1: A man wearing a dyed black shirt is sitting at the table and laughing [SEP] sentence 2: A black shirt is being worn by a man who is sitting at the table and laughing	entailment
+sentence 1: A woman is sewing with a machine [SEP] sentence 2: There is no woman using a sewing machine	contradiction
+sentence 1: A young child is splashing in the water [SEP] sentence 2: There is no young child splashing in the water	contradiction
+sentence 1: There is no girl playing the piano [SEP] sentence 2: A girl is playing the piano	contradiction
+sentence 1: The young girl with a pink shirt is peacefully lying on the grass [SEP] sentence 2: The young girl with a pink shirt isn't peacefully lying on the grass	contradiction
+sentence 1: A guy is mowing the lawn [SEP] sentence 2: There is no man mowing grass	contradiction
+sentence 1: A man is not cutting an onion [SEP] sentence 2: A man is cutting an onion	contradiction
+sentence 1: There is no man on a bicycle riding on the beach [SEP] sentence 2: A man on a bicycle is riding on the beach	contradiction
+sentence 1: Nobody is drilling a hole in a strip of wood with a power drill [SEP] sentence 2: Someone is drilling a hole in a strip of wood with a power drill	contradiction
+sentence 1: A woman is not frying some food [SEP] sentence 2: A woman is frying some food	contradiction
+sentence 1: The man is not slicing a potato [SEP] sentence 2: The man is slicing a potato	contradiction
+sentence 1: A man is pouring oil into a skillet [SEP] sentence 2: A man is taking the oil out off a skillet	contradiction
+sentence 1: There is no man on a rock high above some trees standing in a strange position [SEP] sentence 2: A man is on a rock high above some trees and is standing in a strange position	contradiction
+sentence 1: The woman is dancing [SEP] sentence 2: The woman is not dancing	contradiction
+sentence 1: A man is squatting in brush and taking a photograph [SEP] sentence 2: There is no man squatting in brush and taking a photograph	contradiction
+sentence 1: A man in a hat is standing outside of a green jeep [SEP] sentence 2: A man with no hat is standing outside of a green jeep	contradiction
+sentence 1: A small boy in a yellow shirt is laughing on the beach [SEP] sentence 2: There is no small boy in a yellow shirt laughing on the beach	contradiction
+sentence 1: The group of people is sitting on a rocky ledge and a scenic view is behind them [SEP] sentence 2: The group of people is not sitting on a rocky ledge with a scenic view behind them	contradiction
+sentence 1: A woman is exercising [SEP] sentence 2: There is no woman exercising	contradiction
+sentence 1: A man wearing a dyed black shirt is sitting at the table and laughing [SEP] sentence 2: There is no man wearing a shirt dyed black, sitting at the table and laughing	contradiction
+sentence 1: The shirtless man in striped shorts and sunglasses is not standing near a man in a white shirt and sunglasses [SEP] sentence 2: The shirtless man in striped shorts and sunglasses is standing near a man in a white shirt and sunglasses	contradiction
+sentence 1: A cat is eating corn on the cob [SEP] sentence 2: There is no cat eating corn on the cob	contradiction
+sentence 1: The black dog is walking along a tree trunk bridge over water [SEP] sentence 2: There is no dog crossing a river on a bridge made from a fallen tree	contradiction
+sentence 1: A woman is cutting meat [SEP] sentence 2: A woman is not cutting meat	contradiction
+sentence 1: Nobody is rinsing a steak with water [SEP] sentence 2: A person is rinsing a steak with water	contradiction
+sentence 1: A person is riding a motorcycle [SEP] sentence 2: A person is standing near a motorcycle	contradiction
+sentence 1: A man is dancing [SEP] sentence 2: There is no man dancing	contradiction
+sentence 1: There is no girl riding a horse [SEP] sentence 2: The girl is trotting on the horse	contradiction
+sentence 1: The windows are being cleaned by a man [SEP] sentence 2: There is no window being cleaned by a man	contradiction
+sentence 1: A young girl in a blue leotard is jumping in the air [SEP] sentence 2: There is no girl in blue jumping in the air	contradiction
+sentence 1: There is no man playing guitar [SEP] sentence 2: A man is playing guitar	contradiction
+sentence 1: A person is playing a keyboard [SEP] sentence 2: A person is not playing a keyboard	contradiction
+sentence 1: A man is playing the guitar [SEP] sentence 2: There is no man playing the guitar	contradiction
