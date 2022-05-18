@@ -65,7 +65,17 @@ cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/models/
 cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/models/T5-large-maml-cls2cls-3e-5-2-5000-5e-1-up32shot /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/models/T5-large-maml-cls2cls-3e-5-2-5000-5e-1-200prompt -r
 cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/models/T5-large-maml-cls2cls-3e-5-2-5000-5e-1-up32shot /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_multi/models/T5-large-multitask-cls2cls-5e-1-4-20-200prompt -r
 
-cp cuda_new_01.sh cuda_new_45.sh cuda_new_67.sh /export/share/sjoty/continual-learning/MetaPromptTuning/
+#cp cuda_new_01.sh cuda_new_45.sh cuda_new_67.sh /export/share/sjoty/continual-learning/MetaPromptTuning/
+cp /export/share/sjoty/continual-learning/MetaPromptTuning/cuda_01.sh /export/share/sjoty/continual-learning/MetaPromptTuning/cuda_01_0518bak.sh
+cp /export/share/sjoty/continual-learning/MetaPromptTuning/cuda_23.sh /export/share/sjoty/continual-learning/MetaPromptTuning/cuda_23_0518bak.sh
+cp /export/share/sjoty/continual-learning/MetaPromptTuning/cuda_45.sh /export/share/sjoty/continual-learning/MetaPromptTuning/cuda_45_0518bak.sh
+cp /export/share/sjoty/continual-learning/MetaPromptTuning/cuda_67.sh /export/share/sjoty/continual-learning/MetaPromptTuning/cuda_67_0518bak.sh
+
+cp ../newscript_0515/cuda_01.sh /export/share/sjoty/continual-learning/MetaPromptTuning/
+cp ../newscript_0515/cuda_23.sh /export/share/sjoty/continual-learning/MetaPromptTuning/
+cp ../newscript_0515/cuda_45.sh /export/share/sjoty/continual-learning/MetaPromptTuning/
+cp ../newscript_0515/cuda_67.sh /export/share/sjoty/continual-learning/MetaPromptTuning/
+
 
 ########change number of meta-training tasks
 cp changeupnum/train_classification_test_classification_12uptasks.json /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/dataloader/custom_tasks_splits/
