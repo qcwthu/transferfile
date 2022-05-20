@@ -20,7 +20,7 @@ do
 			do
   				echo "Task: $TASK, Checkpoint: $CHECKPOINT, Identifier: $IDENTIFIER"
   				python -m torch.distributed.launch --nproc_per_node 2 --master_port 26387 singletask_from_multi_cls2cls.py \
-        			--task_dir data/${TASK}/ \
+        			--task_dir data_128/${TASK}/ \
         			--task_name ${TASK} \
         			--identifier $IDENTIFIER \
         			--checkpoint $CHECKPOINT \
@@ -36,7 +36,6 @@ do
         			--gradient_accumulation_steps 1 \
         			--output_dir models/${IDENTIFIER}/singletask-${TASK} \
         			--cuda 4,5 \
-        			--task_dir data_128 \
        				--lm_adapted_path /export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/$size/pytorch_model.bin \
         			--model google/t5-v1_1-$size \
  			        --prompt_number 100

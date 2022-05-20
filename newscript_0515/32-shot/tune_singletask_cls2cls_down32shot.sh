@@ -10,7 +10,7 @@ for TASK in ${TASKS[@]}
 do
   echo "Task: $TASK, Checkpoint: $CHECKPOINT, Identifier: $IDENTIFIER"
   python -m torch.distributed.launch --nproc_per_node 2 --master_port 24682 tune_singletask_cls2cls.py \
-        --task_dir data/${TASK}/ \
+        --task_dir data_32/${TASK}/ \
         --task_name ${TASK} \
         --identifier $IDENTIFIER \
         --checkpoint $CHECKPOINT \
@@ -26,7 +26,6 @@ do
         --gradient_accumulation_steps 1 \
         --output_dir models/${IDENTIFIER}/singletask-${TASK} \
         --cuda 2,3 \
-        --task_dir data_32 \
         --model google/t5-v1_1-$size
   echo "++++++++++++++++++++++++++++++"
 	ps aux | grep tune_singletask_cls2cls.py | awk '{print $2}' | xargs kill -9
