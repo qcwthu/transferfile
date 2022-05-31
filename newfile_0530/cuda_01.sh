@@ -43,7 +43,7 @@ rm -f /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data
 cd ..
 
 
-#cd CrossFit_maml/
+cd CrossFit_maml/
 #echo "maml 12uptasks downstream"
 #bash singletask_from_meta_cls2cls_12uptasks.sh
 #rm -f /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data/*/*.json
@@ -51,8 +51,8 @@ cd ..
 #echo "maml 24uptasks upstream"
 #bash cli_maml_ddp_prompt_cls2cls_24uptasks.sh
 #rm -f /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data/*/*.json
-#
-#echo "maml 24uptasks downstream"
-#bash singletask_from_meta_cls2cls_24uptasks.sh
-#rm -f /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data/*/*.json
-#cd ..
+
+echo "maml 24uptasks downstream"
+bash singletask_from_meta_cls2cls_24uptasks.sh
+rm -f /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/data/*/*.json
+cd ..
