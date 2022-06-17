@@ -56,4 +56,6 @@ cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/models/
 ###noqa2qa maml,验证一下是不是完整
 cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/models/*noqa2qa* ./ -r
 
+###看一下超参搜索的范围 maml multi
+
 cd ..
