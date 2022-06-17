@@ -1,0 +1,153 @@
+nohup: ignoring input
+multi 16shot downstream for 64shot upstream
+Task: superglue-cb, Checkpoint: models/upstream-multitask-cls2cls-5e-1-4-10-64shot/last-model.pt, Identifier: T5-large-multitask-cls2cls-5e-1-4-10-up64shot
+Traceback (most recent call last):
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_multi/singletask_from_multi_cls2cls.py", line 229, in <module>
+    main()
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_multi/singletask_from_multi_cls2cls.py", line 142, in main
+    handlers=[logging.FileHandler(os.path.join(args.output_dir, log_filename)),
+  File "/opt/conda/envs/meta/lib/python3.9/logging/__init__.py", line 1146, in __init__
+    StreamHandler.__init__(self, self._open())
+  File "/opt/conda/envs/meta/lib/python3.9/logging/__init__.py", line 1175, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding,
+FileNotFoundError: [Errno 2] No such file or directory: '/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_multi/models/T5-large-multitask-cls2cls-5e-1-4-10-up64shot/singletask-superglue-cb/log.txt'
+06/17/2022 15:53:27 - INFO - __main__ - Namespace(task_dir='data/superglue-cb/', task_name='superglue-cb', identifier='T5-large-multitask-cls2cls-5e-1-4-10-up64shot', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-multitask-cls2cls-5e-1-4-10-up64shot/singletask-superglue-cb', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-multitask-cls2cls-5e-1-4-10-64shot/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=0, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='4,5')
+06/17/2022 15:53:27 - INFO - __main__ - models/T5-large-multitask-cls2cls-5e-1-4-10-up64shot/singletask-superglue-cb
+Traceback (most recent call last):
+  File "/opt/conda/envs/meta/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/conda/envs/meta/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 340, in <module>
+    main()
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 326, in main
+    sigkill_handler(signal.SIGTERM, None)  # not coming back
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 301, in sigkill_handler
+    raise subprocess.CalledProcessError(returncode=last_return_code, cmd=cmd)
+subprocess.CalledProcessError: Command '['/opt/conda/envs/meta/bin/python', '-u', 'singletask_from_multi_cls2cls.py', '--local_rank=1', '--task_dir', 'data/superglue-cb/', '--task_name', 'superglue-cb', '--identifier', 'T5-large-multitask-cls2cls-5e-1-4-10-up64shot', '--checkpoint', 'models/upstream-multitask-cls2cls-5e-1-4-10-64shot/last-model.pt', '--do_train', '--do_predict', '--learning_rate_list', '5e-1', '4e-1', '3e-1', '2e-1', '--bsz_list', '8', '--predict_batch_size', '16', '--total_steps', '3000', '--eval_period', '50', '--warmup_steps', '50', '--num_train_epochs', '1000.0', '--gradient_accumulation_steps', '1', '--output_dir', 'models/T5-large-multitask-cls2cls-5e-1-4-10-up64shot/singletask-superglue-cb', '--cuda', '4,5', '--lm_adapted_path', '/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', '--model', 'google/t5-v1_1-large', '--prompt_number', '100']' returned non-zero exit status 1.
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+Killing subprocess 84553
+Killing subprocess 84554
+++++++++++++++++++++++++++++++
+kill: (84561): No such process
+Task: dbpedia_14, Checkpoint: models/upstream-multitask-cls2cls-5e-1-4-10-64shot/last-model.pt, Identifier: T5-large-multitask-cls2cls-5e-1-4-10-up64shot
+06/17/2022 15:53:31 - INFO - __main__ - Namespace(task_dir='data/dbpedia_14/', task_name='dbpedia_14', identifier='T5-large-multitask-cls2cls-5e-1-4-10-up64shot', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-multitask-cls2cls-5e-1-4-10-up64shot/singletask-dbpedia_14', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-multitask-cls2cls-5e-1-4-10-64shot/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=0, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='4,5')
+06/17/2022 15:53:31 - INFO - __main__ - models/T5-large-multitask-cls2cls-5e-1-4-10-up64shot/singletask-dbpedia_14
+06/17/2022 15:53:32 - INFO - __main__ - Namespace(task_dir='data/dbpedia_14/', task_name='dbpedia_14', identifier='T5-large-multitask-cls2cls-5e-1-4-10-up64shot', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-multitask-cls2cls-5e-1-4-10-up64shot/singletask-dbpedia_14', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-multitask-cls2cls-5e-1-4-10-64shot/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=1, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='4,5')
+06/17/2022 15:53:32 - INFO - __main__ - models/T5-large-multitask-cls2cls-5e-1-4-10-up64shot/singletask-dbpedia_14
+06/17/2022 15:53:32 - INFO - root - Added key: store_based_barrier_key:1 to store for rank: 1
+06/17/2022 15:53:32 - INFO - root - Added key: store_based_barrier_key:1 to store for rank: 0
+06/17/2022 15:53:32 - INFO - __main__ - args.device: cuda:0
+06/17/2022 15:53:32 - INFO - __main__ - Using 2 gpus
+06/17/2022 15:53:32 - INFO - __main__ - Fine-tuning the following samples: ['dbpedia_14_16_100', 'dbpedia_14_16_13', 'dbpedia_14_16_21', 'dbpedia_14_16_42', 'dbpedia_14_16_87']
+06/17/2022 15:53:32 - INFO - __main__ - args.device: cuda:1
+06/17/2022 15:53:32 - INFO - __main__ - Using 2 gpus
+06/17/2022 15:53:32 - INFO - __main__ - Fine-tuning the following samples: ['dbpedia_14_16_100', 'dbpedia_14_16_13', 'dbpedia_14_16_21', 'dbpedia_14_16_42', 'dbpedia_14_16_87']
+06/17/2022 15:53:37 - INFO - __main__ - Running ... prefix=dbpedia_14_16_100, lr=0.5, bsz=8 ...
+06/17/2022 15:53:37 - INFO - __main__ - Start tokenizing ... 224 instances
+06/17/2022 15:53:37 - INFO - __main__ - Printing 3 examples
+06/17/2022 15:53:37 - INFO - __main__ -  [dbpedia_14] Linnaemyini is a tribe of flies in the family Tachinidae.
+06/17/2022 15:53:37 - INFO - __main__ - ['Animal']
+06/17/2022 15:53:37 - INFO - __main__ -  [dbpedia_14] Morula ambrosia is a species of sea snail a marine gastropod mollusk in the family Muricidae the murex snails or rock snails.
+06/17/2022 15:53:37 - INFO - __main__ - ['Animal']
+06/17/2022 15:53:37 - INFO - __main__ -  [dbpedia_14] Neoduma plagosus is a moth of the Arctiidae family. It was described by Rothschild in 1912. It is found in New Guinea.The length of the forewings 10 mm. The forewings are creamy white with a yellow costa. The basal half of the wings is edged with black and there are two olive-grey antemedian patches as well as one on the termen. The hindwings are buff.
+06/17/2022 15:53:37 - INFO - __main__ - ['Animal']
+06/17/2022 15:53:37 - INFO - __main__ - Tokenizing Input ...
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+/opt/conda/envs/meta/lib/python3.9/site-packages/transformers/tokenization_utils_base.py:2105: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+06/17/2022 15:53:37 - INFO - __main__ - Start tokenizing ... 224 instances
+06/17/2022 15:53:37 - INFO - __main__ - Printing 3 examples
+06/17/2022 15:53:37 - INFO - __main__ -  [dbpedia_14] Linnaemyini is a tribe of flies in the family Tachinidae.
+06/17/2022 15:53:37 - INFO - __main__ - ['Animal']
+06/17/2022 15:53:37 - INFO - __main__ -  [dbpedia_14] Morula ambrosia is a species of sea snail a marine gastropod mollusk in the family Muricidae the murex snails or rock snails.
+06/17/2022 15:53:37 - INFO - __main__ - ['Animal']
+06/17/2022 15:53:37 - INFO - __main__ -  [dbpedia_14] Neoduma plagosus is a moth of the Arctiidae family. It was described by Rothschild in 1912. It is found in New Guinea.The length of the forewings 10 mm. The forewings are creamy white with a yellow costa. The basal half of the wings is edged with black and there are two olive-grey antemedian patches as well as one on the termen. The hindwings are buff.
+06/17/2022 15:53:37 - INFO - __main__ - ['Animal']
+06/17/2022 15:53:37 - INFO - __main__ - Tokenizing Input ...
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+/opt/conda/envs/meta/lib/python3.9/site-packages/transformers/tokenization_utils_base.py:2105: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+06/17/2022 15:53:38 - INFO - __main__ - Tokenizing Output ...
+06/17/2022 15:53:38 - INFO - __main__ - Tokenizing Output ...
+06/17/2022 15:53:38 - INFO - __main__ - Loaded 224 examples from train data
+use DistributedSampler
+06/17/2022 15:53:38 - INFO - __main__ - Start tokenizing ... 224 instances
+06/17/2022 15:53:38 - INFO - __main__ - Printing 3 examples
+06/17/2022 15:53:38 - INFO - __main__ -  [dbpedia_14] Mesoscincus is a genus comprising three species of skink native to Mexico and Central America. They were formerly included in the genus Eumeces.
+06/17/2022 15:53:38 - INFO - __main__ - ['Animal']
+06/17/2022 15:53:38 - INFO - __main__ -  [dbpedia_14] Oxynoemacheilus leontinae is a species of stone loach found in Israel Jordan Lebanon and Syria.Its natural habitat is rivers.
+06/17/2022 15:53:38 - INFO - __main__ - ['Animal']
+06/17/2022 15:53:38 - INFO - __main__ -  [dbpedia_14] Syrmoptera homeyerii is a butterfly in the Lycaenidae family. It is found in the Democratic Republic of Congo (Uele Sankuru Lualaba Lomani Tanganika and Maniema) and Angola.
+06/17/2022 15:53:38 - INFO - __main__ - ['Animal']
+06/17/2022 15:53:38 - INFO - __main__ - Tokenizing Input ...
+06/17/2022 15:53:38 - INFO - __main__ - Loaded 224 examples from train data
+use DistributedSampler
+06/17/2022 15:53:38 - INFO - __main__ - Start tokenizing ... 224 instances
+06/17/2022 15:53:38 - INFO - __main__ - Printing 3 examples
+06/17/2022 15:53:38 - INFO - __main__ -  [dbpedia_14] Mesoscincus is a genus comprising three species of skink native to Mexico and Central America. They were formerly included in the genus Eumeces.
+06/17/2022 15:53:38 - INFO - __main__ - ['Animal']
+06/17/2022 15:53:38 - INFO - __main__ -  [dbpedia_14] Oxynoemacheilus leontinae is a species of stone loach found in Israel Jordan Lebanon and Syria.Its natural habitat is rivers.
+06/17/2022 15:53:38 - INFO - __main__ - ['Animal']
+06/17/2022 15:53:38 - INFO - __main__ -  [dbpedia_14] Syrmoptera homeyerii is a butterfly in the Lycaenidae family. It is found in the Democratic Republic of Congo (Uele Sankuru Lualaba Lomani Tanganika and Maniema) and Angola.
+06/17/2022 15:53:38 - INFO - __main__ - ['Animal']
+06/17/2022 15:53:38 - INFO - __main__ - Tokenizing Input ...
+06/17/2022 15:53:38 - INFO - __main__ - Tokenizing Output ...
+06/17/2022 15:53:38 - INFO - __main__ - Tokenizing Output ...
+06/17/2022 15:53:38 - INFO - __main__ - Loaded 224 examples from dev data
+06/17/2022 15:53:38 - INFO - __main__ - Loaded 224 examples from dev data
+06/17/2022 15:53:56 - INFO - __main__ - load prompt embedding from ckpt
+06/17/2022 15:53:56 - INFO - __main__ - load prompt embedding from ckpt
+06/17/2022 15:53:57 - INFO - root - ShardedDDP bucket size: 8.00M parameters, model size 746.97M parameters
+06/17/2022 15:53:57 - INFO - __main__ - Starting training!
+06/17/2022 15:54:01 - INFO - root - ShardedDDP bucket size: 8.00M parameters, model size 746.97M parameters
+06/17/2022 15:54:01 - INFO - __main__ - Starting training!
+06/17/2022 15:54:06 - INFO - __main__ - Step 10 Global step 10 Train loss 6.48 on epoch=0
+06/17/2022 15:54:08 - INFO - __main__ - Step 20 Global step 20 Train loss 4.64 on epoch=1
+06/17/2022 15:54:11 - INFO - __main__ - Step 30 Global step 30 Train loss 3.91 on epoch=2
+06/17/2022 15:54:13 - INFO - __main__ - Step 40 Global step 40 Train loss 3.55 on epoch=2
+06/17/2022 15:54:16 - INFO - __main__ - Step 50 Global step 50 Train loss 3.06 on epoch=3
+06/17/2022 15:54:21 - INFO - __main__ - Global step 50 Train loss 4.33 Classification-F1 0.09449715410666175 on epoch=3
+06/17/2022 15:54:21 - INFO - __main__ - Saving model with best Classification-F1: -1.0 -> 0.09449715410666175 on epoch=3, global_step=50
+06/17/2022 15:54:23 - INFO - __main__ - Step 60 Global step 60 Train loss 2.91 on epoch=4
+06/17/2022 15:54:26 - INFO - __main__ - Step 70 Global step 70 Train loss 2.21 on epoch=4
+06/17/2022 15:54:29 - INFO - __main__ - Step 80 Global step 80 Train loss 2.37 on epoch=5
+06/17/2022 15:54:31 - INFO - __main__ - Step 90 Global step 90 Train loss 1.99 on epoch=6
+06/17/2022 15:54:34 - INFO - __main__ - Step 100 Global step 100 Train loss 1.79 on epoch=7
+06/17/2022 15:54:39 - INFO - __main__ - Global step 100 Train loss 2.26 Classification-F1 0.12245518216089807 on epoch=7
+06/17/2022 15:54:39 - INFO - __main__ - Saving model with best Classification-F1: 0.09449715410666175 -> 0.12245518216089807 on epoch=7, global_step=100
+06/17/2022 15:54:42 - INFO - __main__ - Step 110 Global step 110 Train loss 1.59 on epoch=7
+06/17/2022 15:54:44 - INFO - __main__ - Step 120 Global step 120 Train loss 1.50 on epoch=8
+06/17/2022 15:54:47 - INFO - __main__ - Step 130 Global step 130 Train loss 1.53 on epoch=9
+06/17/2022 15:54:49 - INFO - __main__ - Step 140 Global step 140 Train loss 1.24 on epoch=9
+06/17/2022 15:54:52 - INFO - __main__ - Step 150 Global step 150 Train loss 1.10 on epoch=10
+06/17/2022 15:54:58 - INFO - __main__ - Global step 150 Train loss 1.39 Classification-F1 0.35281495838727894 on epoch=10
+06/17/2022 15:54:58 - INFO - __main__ - Saving model with best Classification-F1: 0.12245518216089807 -> 0.35281495838727894 on epoch=10, global_step=150
+06/17/2022 15:55:00 - INFO - __main__ - Step 160 Global step 160 Train loss 0.99 on epoch=11
+06/17/2022 15:55:03 - INFO - __main__ - Step 170 Global step 170 Train loss 0.97 on epoch=12
+06/17/2022 15:55:05 - INFO - __main__ - Step 180 Global step 180 Train loss 0.72 on epoch=12
+06/17/2022 15:55:08 - INFO - __main__ - Step 190 Global step 190 Train loss 0.87 on epoch=13
+06/17/2022 15:55:10 - INFO - __main__ - Step 200 Global step 200 Train loss 0.68 on epoch=14
+06/17/2022 15:55:17 - INFO - __main__ - Global step 200 Train loss 0.85 Classification-F1 0.546381314268775 on epoch=14
+06/17/2022 15:55:17 - INFO - __main__ - Saving model with best Classification-F1: 0.35281495838727894 -> 0.546381314268775 on epoch=14, global_step=200
+06/17/2022 15:55:20 - INFO - __main__ - Step 210 Global step 210 Train loss 0.76 on epoch=14
+06/17/2022 15:55:22 - INFO - __main__ - Step 220 Global step 220 Train loss 0.61 on epoch=15
+06/17/2022 15:55:25 - INFO - __main__ - Step 230 Global step 230 Train loss 0.50 on epoch=16
+06/17/2022 15:55:27 - INFO - __main__ - Step 240 Global step 240 Train loss 0.60 on epoch=17
+06/17/2022 15:55:30 - INFO - __main__ - Step 250 Global step 250 Train loss 0.43 on epoch=17
+06/17/2022 15:55:36 - INFO - __main__ - Global step 250 Train loss 0.58 Classification-F1 0.5899627675718758 on epoch=17
+06/17/2022 15:55:36 - INFO - __main__ - Saving model with best Classification-F1: 0.546381314268775 -> 0.5899627675718758 on epoch=17, global_step=250
+06/17/2022 15:55:39 - INFO - __main__ - Step 260 Global step 260 Train loss 0.43 on epoch=18
+06/17/2022 15:55:41 - INFO - __main__ - Step 270 Global step 270 Train loss 0.38 on epoch=19
+06/17/2022 15:55:44 - INFO - __main__ - Step 280 Global step 280 Train loss 0.40 on epoch=19
+06/17/2022 15:55:46 - INFO - __main__ - Step 290 Global step 290 Train loss 0.41 on epoch=20
+06/17/2022 15:55:49 - INFO - __main__ - Step 300 Global step 300 Train loss 0.32 on epoch=21
+06/17/2022 15:55:56 - INFO - __main__ - Global step 300 Train loss 0.39 Classification-F1 0.7283117917526519 on epoch=21
+06/17/2022 15:55:56 - INFO - __main__ - Saving model with best Classification-F1: 0.5899627675718758 -> 0.7283117917526519 on epoch=21, global_step=300
+06/17/2022 15:55:58 - INFO - __main__ - Step 310 Global step 310 Train loss 0.37 on epoch=22
+06/17/2022 15:56:01 - INFO - __main__ - Step 320 Global step 320 Train loss 0.28 on epoch=22
+06/17/2022 15:56:04 - INFO - __main__ - Step 330 Global step 330 Train loss 0.42 on epoch=23
+06/17/2022 15:56:06 - INFO - __main__ - Step 340 Global step 340 Train loss 0.25 on epoch=24
+06/17/2022 15:56:09 - INFO - __main__ - Step 350 Global step 350 Train loss 0.32 on epoch=24

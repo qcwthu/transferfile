@@ -1,0 +1,177 @@
+05/21/2022 21:35:33 - INFO - __main__ - Namespace(task_dir='data/superglue-cb/', task_name='superglue-cb', identifier='T5-large-multitask-cls2cls-5e-1-4-20-up128shot', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-superglue-cb', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-multitask-cls2cls-5e-1-4-20-128shot/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=0, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='4,5')
+05/21/2022 21:35:33 - INFO - __main__ - models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-superglue-cb
+05/21/2022 21:35:34 - INFO - __main__ - Namespace(task_dir='data/superglue-cb/', task_name='superglue-cb', identifier='T5-large-multitask-cls2cls-5e-1-4-20-up128shot', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-superglue-cb', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-multitask-cls2cls-5e-1-4-20-128shot/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=1, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='4,5')
+05/21/2022 21:35:34 - INFO - __main__ - models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-superglue-cb
+05/21/2022 21:35:34 - INFO - root - Added key: store_based_barrier_key:1 to store for rank: 1
+05/21/2022 21:35:34 - INFO - root - Added key: store_based_barrier_key:1 to store for rank: 0
+05/21/2022 21:35:34 - INFO - __main__ - args.device: cuda:0
+05/21/2022 21:35:34 - INFO - __main__ - Using 2 gpus
+05/21/2022 21:35:34 - INFO - __main__ - Fine-tuning the following samples: ['superglue-cb_16_100', 'superglue-cb_16_13', 'superglue-cb_16_21', 'superglue-cb_16_42', 'superglue-cb_16_87']
+05/21/2022 21:35:34 - INFO - __main__ - args.device: cuda:1
+05/21/2022 21:35:34 - INFO - __main__ - Using 2 gpus
+05/21/2022 21:35:34 - INFO - __main__ - Fine-tuning the following samples: ['superglue-cb_16_100', 'superglue-cb_16_13', 'superglue-cb_16_21', 'superglue-cb_16_42', 'superglue-cb_16_87']
+05/21/2022 21:35:39 - INFO - __main__ - Running ... prefix=superglue-cb_16_100, lr=0.5, bsz=8 ...
+05/21/2022 21:35:40 - INFO - __main__ - Start tokenizing ... 48 instances
+05/21/2022 21:35:40 - INFO - __main__ - Printing 3 examples
+05/21/2022 21:35:40 - INFO - __main__ -  [superglue-cb] premise: If there are spirits at work at the time, they come only from yourself, not from the fume of the incense. Why should spirits aid living beings? What arrogance is it that drives people to believe they can have power over them? [SEP] hypothesis: people can have power over spirits
+05/21/2022 21:35:40 - INFO - __main__ - ['contradiction']
+05/21/2022 21:35:40 - INFO - __main__ -  [superglue-cb] premise: ``Ely,'' I said (that was her name and the first time I 'd ever used it), ``I want to be free.'' She looked stunned. I don't think she 'd considered this. [SEP] hypothesis: Ely had considered him wanting to be free
+05/21/2022 21:35:40 - INFO - __main__ - ['contradiction']
+05/21/2022 21:35:40 - INFO - __main__ -  [superglue-cb] premise: B: you know, sometimes I would go over, but you know, it wouldn't hit me in a big way because I knew that, uh, I would have it covered in that respect. A: Right.  Right. That's good. I don't think we've gone that far, to pay it you know, in advance before we spend it, [SEP] hypothesis: they've gone that far
+05/21/2022 21:35:40 - INFO - __main__ - ['contradiction']
+05/21/2022 21:35:40 - INFO - __main__ - Tokenizing Input ...
+05/21/2022 21:35:40 - INFO - __main__ - Start tokenizing ... 48 instances
+05/21/2022 21:35:40 - INFO - __main__ - Printing 3 examples
+05/21/2022 21:35:40 - INFO - __main__ -  [superglue-cb] premise: If there are spirits at work at the time, they come only from yourself, not from the fume of the incense. Why should spirits aid living beings? What arrogance is it that drives people to believe they can have power over them? [SEP] hypothesis: people can have power over spirits
+05/21/2022 21:35:40 - INFO - __main__ - ['contradiction']
+05/21/2022 21:35:40 - INFO - __main__ -  [superglue-cb] premise: ``Ely,'' I said (that was her name and the first time I 'd ever used it), ``I want to be free.'' She looked stunned. I don't think she 'd considered this. [SEP] hypothesis: Ely had considered him wanting to be free
+05/21/2022 21:35:40 - INFO - __main__ - ['contradiction']
+05/21/2022 21:35:40 - INFO - __main__ -  [superglue-cb] premise: B: you know, sometimes I would go over, but you know, it wouldn't hit me in a big way because I knew that, uh, I would have it covered in that respect. A: Right.  Right. That's good. I don't think we've gone that far, to pay it you know, in advance before we spend it, [SEP] hypothesis: they've gone that far
+05/21/2022 21:35:40 - INFO - __main__ - ['contradiction']
+05/21/2022 21:35:40 - INFO - __main__ - Tokenizing Input ...
+05/21/2022 21:35:40 - INFO - __main__ - Tokenizing Output ...
+05/21/2022 21:35:40 - INFO - __main__ - Tokenizing Output ...
+05/21/2022 21:35:40 - INFO - __main__ - Loaded 48 examples from train data
+05/21/2022 21:35:40 - INFO - __main__ - Start tokenizing ... 32 instances
+05/21/2022 21:35:40 - INFO - __main__ - Printing 3 examples
+05/21/2022 21:35:40 - INFO - __main__ -  [superglue-cb] premise: A: I do too. I believe about ten years ago that we went through a terrible time, but I don't, I believe that they're better now, you know, wh-, B: I think so. I don't think they're shoddy [SEP] hypothesis: they're shoddy
+05/21/2022 21:35:40 - INFO - __main__ - ['contradiction']
+05/21/2022 21:35:40 - INFO - __main__ -  [superglue-cb] premise: She swallowed hard, unsure if she had the nerve to go ahead. The memory of the pain in Tara's eyes last night decided her. Did he really expect her to believe that Tara was only the housekeeper? [SEP] hypothesis: Tara was only the housekeeper
+05/21/2022 21:35:40 - INFO - __main__ - ['contradiction']
+05/21/2022 21:35:40 - INFO - __main__ -  [superglue-cb] premise: B: All right, well. A: Um, short term, I don't think anything's going to be done about it or probably should be done about it. [SEP] hypothesis: something's going to be done about it
+05/21/2022 21:35:40 - INFO - __main__ - ['contradiction']
+05/21/2022 21:35:40 - INFO - __main__ - Tokenizing Input ...
+05/21/2022 21:35:40 - INFO - __main__ - Loaded 48 examples from train data
+05/21/2022 21:35:40 - INFO - __main__ - Start tokenizing ... 32 instances
+05/21/2022 21:35:40 - INFO - __main__ - Printing 3 examples
+05/21/2022 21:35:40 - INFO - __main__ -  [superglue-cb] premise: A: I do too. I believe about ten years ago that we went through a terrible time, but I don't, I believe that they're better now, you know, wh-, B: I think so. I don't think they're shoddy [SEP] hypothesis: they're shoddy
+05/21/2022 21:35:40 - INFO - __main__ - ['contradiction']
+05/21/2022 21:35:40 - INFO - __main__ -  [superglue-cb] premise: She swallowed hard, unsure if she had the nerve to go ahead. The memory of the pain in Tara's eyes last night decided her. Did he really expect her to believe that Tara was only the housekeeper? [SEP] hypothesis: Tara was only the housekeeper
+05/21/2022 21:35:40 - INFO - __main__ - ['contradiction']
+05/21/2022 21:35:40 - INFO - __main__ -  [superglue-cb] premise: B: All right, well. A: Um, short term, I don't think anything's going to be done about it or probably should be done about it. [SEP] hypothesis: something's going to be done about it
+05/21/2022 21:35:40 - INFO - __main__ - ['contradiction']
+05/21/2022 21:35:40 - INFO - __main__ - Tokenizing Input ...
+05/21/2022 21:35:40 - INFO - __main__ - Tokenizing Output ...
+05/21/2022 21:35:40 - INFO - __main__ - Tokenizing Output ...
+05/21/2022 21:35:40 - INFO - __main__ - Loaded 32 examples from dev data
+05/21/2022 21:35:40 - INFO - __main__ - Loaded 32 examples from dev data
+05/21/2022 21:35:57 - INFO - __main__ - load prompt embedding from ckpt
+05/21/2022 21:35:58 - INFO - __main__ - load prompt embedding from ckpt
+06/01/2022 01:25:16 - INFO - __main__ - Namespace(task_dir='data/superglue-cb/', task_name='superglue-cb', identifier='T5-large-multitask-cls2cls-5e-1-4-20-up128shot', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-superglue-cb', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-multitask-cls2cls-5e-1-4-20-128shot/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=1, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='4,5')
+06/01/2022 01:25:16 - INFO - __main__ - models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-superglue-cb
+06/01/2022 01:25:16 - INFO - __main__ - Namespace(task_dir='data/superglue-cb/', task_name='superglue-cb', identifier='T5-large-multitask-cls2cls-5e-1-4-20-up128shot', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-superglue-cb', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-multitask-cls2cls-5e-1-4-20-128shot/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=0, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='4,5')
+06/01/2022 01:25:16 - INFO - __main__ - models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-superglue-cb
+06/01/2022 01:25:18 - INFO - root - Added key: store_based_barrier_key:1 to store for rank: 1
+06/01/2022 01:25:18 - INFO - root - Added key: store_based_barrier_key:1 to store for rank: 0
+06/01/2022 01:25:18 - INFO - __main__ - args.device: cuda:0
+06/01/2022 01:25:18 - INFO - __main__ - Using 2 gpus
+06/01/2022 01:25:18 - INFO - __main__ - Fine-tuning the following samples: ['superglue-cb_16_100', 'superglue-cb_16_13', 'superglue-cb_16_21', 'superglue-cb_16_42', 'superglue-cb_16_87']
+06/01/2022 01:25:18 - INFO - __main__ - args.device: cuda:1
+06/01/2022 01:25:18 - INFO - __main__ - Using 2 gpus
+06/01/2022 01:25:18 - INFO - __main__ - Fine-tuning the following samples: ['superglue-cb_16_100', 'superglue-cb_16_13', 'superglue-cb_16_21', 'superglue-cb_16_42', 'superglue-cb_16_87']
+06/01/2022 01:25:22 - INFO - __main__ - Running ... prefix=superglue-cb_16_100, lr=0.5, bsz=8 ...
+06/01/2022 01:25:23 - INFO - __main__ - Start tokenizing ... 48 instances
+06/01/2022 01:25:23 - INFO - __main__ - Printing 3 examples
+06/01/2022 01:25:23 - INFO - __main__ -  [superglue-cb] premise: If there are spirits at work at the time, they come only from yourself, not from the fume of the incense. Why should spirits aid living beings? What arrogance is it that drives people to believe they can have power over them? [SEP] hypothesis: people can have power over spirits
+06/01/2022 01:25:23 - INFO - __main__ - ['contradiction']
+06/01/2022 01:25:23 - INFO - __main__ -  [superglue-cb] premise: ``Ely,'' I said (that was her name and the first time I 'd ever used it), ``I want to be free.'' She looked stunned. I don't think she 'd considered this. [SEP] hypothesis: Ely had considered him wanting to be free
+06/01/2022 01:25:23 - INFO - __main__ - ['contradiction']
+06/01/2022 01:25:23 - INFO - __main__ -  [superglue-cb] premise: B: you know, sometimes I would go over, but you know, it wouldn't hit me in a big way because I knew that, uh, I would have it covered in that respect. A: Right.  Right. That's good. I don't think we've gone that far, to pay it you know, in advance before we spend it, [SEP] hypothesis: they've gone that far
+06/01/2022 01:25:23 - INFO - __main__ - ['contradiction']
+06/01/2022 01:25:23 - INFO - __main__ - Tokenizing Input ...
+06/01/2022 01:25:23 - INFO - __main__ - Tokenizing Output ...
+06/01/2022 01:25:23 - INFO - __main__ - Start tokenizing ... 48 instances
+06/01/2022 01:25:23 - INFO - __main__ - Printing 3 examples
+06/01/2022 01:25:23 - INFO - __main__ -  [superglue-cb] premise: If there are spirits at work at the time, they come only from yourself, not from the fume of the incense. Why should spirits aid living beings? What arrogance is it that drives people to believe they can have power over them? [SEP] hypothesis: people can have power over spirits
+06/01/2022 01:25:23 - INFO - __main__ - ['contradiction']
+06/01/2022 01:25:23 - INFO - __main__ -  [superglue-cb] premise: ``Ely,'' I said (that was her name and the first time I 'd ever used it), ``I want to be free.'' She looked stunned. I don't think she 'd considered this. [SEP] hypothesis: Ely had considered him wanting to be free
+06/01/2022 01:25:23 - INFO - __main__ - ['contradiction']
+06/01/2022 01:25:23 - INFO - __main__ -  [superglue-cb] premise: B: you know, sometimes I would go over, but you know, it wouldn't hit me in a big way because I knew that, uh, I would have it covered in that respect. A: Right.  Right. That's good. I don't think we've gone that far, to pay it you know, in advance before we spend it, [SEP] hypothesis: they've gone that far
+06/01/2022 01:25:23 - INFO - __main__ - ['contradiction']
+06/01/2022 01:25:23 - INFO - __main__ - Tokenizing Input ...
+06/01/2022 01:25:23 - INFO - __main__ - Tokenizing Output ...
+06/01/2022 01:25:23 - INFO - __main__ - Loaded 48 examples from train data
+06/01/2022 01:25:23 - INFO - __main__ - Start tokenizing ... 32 instances
+06/01/2022 01:25:23 - INFO - __main__ - Printing 3 examples
+06/01/2022 01:25:23 - INFO - __main__ -  [superglue-cb] premise: A: I do too. I believe about ten years ago that we went through a terrible time, but I don't, I believe that they're better now, you know, wh-, B: I think so. I don't think they're shoddy [SEP] hypothesis: they're shoddy
+06/01/2022 01:25:23 - INFO - __main__ - ['contradiction']
+06/01/2022 01:25:23 - INFO - __main__ -  [superglue-cb] premise: She swallowed hard, unsure if she had the nerve to go ahead. The memory of the pain in Tara's eyes last night decided her. Did he really expect her to believe that Tara was only the housekeeper? [SEP] hypothesis: Tara was only the housekeeper
+06/01/2022 01:25:23 - INFO - __main__ - ['contradiction']
+06/01/2022 01:25:23 - INFO - __main__ -  [superglue-cb] premise: B: All right, well. A: Um, short term, I don't think anything's going to be done about it or probably should be done about it. [SEP] hypothesis: something's going to be done about it
+06/01/2022 01:25:23 - INFO - __main__ - ['contradiction']
+06/01/2022 01:25:23 - INFO - __main__ - Tokenizing Input ...
+06/01/2022 01:25:23 - INFO - __main__ - Tokenizing Output ...
+06/01/2022 01:25:23 - INFO - __main__ - Loaded 48 examples from train data
+06/01/2022 01:25:23 - INFO - __main__ - Start tokenizing ... 32 instances
+06/01/2022 01:25:23 - INFO - __main__ - Printing 3 examples
+06/01/2022 01:25:23 - INFO - __main__ -  [superglue-cb] premise: A: I do too. I believe about ten years ago that we went through a terrible time, but I don't, I believe that they're better now, you know, wh-, B: I think so. I don't think they're shoddy [SEP] hypothesis: they're shoddy
+06/01/2022 01:25:23 - INFO - __main__ - ['contradiction']
+06/01/2022 01:25:23 - INFO - __main__ -  [superglue-cb] premise: She swallowed hard, unsure if she had the nerve to go ahead. The memory of the pain in Tara's eyes last night decided her. Did he really expect her to believe that Tara was only the housekeeper? [SEP] hypothesis: Tara was only the housekeeper
+06/01/2022 01:25:23 - INFO - __main__ - ['contradiction']
+06/01/2022 01:25:23 - INFO - __main__ -  [superglue-cb] premise: B: All right, well. A: Um, short term, I don't think anything's going to be done about it or probably should be done about it. [SEP] hypothesis: something's going to be done about it
+06/01/2022 01:25:23 - INFO - __main__ - ['contradiction']
+06/01/2022 01:25:23 - INFO - __main__ - Tokenizing Input ...
+06/01/2022 01:25:23 - INFO - __main__ - Tokenizing Output ...
+06/01/2022 01:25:23 - INFO - __main__ - Loaded 32 examples from dev data
+06/01/2022 01:25:23 - INFO - __main__ - Loaded 32 examples from dev data
+06/01/2022 01:25:41 - INFO - __main__ - load prompt embedding from ckpt
+06/01/2022 01:25:43 - INFO - __main__ - load prompt embedding from ckpt
+06/14/2022 19:31:39 - INFO - __main__ - Namespace(task_dir='data/superglue-cb/', task_name='superglue-cb', identifier='T5-large-multitask-cls2cls-5e-1-4-20-up128shot', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-superglue-cb', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-multitask-cls2cls-5e-1-4-20-128shot/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=1, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='4,5')
+06/14/2022 19:31:39 - INFO - __main__ - models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-superglue-cb
+06/14/2022 19:31:39 - INFO - __main__ - Namespace(task_dir='data/superglue-cb/', task_name='superglue-cb', identifier='T5-large-multitask-cls2cls-5e-1-4-20-up128shot', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-superglue-cb', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-multitask-cls2cls-5e-1-4-20-128shot/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=0, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='4,5')
+06/14/2022 19:31:39 - INFO - __main__ - models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-superglue-cb
+06/14/2022 19:31:41 - INFO - root - Added key: store_based_barrier_key:1 to store for rank: 1
+06/14/2022 19:31:41 - INFO - root - Added key: store_based_barrier_key:1 to store for rank: 0
+06/14/2022 19:31:41 - INFO - __main__ - args.device: cuda:0
+06/14/2022 19:31:41 - INFO - __main__ - Using 2 gpus
+06/14/2022 19:31:41 - INFO - __main__ - Fine-tuning the following samples: ['superglue-cb_16_100', 'superglue-cb_16_13', 'superglue-cb_16_21', 'superglue-cb_16_42', 'superglue-cb_16_87']
+06/14/2022 19:31:41 - INFO - __main__ - args.device: cuda:1
+06/14/2022 19:31:41 - INFO - __main__ - Using 2 gpus
+06/14/2022 19:31:41 - INFO - __main__ - Fine-tuning the following samples: ['superglue-cb_16_100', 'superglue-cb_16_13', 'superglue-cb_16_21', 'superglue-cb_16_42', 'superglue-cb_16_87']
+06/14/2022 19:31:45 - INFO - __main__ - Running ... prefix=superglue-cb_16_100, lr=0.5, bsz=8 ...
+06/14/2022 19:31:46 - INFO - __main__ - Start tokenizing ... 48 instances
+06/14/2022 19:31:46 - INFO - __main__ - Printing 3 examples
+06/14/2022 19:31:46 - INFO - __main__ -  [superglue-cb] premise: If there are spirits at work at the time, they come only from yourself, not from the fume of the incense. Why should spirits aid living beings? What arrogance is it that drives people to believe they can have power over them? [SEP] hypothesis: people can have power over spirits
+06/14/2022 19:31:46 - INFO - __main__ - ['contradiction']
+06/14/2022 19:31:46 - INFO - __main__ -  [superglue-cb] premise: ``Ely,'' I said (that was her name and the first time I 'd ever used it), ``I want to be free.'' She looked stunned. I don't think she 'd considered this. [SEP] hypothesis: Ely had considered him wanting to be free
+06/14/2022 19:31:46 - INFO - __main__ - ['contradiction']
+06/14/2022 19:31:46 - INFO - __main__ -  [superglue-cb] premise: B: you know, sometimes I would go over, but you know, it wouldn't hit me in a big way because I knew that, uh, I would have it covered in that respect. A: Right.  Right. That's good. I don't think we've gone that far, to pay it you know, in advance before we spend it, [SEP] hypothesis: they've gone that far
+06/14/2022 19:31:46 - INFO - __main__ - ['contradiction']
+06/14/2022 19:31:46 - INFO - __main__ - Tokenizing Input ...
+06/14/2022 19:31:46 - INFO - __main__ - Tokenizing Output ...
+06/14/2022 19:31:46 - INFO - __main__ - Start tokenizing ... 48 instances
+06/14/2022 19:31:46 - INFO - __main__ - Printing 3 examples
+06/14/2022 19:31:46 - INFO - __main__ -  [superglue-cb] premise: If there are spirits at work at the time, they come only from yourself, not from the fume of the incense. Why should spirits aid living beings? What arrogance is it that drives people to believe they can have power over them? [SEP] hypothesis: people can have power over spirits
+06/14/2022 19:31:46 - INFO - __main__ - ['contradiction']
+06/14/2022 19:31:46 - INFO - __main__ -  [superglue-cb] premise: ``Ely,'' I said (that was her name and the first time I 'd ever used it), ``I want to be free.'' She looked stunned. I don't think she 'd considered this. [SEP] hypothesis: Ely had considered him wanting to be free
+06/14/2022 19:31:46 - INFO - __main__ - ['contradiction']
+06/14/2022 19:31:46 - INFO - __main__ -  [superglue-cb] premise: B: you know, sometimes I would go over, but you know, it wouldn't hit me in a big way because I knew that, uh, I would have it covered in that respect. A: Right.  Right. That's good. I don't think we've gone that far, to pay it you know, in advance before we spend it, [SEP] hypothesis: they've gone that far
+06/14/2022 19:31:46 - INFO - __main__ - ['contradiction']
+06/14/2022 19:31:46 - INFO - __main__ - Tokenizing Input ...
+06/14/2022 19:31:46 - INFO - __main__ - Tokenizing Output ...
+06/14/2022 19:31:46 - INFO - __main__ - Loaded 48 examples from train data
+06/14/2022 19:31:46 - INFO - __main__ - Start tokenizing ... 32 instances
+06/14/2022 19:31:46 - INFO - __main__ - Printing 3 examples
+06/14/2022 19:31:46 - INFO - __main__ -  [superglue-cb] premise: A: I do too. I believe about ten years ago that we went through a terrible time, but I don't, I believe that they're better now, you know, wh-, B: I think so. I don't think they're shoddy [SEP] hypothesis: they're shoddy
+06/14/2022 19:31:46 - INFO - __main__ - ['contradiction']
+06/14/2022 19:31:46 - INFO - __main__ -  [superglue-cb] premise: She swallowed hard, unsure if she had the nerve to go ahead. The memory of the pain in Tara's eyes last night decided her. Did he really expect her to believe that Tara was only the housekeeper? [SEP] hypothesis: Tara was only the housekeeper
+06/14/2022 19:31:46 - INFO - __main__ - ['contradiction']
+06/14/2022 19:31:46 - INFO - __main__ -  [superglue-cb] premise: B: All right, well. A: Um, short term, I don't think anything's going to be done about it or probably should be done about it. [SEP] hypothesis: something's going to be done about it
+06/14/2022 19:31:46 - INFO - __main__ - ['contradiction']
+06/14/2022 19:31:46 - INFO - __main__ - Tokenizing Input ...
+06/14/2022 19:31:46 - INFO - __main__ - Tokenizing Output ...
+06/14/2022 19:31:46 - INFO - __main__ - Loaded 48 examples from train data
+06/14/2022 19:31:46 - INFO - __main__ - Start tokenizing ... 32 instances
+06/14/2022 19:31:46 - INFO - __main__ - Printing 3 examples
+06/14/2022 19:31:46 - INFO - __main__ -  [superglue-cb] premise: A: I do too. I believe about ten years ago that we went through a terrible time, but I don't, I believe that they're better now, you know, wh-, B: I think so. I don't think they're shoddy [SEP] hypothesis: they're shoddy
+06/14/2022 19:31:46 - INFO - __main__ - ['contradiction']
+06/14/2022 19:31:46 - INFO - __main__ -  [superglue-cb] premise: She swallowed hard, unsure if she had the nerve to go ahead. The memory of the pain in Tara's eyes last night decided her. Did he really expect her to believe that Tara was only the housekeeper? [SEP] hypothesis: Tara was only the housekeeper
+06/14/2022 19:31:46 - INFO - __main__ - ['contradiction']
+06/14/2022 19:31:46 - INFO - __main__ -  [superglue-cb] premise: B: All right, well. A: Um, short term, I don't think anything's going to be done about it or probably should be done about it. [SEP] hypothesis: something's going to be done about it
+06/14/2022 19:31:46 - INFO - __main__ - ['contradiction']
+06/14/2022 19:31:46 - INFO - __main__ - Tokenizing Input ...
+06/14/2022 19:31:46 - INFO - __main__ - Tokenizing Output ...
+06/14/2022 19:31:46 - INFO - __main__ - Loaded 32 examples from dev data
+06/14/2022 19:31:46 - INFO - __main__ - Loaded 32 examples from dev data
+06/14/2022 19:32:04 - INFO - __main__ - load prompt embedding from ckpt
+06/14/2022 19:32:04 - INFO - __main__ - load prompt embedding from ckpt

@@ -1,0 +1,235 @@
+06/17/2022 15:36:10 - INFO - __main__ - Namespace(task_dir='data/yelp_polarity/', task_name='yelp_polarity', identifier='T5-large-multitask-cls2cls-5e-1-4-20-200prompt', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-multitask-cls2cls-5e-1-4-20-200prompt/singletask-yelp_polarity', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-200prompt-multitask-cls2cls-5e-1-4-20/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=1, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=200, cuda='4,5')
+06/17/2022 15:36:10 - INFO - __main__ - models/T5-large-multitask-cls2cls-5e-1-4-20-200prompt/singletask-yelp_polarity
+06/17/2022 15:36:10 - INFO - __main__ - Namespace(task_dir='data/yelp_polarity/', task_name='yelp_polarity', identifier='T5-large-multitask-cls2cls-5e-1-4-20-200prompt', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-multitask-cls2cls-5e-1-4-20-200prompt/singletask-yelp_polarity', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-200prompt-multitask-cls2cls-5e-1-4-20/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=0, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=200, cuda='4,5')
+06/17/2022 15:36:10 - INFO - __main__ - models/T5-large-multitask-cls2cls-5e-1-4-20-200prompt/singletask-yelp_polarity
+06/17/2022 15:36:11 - INFO - root - Added key: store_based_barrier_key:1 to store for rank: 1
+06/17/2022 15:36:11 - INFO - root - Added key: store_based_barrier_key:1 to store for rank: 0
+06/17/2022 15:36:11 - INFO - __main__ - args.device: cuda:0
+06/17/2022 15:36:11 - INFO - __main__ - Using 2 gpus
+06/17/2022 15:36:11 - INFO - __main__ - args.device: cuda:1
+06/17/2022 15:36:11 - INFO - __main__ - Fine-tuning the following samples: ['yelp_polarity_16_100', 'yelp_polarity_16_13', 'yelp_polarity_16_21', 'yelp_polarity_16_42', 'yelp_polarity_16_87']
+06/17/2022 15:36:11 - INFO - __main__ - Using 2 gpus
+06/17/2022 15:36:11 - INFO - __main__ - Fine-tuning the following samples: ['yelp_polarity_16_100', 'yelp_polarity_16_13', 'yelp_polarity_16_21', 'yelp_polarity_16_42', 'yelp_polarity_16_87']
+06/17/2022 15:36:16 - INFO - __main__ - Running ... prefix=yelp_polarity_16_100, lr=0.5, bsz=8 ...
+06/17/2022 15:36:17 - INFO - __main__ - Start tokenizing ... 32 instances
+06/17/2022 15:36:17 - INFO - __main__ - Printing 3 examples
+06/17/2022 15:36:17 - INFO - __main__ -  [yelp_polarity] Soggy pizza, $19 burger with no side, 5% concession fee whatever. This place is SO overpriced, and the food is McDonald's just way overpriced.
+06/17/2022 15:36:17 - INFO - __main__ - ['negative']
+06/17/2022 15:36:17 - INFO - __main__ -  [yelp_polarity] I originally went to the AZ Heart Institute due to fainting spells and periods of breathlessness when I wasn't moving.  In addition to an extremely abrupt manner - saying things like, \""Doesn't matter.  Nope.  Doesn't matter,\"" when I told him about my family history of heart problems (didn't matter because it was my uncle, not my parents.  Because there's no way that my grandmother could have passed the defective heart gene to my mother, who could have passed it to me without showing symptoms herself.  And the fact that my father at the time had heart issues, eventually dying from a heart attack, was inconsequential.), the doctor seemed extremely bored and had a \""why are you wasting my time\"" demeanor.  I was wasting his time because I was in my early twenties, but was having chest pains, hard thumps in my chest, and was passing out in clusters.  The icing on the cake however, and the reason I left and never came back, was when he shut the door and it bounced slightly open, and I was able to hear him making fun of me to a nurse right outside the door.  Humiliating, to say the least.  Now, some years later, I continue to have clusters of fainting, gasping for air, pounding in my chest, and memory problems.  I'm in the process of having the issue diagnosed with another cardiology practice, one who actually listens and has the courtesy to at least wait until I leave to snort and laugh about whether or not you can believe this chick.  I would never ever return to this place, nor would I ever recommend anyone go there.  As a matter of fact, I have steered a couple of friends away from the AZ Heart Institute due to my experience.
+06/17/2022 15:36:17 - INFO - __main__ - ['negative']
+06/17/2022 15:36:17 - INFO - __main__ -  [yelp_polarity] I have just came here for staying two days. Feel so upset because of customer service. Room is not as clean as I thought. There is no reason to stay here, but to watch mystere.
+06/17/2022 15:36:17 - INFO - __main__ - ['negative']
+06/17/2022 15:36:17 - INFO - __main__ - Tokenizing Input ...
+06/17/2022 15:36:17 - INFO - __main__ - Start tokenizing ... 32 instances
+06/17/2022 15:36:17 - INFO - __main__ - Printing 3 examples
+06/17/2022 15:36:17 - INFO - __main__ -  [yelp_polarity] Soggy pizza, $19 burger with no side, 5% concession fee whatever. This place is SO overpriced, and the food is McDonald's just way overpriced.
+06/17/2022 15:36:17 - INFO - __main__ - ['negative']
+06/17/2022 15:36:17 - INFO - __main__ -  [yelp_polarity] I originally went to the AZ Heart Institute due to fainting spells and periods of breathlessness when I wasn't moving.  In addition to an extremely abrupt manner - saying things like, \""Doesn't matter.  Nope.  Doesn't matter,\"" when I told him about my family history of heart problems (didn't matter because it was my uncle, not my parents.  Because there's no way that my grandmother could have passed the defective heart gene to my mother, who could have passed it to me without showing symptoms herself.  And the fact that my father at the time had heart issues, eventually dying from a heart attack, was inconsequential.), the doctor seemed extremely bored and had a \""why are you wasting my time\"" demeanor.  I was wasting his time because I was in my early twenties, but was having chest pains, hard thumps in my chest, and was passing out in clusters.  The icing on the cake however, and the reason I left and never came back, was when he shut the door and it bounced slightly open, and I was able to hear him making fun of me to a nurse right outside the door.  Humiliating, to say the least.  Now, some years later, I continue to have clusters of fainting, gasping for air, pounding in my chest, and memory problems.  I'm in the process of having the issue diagnosed with another cardiology practice, one who actually listens and has the courtesy to at least wait until I leave to snort and laugh about whether or not you can believe this chick.  I would never ever return to this place, nor would I ever recommend anyone go there.  As a matter of fact, I have steered a couple of friends away from the AZ Heart Institute due to my experience.
+06/17/2022 15:36:17 - INFO - __main__ - ['negative']
+06/17/2022 15:36:17 - INFO - __main__ -  [yelp_polarity] I have just came here for staying two days. Feel so upset because of customer service. Room is not as clean as I thought. There is no reason to stay here, but to watch mystere.
+06/17/2022 15:36:17 - INFO - __main__ - ['negative']
+06/17/2022 15:36:17 - INFO - __main__ - Tokenizing Input ...
+06/17/2022 15:36:17 - INFO - __main__ - Tokenizing Output ...
+06/17/2022 15:36:17 - INFO - __main__ - Tokenizing Output ...
+06/17/2022 15:36:17 - INFO - __main__ - Loaded 32 examples from train data
+06/17/2022 15:36:17 - INFO - __main__ - Start tokenizing ... 32 instances
+06/17/2022 15:36:17 - INFO - __main__ - Printing 3 examples
+06/17/2022 15:36:17 - INFO - __main__ -  [yelp_polarity] My wife and I brought round trip tickets from  and to McCarran.  The person at the desk informed me that I do not have to call for pick-up service because it is noted on the ticket and to be sure to be at the designated location by 11:30 PM. The night of my pick-up we went to the designated pick up area at 11:20 PM.  At 11:26 PM I called just to check if the shuttle would be on time.  The dispatcher informed me that they are running about 5 to 10 minutes late.  At 11:40 PM I called back and asked for an update.  The dispatcher informed me that the shuttle driver came by at 11:35 PM and no one was there.  I informed the dispatcher that we have been out front from 11:20 PM and the door man of the hotel was out front since 11:00 PM and no airport shuttle came by. We had to catch a cab to the airport.  If they can lie about this,  I hate to think what else they would do.  I will attempt to get reimbursement for my cab fare which I think they will not do.  A follow up review to follow after I talk to them.   Paul Y.
+06/17/2022 15:36:17 - INFO - __main__ - ['negative']
+06/17/2022 15:36:17 - INFO - __main__ -  [yelp_polarity] The snacks are more expensive than the harkins... And the seats look nice but are hella uncomfortable.  I mean go-to-the-chiropractor uncomfortable.
+06/17/2022 15:36:17 - INFO - __main__ - ['negative']
+06/17/2022 15:36:17 - INFO - __main__ -  [yelp_polarity] Ok.... the two stars are ONLY because of the mac n cheese dish .... WHAT HAPPENED??? The first time I tried the mac n cheese I was in love!  I have been to scooter's two more times since my first review and I gotta say the mac n cheese was a complete disappointment! Very bland and watered down .... no flavor at all! I don't know if they have changed cooks? The recipe?  Blah!  Ok .... done with my rant! lol   Outside of the mac n cheese disaster, scooters is still one of my favorite places to go for a drink! and all the other dishes I have tried have been top notch!
+06/17/2022 15:36:17 - INFO - __main__ - ['negative']
+06/17/2022 15:36:17 - INFO - __main__ - Tokenizing Input ...
+06/17/2022 15:36:17 - INFO - __main__ - Loaded 32 examples from train data
+06/17/2022 15:36:17 - INFO - __main__ - Start tokenizing ... 32 instances
+06/17/2022 15:36:17 - INFO - __main__ - Printing 3 examples
+06/17/2022 15:36:17 - INFO - __main__ -  [yelp_polarity] My wife and I brought round trip tickets from  and to McCarran.  The person at the desk informed me that I do not have to call for pick-up service because it is noted on the ticket and to be sure to be at the designated location by 11:30 PM. The night of my pick-up we went to the designated pick up area at 11:20 PM.  At 11:26 PM I called just to check if the shuttle would be on time.  The dispatcher informed me that they are running about 5 to 10 minutes late.  At 11:40 PM I called back and asked for an update.  The dispatcher informed me that the shuttle driver came by at 11:35 PM and no one was there.  I informed the dispatcher that we have been out front from 11:20 PM and the door man of the hotel was out front since 11:00 PM and no airport shuttle came by. We had to catch a cab to the airport.  If they can lie about this,  I hate to think what else they would do.  I will attempt to get reimbursement for my cab fare which I think they will not do.  A follow up review to follow after I talk to them.   Paul Y.
+06/17/2022 15:36:17 - INFO - __main__ - ['negative']
+06/17/2022 15:36:17 - INFO - __main__ -  [yelp_polarity] The snacks are more expensive than the harkins... And the seats look nice but are hella uncomfortable.  I mean go-to-the-chiropractor uncomfortable.
+06/17/2022 15:36:17 - INFO - __main__ - ['negative']
+06/17/2022 15:36:17 - INFO - __main__ -  [yelp_polarity] Ok.... the two stars are ONLY because of the mac n cheese dish .... WHAT HAPPENED??? The first time I tried the mac n cheese I was in love!  I have been to scooter's two more times since my first review and I gotta say the mac n cheese was a complete disappointment! Very bland and watered down .... no flavor at all! I don't know if they have changed cooks? The recipe?  Blah!  Ok .... done with my rant! lol   Outside of the mac n cheese disaster, scooters is still one of my favorite places to go for a drink! and all the other dishes I have tried have been top notch!
+06/17/2022 15:36:17 - INFO - __main__ - ['negative']
+06/17/2022 15:36:17 - INFO - __main__ - Tokenizing Input ...
+06/17/2022 15:36:17 - INFO - __main__ - Tokenizing Output ...
+06/17/2022 15:36:17 - INFO - __main__ - Tokenizing Output ...
+06/17/2022 15:36:17 - INFO - __main__ - Loaded 32 examples from dev data
+06/17/2022 15:36:17 - INFO - __main__ - Loaded 32 examples from dev data
+06/17/2022 15:36:34 - INFO - __main__ - load prompt embedding from ckpt
+06/17/2022 15:36:36 - INFO - __main__ - load prompt embedding from ckpt
+06/17/2022 15:36:37 - INFO - root - ShardedDDP bucket size: 8.00M parameters, model size 747.07M parameters
+06/17/2022 15:36:37 - INFO - __main__ - Starting training!
+06/17/2022 15:36:38 - INFO - root - ShardedDDP bucket size: 8.00M parameters, model size 747.07M parameters
+06/17/2022 15:36:38 - INFO - __main__ - Starting training!
+06/17/2022 15:36:45 - INFO - __main__ - Step 10 Global step 10 Train loss 0.81 on epoch=4
+06/17/2022 15:36:50 - INFO - __main__ - Step 20 Global step 20 Train loss 0.11 on epoch=9
+06/17/2022 15:36:55 - INFO - __main__ - Step 30 Global step 30 Train loss 0.07 on epoch=14
+06/17/2022 15:37:00 - INFO - __main__ - Step 40 Global step 40 Train loss 0.03 on epoch=19
+06/17/2022 15:37:05 - INFO - __main__ - Step 50 Global step 50 Train loss 0.04 on epoch=24
+06/17/2022 15:37:07 - INFO - __main__ - Global step 50 Train loss 0.21 Classification-F1 0.9375 on epoch=24
+06/17/2022 15:37:07 - INFO - __main__ - Saving model with best Classification-F1: -1.0 -> 0.9375 on epoch=24, global_step=50
+06/17/2022 15:37:12 - INFO - __main__ - Step 60 Global step 60 Train loss 0.02 on epoch=29
+06/17/2022 15:37:17 - INFO - __main__ - Step 70 Global step 70 Train loss 0.02 on epoch=34
+06/17/2022 15:37:22 - INFO - __main__ - Step 80 Global step 80 Train loss 0.01 on epoch=39
+06/17/2022 15:37:27 - INFO - __main__ - Step 90 Global step 90 Train loss 0.01 on epoch=44
+06/17/2022 15:37:32 - INFO - __main__ - Step 100 Global step 100 Train loss 0.01 on epoch=49
+06/17/2022 15:37:34 - INFO - __main__ - Global step 100 Train loss 0.02 Classification-F1 0.9687194525904204 on epoch=49
+06/17/2022 15:37:34 - INFO - __main__ - Saving model with best Classification-F1: 0.9375 -> 0.9687194525904204 on epoch=49, global_step=100
+06/17/2022 15:37:39 - INFO - __main__ - Step 110 Global step 110 Train loss 0.02 on epoch=54
+06/17/2022 15:37:44 - INFO - __main__ - Step 120 Global step 120 Train loss 0.01 on epoch=59
+06/17/2022 15:37:49 - INFO - __main__ - Step 130 Global step 130 Train loss 0.01 on epoch=64
+06/17/2022 15:37:54 - INFO - __main__ - Step 140 Global step 140 Train loss 0.01 on epoch=69
+06/17/2022 15:37:59 - INFO - __main__ - Step 150 Global step 150 Train loss 0.00 on epoch=74
+06/17/2022 15:38:01 - INFO - __main__ - Global step 150 Train loss 0.01 Classification-F1 0.9687194525904204 on epoch=74
+06/17/2022 15:38:06 - INFO - __main__ - Step 160 Global step 160 Train loss 0.01 on epoch=79
+06/17/2022 15:38:11 - INFO - __main__ - Step 170 Global step 170 Train loss 0.00 on epoch=84
+06/17/2022 15:38:16 - INFO - __main__ - Step 180 Global step 180 Train loss 0.00 on epoch=89
+06/17/2022 15:38:21 - INFO - __main__ - Step 190 Global step 190 Train loss 0.00 on epoch=94
+06/17/2022 15:38:26 - INFO - __main__ - Step 200 Global step 200 Train loss 0.00 on epoch=99
+06/17/2022 15:38:28 - INFO - __main__ - Global step 200 Train loss 0.01 Classification-F1 0.9687194525904204 on epoch=99
+06/17/2022 15:38:33 - INFO - __main__ - Step 210 Global step 210 Train loss 0.00 on epoch=104
+06/17/2022 15:38:38 - INFO - __main__ - Step 220 Global step 220 Train loss 0.00 on epoch=109
+06/17/2022 15:38:43 - INFO - __main__ - Step 230 Global step 230 Train loss 0.00 on epoch=114
+06/17/2022 15:38:48 - INFO - __main__ - Step 240 Global step 240 Train loss 0.00 on epoch=119
+06/17/2022 15:38:53 - INFO - __main__ - Step 250 Global step 250 Train loss 0.00 on epoch=124
+06/17/2022 15:38:55 - INFO - __main__ - Global step 250 Train loss 0.00 Classification-F1 0.9687194525904204 on epoch=124
+06/17/2022 15:39:00 - INFO - __main__ - Step 260 Global step 260 Train loss 0.00 on epoch=129
+06/17/2022 15:39:05 - INFO - __main__ - Step 270 Global step 270 Train loss 0.00 on epoch=134
+06/17/2022 15:39:10 - INFO - __main__ - Step 280 Global step 280 Train loss 0.00 on epoch=139
+06/17/2022 15:39:15 - INFO - __main__ - Step 290 Global step 290 Train loss 0.00 on epoch=144
+06/17/2022 15:39:20 - INFO - __main__ - Step 300 Global step 300 Train loss 0.00 on epoch=149
+06/17/2022 15:39:22 - INFO - __main__ - Global step 300 Train loss 0.00 Classification-F1 0.9687194525904204 on epoch=149
+06/17/2022 15:39:27 - INFO - __main__ - Step 310 Global step 310 Train loss 0.00 on epoch=154
+06/17/2022 15:39:32 - INFO - __main__ - Step 320 Global step 320 Train loss 0.00 on epoch=159
+06/17/2022 15:39:37 - INFO - __main__ - Step 330 Global step 330 Train loss 0.00 on epoch=164
+06/17/2022 15:39:42 - INFO - __main__ - Step 340 Global step 340 Train loss 0.00 on epoch=169
+06/17/2022 15:39:47 - INFO - __main__ - Step 350 Global step 350 Train loss 0.00 on epoch=174
+06/17/2022 15:39:48 - INFO - __main__ - Global step 350 Train loss 0.00 Classification-F1 0.9687194525904204 on epoch=174
+06/17/2022 15:39:54 - INFO - __main__ - Step 360 Global step 360 Train loss 0.00 on epoch=179
+06/17/2022 15:39:59 - INFO - __main__ - Step 370 Global step 370 Train loss 0.00 on epoch=184
+06/17/2022 15:40:04 - INFO - __main__ - Step 380 Global step 380 Train loss 0.00 on epoch=189
+06/17/2022 15:40:09 - INFO - __main__ - Step 390 Global step 390 Train loss 0.00 on epoch=194
+06/17/2022 15:40:14 - INFO - __main__ - Step 400 Global step 400 Train loss 0.02 on epoch=199
+06/17/2022 15:40:15 - INFO - __main__ - Global step 400 Train loss 0.01 Classification-F1 0.9687194525904204 on epoch=199
+06/17/2022 15:40:21 - INFO - __main__ - Step 410 Global step 410 Train loss 0.00 on epoch=204
+06/17/2022 15:40:26 - INFO - __main__ - Step 420 Global step 420 Train loss 0.00 on epoch=209
+06/17/2022 15:40:31 - INFO - __main__ - Step 430 Global step 430 Train loss 0.00 on epoch=214
+06/17/2022 15:40:36 - INFO - __main__ - Step 440 Global step 440 Train loss 0.00 on epoch=219
+06/17/2022 15:40:41 - INFO - __main__ - Step 450 Global step 450 Train loss 0.00 on epoch=224
+06/17/2022 15:40:42 - INFO - __main__ - Global step 450 Train loss 0.00 Classification-F1 0.9687194525904204 on epoch=224
+06/17/2022 15:40:48 - INFO - __main__ - Step 460 Global step 460 Train loss 0.00 on epoch=229
+06/17/2022 15:40:53 - INFO - __main__ - Step 470 Global step 470 Train loss 0.00 on epoch=234
+06/17/2022 15:40:58 - INFO - __main__ - Step 480 Global step 480 Train loss 0.00 on epoch=239
+06/17/2022 15:41:03 - INFO - __main__ - Step 490 Global step 490 Train loss 0.00 on epoch=244
+06/17/2022 15:41:08 - INFO - __main__ - Step 500 Global step 500 Train loss 0.00 on epoch=249
+06/17/2022 15:41:09 - INFO - __main__ - Global step 500 Train loss 0.00 Classification-F1 0.9687194525904204 on epoch=249
+06/17/2022 15:41:15 - INFO - __main__ - Step 510 Global step 510 Train loss 0.00 on epoch=254
+06/17/2022 15:41:20 - INFO - __main__ - Step 520 Global step 520 Train loss 0.00 on epoch=259
+06/17/2022 15:41:25 - INFO - __main__ - Step 530 Global step 530 Train loss 0.00 on epoch=264
+06/17/2022 15:41:30 - INFO - __main__ - Step 540 Global step 540 Train loss 0.00 on epoch=269
+06/17/2022 15:41:35 - INFO - __main__ - Step 550 Global step 550 Train loss 0.00 on epoch=274
+06/17/2022 15:41:36 - INFO - __main__ - Global step 550 Train loss 0.00 Classification-F1 0.9687194525904204 on epoch=274
+06/17/2022 15:41:42 - INFO - __main__ - Step 560 Global step 560 Train loss 0.00 on epoch=279
+06/17/2022 15:41:47 - INFO - __main__ - Step 570 Global step 570 Train loss 0.00 on epoch=284
+06/17/2022 15:41:52 - INFO - __main__ - Step 580 Global step 580 Train loss 0.00 on epoch=289
+06/17/2022 15:41:57 - INFO - __main__ - Step 590 Global step 590 Train loss 0.00 on epoch=294
+06/17/2022 15:42:02 - INFO - __main__ - Step 600 Global step 600 Train loss 0.00 on epoch=299
+06/17/2022 15:42:03 - INFO - __main__ - Global step 600 Train loss 0.00 Classification-F1 0.9687194525904204 on epoch=299
+06/17/2022 15:42:09 - INFO - __main__ - Step 610 Global step 610 Train loss 0.00 on epoch=304
+06/17/2022 15:42:14 - INFO - __main__ - Step 620 Global step 620 Train loss 0.00 on epoch=309
+06/17/2022 15:42:19 - INFO - __main__ - Step 630 Global step 630 Train loss 0.00 on epoch=314
+06/17/2022 15:42:24 - INFO - __main__ - Step 640 Global step 640 Train loss 0.00 on epoch=319
+06/17/2022 15:42:29 - INFO - __main__ - Step 650 Global step 650 Train loss 0.00 on epoch=324
+06/17/2022 15:42:31 - INFO - __main__ - Global step 650 Train loss 0.00 Classification-F1 0.9687194525904204 on epoch=324
+06/17/2022 15:42:36 - INFO - __main__ - Step 660 Global step 660 Train loss 0.00 on epoch=329
+06/17/2022 15:42:41 - INFO - __main__ - Step 670 Global step 670 Train loss 0.00 on epoch=334
+06/17/2022 15:42:46 - INFO - __main__ - Step 680 Global step 680 Train loss 0.00 on epoch=339
+06/17/2022 15:42:51 - INFO - __main__ - Step 690 Global step 690 Train loss 0.00 on epoch=344
+06/17/2022 15:42:56 - INFO - __main__ - Step 700 Global step 700 Train loss 0.00 on epoch=349
+06/17/2022 15:42:58 - INFO - __main__ - Global step 700 Train loss 0.00 Classification-F1 0.9687194525904204 on epoch=349
+06/17/2022 15:43:03 - INFO - __main__ - Step 710 Global step 710 Train loss 0.00 on epoch=354
+06/17/2022 15:43:08 - INFO - __main__ - Step 720 Global step 720 Train loss 0.01 on epoch=359
+06/17/2022 15:43:13 - INFO - __main__ - Step 730 Global step 730 Train loss 0.00 on epoch=364
+06/17/2022 15:43:18 - INFO - __main__ - Step 740 Global step 740 Train loss 0.00 on epoch=369
+06/17/2022 15:43:23 - INFO - __main__ - Step 750 Global step 750 Train loss 0.00 on epoch=374
+06/17/2022 15:43:25 - INFO - __main__ - Global step 750 Train loss 0.00 Classification-F1 0.9687194525904204 on epoch=374
+06/17/2022 15:43:30 - INFO - __main__ - Step 760 Global step 760 Train loss 0.00 on epoch=379
+06/17/2022 15:43:35 - INFO - __main__ - Step 770 Global step 770 Train loss 0.00 on epoch=384
+06/17/2022 15:43:40 - INFO - __main__ - Step 780 Global step 780 Train loss 0.00 on epoch=389
+06/17/2022 15:43:45 - INFO - __main__ - Step 790 Global step 790 Train loss 0.00 on epoch=394
+06/17/2022 15:43:51 - INFO - __main__ - Step 800 Global step 800 Train loss 0.00 on epoch=399
+06/17/2022 15:43:52 - INFO - __main__ - Global step 800 Train loss 0.00 Classification-F1 0.9687194525904204 on epoch=399
+06/17/2022 15:43:57 - INFO - __main__ - Step 810 Global step 810 Train loss 0.00 on epoch=404
+06/17/2022 15:44:02 - INFO - __main__ - Step 820 Global step 820 Train loss 0.00 on epoch=409
+06/17/2022 15:44:07 - INFO - __main__ - Step 830 Global step 830 Train loss 0.00 on epoch=414
+06/17/2022 15:44:12 - INFO - __main__ - Step 840 Global step 840 Train loss 0.00 on epoch=419
+06/17/2022 15:44:18 - INFO - __main__ - Step 850 Global step 850 Train loss 0.00 on epoch=424
+06/17/2022 15:44:19 - INFO - __main__ - Global step 850 Train loss 0.00 Classification-F1 0.9687194525904204 on epoch=424
+06/17/2022 15:44:24 - INFO - __main__ - Step 860 Global step 860 Train loss 0.00 on epoch=429
+06/17/2022 15:44:29 - INFO - __main__ - Step 870 Global step 870 Train loss 0.00 on epoch=434
+06/17/2022 15:44:34 - INFO - __main__ - Step 880 Global step 880 Train loss 0.00 on epoch=439
+06/17/2022 15:44:39 - INFO - __main__ - Step 890 Global step 890 Train loss 0.00 on epoch=444
+06/17/2022 15:44:45 - INFO - __main__ - Step 900 Global step 900 Train loss 0.00 on epoch=449
+06/17/2022 15:44:46 - INFO - __main__ - Global step 900 Train loss 0.00 Classification-F1 0.9687194525904204 on epoch=449
+06/17/2022 15:44:51 - INFO - __main__ - Step 910 Global step 910 Train loss 0.00 on epoch=454
+06/17/2022 15:44:56 - INFO - __main__ - Step 920 Global step 920 Train loss 0.00 on epoch=459
+06/17/2022 15:45:01 - INFO - __main__ - Step 930 Global step 930 Train loss 0.00 on epoch=464
+06/17/2022 15:45:06 - INFO - __main__ - Step 940 Global step 940 Train loss 0.00 on epoch=469
+06/17/2022 15:45:12 - INFO - __main__ - Step 950 Global step 950 Train loss 0.00 on epoch=474
+06/17/2022 15:45:13 - INFO - __main__ - Global step 950 Train loss 0.00 Classification-F1 0.9687194525904204 on epoch=474
+06/17/2022 15:45:18 - INFO - __main__ - Step 960 Global step 960 Train loss 0.00 on epoch=479
+06/17/2022 15:45:23 - INFO - __main__ - Step 970 Global step 970 Train loss 0.00 on epoch=484
+06/17/2022 15:45:28 - INFO - __main__ - Step 980 Global step 980 Train loss 0.00 on epoch=489
+06/17/2022 15:45:33 - INFO - __main__ - Step 990 Global step 990 Train loss 0.00 on epoch=494
+06/17/2022 15:45:39 - INFO - __main__ - Step 1000 Global step 1000 Train loss 0.00 on epoch=499
+06/17/2022 15:45:40 - INFO - __main__ - Global step 1000 Train loss 0.00 Classification-F1 0.9687194525904204 on epoch=499
+06/17/2022 15:45:45 - INFO - __main__ - Step 1010 Global step 1010 Train loss 0.00 on epoch=504
+06/17/2022 15:45:50 - INFO - __main__ - Step 1020 Global step 1020 Train loss 0.00 on epoch=509
+06/17/2022 15:45:55 - INFO - __main__ - Step 1030 Global step 1030 Train loss 0.00 on epoch=514
+06/17/2022 15:46:00 - INFO - __main__ - Step 1040 Global step 1040 Train loss 0.00 on epoch=519
+06/17/2022 15:46:06 - INFO - __main__ - Step 1050 Global step 1050 Train loss 0.00 on epoch=524
+06/17/2022 15:46:07 - INFO - __main__ - Global step 1050 Train loss 0.00 Classification-F1 0.9687194525904204 on epoch=524
+06/17/2022 15:46:12 - INFO - __main__ - Step 1060 Global step 1060 Train loss 0.00 on epoch=529
+06/17/2022 15:46:17 - INFO - __main__ - Step 1070 Global step 1070 Train loss 0.00 on epoch=534
+06/17/2022 15:46:22 - INFO - __main__ - Step 1080 Global step 1080 Train loss 0.00 on epoch=539
+06/17/2022 15:46:28 - INFO - __main__ - Step 1090 Global step 1090 Train loss 0.00 on epoch=544
+06/17/2022 15:46:33 - INFO - __main__ - Step 1100 Global step 1100 Train loss 0.00 on epoch=549
+06/17/2022 15:46:34 - INFO - __main__ - Global step 1100 Train loss 0.00 Classification-F1 1.0 on epoch=549
+06/17/2022 15:46:34 - INFO - __main__ - Saving model with best Classification-F1: 0.9687194525904204 -> 1.0 on epoch=549, global_step=1100
+06/17/2022 15:46:39 - INFO - __main__ - Step 1110 Global step 1110 Train loss 0.00 on epoch=554
+06/17/2022 15:46:44 - INFO - __main__ - Step 1120 Global step 1120 Train loss 0.00 on epoch=559
+06/17/2022 15:46:49 - INFO - __main__ - Step 1130 Global step 1130 Train loss 0.00 on epoch=564
+06/17/2022 15:46:55 - INFO - __main__ - Step 1140 Global step 1140 Train loss 0.00 on epoch=569
+06/17/2022 15:47:00 - INFO - __main__ - Step 1150 Global step 1150 Train loss 0.00 on epoch=574
+06/17/2022 15:47:01 - INFO - __main__ - Global step 1150 Train loss 0.00 Classification-F1 0.9687194525904204 on epoch=574
+06/17/2022 15:47:06 - INFO - __main__ - Step 1160 Global step 1160 Train loss 0.01 on epoch=579
+06/17/2022 15:47:11 - INFO - __main__ - Step 1170 Global step 1170 Train loss 0.06 on epoch=584
+06/17/2022 15:47:16 - INFO - __main__ - Step 1180 Global step 1180 Train loss 0.00 on epoch=589
+06/17/2022 15:47:22 - INFO - __main__ - Step 1190 Global step 1190 Train loss 0.00 on epoch=594
+06/17/2022 15:47:27 - INFO - __main__ - Step 1200 Global step 1200 Train loss 0.00 on epoch=599
+06/17/2022 15:47:28 - INFO - __main__ - Global step 1200 Train loss 0.01 Classification-F1 0.9687194525904204 on epoch=599
+06/17/2022 15:47:33 - INFO - __main__ - Step 1210 Global step 1210 Train loss 0.00 on epoch=604
+06/17/2022 15:47:38 - INFO - __main__ - Step 1220 Global step 1220 Train loss 0.00 on epoch=609
+06/17/2022 15:47:44 - INFO - __main__ - Step 1230 Global step 1230 Train loss 0.00 on epoch=614
+06/17/2022 15:47:49 - INFO - __main__ - Step 1240 Global step 1240 Train loss 0.00 on epoch=619
+06/17/2022 15:47:54 - INFO - __main__ - Step 1250 Global step 1250 Train loss 0.00 on epoch=624
+06/17/2022 15:47:55 - INFO - __main__ - Global step 1250 Train loss 0.00 Classification-F1 0.9687194525904204 on epoch=624
+06/17/2022 15:48:00 - INFO - __main__ - Step 1260 Global step 1260 Train loss 0.01 on epoch=629
+06/17/2022 15:48:05 - INFO - __main__ - Step 1270 Global step 1270 Train loss 0.00 on epoch=634
+06/17/2022 15:48:11 - INFO - __main__ - Step 1280 Global step 1280 Train loss 0.00 on epoch=639
+06/17/2022 15:48:16 - INFO - __main__ - Step 1290 Global step 1290 Train loss 0.00 on epoch=644
+06/17/2022 15:48:21 - INFO - __main__ - Step 1300 Global step 1300 Train loss 0.00 on epoch=649
+06/17/2022 15:48:22 - INFO - __main__ - Global step 1300 Train loss 0.00 Classification-F1 0.9687194525904204 on epoch=649
+06/17/2022 15:48:27 - INFO - __main__ - Step 1310 Global step 1310 Train loss 0.00 on epoch=654
+06/17/2022 15:48:32 - INFO - __main__ - Step 1320 Global step 1320 Train loss 0.00 on epoch=659
+06/17/2022 15:48:37 - INFO - __main__ - Step 1330 Global step 1330 Train loss 0.00 on epoch=664
+06/17/2022 15:48:43 - INFO - __main__ - Step 1340 Global step 1340 Train loss 0.00 on epoch=669
+06/17/2022 15:48:48 - INFO - __main__ - Step 1350 Global step 1350 Train loss 0.00 on epoch=674
+06/17/2022 15:48:49 - INFO - __main__ - Global step 1350 Train loss 0.00 Classification-F1 0.9687194525904204 on epoch=674
+06/17/2022 15:48:54 - INFO - __main__ - Step 1360 Global step 1360 Train loss 0.00 on epoch=679
+06/17/2022 15:48:59 - INFO - __main__ - Step 1370 Global step 1370 Train loss 0.00 on epoch=684
+06/17/2022 15:49:04 - INFO - __main__ - Step 1380 Global step 1380 Train loss 0.00 on epoch=689
+06/17/2022 15:49:09 - INFO - __main__ - Step 1390 Global step 1390 Train loss 0.00 on epoch=694
+06/17/2022 15:49:15 - INFO - __main__ - Step 1400 Global step 1400 Train loss 0.00 on epoch=699
+06/17/2022 15:49:16 - INFO - __main__ - Global step 1400 Train loss 0.00 Classification-F1 0.9687194525904204 on epoch=699
+06/17/2022 15:49:21 - INFO - __main__ - Step 1410 Global step 1410 Train loss 0.00 on epoch=704
