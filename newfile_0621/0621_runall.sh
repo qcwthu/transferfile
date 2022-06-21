@@ -19,6 +19,7 @@ cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_multi/models
 ###number of meta-training tasks: maml cls2cls
 cp /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/models/*24uptasks* ./ -r
 
+cd ..
 ###base nopara2para
 cp t5base_nopara2para/allfolders/T5-base-nopara2para /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit/models/ -r
 cp t5base_nopara2para/allfolders/T5-base-ft-nopara2para /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFitFT/models/ -r
@@ -27,4 +28,3 @@ cp t5base_nopara2para/allfolders/T5-base-fomaml-nopara2para-3e-5-2-5000-5e-1 /ex
 cp t5base_nopara2para/allfolders/T5-base-multitask-nopara2para-5e-1-4-20 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_multi/models/ -r
 cp t5base_nopara2para/allfolders/T5-base-reptile-nopara2para-3e-5-2-5000-5e-1-10 /export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_reptile/models/ -r
 
-cd ..

@@ -1,0 +1,176 @@
+05/21/2022 21:36:59 - INFO - __main__ - Namespace(task_dir='data/emo/', task_name='emo', identifier='T5-large-multitask-cls2cls-5e-1-4-20-up128shot', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-emo', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-multitask-cls2cls-5e-1-4-20-128shot/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=0, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='4,5')
+05/21/2022 21:36:59 - INFO - __main__ - models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-emo
+05/21/2022 21:36:59 - INFO - __main__ - Namespace(task_dir='data/emo/', task_name='emo', identifier='T5-large-multitask-cls2cls-5e-1-4-20-up128shot', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-emo', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-multitask-cls2cls-5e-1-4-20-128shot/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=1, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='4,5')
+05/21/2022 21:36:59 - INFO - __main__ - models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-emo
+05/21/2022 21:36:59 - INFO - root - Added key: store_based_barrier_key:1 to store for rank: 1
+05/21/2022 21:36:59 - INFO - root - Added key: store_based_barrier_key:1 to store for rank: 0
+05/21/2022 21:36:59 - INFO - __main__ - args.device: cuda:0
+05/21/2022 21:36:59 - INFO - __main__ - Using 2 gpus
+05/21/2022 21:36:59 - INFO - __main__ - args.device: cuda:1
+05/21/2022 21:36:59 - INFO - __main__ - Using 2 gpus
+05/21/2022 21:36:59 - INFO - __main__ - Fine-tuning the following samples: ['emo_16_100', 'emo_16_13', 'emo_16_21', 'emo_16_42', 'emo_16_87']
+05/21/2022 21:36:59 - INFO - __main__ - Fine-tuning the following samples: ['emo_16_100', 'emo_16_13', 'emo_16_21', 'emo_16_42', 'emo_16_87']
+05/21/2022 21:37:04 - INFO - __main__ - Running ... prefix=emo_16_100, lr=0.5, bsz=8 ...
+05/21/2022 21:37:05 - INFO - __main__ - Start tokenizing ... 64 instances
+05/21/2022 21:37:05 - INFO - __main__ - Printing 3 examples
+05/21/2022 21:37:05 - INFO - __main__ -  [emo] how cause yes am listening
+05/21/2022 21:37:05 - INFO - __main__ - ['others']
+05/21/2022 21:37:05 - INFO - __main__ -  [emo] ok that way i like living wwrong
+05/21/2022 21:37:05 - INFO - __main__ - ['others']
+05/21/2022 21:37:05 - INFO - __main__ -  [emo] as u feel to on ur mind depends whose mind your mindn
+05/21/2022 21:37:05 - INFO - __main__ - ['others']
+05/21/2022 21:37:05 - INFO - __main__ - Tokenizing Input ...
+05/21/2022 21:37:05 - INFO - __main__ - Start tokenizing ... 64 instances
+05/21/2022 21:37:05 - INFO - __main__ - Printing 3 examples
+05/21/2022 21:37:05 - INFO - __main__ -  [emo] how cause yes am listening
+05/21/2022 21:37:05 - INFO - __main__ - ['others']
+05/21/2022 21:37:05 - INFO - __main__ -  [emo] ok that way i like living wwrong
+05/21/2022 21:37:05 - INFO - __main__ - ['others']
+05/21/2022 21:37:05 - INFO - __main__ -  [emo] as u feel to on ur mind depends whose mind your mindn
+05/21/2022 21:37:05 - INFO - __main__ - ['others']
+05/21/2022 21:37:05 - INFO - __main__ - Tokenizing Input ...
+05/21/2022 21:37:05 - INFO - __main__ - Tokenizing Output ...
+05/21/2022 21:37:05 - INFO - __main__ - Tokenizing Output ...
+05/21/2022 21:37:05 - INFO - __main__ - Loaded 64 examples from train data
+05/21/2022 21:37:05 - INFO - __main__ - Start tokenizing ... 64 instances
+05/21/2022 21:37:05 - INFO - __main__ - Printing 3 examples
+05/21/2022 21:37:05 - INFO - __main__ -  [emo] ok i wiil ask u some questions done what is ur full name
+05/21/2022 21:37:05 - INFO - __main__ - ['others']
+05/21/2022 21:37:05 - INFO - __main__ -  [emo] give your num i send message to this num no to tjis
+05/21/2022 21:37:05 - INFO - __main__ - ['others']
+05/21/2022 21:37:05 - INFO - __main__ -  [emo] what is docker vagrant and docker are different beasts what is vagrant
+05/21/2022 21:37:05 - INFO - __main__ - ['others']
+05/21/2022 21:37:05 - INFO - __main__ - Tokenizing Input ...
+05/21/2022 21:37:05 - INFO - __main__ - Loaded 64 examples from train data
+05/21/2022 21:37:05 - INFO - __main__ - Start tokenizing ... 64 instances
+05/21/2022 21:37:05 - INFO - __main__ - Printing 3 examples
+05/21/2022 21:37:05 - INFO - __main__ -  [emo] ok i wiil ask u some questions done what is ur full name
+05/21/2022 21:37:05 - INFO - __main__ - ['others']
+05/21/2022 21:37:05 - INFO - __main__ -  [emo] give your num i send message to this num no to tjis
+05/21/2022 21:37:05 - INFO - __main__ - ['others']
+05/21/2022 21:37:05 - INFO - __main__ -  [emo] what is docker vagrant and docker are different beasts what is vagrant
+05/21/2022 21:37:05 - INFO - __main__ - ['others']
+05/21/2022 21:37:05 - INFO - __main__ - Tokenizing Input ...
+05/21/2022 21:37:05 - INFO - __main__ - Tokenizing Output ...
+05/21/2022 21:37:05 - INFO - __main__ - Tokenizing Output ...
+05/21/2022 21:37:05 - INFO - __main__ - Loaded 64 examples from dev data
+05/21/2022 21:37:05 - INFO - __main__ - Loaded 64 examples from dev data
+05/21/2022 21:37:23 - INFO - __main__ - load prompt embedding from ckpt
+06/01/2022 01:26:44 - INFO - __main__ - Namespace(task_dir='data/emo/', task_name='emo', identifier='T5-large-multitask-cls2cls-5e-1-4-20-up128shot', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-emo', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-multitask-cls2cls-5e-1-4-20-128shot/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=1, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='4,5')
+06/01/2022 01:26:44 - INFO - __main__ - models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-emo
+06/01/2022 01:26:44 - INFO - __main__ - Namespace(task_dir='data/emo/', task_name='emo', identifier='T5-large-multitask-cls2cls-5e-1-4-20-up128shot', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-emo', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-multitask-cls2cls-5e-1-4-20-128shot/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=0, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='4,5')
+06/01/2022 01:26:44 - INFO - __main__ - models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-emo
+06/01/2022 01:26:46 - INFO - root - Added key: store_based_barrier_key:1 to store for rank: 1
+06/01/2022 01:26:46 - INFO - root - Added key: store_based_barrier_key:1 to store for rank: 0
+06/01/2022 01:26:46 - INFO - __main__ - args.device: cuda:0
+06/01/2022 01:26:46 - INFO - __main__ - Using 2 gpus
+06/01/2022 01:26:46 - INFO - __main__ - Fine-tuning the following samples: ['emo_16_100', 'emo_16_13', 'emo_16_21', 'emo_16_42', 'emo_16_87']
+06/01/2022 01:26:46 - INFO - __main__ - args.device: cuda:1
+06/01/2022 01:26:46 - INFO - __main__ - Using 2 gpus
+06/01/2022 01:26:46 - INFO - __main__ - Fine-tuning the following samples: ['emo_16_100', 'emo_16_13', 'emo_16_21', 'emo_16_42', 'emo_16_87']
+06/01/2022 01:26:50 - INFO - __main__ - Running ... prefix=emo_16_100, lr=0.5, bsz=8 ...
+06/01/2022 01:26:51 - INFO - __main__ - Start tokenizing ... 64 instances
+06/01/2022 01:26:51 - INFO - __main__ - Printing 3 examples
+06/01/2022 01:26:51 - INFO - __main__ -  [emo] how cause yes am listening
+06/01/2022 01:26:51 - INFO - __main__ - ['others']
+06/01/2022 01:26:51 - INFO - __main__ -  [emo] ok that way i like living wwrong
+06/01/2022 01:26:51 - INFO - __main__ - ['others']
+06/01/2022 01:26:51 - INFO - __main__ -  [emo] as u feel to on ur mind depends whose mind your mindn
+06/01/2022 01:26:51 - INFO - __main__ - ['others']
+06/01/2022 01:26:51 - INFO - __main__ - Tokenizing Input ...
+06/01/2022 01:26:51 - INFO - __main__ - Start tokenizing ... 64 instances
+06/01/2022 01:26:51 - INFO - __main__ - Printing 3 examples
+06/01/2022 01:26:51 - INFO - __main__ -  [emo] how cause yes am listening
+06/01/2022 01:26:51 - INFO - __main__ - ['others']
+06/01/2022 01:26:51 - INFO - __main__ -  [emo] ok that way i like living wwrong
+06/01/2022 01:26:51 - INFO - __main__ - ['others']
+06/01/2022 01:26:51 - INFO - __main__ -  [emo] as u feel to on ur mind depends whose mind your mindn
+06/01/2022 01:26:51 - INFO - __main__ - ['others']
+06/01/2022 01:26:51 - INFO - __main__ - Tokenizing Input ...
+06/01/2022 01:26:51 - INFO - __main__ - Tokenizing Output ...
+06/01/2022 01:26:51 - INFO - __main__ - Tokenizing Output ...
+06/01/2022 01:26:52 - INFO - __main__ - Loaded 64 examples from train data
+06/01/2022 01:26:52 - INFO - __main__ - Start tokenizing ... 64 instances
+06/01/2022 01:26:52 - INFO - __main__ - Printing 3 examples
+06/01/2022 01:26:52 - INFO - __main__ -  [emo] ok i wiil ask u some questions done what is ur full name
+06/01/2022 01:26:52 - INFO - __main__ - ['others']
+06/01/2022 01:26:52 - INFO - __main__ -  [emo] give your num i send message to this num no to tjis
+06/01/2022 01:26:52 - INFO - __main__ - ['others']
+06/01/2022 01:26:52 - INFO - __main__ -  [emo] what is docker vagrant and docker are different beasts what is vagrant
+06/01/2022 01:26:52 - INFO - __main__ - ['others']
+06/01/2022 01:26:52 - INFO - __main__ - Tokenizing Input ...
+06/01/2022 01:26:52 - INFO - __main__ - Loaded 64 examples from train data
+06/01/2022 01:26:52 - INFO - __main__ - Start tokenizing ... 64 instances
+06/01/2022 01:26:52 - INFO - __main__ - Printing 3 examples
+06/01/2022 01:26:52 - INFO - __main__ -  [emo] ok i wiil ask u some questions done what is ur full name
+06/01/2022 01:26:52 - INFO - __main__ - ['others']
+06/01/2022 01:26:52 - INFO - __main__ -  [emo] give your num i send message to this num no to tjis
+06/01/2022 01:26:52 - INFO - __main__ - ['others']
+06/01/2022 01:26:52 - INFO - __main__ -  [emo] what is docker vagrant and docker are different beasts what is vagrant
+06/01/2022 01:26:52 - INFO - __main__ - ['others']
+06/01/2022 01:26:52 - INFO - __main__ - Tokenizing Input ...
+06/01/2022 01:26:52 - INFO - __main__ - Tokenizing Output ...
+06/01/2022 01:26:52 - INFO - __main__ - Tokenizing Output ...
+06/01/2022 01:26:52 - INFO - __main__ - Loaded 64 examples from dev data
+06/01/2022 01:26:52 - INFO - __main__ - Loaded 64 examples from dev data
+06/01/2022 01:27:09 - INFO - __main__ - load prompt embedding from ckpt
+06/01/2022 01:27:09 - INFO - __main__ - load prompt embedding from ckpt
+06/14/2022 19:33:08 - INFO - __main__ - Namespace(task_dir='data/emo/', task_name='emo', identifier='T5-large-multitask-cls2cls-5e-1-4-20-up128shot', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-emo', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-multitask-cls2cls-5e-1-4-20-128shot/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=1, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='4,5')
+06/14/2022 19:33:08 - INFO - __main__ - models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-emo
+06/14/2022 19:33:08 - INFO - __main__ - Namespace(task_dir='data/emo/', task_name='emo', identifier='T5-large-multitask-cls2cls-5e-1-4-20-up128shot', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-emo', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-multitask-cls2cls-5e-1-4-20-128shot/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=0, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='4,5')
+06/14/2022 19:33:08 - INFO - __main__ - models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-emo
+06/14/2022 19:33:09 - INFO - root - Added key: store_based_barrier_key:1 to store for rank: 1
+06/14/2022 19:33:09 - INFO - root - Added key: store_based_barrier_key:1 to store for rank: 0
+06/14/2022 19:33:09 - INFO - __main__ - args.device: cuda:0
+06/14/2022 19:33:09 - INFO - __main__ - Using 2 gpus
+06/14/2022 19:33:09 - INFO - __main__ - Fine-tuning the following samples: ['emo_16_100', 'emo_16_13', 'emo_16_21', 'emo_16_42', 'emo_16_87']
+06/14/2022 19:33:09 - INFO - __main__ - args.device: cuda:1
+06/14/2022 19:33:09 - INFO - __main__ - Using 2 gpus
+06/14/2022 19:33:09 - INFO - __main__ - Fine-tuning the following samples: ['emo_16_100', 'emo_16_13', 'emo_16_21', 'emo_16_42', 'emo_16_87']
+06/14/2022 19:33:14 - INFO - __main__ - Running ... prefix=emo_16_100, lr=0.5, bsz=8 ...
+06/14/2022 19:33:15 - INFO - __main__ - Start tokenizing ... 64 instances
+06/14/2022 19:33:15 - INFO - __main__ - Printing 3 examples
+06/14/2022 19:33:15 - INFO - __main__ -  [emo] how cause yes am listening
+06/14/2022 19:33:15 - INFO - __main__ - ['others']
+06/14/2022 19:33:15 - INFO - __main__ -  [emo] ok that way i like living wwrong
+06/14/2022 19:33:15 - INFO - __main__ - ['others']
+06/14/2022 19:33:15 - INFO - __main__ -  [emo] as u feel to on ur mind depends whose mind your mindn
+06/14/2022 19:33:15 - INFO - __main__ - ['others']
+06/14/2022 19:33:15 - INFO - __main__ - Tokenizing Input ...
+06/14/2022 19:33:15 - INFO - __main__ - Tokenizing Output ...
+06/14/2022 19:33:15 - INFO - __main__ - Start tokenizing ... 64 instances
+06/14/2022 19:33:15 - INFO - __main__ - Printing 3 examples
+06/14/2022 19:33:15 - INFO - __main__ -  [emo] how cause yes am listening
+06/14/2022 19:33:15 - INFO - __main__ - ['others']
+06/14/2022 19:33:15 - INFO - __main__ -  [emo] ok that way i like living wwrong
+06/14/2022 19:33:15 - INFO - __main__ - ['others']
+06/14/2022 19:33:15 - INFO - __main__ -  [emo] as u feel to on ur mind depends whose mind your mindn
+06/14/2022 19:33:15 - INFO - __main__ - ['others']
+06/14/2022 19:33:15 - INFO - __main__ - Tokenizing Input ...
+06/14/2022 19:33:15 - INFO - __main__ - Tokenizing Output ...
+06/14/2022 19:33:15 - INFO - __main__ - Loaded 64 examples from train data
+06/14/2022 19:33:15 - INFO - __main__ - Start tokenizing ... 64 instances
+06/14/2022 19:33:15 - INFO - __main__ - Printing 3 examples
+06/14/2022 19:33:15 - INFO - __main__ -  [emo] ok i wiil ask u some questions done what is ur full name
+06/14/2022 19:33:15 - INFO - __main__ - ['others']
+06/14/2022 19:33:15 - INFO - __main__ -  [emo] give your num i send message to this num no to tjis
+06/14/2022 19:33:15 - INFO - __main__ - ['others']
+06/14/2022 19:33:15 - INFO - __main__ -  [emo] what is docker vagrant and docker are different beasts what is vagrant
+06/14/2022 19:33:15 - INFO - __main__ - ['others']
+06/14/2022 19:33:15 - INFO - __main__ - Tokenizing Input ...
+06/14/2022 19:33:15 - INFO - __main__ - Loaded 64 examples from train data
+06/14/2022 19:33:15 - INFO - __main__ - Start tokenizing ... 64 instances
+06/14/2022 19:33:15 - INFO - __main__ - Printing 3 examples
+06/14/2022 19:33:15 - INFO - __main__ -  [emo] ok i wiil ask u some questions done what is ur full name
+06/14/2022 19:33:15 - INFO - __main__ - ['others']
+06/14/2022 19:33:15 - INFO - __main__ -  [emo] give your num i send message to this num no to tjis
+06/14/2022 19:33:15 - INFO - __main__ - ['others']
+06/14/2022 19:33:15 - INFO - __main__ -  [emo] what is docker vagrant and docker are different beasts what is vagrant
+06/14/2022 19:33:15 - INFO - __main__ - ['others']
+06/14/2022 19:33:15 - INFO - __main__ - Tokenizing Input ...
+06/14/2022 19:33:15 - INFO - __main__ - Tokenizing Output ...
+06/14/2022 19:33:15 - INFO - __main__ - Tokenizing Output ...
+06/14/2022 19:33:15 - INFO - __main__ - Loaded 64 examples from dev data
+06/14/2022 19:33:15 - INFO - __main__ - Loaded 64 examples from dev data
+06/14/2022 19:33:33 - INFO - __main__ - load prompt embedding from ckpt
+06/14/2022 19:33:33 - INFO - __main__ - load prompt embedding from ckpt
