@@ -1,0 +1,177 @@
+05/21/2022 21:39:22 - INFO - __main__ - Namespace(task_dir='data/anli/', task_name='anli', identifier='T5-large-multitask-cls2cls-5e-1-4-20-up128shot', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-anli', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-multitask-cls2cls-5e-1-4-20-128shot/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=0, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='4,5')
+05/21/2022 21:39:22 - INFO - __main__ - models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-anli
+05/21/2022 21:39:23 - INFO - __main__ - Namespace(task_dir='data/anli/', task_name='anli', identifier='T5-large-multitask-cls2cls-5e-1-4-20-up128shot', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-anli', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-multitask-cls2cls-5e-1-4-20-128shot/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=1, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='4,5')
+05/21/2022 21:39:23 - INFO - __main__ - models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-anli
+05/21/2022 21:39:23 - INFO - root - Added key: store_based_barrier_key:1 to store for rank: 1
+05/21/2022 21:39:23 - INFO - root - Added key: store_based_barrier_key:1 to store for rank: 0
+05/21/2022 21:39:23 - INFO - __main__ - args.device: cuda:0
+05/21/2022 21:39:23 - INFO - __main__ - Using 2 gpus
+05/21/2022 21:39:23 - INFO - __main__ - args.device: cuda:1
+05/21/2022 21:39:23 - INFO - __main__ - Using 2 gpus
+05/21/2022 21:39:23 - INFO - __main__ - Fine-tuning the following samples: ['anli_16_100', 'anli_16_13', 'anli_16_21', 'anli_16_42', 'anli_16_87']
+05/21/2022 21:39:23 - INFO - __main__ - Fine-tuning the following samples: ['anli_16_100', 'anli_16_13', 'anli_16_21', 'anli_16_42', 'anli_16_87']
+05/21/2022 21:39:28 - INFO - __main__ - Running ... prefix=anli_16_100, lr=0.5, bsz=8 ...
+05/21/2022 21:39:29 - INFO - __main__ - Start tokenizing ... 48 instances
+05/21/2022 21:39:29 - INFO - __main__ - Printing 3 examples
+05/21/2022 21:39:29 - INFO - __main__ - Start tokenizing ... 48 instances
+05/21/2022 21:39:29 - INFO - __main__ -  [anli] premise: John Zdechlik ("Zuh-DEK-lik") (born 2 May 1937) is an American composer, music teacher, and conductor. Zdechlik has been elected to the American Bandmasters Association and many of his compositions have become standard concert band repertoire, including Chorale and Shaker Dance and Psalm 46. [SEP] hypothesis: John Zdechlik is a savant of music. 
+05/21/2022 21:39:29 - INFO - __main__ - ['neutral']
+05/21/2022 21:39:29 - INFO - __main__ - Printing 3 examples
+05/21/2022 21:39:29 - INFO - __main__ -  [anli] premise: "No Words" is a song written by Paul McCartney and Denny Laine, and first released on 7 December 1973 on "Band on the Run" by Paul McCartney and Wings. The song was Laine's first co-writing on a Wings album and his only writing credit on "Band on the Run". [SEP] hypothesis: The song was Laine's first co-writing on a Wings album and his only writing credit on "Band on the Run" even though Laine had written a few songs before for other singers
+05/21/2022 21:39:29 - INFO - __main__ -  [anli] premise: John Zdechlik ("Zuh-DEK-lik") (born 2 May 1937) is an American composer, music teacher, and conductor. Zdechlik has been elected to the American Bandmasters Association and many of his compositions have become standard concert band repertoire, including Chorale and Shaker Dance and Psalm 46. [SEP] hypothesis: John Zdechlik is a savant of music. 
+05/21/2022 21:39:29 - INFO - __main__ - ['neutral']
+05/21/2022 21:39:29 - INFO - __main__ - ['neutral']
+05/21/2022 21:39:29 - INFO - __main__ -  [anli] premise: Askold Anatolievich Makarov (Russian: Аско́льд Анато́льевич Мака́ров ; 3 May 1925 – 25 December 2000) was a Russian ballet dancer and ballet professor, leading soloist at the Kirov Ballet during the 1960s and early 1970s. Director of the Saint-Petesburg State Academic Ballet from 1976 to 2000. Awarded with: State Prize of the USSR (1951) and People's Artist of the USSR (1983). [SEP] hypothesis: The USSR is home to some of the finest ballet dancers in the world.
+05/21/2022 21:39:29 - INFO - __main__ -  [anli] premise: "No Words" is a song written by Paul McCartney and Denny Laine, and first released on 7 December 1973 on "Band on the Run" by Paul McCartney and Wings. The song was Laine's first co-writing on a Wings album and his only writing credit on "Band on the Run". [SEP] hypothesis: The song was Laine's first co-writing on a Wings album and his only writing credit on "Band on the Run" even though Laine had written a few songs before for other singers
+05/21/2022 21:39:29 - INFO - __main__ - ['neutral']
+05/21/2022 21:39:29 - INFO - __main__ - ['neutral']
+05/21/2022 21:39:29 - INFO - __main__ -  [anli] premise: Askold Anatolievich Makarov (Russian: Аско́льд Анато́льевич Мака́ров ; 3 May 1925 – 25 December 2000) was a Russian ballet dancer and ballet professor, leading soloist at the Kirov Ballet during the 1960s and early 1970s. Director of the Saint-Petesburg State Academic Ballet from 1976 to 2000. Awarded with: State Prize of the USSR (1951) and People's Artist of the USSR (1983). [SEP] hypothesis: The USSR is home to some of the finest ballet dancers in the world.
+05/21/2022 21:39:29 - INFO - __main__ - Tokenizing Input ...
+05/21/2022 21:39:29 - INFO - __main__ - ['neutral']
+05/21/2022 21:39:29 - INFO - __main__ - Tokenizing Input ...
+05/21/2022 21:39:29 - INFO - __main__ - Tokenizing Output ...
+05/21/2022 21:39:29 - INFO - __main__ - Tokenizing Output ...
+05/21/2022 21:39:29 - INFO - __main__ - Loaded 48 examples from train data
+05/21/2022 21:39:29 - INFO - __main__ - Start tokenizing ... 48 instances
+05/21/2022 21:39:29 - INFO - __main__ - Printing 3 examples
+05/21/2022 21:39:29 - INFO - __main__ -  [anli] premise: Alexandra Lendon Bastedo (9 March 1946 – 12 January 2014) was a British actress, best known for her role as secret agent Sharron Macready in the 1968 British espionage/science fiction adventure series "The Champions". She has been cited as a sex symbol of the 1960s and 1970s. Bastedo was a vegetarian and animal welfare advocate. [SEP] hypothesis: Sharron Macready was a popular character through the 1980's.
+05/21/2022 21:39:29 - INFO - __main__ - ['neutral']
+05/21/2022 21:39:29 - INFO - __main__ -  [anli] premise: The Maysville Micropolitan Statistical Area (μSA), as defined by the United States Census Bureau, is coterminous with Mason County, Kentucky, whose county seat and largest city is Maysville. As of the 2010 census, the population of Mason County and the current µSA was 17,490, and 2014 Census Bureau estimates place the population at 17,166. [SEP] hypothesis: The Census Bureau was made up of 17,166 people. 
+05/21/2022 21:39:29 - INFO - __main__ - ['neutral']
+05/21/2022 21:39:29 - INFO - __main__ -  [anli] premise: Fail Safe is a 1964 Cold War thriller film directed by Sidney Lumet, based on the 1962 novel of the same name by Eugene Burdick and Harvey Wheeler. It portrays a fictional account of a nuclear crisis. The film features performances by actors Henry Fonda, Dan O'Herlihy, Walter Matthau and Frank Overton. Larry Hagman, Fritz Weaver, Dom DeLuise and Sorrell Booke appeared in early film roles. [SEP] hypothesis: Fail Safe was more popular than the novel with the same name.
+05/21/2022 21:39:29 - INFO - __main__ - ['neutral']
+05/21/2022 21:39:29 - INFO - __main__ - Tokenizing Input ...
+05/21/2022 21:39:29 - INFO - __main__ - Loaded 48 examples from train data
+05/21/2022 21:39:29 - INFO - __main__ - Start tokenizing ... 48 instances
+05/21/2022 21:39:29 - INFO - __main__ - Printing 3 examples
+05/21/2022 21:39:29 - INFO - __main__ -  [anli] premise: Alexandra Lendon Bastedo (9 March 1946 – 12 January 2014) was a British actress, best known for her role as secret agent Sharron Macready in the 1968 British espionage/science fiction adventure series "The Champions". She has been cited as a sex symbol of the 1960s and 1970s. Bastedo was a vegetarian and animal welfare advocate. [SEP] hypothesis: Sharron Macready was a popular character through the 1980's.
+05/21/2022 21:39:29 - INFO - __main__ - ['neutral']
+05/21/2022 21:39:29 - INFO - __main__ -  [anli] premise: The Maysville Micropolitan Statistical Area (μSA), as defined by the United States Census Bureau, is coterminous with Mason County, Kentucky, whose county seat and largest city is Maysville. As of the 2010 census, the population of Mason County and the current µSA was 17,490, and 2014 Census Bureau estimates place the population at 17,166. [SEP] hypothesis: The Census Bureau was made up of 17,166 people. 
+05/21/2022 21:39:29 - INFO - __main__ - ['neutral']
+05/21/2022 21:39:29 - INFO - __main__ -  [anli] premise: Fail Safe is a 1964 Cold War thriller film directed by Sidney Lumet, based on the 1962 novel of the same name by Eugene Burdick and Harvey Wheeler. It portrays a fictional account of a nuclear crisis. The film features performances by actors Henry Fonda, Dan O'Herlihy, Walter Matthau and Frank Overton. Larry Hagman, Fritz Weaver, Dom DeLuise and Sorrell Booke appeared in early film roles. [SEP] hypothesis: Fail Safe was more popular than the novel with the same name.
+05/21/2022 21:39:29 - INFO - __main__ - ['neutral']
+05/21/2022 21:39:29 - INFO - __main__ - Tokenizing Input ...
+05/21/2022 21:39:29 - INFO - __main__ - Tokenizing Output ...
+05/21/2022 21:39:29 - INFO - __main__ - Tokenizing Output ...
+05/21/2022 21:39:29 - INFO - __main__ - Loaded 48 examples from dev data
+05/21/2022 21:39:29 - INFO - __main__ - Loaded 48 examples from dev data
+05/21/2022 21:39:46 - INFO - __main__ - load prompt embedding from ckpt
+05/21/2022 21:39:47 - INFO - __main__ - load prompt embedding from ckpt
+06/01/2022 01:29:12 - INFO - __main__ - Namespace(task_dir='data/anli/', task_name='anli', identifier='T5-large-multitask-cls2cls-5e-1-4-20-up128shot', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-anli', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-multitask-cls2cls-5e-1-4-20-128shot/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=1, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='4,5')
+06/01/2022 01:29:12 - INFO - __main__ - models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-anli
+06/01/2022 01:29:12 - INFO - __main__ - Namespace(task_dir='data/anli/', task_name='anli', identifier='T5-large-multitask-cls2cls-5e-1-4-20-up128shot', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-anli', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-multitask-cls2cls-5e-1-4-20-128shot/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=0, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='4,5')
+06/01/2022 01:29:12 - INFO - __main__ - models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-anli
+06/01/2022 01:29:13 - INFO - root - Added key: store_based_barrier_key:1 to store for rank: 1
+06/01/2022 01:29:13 - INFO - root - Added key: store_based_barrier_key:1 to store for rank: 0
+06/01/2022 01:29:13 - INFO - __main__ - args.device: cuda:0
+06/01/2022 01:29:13 - INFO - __main__ - Using 2 gpus
+06/01/2022 01:29:13 - INFO - __main__ - Fine-tuning the following samples: ['anli_16_100', 'anli_16_13', 'anli_16_21', 'anli_16_42', 'anli_16_87']
+06/01/2022 01:29:13 - INFO - __main__ - args.device: cuda:1
+06/01/2022 01:29:13 - INFO - __main__ - Using 2 gpus
+06/01/2022 01:29:13 - INFO - __main__ - Fine-tuning the following samples: ['anli_16_100', 'anli_16_13', 'anli_16_21', 'anli_16_42', 'anli_16_87']
+06/01/2022 01:29:18 - INFO - __main__ - Running ... prefix=anli_16_100, lr=0.5, bsz=8 ...
+06/01/2022 01:29:19 - INFO - __main__ - Start tokenizing ... 48 instances
+06/01/2022 01:29:19 - INFO - __main__ - Printing 3 examples
+06/01/2022 01:29:19 - INFO - __main__ -  [anli] premise: John Zdechlik ("Zuh-DEK-lik") (born 2 May 1937) is an American composer, music teacher, and conductor. Zdechlik has been elected to the American Bandmasters Association and many of his compositions have become standard concert band repertoire, including Chorale and Shaker Dance and Psalm 46. [SEP] hypothesis: John Zdechlik is a savant of music. 
+06/01/2022 01:29:19 - INFO - __main__ - ['neutral']
+06/01/2022 01:29:19 - INFO - __main__ -  [anli] premise: "No Words" is a song written by Paul McCartney and Denny Laine, and first released on 7 December 1973 on "Band on the Run" by Paul McCartney and Wings. The song was Laine's first co-writing on a Wings album and his only writing credit on "Band on the Run". [SEP] hypothesis: The song was Laine's first co-writing on a Wings album and his only writing credit on "Band on the Run" even though Laine had written a few songs before for other singers
+06/01/2022 01:29:19 - INFO - __main__ - ['neutral']
+06/01/2022 01:29:19 - INFO - __main__ -  [anli] premise: Askold Anatolievich Makarov (Russian: Аско́льд Анато́льевич Мака́ров ; 3 May 1925 – 25 December 2000) was a Russian ballet dancer and ballet professor, leading soloist at the Kirov Ballet during the 1960s and early 1970s. Director of the Saint-Petesburg State Academic Ballet from 1976 to 2000. Awarded with: State Prize of the USSR (1951) and People's Artist of the USSR (1983). [SEP] hypothesis: The USSR is home to some of the finest ballet dancers in the world.
+06/01/2022 01:29:19 - INFO - __main__ - ['neutral']
+06/01/2022 01:29:19 - INFO - __main__ - Tokenizing Input ...
+06/01/2022 01:29:19 - INFO - __main__ - Start tokenizing ... 48 instances
+06/01/2022 01:29:19 - INFO - __main__ - Printing 3 examples
+06/01/2022 01:29:19 - INFO - __main__ -  [anli] premise: John Zdechlik ("Zuh-DEK-lik") (born 2 May 1937) is an American composer, music teacher, and conductor. Zdechlik has been elected to the American Bandmasters Association and many of his compositions have become standard concert band repertoire, including Chorale and Shaker Dance and Psalm 46. [SEP] hypothesis: John Zdechlik is a savant of music. 
+06/01/2022 01:29:19 - INFO - __main__ - ['neutral']
+06/01/2022 01:29:19 - INFO - __main__ -  [anli] premise: "No Words" is a song written by Paul McCartney and Denny Laine, and first released on 7 December 1973 on "Band on the Run" by Paul McCartney and Wings. The song was Laine's first co-writing on a Wings album and his only writing credit on "Band on the Run". [SEP] hypothesis: The song was Laine's first co-writing on a Wings album and his only writing credit on "Band on the Run" even though Laine had written a few songs before for other singers
+06/01/2022 01:29:19 - INFO - __main__ - ['neutral']
+06/01/2022 01:29:19 - INFO - __main__ -  [anli] premise: Askold Anatolievich Makarov (Russian: Аско́льд Анато́льевич Мака́ров ; 3 May 1925 – 25 December 2000) was a Russian ballet dancer and ballet professor, leading soloist at the Kirov Ballet during the 1960s and early 1970s. Director of the Saint-Petesburg State Academic Ballet from 1976 to 2000. Awarded with: State Prize of the USSR (1951) and People's Artist of the USSR (1983). [SEP] hypothesis: The USSR is home to some of the finest ballet dancers in the world.
+06/01/2022 01:29:19 - INFO - __main__ - ['neutral']
+06/01/2022 01:29:19 - INFO - __main__ - Tokenizing Input ...
+06/01/2022 01:29:19 - INFO - __main__ - Tokenizing Output ...
+06/01/2022 01:29:19 - INFO - __main__ - Tokenizing Output ...
+06/01/2022 01:29:19 - INFO - __main__ - Loaded 48 examples from train data
+06/01/2022 01:29:19 - INFO - __main__ - Start tokenizing ... 48 instances
+06/01/2022 01:29:19 - INFO - __main__ - Printing 3 examples
+06/01/2022 01:29:19 - INFO - __main__ -  [anli] premise: Alexandra Lendon Bastedo (9 March 1946 – 12 January 2014) was a British actress, best known for her role as secret agent Sharron Macready in the 1968 British espionage/science fiction adventure series "The Champions". She has been cited as a sex symbol of the 1960s and 1970s. Bastedo was a vegetarian and animal welfare advocate. [SEP] hypothesis: Sharron Macready was a popular character through the 1980's.
+06/01/2022 01:29:19 - INFO - __main__ - ['neutral']
+06/01/2022 01:29:19 - INFO - __main__ -  [anli] premise: The Maysville Micropolitan Statistical Area (μSA), as defined by the United States Census Bureau, is coterminous with Mason County, Kentucky, whose county seat and largest city is Maysville. As of the 2010 census, the population of Mason County and the current µSA was 17,490, and 2014 Census Bureau estimates place the population at 17,166. [SEP] hypothesis: The Census Bureau was made up of 17,166 people. 
+06/01/2022 01:29:19 - INFO - __main__ - ['neutral']
+06/01/2022 01:29:19 - INFO - __main__ -  [anli] premise: Fail Safe is a 1964 Cold War thriller film directed by Sidney Lumet, based on the 1962 novel of the same name by Eugene Burdick and Harvey Wheeler. It portrays a fictional account of a nuclear crisis. The film features performances by actors Henry Fonda, Dan O'Herlihy, Walter Matthau and Frank Overton. Larry Hagman, Fritz Weaver, Dom DeLuise and Sorrell Booke appeared in early film roles. [SEP] hypothesis: Fail Safe was more popular than the novel with the same name.
+06/01/2022 01:29:19 - INFO - __main__ - ['neutral']
+06/01/2022 01:29:19 - INFO - __main__ - Tokenizing Input ...
+06/01/2022 01:29:19 - INFO - __main__ - Loaded 48 examples from train data
+06/01/2022 01:29:19 - INFO - __main__ - Start tokenizing ... 48 instances
+06/01/2022 01:29:19 - INFO - __main__ - Printing 3 examples
+06/01/2022 01:29:19 - INFO - __main__ -  [anli] premise: Alexandra Lendon Bastedo (9 March 1946 – 12 January 2014) was a British actress, best known for her role as secret agent Sharron Macready in the 1968 British espionage/science fiction adventure series "The Champions". She has been cited as a sex symbol of the 1960s and 1970s. Bastedo was a vegetarian and animal welfare advocate. [SEP] hypothesis: Sharron Macready was a popular character through the 1980's.
+06/01/2022 01:29:19 - INFO - __main__ - ['neutral']
+06/01/2022 01:29:19 - INFO - __main__ -  [anli] premise: The Maysville Micropolitan Statistical Area (μSA), as defined by the United States Census Bureau, is coterminous with Mason County, Kentucky, whose county seat and largest city is Maysville. As of the 2010 census, the population of Mason County and the current µSA was 17,490, and 2014 Census Bureau estimates place the population at 17,166. [SEP] hypothesis: The Census Bureau was made up of 17,166 people. 
+06/01/2022 01:29:19 - INFO - __main__ - ['neutral']
+06/01/2022 01:29:19 - INFO - __main__ -  [anli] premise: Fail Safe is a 1964 Cold War thriller film directed by Sidney Lumet, based on the 1962 novel of the same name by Eugene Burdick and Harvey Wheeler. It portrays a fictional account of a nuclear crisis. The film features performances by actors Henry Fonda, Dan O'Herlihy, Walter Matthau and Frank Overton. Larry Hagman, Fritz Weaver, Dom DeLuise and Sorrell Booke appeared in early film roles. [SEP] hypothesis: Fail Safe was more popular than the novel with the same name.
+06/01/2022 01:29:19 - INFO - __main__ - ['neutral']
+06/01/2022 01:29:19 - INFO - __main__ - Tokenizing Input ...
+06/01/2022 01:29:19 - INFO - __main__ - Tokenizing Output ...
+06/01/2022 01:29:19 - INFO - __main__ - Tokenizing Output ...
+06/01/2022 01:29:19 - INFO - __main__ - Loaded 48 examples from dev data
+06/01/2022 01:29:19 - INFO - __main__ - Loaded 48 examples from dev data
+06/01/2022 01:29:37 - INFO - __main__ - load prompt embedding from ckpt
+06/01/2022 01:29:37 - INFO - __main__ - load prompt embedding from ckpt
+06/14/2022 19:35:33 - INFO - __main__ - Namespace(task_dir='data/anli/', task_name='anli', identifier='T5-large-multitask-cls2cls-5e-1-4-20-up128shot', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-anli', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-multitask-cls2cls-5e-1-4-20-128shot/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=1, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='4,5')
+06/14/2022 19:35:33 - INFO - __main__ - models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-anli
+06/14/2022 19:35:33 - INFO - __main__ - Namespace(task_dir='data/anli/', task_name='anli', identifier='T5-large-multitask-cls2cls-5e-1-4-20-up128shot', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-anli', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-multitask-cls2cls-5e-1-4-20-128shot/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=0, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='4,5')
+06/14/2022 19:35:33 - INFO - __main__ - models/T5-large-multitask-cls2cls-5e-1-4-20-up128shot/singletask-anli
+06/14/2022 19:35:35 - INFO - root - Added key: store_based_barrier_key:1 to store for rank: 1
+06/14/2022 19:35:35 - INFO - root - Added key: store_based_barrier_key:1 to store for rank: 0
+06/14/2022 19:35:35 - INFO - __main__ - args.device: cuda:1
+06/14/2022 19:35:35 - INFO - __main__ - args.device: cuda:0
+06/14/2022 19:35:35 - INFO - __main__ - Using 2 gpus
+06/14/2022 19:35:35 - INFO - __main__ - Using 2 gpus
+06/14/2022 19:35:35 - INFO - __main__ - Fine-tuning the following samples: ['anli_16_100', 'anli_16_13', 'anli_16_21', 'anli_16_42', 'anli_16_87']
+06/14/2022 19:35:35 - INFO - __main__ - Fine-tuning the following samples: ['anli_16_100', 'anli_16_13', 'anli_16_21', 'anli_16_42', 'anli_16_87']
+06/14/2022 19:35:40 - INFO - __main__ - Running ... prefix=anli_16_100, lr=0.5, bsz=8 ...
+06/14/2022 19:35:40 - INFO - __main__ - Start tokenizing ... 48 instances
+06/14/2022 19:35:40 - INFO - __main__ - Printing 3 examples
+06/14/2022 19:35:40 - INFO - __main__ -  [anli] premise: John Zdechlik ("Zuh-DEK-lik") (born 2 May 1937) is an American composer, music teacher, and conductor. Zdechlik has been elected to the American Bandmasters Association and many of his compositions have become standard concert band repertoire, including Chorale and Shaker Dance and Psalm 46. [SEP] hypothesis: John Zdechlik is a savant of music. 
+06/14/2022 19:35:40 - INFO - __main__ - ['neutral']
+06/14/2022 19:35:40 - INFO - __main__ -  [anli] premise: "No Words" is a song written by Paul McCartney and Denny Laine, and first released on 7 December 1973 on "Band on the Run" by Paul McCartney and Wings. The song was Laine's first co-writing on a Wings album and his only writing credit on "Band on the Run". [SEP] hypothesis: The song was Laine's first co-writing on a Wings album and his only writing credit on "Band on the Run" even though Laine had written a few songs before for other singers
+06/14/2022 19:35:40 - INFO - __main__ - ['neutral']
+06/14/2022 19:35:40 - INFO - __main__ -  [anli] premise: Askold Anatolievich Makarov (Russian: Аско́льд Анато́льевич Мака́ров ; 3 May 1925 – 25 December 2000) was a Russian ballet dancer and ballet professor, leading soloist at the Kirov Ballet during the 1960s and early 1970s. Director of the Saint-Petesburg State Academic Ballet from 1976 to 2000. Awarded with: State Prize of the USSR (1951) and People's Artist of the USSR (1983). [SEP] hypothesis: The USSR is home to some of the finest ballet dancers in the world.
+06/14/2022 19:35:40 - INFO - __main__ - ['neutral']
+06/14/2022 19:35:40 - INFO - __main__ - Tokenizing Input ...
+06/14/2022 19:35:40 - INFO - __main__ - Tokenizing Output ...
+06/14/2022 19:35:40 - INFO - __main__ - Start tokenizing ... 48 instances
+06/14/2022 19:35:40 - INFO - __main__ - Printing 3 examples
+06/14/2022 19:35:40 - INFO - __main__ -  [anli] premise: John Zdechlik ("Zuh-DEK-lik") (born 2 May 1937) is an American composer, music teacher, and conductor. Zdechlik has been elected to the American Bandmasters Association and many of his compositions have become standard concert band repertoire, including Chorale and Shaker Dance and Psalm 46. [SEP] hypothesis: John Zdechlik is a savant of music. 
+06/14/2022 19:35:40 - INFO - __main__ - ['neutral']
+06/14/2022 19:35:40 - INFO - __main__ -  [anli] premise: "No Words" is a song written by Paul McCartney and Denny Laine, and first released on 7 December 1973 on "Band on the Run" by Paul McCartney and Wings. The song was Laine's first co-writing on a Wings album and his only writing credit on "Band on the Run". [SEP] hypothesis: The song was Laine's first co-writing on a Wings album and his only writing credit on "Band on the Run" even though Laine had written a few songs before for other singers
+06/14/2022 19:35:40 - INFO - __main__ - ['neutral']
+06/14/2022 19:35:40 - INFO - __main__ -  [anli] premise: Askold Anatolievich Makarov (Russian: Аско́льд Анато́льевич Мака́ров ; 3 May 1925 – 25 December 2000) was a Russian ballet dancer and ballet professor, leading soloist at the Kirov Ballet during the 1960s and early 1970s. Director of the Saint-Petesburg State Academic Ballet from 1976 to 2000. Awarded with: State Prize of the USSR (1951) and People's Artist of the USSR (1983). [SEP] hypothesis: The USSR is home to some of the finest ballet dancers in the world.
+06/14/2022 19:35:40 - INFO - __main__ - ['neutral']
+06/14/2022 19:35:40 - INFO - __main__ - Tokenizing Input ...
+06/14/2022 19:35:40 - INFO - __main__ - Tokenizing Output ...
+06/14/2022 19:35:40 - INFO - __main__ - Loaded 48 examples from train data
+06/14/2022 19:35:40 - INFO - __main__ - Start tokenizing ... 48 instances
+06/14/2022 19:35:40 - INFO - __main__ - Printing 3 examples
+06/14/2022 19:35:40 - INFO - __main__ -  [anli] premise: Alexandra Lendon Bastedo (9 March 1946 – 12 January 2014) was a British actress, best known for her role as secret agent Sharron Macready in the 1968 British espionage/science fiction adventure series "The Champions". She has been cited as a sex symbol of the 1960s and 1970s. Bastedo was a vegetarian and animal welfare advocate. [SEP] hypothesis: Sharron Macready was a popular character through the 1980's.
+06/14/2022 19:35:40 - INFO - __main__ - ['neutral']
+06/14/2022 19:35:40 - INFO - __main__ -  [anli] premise: The Maysville Micropolitan Statistical Area (μSA), as defined by the United States Census Bureau, is coterminous with Mason County, Kentucky, whose county seat and largest city is Maysville. As of the 2010 census, the population of Mason County and the current µSA was 17,490, and 2014 Census Bureau estimates place the population at 17,166. [SEP] hypothesis: The Census Bureau was made up of 17,166 people. 
+06/14/2022 19:35:40 - INFO - __main__ - ['neutral']
+06/14/2022 19:35:40 - INFO - __main__ -  [anli] premise: Fail Safe is a 1964 Cold War thriller film directed by Sidney Lumet, based on the 1962 novel of the same name by Eugene Burdick and Harvey Wheeler. It portrays a fictional account of a nuclear crisis. The film features performances by actors Henry Fonda, Dan O'Herlihy, Walter Matthau and Frank Overton. Larry Hagman, Fritz Weaver, Dom DeLuise and Sorrell Booke appeared in early film roles. [SEP] hypothesis: Fail Safe was more popular than the novel with the same name.
+06/14/2022 19:35:40 - INFO - __main__ - ['neutral']
+06/14/2022 19:35:40 - INFO - __main__ - Tokenizing Input ...
+06/14/2022 19:35:40 - INFO - __main__ - Tokenizing Output ...
+06/14/2022 19:35:40 - INFO - __main__ - Loaded 48 examples from train data
+06/14/2022 19:35:40 - INFO - __main__ - Start tokenizing ... 48 instances
+06/14/2022 19:35:40 - INFO - __main__ - Printing 3 examples
+06/14/2022 19:35:40 - INFO - __main__ -  [anli] premise: Alexandra Lendon Bastedo (9 March 1946 – 12 January 2014) was a British actress, best known for her role as secret agent Sharron Macready in the 1968 British espionage/science fiction adventure series "The Champions". She has been cited as a sex symbol of the 1960s and 1970s. Bastedo was a vegetarian and animal welfare advocate. [SEP] hypothesis: Sharron Macready was a popular character through the 1980's.
+06/14/2022 19:35:40 - INFO - __main__ - ['neutral']
+06/14/2022 19:35:40 - INFO - __main__ -  [anli] premise: The Maysville Micropolitan Statistical Area (μSA), as defined by the United States Census Bureau, is coterminous with Mason County, Kentucky, whose county seat and largest city is Maysville. As of the 2010 census, the population of Mason County and the current µSA was 17,490, and 2014 Census Bureau estimates place the population at 17,166. [SEP] hypothesis: The Census Bureau was made up of 17,166 people. 
+06/14/2022 19:35:40 - INFO - __main__ - ['neutral']
+06/14/2022 19:35:40 - INFO - __main__ -  [anli] premise: Fail Safe is a 1964 Cold War thriller film directed by Sidney Lumet, based on the 1962 novel of the same name by Eugene Burdick and Harvey Wheeler. It portrays a fictional account of a nuclear crisis. The film features performances by actors Henry Fonda, Dan O'Herlihy, Walter Matthau and Frank Overton. Larry Hagman, Fritz Weaver, Dom DeLuise and Sorrell Booke appeared in early film roles. [SEP] hypothesis: Fail Safe was more popular than the novel with the same name.
+06/14/2022 19:35:40 - INFO - __main__ - ['neutral']
+06/14/2022 19:35:40 - INFO - __main__ - Tokenizing Input ...
+06/14/2022 19:35:40 - INFO - __main__ - Tokenizing Output ...
+06/14/2022 19:35:41 - INFO - __main__ - Loaded 48 examples from dev data
+06/14/2022 19:35:41 - INFO - __main__ - Loaded 48 examples from dev data
+06/14/2022 19:35:58 - INFO - __main__ - load prompt embedding from ckpt
+06/14/2022 19:35:58 - INFO - __main__ - load prompt embedding from ckpt
