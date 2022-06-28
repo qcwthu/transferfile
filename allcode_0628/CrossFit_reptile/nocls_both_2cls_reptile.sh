@@ -1,0 +1,2 @@
+bash singletask_from_reptile_nocls2cls.sh
+bash singletask_from_reptile_both2cls.sh

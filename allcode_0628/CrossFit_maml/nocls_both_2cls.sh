@@ -1,0 +1,2 @@
+bash singletask_from_meta_nocls2cls.sh
+bash singletask_from_meta_both2cls.sh

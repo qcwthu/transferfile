@@ -1,0 +1,3 @@
+#bash cli_maml_ddp_prompt_noqa2qa.sh
+bash cli_maml_ddp_prompt_qa2qa.sh
+bash cli_maml_ddp_prompt_nonli2nli.sh

@@ -1,0 +1,1690 @@
+nohup: ignoring input
+Task: wiki_split, Checkpoint: models/upstream-maml-random-3e-5-2-5000-5e-1/last-model.pt, Identifier: T5-large-maml-random-3e-5-2-5000-5e-1
+/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py:163: DeprecationWarning: The 'warn' method is deprecated, use 'warning' instead
+  logger.warn(
+The module torch.distributed.launch is deprecated and going to be removed in future.Migrate to torch.distributed.run
+WARNING:torch.distributed.run:--use_env is deprecated and will be removed in future releases.
+ Please read local_rank from `os.environ('LOCAL_RANK')` instead.
+INFO:torch.distributed.launcher.api:Starting elastic_operator with launch configs:
+  entrypoint       : singletask_from_meta.py
+  min_nodes        : 1
+  max_nodes        : 1
+  nproc_per_node   : 2
+  run_id           : none
+  rdzv_backend     : static
+  rdzv_endpoint    : 127.0.0.1:29548
+  rdzv_configs     : {'rank': 0, 'timeout': 900}
+  max_restarts     : 3
+  monitor_interval : 5
+  log_dir          : None
+  metrics_cfg      : {}
+
+INFO:torch.distributed.elastic.agent.server.local_elastic_agent:log directory set to: /tmp/torchelastic_x03u03gd/none_pa7m2_xs
+INFO:torch.distributed.elastic.agent.server.api:[default] starting workers for entrypoint: python
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous'ing worker group
+/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/elastic/utils/store.py:52: FutureWarning: This is an experimental API and will be changed in future.
+  warnings.warn(
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous complete for workers. Result:
+  restart_count=0
+  master_addr=127.0.0.1
+  master_port=29548
+  group_rank=0
+  group_world_size=1
+  local_ranks=[0, 1]
+  role_ranks=[0, 1]
+  global_ranks=[0, 1]
+  role_world_sizes=[2, 2]
+  global_world_sizes=[2, 2]
+
+INFO:torch.distributed.elastic.agent.server.api:[default] Starting worker group
+INFO:torch.distributed.elastic.multiprocessing:Setting worker0 reply file to: /tmp/torchelastic_x03u03gd/none_pa7m2_xs/attempt_0/0/error.json
+INFO:torch.distributed.elastic.multiprocessing:Setting worker1 reply file to: /tmp/torchelastic_x03u03gd/none_pa7m2_xs/attempt_0/1/error.json
+Output directory () already exists and is not empty.
+02/24/2022 14:39:18 - INFO - __main__ - Namespace(task_dir='data/wiki_split/', task_name='wiki_split', identifier='T5-large-maml-random-3e-5-2-5000-5e-1', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-maml-random-3e-5-2-5000-5e-1/singletask-wiki_split', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-maml-random-3e-5-2-5000-5e-1/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=1, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='2,3')
+02/24/2022 14:39:18 - INFO - __main__ - models/T5-large-maml-random-3e-5-2-5000-5e-1/singletask-wiki_split
+02/24/2022 14:39:18 - INFO - __main__ - Namespace(task_dir='data/wiki_split/', task_name='wiki_split', identifier='T5-large-maml-random-3e-5-2-5000-5e-1', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-maml-random-3e-5-2-5000-5e-1/singletask-wiki_split', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-maml-random-3e-5-2-5000-5e-1/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=0, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='2,3')
+02/24/2022 14:39:18 - INFO - __main__ - models/T5-large-maml-random-3e-5-2-5000-5e-1/singletask-wiki_split
+02/24/2022 14:39:19 - INFO - torch.distributed.distributed_c10d - Added key: store_based_barrier_key:1 to store for rank: 1
+02/24/2022 14:39:19 - INFO - torch.distributed.distributed_c10d - Added key: store_based_barrier_key:1 to store for rank: 0
+02/24/2022 14:39:19 - INFO - torch.distributed.distributed_c10d - Rank 0: Completed store-based barrier for 2 nodes.
+02/24/2022 14:39:19 - INFO - __main__ - args.device: cuda:0
+02/24/2022 14:39:19 - INFO - __main__ - Using 2 gpus
+02/24/2022 14:39:19 - INFO - torch.distributed.distributed_c10d - Rank 1: Completed store-based barrier for 2 nodes.
+02/24/2022 14:39:19 - INFO - __main__ - args.device: cuda:1
+02/24/2022 14:39:19 - INFO - __main__ - Using 2 gpus
+02/24/2022 14:39:19 - INFO - __main__ - Fine-tuning the following samples: ['wiki_split_32_100', 'wiki_split_32_13', 'wiki_split_32_21', 'wiki_split_32_42', 'wiki_split_32_87']
+02/24/2022 14:39:19 - INFO - __main__ - Fine-tuning the following samples: ['wiki_split_32_100', 'wiki_split_32_13', 'wiki_split_32_21', 'wiki_split_32_42', 'wiki_split_32_87']
+[W ProcessGroupNCCL.cpp:1569] Rank 1 using best-guess GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device.
+[W ProcessGroupNCCL.cpp:1569] Rank 0 using best-guess GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device.
+02/24/2022 14:39:24 - INFO - __main__ - Running ... prefix=wiki_split_32_100, lr=0.5, bsz=8 ...
+02/24/2022 14:39:25 - INFO - __main__ - Start tokenizing ... 32 instances
+02/24/2022 14:39:25 - INFO - __main__ - Printing 3 examples
+02/24/2022 14:39:25 - INFO - __main__ -  [wiki_split] sentence 1: KHOTOUM is a Costume Design ( installation & photography ) exhibition , Opened on November 20th , 2014 in Cairo , Egypt .  [SEP] sentence 2:  Khotoum exhibition is inspired by Egyptian Painter , Abd El - Hady el Gazzar .
+02/24/2022 14:39:25 - INFO - __main__ - ['KHOTOUM is a Costume Design ( installation & photography ) exhibition that is inspired by the great Egyptian Painter , Abd El - Hady el Gazzar .']
+02/24/2022 14:39:25 - INFO - __main__ -  [wiki_split] sentence 1: The instrument is not dodecaphonically tempered , instead using the Istrian scale .  [SEP] sentence 2:  Its sound is distinct and unusual .
+02/24/2022 14:39:25 - INFO - __main__ - ['The instrument is not dodecaphonically tempered , it uses the Istrian scale and its sound is distinct and unusual .']
+02/24/2022 14:39:25 - INFO - __main__ -  [wiki_split] sentence 1: Male Tapanuli orangutans produce loud , long distance calls that can last for up to two minutes .  [SEP] sentence 2:  Their calls have a higher frequency and a higher number of pulses than those of other orangutan species .
+02/24/2022 14:39:25 - INFO - __main__ - ['Male Tapanuli orangutans produce loud , long distance calls with a high frequency and a high number of pulses distinct from those of other orangutan species .']
+02/24/2022 14:39:25 - INFO - __main__ - Tokenizing Input ...
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+/opt/conda/envs/meta/lib/python3.9/site-packages/transformers/tokenization_utils_base.py:2105: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+02/24/2022 14:39:25 - INFO - __main__ - Tokenizing Output ...
+02/24/2022 14:39:25 - INFO - __main__ - Start tokenizing ... 32 instances
+02/24/2022 14:39:25 - INFO - __main__ - Printing 3 examples
+02/24/2022 14:39:25 - INFO - __main__ -  [wiki_split] sentence 1: KHOTOUM is a Costume Design ( installation & photography ) exhibition , Opened on November 20th , 2014 in Cairo , Egypt .  [SEP] sentence 2:  Khotoum exhibition is inspired by Egyptian Painter , Abd El - Hady el Gazzar .
+02/24/2022 14:39:25 - INFO - __main__ - ['KHOTOUM is a Costume Design ( installation & photography ) exhibition that is inspired by the great Egyptian Painter , Abd El - Hady el Gazzar .']
+02/24/2022 14:39:25 - INFO - __main__ -  [wiki_split] sentence 1: The instrument is not dodecaphonically tempered , instead using the Istrian scale .  [SEP] sentence 2:  Its sound is distinct and unusual .
+02/24/2022 14:39:25 - INFO - __main__ - ['The instrument is not dodecaphonically tempered , it uses the Istrian scale and its sound is distinct and unusual .']
+02/24/2022 14:39:25 - INFO - __main__ -  [wiki_split] sentence 1: Male Tapanuli orangutans produce loud , long distance calls that can last for up to two minutes .  [SEP] sentence 2:  Their calls have a higher frequency and a higher number of pulses than those of other orangutan species .
+02/24/2022 14:39:25 - INFO - __main__ - ['Male Tapanuli orangutans produce loud , long distance calls with a high frequency and a high number of pulses distinct from those of other orangutan species .']
+02/24/2022 14:39:25 - INFO - __main__ - Tokenizing Input ...
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+/opt/conda/envs/meta/lib/python3.9/site-packages/transformers/tokenization_utils_base.py:2105: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+02/24/2022 14:39:25 - INFO - __main__ - Tokenizing Output ...
+02/24/2022 14:39:25 - INFO - __main__ - Loaded 32 examples from train data
+use DistributedSampler
+02/24/2022 14:39:25 - INFO - __main__ - Start tokenizing ... 32 instances
+02/24/2022 14:39:25 - INFO - __main__ - Printing 3 examples
+02/24/2022 14:39:25 - INFO - __main__ -  [wiki_split] sentence 1: Under the name '' J.J. Solari '' , he became a writer of short stories .  [SEP] sentence 2:  They were collected in a 2007 anthology called '' When Bikers Meet Humans '' .
+02/24/2022 14:39:25 - INFO - __main__ - ["Under the name '' J.J. Solari '' , he became a writer of short stories for biker magazines such as , which were collected in a 2007 anthology called '' When Bikers Meet Humans '' ."]
+02/24/2022 14:39:25 - INFO - __main__ -  [wiki_split] sentence 1: It featured others , notables like David Tyree who was a free agent due to the lack of depth on the New York Giants .  [SEP] sentence 2:  The most notable being Brett Favre of the New York Jets after coming out of retirement .
+02/24/2022 14:39:25 - INFO - __main__ - ['It featured others , notables like David Tyree who was a free agent due to the lack of depth on the New York Giants , with the most notable being Favre of the Jets after coming out of retirement .']
+02/24/2022 14:39:25 - INFO - __main__ -  [wiki_split] sentence 1: LED lamps are made that replace screw - in incandescent or compact fluorescent light bulbs .  [SEP] sentence 2:  Most LED lamps replace incandescent bulbs rated from 5 to 60 watts .
+02/24/2022 14:39:25 - INFO - __main__ - ['LED lamps are made that replace screw - in incandescent or compact fluorescent light bulbs , mostly replacing incandescent bulbs rated from 5 to 60 watts .']
+02/24/2022 14:39:25 - INFO - __main__ - Tokenizing Input ...
+02/24/2022 14:39:25 - INFO - __main__ - Tokenizing Output ...
+02/24/2022 14:39:25 - INFO - __main__ - Loaded 32 examples from train data
+use DistributedSampler
+02/24/2022 14:39:25 - INFO - __main__ - Start tokenizing ... 32 instances
+02/24/2022 14:39:25 - INFO - __main__ - Printing 3 examples
+02/24/2022 14:39:25 - INFO - __main__ -  [wiki_split] sentence 1: Under the name '' J.J. Solari '' , he became a writer of short stories .  [SEP] sentence 2:  They were collected in a 2007 anthology called '' When Bikers Meet Humans '' .
+02/24/2022 14:39:25 - INFO - __main__ - ["Under the name '' J.J. Solari '' , he became a writer of short stories for biker magazines such as , which were collected in a 2007 anthology called '' When Bikers Meet Humans '' ."]
+02/24/2022 14:39:25 - INFO - __main__ -  [wiki_split] sentence 1: It featured others , notables like David Tyree who was a free agent due to the lack of depth on the New York Giants .  [SEP] sentence 2:  The most notable being Brett Favre of the New York Jets after coming out of retirement .
+02/24/2022 14:39:25 - INFO - __main__ - ['It featured others , notables like David Tyree who was a free agent due to the lack of depth on the New York Giants , with the most notable being Favre of the Jets after coming out of retirement .']
+02/24/2022 14:39:25 - INFO - __main__ -  [wiki_split] sentence 1: LED lamps are made that replace screw - in incandescent or compact fluorescent light bulbs .  [SEP] sentence 2:  Most LED lamps replace incandescent bulbs rated from 5 to 60 watts .
+02/24/2022 14:39:25 - INFO - __main__ - ['LED lamps are made that replace screw - in incandescent or compact fluorescent light bulbs , mostly replacing incandescent bulbs rated from 5 to 60 watts .']
+02/24/2022 14:39:25 - INFO - __main__ - Tokenizing Input ...
+02/24/2022 14:39:25 - INFO - __main__ - Tokenizing Output ...
+02/24/2022 14:39:25 - INFO - __main__ - Loaded 32 examples from dev data
+02/24/2022 14:39:25 - INFO - __main__ - Loaded 32 examples from dev data
+02/24/2022 14:39:40 - INFO - __main__ - load prompt embedding from ckpt
+02/24/2022 14:39:40 - INFO - __main__ - load prompt embedding from ckpt
+02/24/2022 14:39:40 - INFO - root - ShardedDDP bucket size: 8.00M parameters, model size 746.97M parameters
+02/24/2022 14:39:40 - INFO - __main__ - Starting training!
+02/24/2022 14:39:49 - INFO - root - ShardedDDP bucket size: 8.00M parameters, model size 746.97M parameters
+02/24/2022 14:39:50 - INFO - __main__ - Starting training!
+02/24/2022 14:39:53 - INFO - __main__ - Step 10 Global step 10 Train loss 0.81 on epoch=4
+02/24/2022 14:39:55 - INFO - __main__ - Step 20 Global step 20 Train loss 0.71 on epoch=9
+02/24/2022 14:39:57 - INFO - __main__ - Step 30 Global step 30 Train loss 0.67 on epoch=14
+02/24/2022 14:39:59 - INFO - __main__ - Step 40 Global step 40 Train loss 0.61 on epoch=19
+02/24/2022 14:40:01 - INFO - __main__ - Step 50 Global step 50 Train loss 0.59 on epoch=24
+/opt/conda/envs/meta/lib/python3.9/site-packages/torch/_tensor.py:575: UserWarning: floor_divide is deprecated, and will be removed in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values.
+To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor'). (Triggered internally at  /pytorch/aten/src/ATen/native/BinaryOps.cpp:467.)
+  return torch.floor_divide(self, other)
+02/24/2022 14:40:12 - INFO - __main__ - Global step 50 Train loss 0.68 Rouge-L 0.7781286102544258 on epoch=24
+02/24/2022 14:40:12 - INFO - __main__ - Saving model with best Rouge-L: -1.0 -> 0.7781286102544258 on epoch=24, global_step=50
+02/24/2022 14:40:14 - INFO - __main__ - Step 60 Global step 60 Train loss 0.57 on epoch=29
+02/24/2022 14:40:16 - INFO - __main__ - Step 70 Global step 70 Train loss 0.56 on epoch=34
+02/24/2022 14:40:18 - INFO - __main__ - Step 80 Global step 80 Train loss 0.54 on epoch=39
+02/24/2022 14:40:21 - INFO - __main__ - Step 90 Global step 90 Train loss 0.54 on epoch=44
+02/24/2022 14:40:23 - INFO - __main__ - Step 100 Global step 100 Train loss 0.52 on epoch=49
+02/24/2022 14:40:34 - INFO - __main__ - Global step 100 Train loss 0.54 Rouge-L 0.8538303344628733 on epoch=49
+02/24/2022 14:40:34 - INFO - __main__ - Saving model with best Rouge-L: 0.7781286102544258 -> 0.8538303344628733 on epoch=49, global_step=100
+02/24/2022 14:40:36 - INFO - __main__ - Step 110 Global step 110 Train loss 0.50 on epoch=54
+02/24/2022 14:40:38 - INFO - __main__ - Step 120 Global step 120 Train loss 0.49 on epoch=59
+02/24/2022 14:40:41 - INFO - __main__ - Step 130 Global step 130 Train loss 0.48 on epoch=64
+02/24/2022 14:40:43 - INFO - __main__ - Step 140 Global step 140 Train loss 0.47 on epoch=69
+02/24/2022 14:40:45 - INFO - __main__ - Step 150 Global step 150 Train loss 0.45 on epoch=74
+02/24/2022 14:40:57 - INFO - __main__ - Global step 150 Train loss 0.48 Rouge-L 0.8642392035516904 on epoch=74
+02/24/2022 14:40:57 - INFO - __main__ - Saving model with best Rouge-L: 0.8538303344628733 -> 0.8642392035516904 on epoch=74, global_step=150
+02/24/2022 14:40:59 - INFO - __main__ - Step 160 Global step 160 Train loss 0.46 on epoch=79
+02/24/2022 14:41:02 - INFO - __main__ - Step 170 Global step 170 Train loss 0.44 on epoch=84
+02/24/2022 14:41:04 - INFO - __main__ - Step 180 Global step 180 Train loss 0.45 on epoch=89
+02/24/2022 14:41:06 - INFO - __main__ - Step 190 Global step 190 Train loss 0.43 on epoch=94
+02/24/2022 14:41:08 - INFO - __main__ - Step 200 Global step 200 Train loss 0.42 on epoch=99
+02/24/2022 14:41:19 - INFO - __main__ - Global step 200 Train loss 0.44 Rouge-L 0.8741078704048544 on epoch=99
+02/24/2022 14:41:19 - INFO - __main__ - Saving model with best Rouge-L: 0.8642392035516904 -> 0.8741078704048544 on epoch=99, global_step=200
+02/24/2022 14:41:21 - INFO - __main__ - Step 210 Global step 210 Train loss 0.41 on epoch=104
+02/24/2022 14:41:24 - INFO - __main__ - Step 220 Global step 220 Train loss 0.41 on epoch=109
+02/24/2022 14:41:26 - INFO - __main__ - Step 230 Global step 230 Train loss 0.40 on epoch=114
+02/24/2022 14:41:28 - INFO - __main__ - Step 240 Global step 240 Train loss 0.40 on epoch=119
+02/24/2022 14:41:30 - INFO - __main__ - Step 250 Global step 250 Train loss 0.37 on epoch=124
+02/24/2022 14:41:41 - INFO - __main__ - Global step 250 Train loss 0.40 Rouge-L 0.8657543208994521 on epoch=124
+02/24/2022 14:41:43 - INFO - __main__ - Step 260 Global step 260 Train loss 0.37 on epoch=129
+02/24/2022 14:41:45 - INFO - __main__ - Step 270 Global step 270 Train loss 0.37 on epoch=134
+02/24/2022 14:41:48 - INFO - __main__ - Step 280 Global step 280 Train loss 0.38 on epoch=139
+02/24/2022 14:41:50 - INFO - __main__ - Step 290 Global step 290 Train loss 0.36 on epoch=144
+02/24/2022 14:41:52 - INFO - __main__ - Step 300 Global step 300 Train loss 0.36 on epoch=149
+02/24/2022 14:42:03 - INFO - __main__ - Global step 300 Train loss 0.37 Rouge-L 0.8726547057813338 on epoch=149
+02/24/2022 14:42:05 - INFO - __main__ - Step 310 Global step 310 Train loss 0.35 on epoch=154
+02/24/2022 14:42:07 - INFO - __main__ - Step 320 Global step 320 Train loss 0.33 on epoch=159
+02/24/2022 14:42:09 - INFO - __main__ - Step 330 Global step 330 Train loss 0.34 on epoch=164
+02/24/2022 14:42:12 - INFO - __main__ - Step 340 Global step 340 Train loss 0.33 on epoch=169
+02/24/2022 14:42:14 - INFO - __main__ - Step 350 Global step 350 Train loss 0.32 on epoch=174
+02/24/2022 14:42:25 - INFO - __main__ - Global step 350 Train loss 0.34 Rouge-L 0.8632374286056811 on epoch=174
+02/24/2022 14:42:28 - INFO - __main__ - Step 360 Global step 360 Train loss 0.32 on epoch=179
+02/24/2022 14:42:30 - INFO - __main__ - Step 370 Global step 370 Train loss 0.33 on epoch=184
+02/24/2022 14:42:32 - INFO - __main__ - Step 380 Global step 380 Train loss 0.31 on epoch=189
+02/24/2022 14:42:35 - INFO - __main__ - Step 390 Global step 390 Train loss 0.32 on epoch=194
+02/24/2022 14:42:37 - INFO - __main__ - Step 400 Global step 400 Train loss 0.30 on epoch=199
+02/24/2022 14:42:48 - INFO - __main__ - Global step 400 Train loss 0.32 Rouge-L 0.8777851518906259 on epoch=199
+02/24/2022 14:42:48 - INFO - __main__ - Saving model with best Rouge-L: 0.8741078704048544 -> 0.8777851518906259 on epoch=199, global_step=400
+02/24/2022 14:42:50 - INFO - __main__ - Step 410 Global step 410 Train loss 0.31 on epoch=204
+02/24/2022 14:42:52 - INFO - __main__ - Step 420 Global step 420 Train loss 0.29 on epoch=209
+02/24/2022 14:42:55 - INFO - __main__ - Step 430 Global step 430 Train loss 0.28 on epoch=214
+02/24/2022 14:42:57 - INFO - __main__ - Step 440 Global step 440 Train loss 0.28 on epoch=219
+02/24/2022 14:42:59 - INFO - __main__ - Step 450 Global step 450 Train loss 0.28 on epoch=224
+02/24/2022 14:43:10 - INFO - __main__ - Global step 450 Train loss 0.29 Rouge-L 0.8662379627530266 on epoch=224
+02/24/2022 14:43:12 - INFO - __main__ - Step 460 Global step 460 Train loss 0.28 on epoch=229
+02/24/2022 14:43:14 - INFO - __main__ - Step 470 Global step 470 Train loss 0.28 on epoch=234
+02/24/2022 14:43:17 - INFO - __main__ - Step 480 Global step 480 Train loss 0.26 on epoch=239
+02/24/2022 14:43:19 - INFO - __main__ - Step 490 Global step 490 Train loss 0.27 on epoch=244
+02/24/2022 14:43:21 - INFO - __main__ - Step 500 Global step 500 Train loss 0.26 on epoch=249
+02/24/2022 14:43:32 - INFO - __main__ - Global step 500 Train loss 0.27 Rouge-L 0.8635126243339849 on epoch=249
+02/24/2022 14:43:35 - INFO - __main__ - Step 510 Global step 510 Train loss 0.26 on epoch=254
+02/24/2022 14:43:37 - INFO - __main__ - Step 520 Global step 520 Train loss 0.26 on epoch=259
+02/24/2022 14:43:39 - INFO - __main__ - Step 530 Global step 530 Train loss 0.26 on epoch=264
+02/24/2022 14:43:42 - INFO - __main__ - Step 540 Global step 540 Train loss 0.25 on epoch=269
+02/24/2022 14:43:44 - INFO - __main__ - Step 550 Global step 550 Train loss 0.26 on epoch=274
+02/24/2022 14:43:54 - INFO - __main__ - Global step 550 Train loss 0.26 Rouge-L 0.8720432620087791 on epoch=274
+02/24/2022 14:43:57 - INFO - __main__ - Step 560 Global step 560 Train loss 0.26 on epoch=279
+02/24/2022 14:43:59 - INFO - __main__ - Step 570 Global step 570 Train loss 0.24 on epoch=284
+02/24/2022 14:44:01 - INFO - __main__ - Step 580 Global step 580 Train loss 0.23 on epoch=289
+02/24/2022 14:44:04 - INFO - __main__ - Step 590 Global step 590 Train loss 0.23 on epoch=294
+02/24/2022 14:44:06 - INFO - __main__ - Step 600 Global step 600 Train loss 0.23 on epoch=299
+02/24/2022 14:44:16 - INFO - __main__ - Global step 600 Train loss 0.24 Rouge-L 0.8476942703705852 on epoch=299
+02/24/2022 14:44:19 - INFO - __main__ - Step 610 Global step 610 Train loss 0.23 on epoch=304
+02/24/2022 14:44:21 - INFO - __main__ - Step 620 Global step 620 Train loss 0.23 on epoch=309
+02/24/2022 14:44:23 - INFO - __main__ - Step 630 Global step 630 Train loss 0.23 on epoch=314
+02/24/2022 14:44:26 - INFO - __main__ - Step 640 Global step 640 Train loss 0.22 on epoch=319
+02/24/2022 14:44:28 - INFO - __main__ - Step 650 Global step 650 Train loss 0.22 on epoch=324
+02/24/2022 14:44:39 - INFO - __main__ - Global step 650 Train loss 0.23 Rouge-L 0.8680862915380182 on epoch=324
+02/24/2022 14:44:41 - INFO - __main__ - Step 660 Global step 660 Train loss 0.21 on epoch=329
+02/24/2022 14:44:43 - INFO - __main__ - Step 670 Global step 670 Train loss 0.21 on epoch=334
+02/24/2022 14:44:46 - INFO - __main__ - Step 680 Global step 680 Train loss 0.21 on epoch=339
+02/24/2022 14:44:48 - INFO - __main__ - Step 690 Global step 690 Train loss 0.20 on epoch=344
+02/24/2022 14:44:50 - INFO - __main__ - Step 700 Global step 700 Train loss 0.21 on epoch=349
+02/24/2022 14:45:01 - INFO - __main__ - Global step 700 Train loss 0.21 Rouge-L 0.8543279804409483 on epoch=349
+02/24/2022 14:45:03 - INFO - __main__ - Step 710 Global step 710 Train loss 0.21 on epoch=354
+02/24/2022 14:45:05 - INFO - __main__ - Step 720 Global step 720 Train loss 0.20 on epoch=359
+02/24/2022 14:45:08 - INFO - __main__ - Step 730 Global step 730 Train loss 0.20 on epoch=364
+02/24/2022 14:45:10 - INFO - __main__ - Step 740 Global step 740 Train loss 0.20 on epoch=369
+02/24/2022 14:45:12 - INFO - __main__ - Step 750 Global step 750 Train loss 0.21 on epoch=374
+02/24/2022 14:45:24 - INFO - __main__ - Global step 750 Train loss 0.21 Rouge-L 0.8706292499207532 on epoch=374
+02/24/2022 14:45:26 - INFO - __main__ - Step 760 Global step 760 Train loss 0.21 on epoch=379
+02/24/2022 14:45:29 - INFO - __main__ - Step 770 Global step 770 Train loss 0.19 on epoch=384
+02/24/2022 14:45:31 - INFO - __main__ - Step 780 Global step 780 Train loss 0.20 on epoch=389
+02/24/2022 14:45:33 - INFO - __main__ - Step 790 Global step 790 Train loss 0.19 on epoch=394
+02/24/2022 14:45:36 - INFO - __main__ - Step 800 Global step 800 Train loss 0.20 on epoch=399
+02/24/2022 14:45:47 - INFO - __main__ - Global step 800 Train loss 0.20 Rouge-L 0.8585620742591544 on epoch=399
+02/24/2022 14:45:49 - INFO - __main__ - Step 810 Global step 810 Train loss 0.17 on epoch=404
+02/24/2022 14:45:51 - INFO - __main__ - Step 820 Global step 820 Train loss 0.18 on epoch=409
+02/24/2022 14:45:54 - INFO - __main__ - Step 830 Global step 830 Train loss 0.18 on epoch=414
+02/24/2022 14:45:56 - INFO - __main__ - Step 840 Global step 840 Train loss 0.17 on epoch=419
+02/24/2022 14:45:58 - INFO - __main__ - Step 850 Global step 850 Train loss 0.17 on epoch=424
+02/24/2022 14:46:09 - INFO - __main__ - Global step 850 Train loss 0.18 Rouge-L 0.8702837935832088 on epoch=424
+02/24/2022 14:46:11 - INFO - __main__ - Step 860 Global step 860 Train loss 0.16 on epoch=429
+02/24/2022 14:46:13 - INFO - __main__ - Step 870 Global step 870 Train loss 0.18 on epoch=434
+02/24/2022 14:46:16 - INFO - __main__ - Step 880 Global step 880 Train loss 0.18 on epoch=439
+02/24/2022 14:46:18 - INFO - __main__ - Step 890 Global step 890 Train loss 0.18 on epoch=444
+02/24/2022 14:46:20 - INFO - __main__ - Step 900 Global step 900 Train loss 0.16 on epoch=449
+02/24/2022 14:46:31 - INFO - __main__ - Global step 900 Train loss 0.17 Rouge-L 0.8726947553576883 on epoch=449
+02/24/2022 14:46:34 - INFO - __main__ - Step 910 Global step 910 Train loss 0.17 on epoch=454
+02/24/2022 14:46:36 - INFO - __main__ - Step 920 Global step 920 Train loss 0.17 on epoch=459
+02/24/2022 14:46:39 - INFO - __main__ - Step 930 Global step 930 Train loss 0.18 on epoch=464
+02/24/2022 14:46:41 - INFO - __main__ - Step 940 Global step 940 Train loss 0.16 on epoch=469
+02/24/2022 14:46:43 - INFO - __main__ - Step 950 Global step 950 Train loss 0.17 on epoch=474
+02/24/2022 14:46:55 - INFO - __main__ - Global step 950 Train loss 0.17 Rouge-L 0.8793965007064838 on epoch=474
+02/24/2022 14:46:55 - INFO - __main__ - Saving model with best Rouge-L: 0.8777851518906259 -> 0.8793965007064838 on epoch=474, global_step=950
+02/24/2022 14:46:57 - INFO - __main__ - Step 960 Global step 960 Train loss 0.17 on epoch=479
+02/24/2022 14:47:00 - INFO - __main__ - Step 970 Global step 970 Train loss 0.17 on epoch=484
+02/24/2022 14:47:02 - INFO - __main__ - Step 980 Global step 980 Train loss 0.16 on epoch=489
+02/24/2022 14:47:05 - INFO - __main__ - Step 990 Global step 990 Train loss 0.16 on epoch=494
+02/24/2022 14:47:07 - INFO - __main__ - Step 1000 Global step 1000 Train loss 0.16 on epoch=499
+02/24/2022 14:47:18 - INFO - __main__ - Global step 1000 Train loss 0.16 Rouge-L 0.8765402925804338 on epoch=499
+02/24/2022 14:47:20 - INFO - __main__ - Step 1010 Global step 1010 Train loss 0.15 on epoch=504
+02/24/2022 14:47:23 - INFO - __main__ - Step 1020 Global step 1020 Train loss 0.15 on epoch=509
+02/24/2022 14:47:25 - INFO - __main__ - Step 1030 Global step 1030 Train loss 0.14 on epoch=514
+02/24/2022 14:47:27 - INFO - __main__ - Step 1040 Global step 1040 Train loss 0.15 on epoch=519
+02/24/2022 14:47:30 - INFO - __main__ - Step 1050 Global step 1050 Train loss 0.15 on epoch=524
+02/24/2022 14:47:41 - INFO - __main__ - Global step 1050 Train loss 0.15 Rouge-L 0.8796073939007538 on epoch=524
+02/24/2022 14:47:41 - INFO - __main__ - Saving model with best Rouge-L: 0.8793965007064838 -> 0.8796073939007538 on epoch=524, global_step=1050
+02/24/2022 14:47:44 - INFO - __main__ - Step 1060 Global step 1060 Train loss 0.15 on epoch=529
+02/24/2022 14:47:46 - INFO - __main__ - Step 1070 Global step 1070 Train loss 0.14 on epoch=534
+02/24/2022 14:47:49 - INFO - __main__ - Step 1080 Global step 1080 Train loss 0.15 on epoch=539
+02/24/2022 14:47:51 - INFO - __main__ - Step 1090 Global step 1090 Train loss 0.14 on epoch=544
+02/24/2022 14:47:53 - INFO - __main__ - Step 1100 Global step 1100 Train loss 0.16 on epoch=549
+02/24/2022 14:48:05 - INFO - __main__ - Global step 1100 Train loss 0.15 Rouge-L 0.870766816533314 on epoch=549
+02/24/2022 14:48:07 - INFO - __main__ - Step 1110 Global step 1110 Train loss 0.14 on epoch=554
+02/24/2022 14:48:09 - INFO - __main__ - Step 1120 Global step 1120 Train loss 0.14 on epoch=559
+02/24/2022 14:48:12 - INFO - __main__ - Step 1130 Global step 1130 Train loss 0.14 on epoch=564
+02/24/2022 14:48:14 - INFO - __main__ - Step 1140 Global step 1140 Train loss 0.13 on epoch=569
+02/24/2022 14:48:16 - INFO - __main__ - Step 1150 Global step 1150 Train loss 0.13 on epoch=574
+02/24/2022 14:48:27 - INFO - __main__ - Global step 1150 Train loss 0.14 Rouge-L 0.8742813926478841 on epoch=574
+02/24/2022 14:48:29 - INFO - __main__ - Step 1160 Global step 1160 Train loss 0.13 on epoch=579
+02/24/2022 14:48:32 - INFO - __main__ - Step 1170 Global step 1170 Train loss 0.13 on epoch=584
+02/24/2022 14:48:34 - INFO - __main__ - Step 1180 Global step 1180 Train loss 0.13 on epoch=589
+02/24/2022 14:48:36 - INFO - __main__ - Step 1190 Global step 1190 Train loss 0.14 on epoch=594
+02/24/2022 14:48:39 - INFO - __main__ - Step 1200 Global step 1200 Train loss 0.13 on epoch=599
+02/24/2022 14:48:50 - INFO - __main__ - Global step 1200 Train loss 0.13 Rouge-L 0.8703243321315595 on epoch=599
+02/24/2022 14:48:53 - INFO - __main__ - Step 1210 Global step 1210 Train loss 0.13 on epoch=604
+02/24/2022 14:48:55 - INFO - __main__ - Step 1220 Global step 1220 Train loss 0.13 on epoch=609
+02/24/2022 14:48:57 - INFO - __main__ - Step 1230 Global step 1230 Train loss 0.12 on epoch=614
+02/24/2022 14:49:00 - INFO - __main__ - Step 1240 Global step 1240 Train loss 0.12 on epoch=619
+02/24/2022 14:49:02 - INFO - __main__ - Step 1250 Global step 1250 Train loss 0.13 on epoch=624
+02/24/2022 14:49:13 - INFO - __main__ - Global step 1250 Train loss 0.13 Rouge-L 0.8810300663949966 on epoch=624
+02/24/2022 14:49:13 - INFO - __main__ - Saving model with best Rouge-L: 0.8796073939007538 -> 0.8810300663949966 on epoch=624, global_step=1250
+02/24/2022 14:49:15 - INFO - __main__ - Step 1260 Global step 1260 Train loss 0.13 on epoch=629
+02/24/2022 14:49:17 - INFO - __main__ - Step 1270 Global step 1270 Train loss 0.13 on epoch=634
+02/24/2022 14:49:20 - INFO - __main__ - Step 1280 Global step 1280 Train loss 0.11 on epoch=639
+02/24/2022 14:49:22 - INFO - __main__ - Step 1290 Global step 1290 Train loss 0.12 on epoch=644
+02/24/2022 14:49:24 - INFO - __main__ - Step 1300 Global step 1300 Train loss 0.11 on epoch=649
+02/24/2022 14:49:36 - INFO - __main__ - Global step 1300 Train loss 0.12 Rouge-L 0.8777935641404695 on epoch=649
+02/24/2022 14:49:38 - INFO - __main__ - Step 1310 Global step 1310 Train loss 0.12 on epoch=654
+02/24/2022 14:49:41 - INFO - __main__ - Step 1320 Global step 1320 Train loss 0.12 on epoch=659
+02/24/2022 14:49:43 - INFO - __main__ - Step 1330 Global step 1330 Train loss 0.11 on epoch=664
+02/24/2022 14:49:45 - INFO - __main__ - Step 1340 Global step 1340 Train loss 0.10 on epoch=669
+02/24/2022 14:49:48 - INFO - __main__ - Step 1350 Global step 1350 Train loss 0.12 on epoch=674
+02/24/2022 14:49:59 - INFO - __main__ - Global step 1350 Train loss 0.11 Rouge-L 0.8629073472006705 on epoch=674
+02/24/2022 14:50:01 - INFO - __main__ - Step 1360 Global step 1360 Train loss 0.11 on epoch=679
+02/24/2022 14:50:03 - INFO - __main__ - Step 1370 Global step 1370 Train loss 0.11 on epoch=684
+02/24/2022 14:50:06 - INFO - __main__ - Step 1380 Global step 1380 Train loss 0.10 on epoch=689
+02/24/2022 14:50:08 - INFO - __main__ - Step 1390 Global step 1390 Train loss 0.10 on epoch=694
+02/24/2022 14:50:10 - INFO - __main__ - Step 1400 Global step 1400 Train loss 0.12 on epoch=699
+02/24/2022 14:50:22 - INFO - __main__ - Global step 1400 Train loss 0.11 Rouge-L 0.8709948117432789 on epoch=699
+02/24/2022 14:50:24 - INFO - __main__ - Step 1410 Global step 1410 Train loss 0.11 on epoch=704
+02/24/2022 14:50:26 - INFO - __main__ - Step 1420 Global step 1420 Train loss 0.10 on epoch=709
+02/24/2022 14:50:29 - INFO - __main__ - Step 1430 Global step 1430 Train loss 0.10 on epoch=714
+02/24/2022 14:50:31 - INFO - __main__ - Step 1440 Global step 1440 Train loss 0.10 on epoch=719
+02/24/2022 14:50:33 - INFO - __main__ - Step 1450 Global step 1450 Train loss 0.10 on epoch=724
+02/24/2022 14:50:44 - INFO - __main__ - Global step 1450 Train loss 0.10 Rouge-L 0.8779954322247983 on epoch=724
+02/24/2022 14:50:47 - INFO - __main__ - Step 1460 Global step 1460 Train loss 0.10 on epoch=729
+02/24/2022 14:50:49 - INFO - __main__ - Step 1470 Global step 1470 Train loss 0.10 on epoch=734
+02/24/2022 14:50:51 - INFO - __main__ - Step 1480 Global step 1480 Train loss 0.09 on epoch=739
+02/24/2022 14:50:54 - INFO - __main__ - Step 1490 Global step 1490 Train loss 0.09 on epoch=744
+02/24/2022 14:50:56 - INFO - __main__ - Step 1500 Global step 1500 Train loss 0.10 on epoch=749
+02/24/2022 14:51:07 - INFO - __main__ - Global step 1500 Train loss 0.09 Rouge-L 0.8554228422578504 on epoch=749
+02/24/2022 14:51:09 - INFO - __main__ - Step 1510 Global step 1510 Train loss 0.09 on epoch=754
+02/24/2022 14:51:12 - INFO - __main__ - Step 1520 Global step 1520 Train loss 0.09 on epoch=759
+02/24/2022 14:51:14 - INFO - __main__ - Step 1530 Global step 1530 Train loss 0.09 on epoch=764
+02/24/2022 14:51:16 - INFO - __main__ - Step 1540 Global step 1540 Train loss 0.08 on epoch=769
+02/24/2022 14:51:19 - INFO - __main__ - Step 1550 Global step 1550 Train loss 0.08 on epoch=774
+02/24/2022 14:51:30 - INFO - __main__ - Global step 1550 Train loss 0.09 Rouge-L 0.8747773271856951 on epoch=774
+02/24/2022 14:51:32 - INFO - __main__ - Step 1560 Global step 1560 Train loss 0.10 on epoch=779
+02/24/2022 14:51:35 - INFO - __main__ - Step 1570 Global step 1570 Train loss 0.10 on epoch=784
+02/24/2022 14:51:37 - INFO - __main__ - Step 1580 Global step 1580 Train loss 0.09 on epoch=789
+02/24/2022 14:51:39 - INFO - __main__ - Step 1590 Global step 1590 Train loss 0.09 on epoch=794
+02/24/2022 14:51:42 - INFO - __main__ - Step 1600 Global step 1600 Train loss 0.09 on epoch=799
+02/24/2022 14:51:53 - INFO - __main__ - Global step 1600 Train loss 0.09 Rouge-L 0.882081281674053 on epoch=799
+02/24/2022 14:51:53 - INFO - __main__ - Saving model with best Rouge-L: 0.8810300663949966 -> 0.882081281674053 on epoch=799, global_step=1600
+02/24/2022 14:51:55 - INFO - __main__ - Step 1610 Global step 1610 Train loss 0.10 on epoch=804
+02/24/2022 14:51:57 - INFO - __main__ - Step 1620 Global step 1620 Train loss 0.08 on epoch=809
+02/24/2022 14:52:00 - INFO - __main__ - Step 1630 Global step 1630 Train loss 0.09 on epoch=814
+02/24/2022 14:52:02 - INFO - __main__ - Step 1640 Global step 1640 Train loss 0.08 on epoch=819
+02/24/2022 14:52:04 - INFO - __main__ - Step 1650 Global step 1650 Train loss 0.08 on epoch=824
+02/24/2022 14:52:16 - INFO - __main__ - Global step 1650 Train loss 0.09 Rouge-L 0.8907172199243032 on epoch=824
+02/24/2022 14:52:16 - INFO - __main__ - Saving model with best Rouge-L: 0.882081281674053 -> 0.8907172199243032 on epoch=824, global_step=1650
+02/24/2022 14:52:19 - INFO - __main__ - Step 1660 Global step 1660 Train loss 0.08 on epoch=829
+02/24/2022 14:52:21 - INFO - __main__ - Step 1670 Global step 1670 Train loss 0.09 on epoch=834
+02/24/2022 14:52:23 - INFO - __main__ - Step 1680 Global step 1680 Train loss 0.09 on epoch=839
+02/24/2022 14:52:26 - INFO - __main__ - Step 1690 Global step 1690 Train loss 0.09 on epoch=844
+02/24/2022 14:52:28 - INFO - __main__ - Step 1700 Global step 1700 Train loss 0.08 on epoch=849
+02/24/2022 14:52:39 - INFO - __main__ - Global step 1700 Train loss 0.08 Rouge-L 0.890183197145211 on epoch=849
+02/24/2022 14:52:42 - INFO - __main__ - Step 1710 Global step 1710 Train loss 0.08 on epoch=854
+02/24/2022 14:52:44 - INFO - __main__ - Step 1720 Global step 1720 Train loss 0.08 on epoch=859
+02/24/2022 14:52:46 - INFO - __main__ - Step 1730 Global step 1730 Train loss 0.07 on epoch=864
+02/24/2022 14:52:49 - INFO - __main__ - Step 1740 Global step 1740 Train loss 0.07 on epoch=869
+02/24/2022 14:52:51 - INFO - __main__ - Step 1750 Global step 1750 Train loss 0.07 on epoch=874
+02/24/2022 14:53:02 - INFO - __main__ - Global step 1750 Train loss 0.08 Rouge-L 0.8845109089968147 on epoch=874
+02/24/2022 14:53:04 - INFO - __main__ - Step 1760 Global step 1760 Train loss 0.07 on epoch=879
+02/24/2022 14:53:07 - INFO - __main__ - Step 1770 Global step 1770 Train loss 0.07 on epoch=884
+02/24/2022 14:53:09 - INFO - __main__ - Step 1780 Global step 1780 Train loss 0.07 on epoch=889
+02/24/2022 14:53:11 - INFO - __main__ - Step 1790 Global step 1790 Train loss 0.07 on epoch=894
+02/24/2022 14:53:14 - INFO - __main__ - Step 1800 Global step 1800 Train loss 0.08 on epoch=899
+02/24/2022 14:53:25 - INFO - __main__ - Global step 1800 Train loss 0.07 Rouge-L 0.8797404508794329 on epoch=899
+02/24/2022 14:53:27 - INFO - __main__ - Step 1810 Global step 1810 Train loss 0.07 on epoch=904
+02/24/2022 14:53:30 - INFO - __main__ - Step 1820 Global step 1820 Train loss 0.07 on epoch=909
+02/24/2022 14:53:32 - INFO - __main__ - Step 1830 Global step 1830 Train loss 0.08 on epoch=914
+02/24/2022 14:53:35 - INFO - __main__ - Step 1840 Global step 1840 Train loss 0.07 on epoch=919
+02/24/2022 14:53:37 - INFO - __main__ - Step 1850 Global step 1850 Train loss 0.07 on epoch=924
+02/24/2022 14:53:48 - INFO - __main__ - Global step 1850 Train loss 0.07 Rouge-L 0.8678642422289469 on epoch=924
+02/24/2022 14:53:51 - INFO - __main__ - Step 1860 Global step 1860 Train loss 0.08 on epoch=929
+02/24/2022 14:53:53 - INFO - __main__ - Step 1870 Global step 1870 Train loss 0.07 on epoch=934
+02/24/2022 14:53:55 - INFO - __main__ - Step 1880 Global step 1880 Train loss 0.07 on epoch=939
+02/24/2022 14:53:58 - INFO - __main__ - Step 1890 Global step 1890 Train loss 0.07 on epoch=944
+02/24/2022 14:54:00 - INFO - __main__ - Step 1900 Global step 1900 Train loss 0.07 on epoch=949
+02/24/2022 14:54:11 - INFO - __main__ - Global step 1900 Train loss 0.07 Rouge-L 0.8739520008317885 on epoch=949
+02/24/2022 14:54:14 - INFO - __main__ - Step 1910 Global step 1910 Train loss 0.08 on epoch=954
+02/24/2022 14:54:16 - INFO - __main__ - Step 1920 Global step 1920 Train loss 0.07 on epoch=959
+02/24/2022 14:54:18 - INFO - __main__ - Step 1930 Global step 1930 Train loss 0.07 on epoch=964
+02/24/2022 14:54:21 - INFO - __main__ - Step 1940 Global step 1940 Train loss 0.07 on epoch=969
+02/24/2022 14:54:23 - INFO - __main__ - Step 1950 Global step 1950 Train loss 0.07 on epoch=974
+02/24/2022 14:54:35 - INFO - __main__ - Global step 1950 Train loss 0.07 Rouge-L 0.8862140875257328 on epoch=974
+02/24/2022 14:54:37 - INFO - __main__ - Step 1960 Global step 1960 Train loss 0.07 on epoch=979
+02/24/2022 14:54:39 - INFO - __main__ - Step 1970 Global step 1970 Train loss 0.07 on epoch=984
+02/24/2022 14:54:42 - INFO - __main__ - Step 1980 Global step 1980 Train loss 0.07 on epoch=989
+02/24/2022 14:54:44 - INFO - __main__ - Step 1990 Global step 1990 Train loss 0.06 on epoch=994
+02/24/2022 14:54:46 - INFO - __main__ - Step 2000 Global step 2000 Train loss 0.07 on epoch=999
+02/24/2022 14:54:48 - INFO - __main__ - Start tokenizing ... 32 instances
+02/24/2022 14:54:48 - INFO - __main__ - Printing 3 examples
+02/24/2022 14:54:48 - INFO - __main__ -  [wiki_split] sentence 1: KHOTOUM is a Costume Design ( installation & photography ) exhibition , Opened on November 20th , 2014 in Cairo , Egypt .  [SEP] sentence 2:  Khotoum exhibition is inspired by Egyptian Painter , Abd El - Hady el Gazzar .
+02/24/2022 14:54:48 - INFO - __main__ - ['KHOTOUM is a Costume Design ( installation & photography ) exhibition that is inspired by the great Egyptian Painter , Abd El - Hady el Gazzar .']
+02/24/2022 14:54:48 - INFO - __main__ -  [wiki_split] sentence 1: The instrument is not dodecaphonically tempered , instead using the Istrian scale .  [SEP] sentence 2:  Its sound is distinct and unusual .
+02/24/2022 14:54:48 - INFO - __main__ - ['The instrument is not dodecaphonically tempered , it uses the Istrian scale and its sound is distinct and unusual .']
+02/24/2022 14:54:48 - INFO - __main__ -  [wiki_split] sentence 1: Male Tapanuli orangutans produce loud , long distance calls that can last for up to two minutes .  [SEP] sentence 2:  Their calls have a higher frequency and a higher number of pulses than those of other orangutan species .
+02/24/2022 14:54:48 - INFO - __main__ - ['Male Tapanuli orangutans produce loud , long distance calls with a high frequency and a high number of pulses distinct from those of other orangutan species .']
+02/24/2022 14:54:48 - INFO - __main__ - Tokenizing Input ...
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+02/24/2022 14:54:48 - INFO - __main__ - Tokenizing Output ...
+02/24/2022 14:54:48 - INFO - __main__ - Loaded 32 examples from train data
+use DistributedSampler
+02/24/2022 14:54:48 - INFO - __main__ - Start tokenizing ... 32 instances
+02/24/2022 14:54:48 - INFO - __main__ - Printing 3 examples
+02/24/2022 14:54:48 - INFO - __main__ -  [wiki_split] sentence 1: Under the name '' J.J. Solari '' , he became a writer of short stories .  [SEP] sentence 2:  They were collected in a 2007 anthology called '' When Bikers Meet Humans '' .
+02/24/2022 14:54:48 - INFO - __main__ - ["Under the name '' J.J. Solari '' , he became a writer of short stories for biker magazines such as , which were collected in a 2007 anthology called '' When Bikers Meet Humans '' ."]
+02/24/2022 14:54:48 - INFO - __main__ -  [wiki_split] sentence 1: It featured others , notables like David Tyree who was a free agent due to the lack of depth on the New York Giants .  [SEP] sentence 2:  The most notable being Brett Favre of the New York Jets after coming out of retirement .
+02/24/2022 14:54:48 - INFO - __main__ - ['It featured others , notables like David Tyree who was a free agent due to the lack of depth on the New York Giants , with the most notable being Favre of the Jets after coming out of retirement .']
+02/24/2022 14:54:48 - INFO - __main__ -  [wiki_split] sentence 1: LED lamps are made that replace screw - in incandescent or compact fluorescent light bulbs .  [SEP] sentence 2:  Most LED lamps replace incandescent bulbs rated from 5 to 60 watts .
+02/24/2022 14:54:48 - INFO - __main__ - ['LED lamps are made that replace screw - in incandescent or compact fluorescent light bulbs , mostly replacing incandescent bulbs rated from 5 to 60 watts .']
+02/24/2022 14:54:48 - INFO - __main__ - Tokenizing Input ...
+02/24/2022 14:54:48 - INFO - __main__ - Tokenizing Output ...
+02/24/2022 14:54:48 - INFO - __main__ - Loaded 32 examples from dev data
+02/24/2022 14:54:58 - INFO - __main__ - Global step 2000 Train loss 0.07 Rouge-L 0.8806234568388156 on epoch=999
+02/24/2022 14:54:58 - INFO - __main__ - save last model!
+02/24/2022 14:54:58 - INFO - __main__ - Loading checkpoint from best ckpt on the fly
+02/24/2022 14:54:58 - INFO - __main__ - Start tokenizing ... 5000 instances
+02/24/2022 14:54:58 - INFO - __main__ - Printing 3 examples
+02/24/2022 14:54:58 - INFO - __main__ -  [wiki_split] sentence 1: ' Lauren Rose Crace ' , born 25th of May 1986 in Birmingham , England , is the daughter of Jim Crace who is a contemporary English writer .  [SEP] sentence 2:  Crace currently plays the part of '' Ronnie Mitchell 's '' long lost daughter Danielle Jones ( Amy ) in the soap opera '' EastEnders '' .
+02/24/2022 14:54:58 - INFO - __main__ - ["' Lauren Rose Crace ' , born 25th of May 1986 in Birmingham , England , currently plays the part of '' Ronnie Mitchell 's '' long lost daughter Danielle Jones ( Amy ) in the soap opera '' EastEnders '' ."]
+02/24/2022 14:54:58 - INFO - __main__ -  [wiki_split] sentence 1: '' A Living Library '' was Sherk 's work that consisted of transforming buried urban streams and asphalted public spaces into thriving art gardens .  [SEP] sentence 2:  She transformed these spaces for to build educations centers for children in communities in San Francisco and New York City .
+02/24/2022 14:54:58 - INFO - __main__ - ["'' A Living Library '' was Bonnie Sherk 's work of transforming buried urban streams and asphalted public spaces into thriving educational art gardens for communities in San Francisco and New York City ."]
+02/24/2022 14:54:58 - INFO - __main__ -  [wiki_split] sentence 1: '' All Singing , All Dancing '' is the eleventh episode of '' The Simpsons '' ' ninth season .  [SEP] sentence 2:  It originally aired on the Fox network in the United States on January 4 , 1998 .
+02/24/2022 14:54:58 - INFO - __main__ - ["'' All Singing , All Dancing '' is the eleventh episode of '' The Simpsons '' ' ninth season and originally aired on the Fox network on January 4 , 1998 ."]
+02/24/2022 14:54:58 - INFO - __main__ - Tokenizing Input ...
+02/24/2022 14:55:01 - INFO - __main__ - Tokenizing Output ...
+02/24/2022 14:55:02 - INFO - __main__ - load prompt embedding from ckpt
+02/24/2022 14:55:03 - INFO - root - ShardedDDP bucket size: 8.00M parameters, model size 746.97M parameters
+02/24/2022 14:55:03 - INFO - __main__ - Starting training!
+02/24/2022 14:55:06 - INFO - __main__ - Loaded 5000 examples from test data
+02/24/2022 15:24:17 - INFO - __main__ - Saved prediction in models/T5-large-maml-random-3e-5-2-5000-5e-1/singletask-wiki_split/wiki_split_32_100_0.5_8_predictions.txt
+02/24/2022 15:24:22 - INFO - __main__ - Rouge-L on test data: 0.8703
+02/24/2022 15:24:22 - INFO - __main__ - prefix=wiki_split_32_100, lr=0.5, bsz=8, dev_performance=0.8907172199243032, test_performance=0.8702633735700505
+02/24/2022 15:24:23 - INFO - __main__ - Running ... prefix=wiki_split_32_100, lr=0.4, bsz=8 ...
+02/24/2022 15:24:23 - INFO - __main__ - Start tokenizing ... 32 instances
+02/24/2022 15:24:23 - INFO - __main__ - Printing 3 examples
+02/24/2022 15:24:23 - INFO - __main__ -  [wiki_split] sentence 1: KHOTOUM is a Costume Design ( installation & photography ) exhibition , Opened on November 20th , 2014 in Cairo , Egypt .  [SEP] sentence 2:  Khotoum exhibition is inspired by Egyptian Painter , Abd El - Hady el Gazzar .
+02/24/2022 15:24:23 - INFO - __main__ - ['KHOTOUM is a Costume Design ( installation & photography ) exhibition that is inspired by the great Egyptian Painter , Abd El - Hady el Gazzar .']
+02/24/2022 15:24:23 - INFO - __main__ -  [wiki_split] sentence 1: The instrument is not dodecaphonically tempered , instead using the Istrian scale .  [SEP] sentence 2:  Its sound is distinct and unusual .
+02/24/2022 15:24:23 - INFO - __main__ - ['The instrument is not dodecaphonically tempered , it uses the Istrian scale and its sound is distinct and unusual .']
+02/24/2022 15:24:23 - INFO - __main__ -  [wiki_split] sentence 1: Male Tapanuli orangutans produce loud , long distance calls that can last for up to two minutes .  [SEP] sentence 2:  Their calls have a higher frequency and a higher number of pulses than those of other orangutan species .
+02/24/2022 15:24:23 - INFO - __main__ - ['Male Tapanuli orangutans produce loud , long distance calls with a high frequency and a high number of pulses distinct from those of other orangutan species .']
+02/24/2022 15:24:23 - INFO - __main__ - Tokenizing Input ...
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+/opt/conda/envs/meta/lib/python3.9/site-packages/transformers/tokenization_utils_base.py:2105: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+02/24/2022 15:24:23 - INFO - __main__ - Tokenizing Output ...
+02/24/2022 15:24:24 - INFO - __main__ - Loaded 32 examples from train data
+use DistributedSampler
+02/24/2022 15:24:24 - INFO - __main__ - Start tokenizing ... 32 instances
+02/24/2022 15:24:24 - INFO - __main__ - Printing 3 examples
+02/24/2022 15:24:24 - INFO - __main__ -  [wiki_split] sentence 1: Under the name '' J.J. Solari '' , he became a writer of short stories .  [SEP] sentence 2:  They were collected in a 2007 anthology called '' When Bikers Meet Humans '' .
+02/24/2022 15:24:24 - INFO - __main__ - ["Under the name '' J.J. Solari '' , he became a writer of short stories for biker magazines such as , which were collected in a 2007 anthology called '' When Bikers Meet Humans '' ."]
+02/24/2022 15:24:24 - INFO - __main__ -  [wiki_split] sentence 1: It featured others , notables like David Tyree who was a free agent due to the lack of depth on the New York Giants .  [SEP] sentence 2:  The most notable being Brett Favre of the New York Jets after coming out of retirement .
+02/24/2022 15:24:24 - INFO - __main__ - ['It featured others , notables like David Tyree who was a free agent due to the lack of depth on the New York Giants , with the most notable being Favre of the Jets after coming out of retirement .']
+02/24/2022 15:24:24 - INFO - __main__ -  [wiki_split] sentence 1: LED lamps are made that replace screw - in incandescent or compact fluorescent light bulbs .  [SEP] sentence 2:  Most LED lamps replace incandescent bulbs rated from 5 to 60 watts .
+02/24/2022 15:24:24 - INFO - __main__ - ['LED lamps are made that replace screw - in incandescent or compact fluorescent light bulbs , mostly replacing incandescent bulbs rated from 5 to 60 watts .']
+02/24/2022 15:24:24 - INFO - __main__ - Tokenizing Input ...
+02/24/2022 15:24:24 - INFO - __main__ - Tokenizing Output ...
+02/24/2022 15:24:24 - INFO - __main__ - Loaded 32 examples from dev data
+02/24/2022 15:24:37 - INFO - __main__ - load prompt embedding from ckpt
+02/24/2022 15:24:38 - INFO - root - ShardedDDP bucket size: 8.00M parameters, model size 746.97M parameters
+02/24/2022 15:24:38 - INFO - __main__ - Starting training!
+02/24/2022 15:24:41 - INFO - __main__ - Step 10 Global step 10 Train loss 0.82 on epoch=4
+02/24/2022 15:24:44 - INFO - __main__ - Step 20 Global step 20 Train loss 0.70 on epoch=9
+02/24/2022 15:24:46 - INFO - __main__ - Step 30 Global step 30 Train loss 0.64 on epoch=14
+02/24/2022 15:24:48 - INFO - __main__ - Step 40 Global step 40 Train loss 0.61 on epoch=19
+02/24/2022 15:24:51 - INFO - __main__ - Step 50 Global step 50 Train loss 0.59 on epoch=24
+02/24/2022 15:25:02 - INFO - __main__ - Global step 50 Train loss 0.67 Rouge-L 0.7875387293812833 on epoch=24
+02/24/2022 15:25:02 - INFO - __main__ - Saving model with best Rouge-L: -1.0 -> 0.7875387293812833 on epoch=24, global_step=50
+02/24/2022 15:25:04 - INFO - __main__ - Step 60 Global step 60 Train loss 0.58 on epoch=29
+02/24/2022 15:25:07 - INFO - __main__ - Step 70 Global step 70 Train loss 0.56 on epoch=34
+02/24/2022 15:25:09 - INFO - __main__ - Step 80 Global step 80 Train loss 0.55 on epoch=39
+02/24/2022 15:25:11 - INFO - __main__ - Step 90 Global step 90 Train loss 0.53 on epoch=44
+02/24/2022 15:25:14 - INFO - __main__ - Step 100 Global step 100 Train loss 0.53 on epoch=49
+02/24/2022 15:25:26 - INFO - __main__ - Global step 100 Train loss 0.55 Rouge-L 0.8586240157470528 on epoch=49
+02/24/2022 15:25:26 - INFO - __main__ - Saving model with best Rouge-L: 0.7875387293812833 -> 0.8586240157470528 on epoch=49, global_step=100
+02/24/2022 15:25:28 - INFO - __main__ - Step 110 Global step 110 Train loss 0.53 on epoch=54
+02/24/2022 15:25:30 - INFO - __main__ - Step 120 Global step 120 Train loss 0.50 on epoch=59
+02/24/2022 15:25:33 - INFO - __main__ - Step 130 Global step 130 Train loss 0.50 on epoch=64
+02/24/2022 15:25:35 - INFO - __main__ - Step 140 Global step 140 Train loss 0.49 on epoch=69
+02/24/2022 15:25:37 - INFO - __main__ - Step 150 Global step 150 Train loss 0.48 on epoch=74
+02/24/2022 15:25:49 - INFO - __main__ - Global step 150 Train loss 0.50 Rouge-L 0.8559061549559362 on epoch=74
+02/24/2022 15:25:52 - INFO - __main__ - Step 160 Global step 160 Train loss 0.47 on epoch=79
+02/24/2022 15:25:54 - INFO - __main__ - Step 170 Global step 170 Train loss 0.47 on epoch=84
+02/24/2022 15:25:56 - INFO - __main__ - Step 180 Global step 180 Train loss 0.46 on epoch=89
+02/24/2022 15:25:59 - INFO - __main__ - Step 190 Global step 190 Train loss 0.44 on epoch=94
+02/24/2022 15:26:01 - INFO - __main__ - Step 200 Global step 200 Train loss 0.44 on epoch=99
+02/24/2022 15:26:11 - INFO - __main__ - Global step 200 Train loss 0.46 Rouge-L 0.8560781747128157 on epoch=99
+02/24/2022 15:26:14 - INFO - __main__ - Step 210 Global step 210 Train loss 0.44 on epoch=104
+02/24/2022 15:26:16 - INFO - __main__ - Step 220 Global step 220 Train loss 0.43 on epoch=109
+02/24/2022 15:26:19 - INFO - __main__ - Step 230 Global step 230 Train loss 0.42 on epoch=114
+02/24/2022 15:26:21 - INFO - __main__ - Step 240 Global step 240 Train loss 0.43 on epoch=119
+02/24/2022 15:26:23 - INFO - __main__ - Step 250 Global step 250 Train loss 0.42 on epoch=124
+02/24/2022 15:26:35 - INFO - __main__ - Global step 250 Train loss 0.43 Rouge-L 0.8729491387977737 on epoch=124
+02/24/2022 15:26:35 - INFO - __main__ - Saving model with best Rouge-L: 0.8586240157470528 -> 0.8729491387977737 on epoch=124, global_step=250
+02/24/2022 15:26:37 - INFO - __main__ - Step 260 Global step 260 Train loss 0.40 on epoch=129
+02/24/2022 15:26:40 - INFO - __main__ - Step 270 Global step 270 Train loss 0.41 on epoch=134
+02/24/2022 15:26:42 - INFO - __main__ - Step 280 Global step 280 Train loss 0.39 on epoch=139
+02/24/2022 15:26:44 - INFO - __main__ - Step 290 Global step 290 Train loss 0.40 on epoch=144
+02/24/2022 15:26:47 - INFO - __main__ - Step 300 Global step 300 Train loss 0.38 on epoch=149
+02/24/2022 15:26:57 - INFO - __main__ - Global step 300 Train loss 0.39 Rouge-L 0.8714349175782756 on epoch=149
+02/24/2022 15:26:59 - INFO - __main__ - Step 310 Global step 310 Train loss 0.38 on epoch=154
+02/24/2022 15:27:02 - INFO - __main__ - Step 320 Global step 320 Train loss 0.38 on epoch=159
+02/24/2022 15:27:04 - INFO - __main__ - Step 330 Global step 330 Train loss 0.36 on epoch=164
+02/24/2022 15:27:07 - INFO - __main__ - Step 340 Global step 340 Train loss 0.35 on epoch=169
+02/24/2022 15:27:09 - INFO - __main__ - Step 350 Global step 350 Train loss 0.36 on epoch=174
+02/24/2022 15:27:19 - INFO - __main__ - Global step 350 Train loss 0.37 Rouge-L 0.8574464774223701 on epoch=174
+02/24/2022 15:27:22 - INFO - __main__ - Step 360 Global step 360 Train loss 0.35 on epoch=179
+02/24/2022 15:27:24 - INFO - __main__ - Step 370 Global step 370 Train loss 0.36 on epoch=184
+02/24/2022 15:27:26 - INFO - __main__ - Step 380 Global step 380 Train loss 0.35 on epoch=189
+02/24/2022 15:27:29 - INFO - __main__ - Step 390 Global step 390 Train loss 0.34 on epoch=194
+02/24/2022 15:27:31 - INFO - __main__ - Step 400 Global step 400 Train loss 0.34 on epoch=199
+02/24/2022 15:27:41 - INFO - __main__ - Global step 400 Train loss 0.35 Rouge-L 0.8689568306234412 on epoch=199
+02/24/2022 15:27:44 - INFO - __main__ - Step 410 Global step 410 Train loss 0.33 on epoch=204
+02/24/2022 15:27:46 - INFO - __main__ - Step 420 Global step 420 Train loss 0.34 on epoch=209
+02/24/2022 15:27:48 - INFO - __main__ - Step 430 Global step 430 Train loss 0.32 on epoch=214
+02/24/2022 15:27:51 - INFO - __main__ - Step 440 Global step 440 Train loss 0.33 on epoch=219
+02/24/2022 15:27:53 - INFO - __main__ - Step 450 Global step 450 Train loss 0.33 on epoch=224
+02/24/2022 15:28:04 - INFO - __main__ - Global step 450 Train loss 0.33 Rouge-L 0.8748200531835366 on epoch=224
+02/24/2022 15:28:04 - INFO - __main__ - Saving model with best Rouge-L: 0.8729491387977737 -> 0.8748200531835366 on epoch=224, global_step=450
+02/24/2022 15:28:06 - INFO - __main__ - Step 460 Global step 460 Train loss 0.31 on epoch=229
+02/24/2022 15:28:08 - INFO - __main__ - Step 470 Global step 470 Train loss 0.31 on epoch=234
+02/24/2022 15:28:11 - INFO - __main__ - Step 480 Global step 480 Train loss 0.31 on epoch=239
+02/24/2022 15:28:13 - INFO - __main__ - Step 490 Global step 490 Train loss 0.30 on epoch=244
+02/24/2022 15:28:16 - INFO - __main__ - Step 500 Global step 500 Train loss 0.31 on epoch=249
+02/24/2022 15:28:27 - INFO - __main__ - Global step 500 Train loss 0.31 Rouge-L 0.8669077704130745 on epoch=249
+02/24/2022 15:28:29 - INFO - __main__ - Step 510 Global step 510 Train loss 0.31 on epoch=254
+02/24/2022 15:28:32 - INFO - __main__ - Step 520 Global step 520 Train loss 0.31 on epoch=259
+02/24/2022 15:28:34 - INFO - __main__ - Step 530 Global step 530 Train loss 0.29 on epoch=264
+02/24/2022 15:28:37 - INFO - __main__ - Step 540 Global step 540 Train loss 0.30 on epoch=269
+02/24/2022 15:28:39 - INFO - __main__ - Step 550 Global step 550 Train loss 0.29 on epoch=274
+02/24/2022 15:28:51 - INFO - __main__ - Global step 550 Train loss 0.30 Rouge-L 0.8778378009294665 on epoch=274
+02/24/2022 15:28:51 - INFO - __main__ - Saving model with best Rouge-L: 0.8748200531835366 -> 0.8778378009294665 on epoch=274, global_step=550
+02/24/2022 15:28:53 - INFO - __main__ - Step 560 Global step 560 Train loss 0.30 on epoch=279
+02/24/2022 15:28:55 - INFO - __main__ - Step 570 Global step 570 Train loss 0.27 on epoch=284
+02/24/2022 15:28:58 - INFO - __main__ - Step 580 Global step 580 Train loss 0.28 on epoch=289
+02/24/2022 15:29:00 - INFO - __main__ - Step 590 Global step 590 Train loss 0.28 on epoch=294
+02/24/2022 15:29:02 - INFO - __main__ - Step 600 Global step 600 Train loss 0.27 on epoch=299
+02/24/2022 15:29:14 - INFO - __main__ - Global step 600 Train loss 0.28 Rouge-L 0.8640347506038931 on epoch=299
+02/24/2022 15:29:16 - INFO - __main__ - Step 610 Global step 610 Train loss 0.28 on epoch=304
+02/24/2022 15:29:19 - INFO - __main__ - Step 620 Global step 620 Train loss 0.27 on epoch=309
+02/24/2022 15:29:21 - INFO - __main__ - Step 630 Global step 630 Train loss 0.28 on epoch=314
+02/24/2022 15:29:23 - INFO - __main__ - Step 640 Global step 640 Train loss 0.26 on epoch=319
+02/24/2022 15:29:26 - INFO - __main__ - Step 650 Global step 650 Train loss 0.26 on epoch=324
+02/24/2022 15:29:37 - INFO - __main__ - Global step 650 Train loss 0.27 Rouge-L 0.8717537916268548 on epoch=324
+02/24/2022 15:29:39 - INFO - __main__ - Step 660 Global step 660 Train loss 0.27 on epoch=329
+02/24/2022 15:29:42 - INFO - __main__ - Step 670 Global step 670 Train loss 0.26 on epoch=334
+02/24/2022 15:29:44 - INFO - __main__ - Step 680 Global step 680 Train loss 0.27 on epoch=339
+02/24/2022 15:29:46 - INFO - __main__ - Step 690 Global step 690 Train loss 0.25 on epoch=344
+02/24/2022 15:29:49 - INFO - __main__ - Step 700 Global step 700 Train loss 0.25 on epoch=349
+02/24/2022 15:29:59 - INFO - __main__ - Global step 700 Train loss 0.26 Rouge-L 0.8610735579430746 on epoch=349
+02/24/2022 15:30:02 - INFO - __main__ - Step 710 Global step 710 Train loss 0.25 on epoch=354
+02/24/2022 15:30:04 - INFO - __main__ - Step 720 Global step 720 Train loss 0.24 on epoch=359
+02/24/2022 15:30:06 - INFO - __main__ - Step 730 Global step 730 Train loss 0.25 on epoch=364
+02/24/2022 15:30:09 - INFO - __main__ - Step 740 Global step 740 Train loss 0.25 on epoch=369
+02/24/2022 15:30:11 - INFO - __main__ - Step 750 Global step 750 Train loss 0.24 on epoch=374
+02/24/2022 15:30:23 - INFO - __main__ - Global step 750 Train loss 0.24 Rouge-L 0.8607345119211891 on epoch=374
+02/24/2022 15:30:25 - INFO - __main__ - Step 760 Global step 760 Train loss 0.22 on epoch=379
+02/24/2022 15:30:27 - INFO - __main__ - Step 770 Global step 770 Train loss 0.25 on epoch=384
+02/24/2022 15:30:30 - INFO - __main__ - Step 780 Global step 780 Train loss 0.23 on epoch=389
+02/24/2022 15:30:32 - INFO - __main__ - Step 790 Global step 790 Train loss 0.23 on epoch=394
+02/24/2022 15:30:34 - INFO - __main__ - Step 800 Global step 800 Train loss 0.23 on epoch=399
+02/24/2022 15:30:46 - INFO - __main__ - Global step 800 Train loss 0.23 Rouge-L 0.865809674147316 on epoch=399
+02/24/2022 15:30:48 - INFO - __main__ - Step 810 Global step 810 Train loss 0.24 on epoch=404
+02/24/2022 15:30:50 - INFO - __main__ - Step 820 Global step 820 Train loss 0.24 on epoch=409
+02/24/2022 15:30:53 - INFO - __main__ - Step 830 Global step 830 Train loss 0.23 on epoch=414
+02/24/2022 15:30:55 - INFO - __main__ - Step 840 Global step 840 Train loss 0.21 on epoch=419
+02/24/2022 15:30:57 - INFO - __main__ - Step 850 Global step 850 Train loss 0.22 on epoch=424
+02/24/2022 15:31:09 - INFO - __main__ - Global step 850 Train loss 0.22 Rouge-L 0.8786743388961471 on epoch=424
+02/24/2022 15:31:09 - INFO - __main__ - Saving model with best Rouge-L: 0.8778378009294665 -> 0.8786743388961471 on epoch=424, global_step=850
+02/24/2022 15:31:11 - INFO - __main__ - Step 860 Global step 860 Train loss 0.22 on epoch=429
+02/24/2022 15:31:14 - INFO - __main__ - Step 870 Global step 870 Train loss 0.21 on epoch=434
+02/24/2022 15:31:16 - INFO - __main__ - Step 880 Global step 880 Train loss 0.22 on epoch=439
+02/24/2022 15:31:18 - INFO - __main__ - Step 890 Global step 890 Train loss 0.21 on epoch=444
+02/24/2022 15:31:21 - INFO - __main__ - Step 900 Global step 900 Train loss 0.21 on epoch=449
+02/24/2022 15:31:32 - INFO - __main__ - Global step 900 Train loss 0.22 Rouge-L 0.882064520344348 on epoch=449
+02/24/2022 15:31:32 - INFO - __main__ - Saving model with best Rouge-L: 0.8786743388961471 -> 0.882064520344348 on epoch=449, global_step=900
+02/24/2022 15:31:35 - INFO - __main__ - Step 910 Global step 910 Train loss 0.22 on epoch=454
+02/24/2022 15:31:37 - INFO - __main__ - Step 920 Global step 920 Train loss 0.21 on epoch=459
+02/24/2022 15:31:39 - INFO - __main__ - Step 930 Global step 930 Train loss 0.22 on epoch=464
+02/24/2022 15:31:41 - INFO - __main__ - Step 940 Global step 940 Train loss 0.20 on epoch=469
+02/24/2022 15:31:44 - INFO - __main__ - Step 950 Global step 950 Train loss 0.19 on epoch=474
+02/24/2022 15:31:55 - INFO - __main__ - Global step 950 Train loss 0.21 Rouge-L 0.8774693342228399 on epoch=474
+02/24/2022 15:31:58 - INFO - __main__ - Step 960 Global step 960 Train loss 0.21 on epoch=479
+02/24/2022 15:32:00 - INFO - __main__ - Step 970 Global step 970 Train loss 0.21 on epoch=484
+02/24/2022 15:32:02 - INFO - __main__ - Step 980 Global step 980 Train loss 0.20 on epoch=489
+02/24/2022 15:32:05 - INFO - __main__ - Step 990 Global step 990 Train loss 0.20 on epoch=494
+02/24/2022 15:32:07 - INFO - __main__ - Step 1000 Global step 1000 Train loss 0.18 on epoch=499
+02/24/2022 15:32:18 - INFO - __main__ - Global step 1000 Train loss 0.20 Rouge-L 0.8649560045995071 on epoch=499
+02/24/2022 15:32:21 - INFO - __main__ - Step 1010 Global step 1010 Train loss 0.19 on epoch=504
+02/24/2022 15:32:23 - INFO - __main__ - Step 1020 Global step 1020 Train loss 0.19 on epoch=509
+02/24/2022 15:32:25 - INFO - __main__ - Step 1030 Global step 1030 Train loss 0.20 on epoch=514
+02/24/2022 15:32:28 - INFO - __main__ - Step 1040 Global step 1040 Train loss 0.19 on epoch=519
+02/24/2022 15:32:30 - INFO - __main__ - Step 1050 Global step 1050 Train loss 0.18 on epoch=524
+02/24/2022 15:32:41 - INFO - __main__ - Global step 1050 Train loss 0.19 Rouge-L 0.8581223010979814 on epoch=524
+02/24/2022 15:32:43 - INFO - __main__ - Step 1060 Global step 1060 Train loss 0.20 on epoch=529
+02/24/2022 15:32:45 - INFO - __main__ - Step 1070 Global step 1070 Train loss 0.18 on epoch=534
+02/24/2022 15:32:48 - INFO - __main__ - Step 1080 Global step 1080 Train loss 0.18 on epoch=539
+02/24/2022 15:32:50 - INFO - __main__ - Step 1090 Global step 1090 Train loss 0.19 on epoch=544
+02/24/2022 15:32:52 - INFO - __main__ - Step 1100 Global step 1100 Train loss 0.19 on epoch=549
+02/24/2022 15:33:03 - INFO - __main__ - Global step 1100 Train loss 0.19 Rouge-L 0.8711108462961412 on epoch=549
+02/24/2022 15:33:06 - INFO - __main__ - Step 1110 Global step 1110 Train loss 0.19 on epoch=554
+02/24/2022 15:33:08 - INFO - __main__ - Step 1120 Global step 1120 Train loss 0.17 on epoch=559
+02/24/2022 15:33:10 - INFO - __main__ - Step 1130 Global step 1130 Train loss 0.18 on epoch=564
+02/24/2022 15:33:12 - INFO - __main__ - Step 1140 Global step 1140 Train loss 0.17 on epoch=569
+02/24/2022 15:33:15 - INFO - __main__ - Step 1150 Global step 1150 Train loss 0.16 on epoch=574
+02/24/2022 15:33:26 - INFO - __main__ - Global step 1150 Train loss 0.17 Rouge-L 0.8671876990094731 on epoch=574
+02/24/2022 15:33:28 - INFO - __main__ - Step 1160 Global step 1160 Train loss 0.17 on epoch=579
+02/24/2022 15:33:31 - INFO - __main__ - Step 1170 Global step 1170 Train loss 0.17 on epoch=584
+02/24/2022 15:33:33 - INFO - __main__ - Step 1180 Global step 1180 Train loss 0.18 on epoch=589
+02/24/2022 15:33:35 - INFO - __main__ - Step 1190 Global step 1190 Train loss 0.17 on epoch=594
+02/24/2022 15:33:37 - INFO - __main__ - Step 1200 Global step 1200 Train loss 0.17 on epoch=599
+02/24/2022 15:33:48 - INFO - __main__ - Global step 1200 Train loss 0.17 Rouge-L 0.846029000625618 on epoch=599
+02/24/2022 15:33:50 - INFO - __main__ - Step 1210 Global step 1210 Train loss 0.17 on epoch=604
+02/24/2022 15:33:52 - INFO - __main__ - Step 1220 Global step 1220 Train loss 0.17 on epoch=609
+02/24/2022 15:33:55 - INFO - __main__ - Step 1230 Global step 1230 Train loss 0.17 on epoch=614
+02/24/2022 15:33:57 - INFO - __main__ - Step 1240 Global step 1240 Train loss 0.14 on epoch=619
+02/24/2022 15:33:59 - INFO - __main__ - Step 1250 Global step 1250 Train loss 0.17 on epoch=624
+02/24/2022 15:34:11 - INFO - __main__ - Global step 1250 Train loss 0.17 Rouge-L 0.87615258133478 on epoch=624
+02/24/2022 15:34:13 - INFO - __main__ - Step 1260 Global step 1260 Train loss 0.15 on epoch=629
+02/24/2022 15:34:15 - INFO - __main__ - Step 1270 Global step 1270 Train loss 0.16 on epoch=634
+02/24/2022 15:34:17 - INFO - __main__ - Step 1280 Global step 1280 Train loss 0.15 on epoch=639
+02/24/2022 15:34:20 - INFO - __main__ - Step 1290 Global step 1290 Train loss 0.16 on epoch=644
+02/24/2022 15:34:22 - INFO - __main__ - Step 1300 Global step 1300 Train loss 0.15 on epoch=649
+02/24/2022 15:34:35 - INFO - __main__ - Global step 1300 Train loss 0.15 Rouge-L 0.8703298089753528 on epoch=649
+02/24/2022 15:34:37 - INFO - __main__ - Step 1310 Global step 1310 Train loss 0.16 on epoch=654
+02/24/2022 15:34:40 - INFO - __main__ - Step 1320 Global step 1320 Train loss 0.15 on epoch=659
+02/24/2022 15:34:42 - INFO - __main__ - Step 1330 Global step 1330 Train loss 0.16 on epoch=664
+02/24/2022 15:34:44 - INFO - __main__ - Step 1340 Global step 1340 Train loss 0.15 on epoch=669
+02/24/2022 15:34:46 - INFO - __main__ - Step 1350 Global step 1350 Train loss 0.15 on epoch=674
+02/24/2022 15:35:00 - INFO - __main__ - Global step 1350 Train loss 0.15 Rouge-L 0.8667129024117586 on epoch=674
+02/24/2022 15:35:02 - INFO - __main__ - Step 1360 Global step 1360 Train loss 0.16 on epoch=679
+02/24/2022 15:35:04 - INFO - __main__ - Step 1370 Global step 1370 Train loss 0.17 on epoch=684
+02/24/2022 15:35:06 - INFO - __main__ - Step 1380 Global step 1380 Train loss 0.15 on epoch=689
+02/24/2022 15:35:09 - INFO - __main__ - Step 1390 Global step 1390 Train loss 0.15 on epoch=694
+02/24/2022 15:35:11 - INFO - __main__ - Step 1400 Global step 1400 Train loss 0.14 on epoch=699
+02/24/2022 15:35:22 - INFO - __main__ - Global step 1400 Train loss 0.15 Rouge-L 0.8650120761800646 on epoch=699
+02/24/2022 15:35:25 - INFO - __main__ - Step 1410 Global step 1410 Train loss 0.15 on epoch=704
+02/24/2022 15:35:27 - INFO - __main__ - Step 1420 Global step 1420 Train loss 0.15 on epoch=709
+02/24/2022 15:35:29 - INFO - __main__ - Step 1430 Global step 1430 Train loss 0.14 on epoch=714
+02/24/2022 15:35:31 - INFO - __main__ - Step 1440 Global step 1440 Train loss 0.14 on epoch=719
+02/24/2022 15:35:34 - INFO - __main__ - Step 1450 Global step 1450 Train loss 0.15 on epoch=724
+02/24/2022 15:35:45 - INFO - __main__ - Global step 1450 Train loss 0.15 Rouge-L 0.8656909145062417 on epoch=724
+02/24/2022 15:35:48 - INFO - __main__ - Step 1460 Global step 1460 Train loss 0.14 on epoch=729
+02/24/2022 15:35:50 - INFO - __main__ - Step 1470 Global step 1470 Train loss 0.13 on epoch=734
+02/24/2022 15:35:52 - INFO - __main__ - Step 1480 Global step 1480 Train loss 0.13 on epoch=739
+02/24/2022 15:35:54 - INFO - __main__ - Step 1490 Global step 1490 Train loss 0.15 on epoch=744
+02/24/2022 15:35:57 - INFO - __main__ - Step 1500 Global step 1500 Train loss 0.13 on epoch=749
+02/24/2022 15:36:07 - INFO - __main__ - Global step 1500 Train loss 0.14 Rouge-L 0.8546507647358703 on epoch=749
+02/24/2022 15:36:10 - INFO - __main__ - Step 1510 Global step 1510 Train loss 0.14 on epoch=754
+02/24/2022 15:36:12 - INFO - __main__ - Step 1520 Global step 1520 Train loss 0.13 on epoch=759
+02/24/2022 15:36:14 - INFO - __main__ - Step 1530 Global step 1530 Train loss 0.13 on epoch=764
+02/24/2022 15:36:17 - INFO - __main__ - Step 1540 Global step 1540 Train loss 0.12 on epoch=769
+02/24/2022 15:36:19 - INFO - __main__ - Step 1550 Global step 1550 Train loss 0.14 on epoch=774
+02/24/2022 15:36:32 - INFO - __main__ - Global step 1550 Train loss 0.13 Rouge-L 0.8541546330261862 on epoch=774
+02/24/2022 15:36:34 - INFO - __main__ - Step 1560 Global step 1560 Train loss 0.13 on epoch=779
+02/24/2022 15:36:37 - INFO - __main__ - Step 1570 Global step 1570 Train loss 0.13 on epoch=784
+02/24/2022 15:36:39 - INFO - __main__ - Step 1580 Global step 1580 Train loss 0.13 on epoch=789
+02/24/2022 15:36:41 - INFO - __main__ - Step 1590 Global step 1590 Train loss 0.12 on epoch=794
+02/24/2022 15:36:44 - INFO - __main__ - Step 1600 Global step 1600 Train loss 0.13 on epoch=799
+02/24/2022 15:36:58 - INFO - __main__ - Global step 1600 Train loss 0.13 Rouge-L 0.8538531921165384 on epoch=799
+02/24/2022 15:37:00 - INFO - __main__ - Step 1610 Global step 1610 Train loss 0.13 on epoch=804
+02/24/2022 15:37:03 - INFO - __main__ - Step 1620 Global step 1620 Train loss 0.13 on epoch=809
+02/24/2022 15:37:05 - INFO - __main__ - Step 1630 Global step 1630 Train loss 0.13 on epoch=814
+02/24/2022 15:37:07 - INFO - __main__ - Step 1640 Global step 1640 Train loss 0.12 on epoch=819
+02/24/2022 15:37:10 - INFO - __main__ - Step 1650 Global step 1650 Train loss 0.12 on epoch=824
+02/24/2022 15:37:21 - INFO - __main__ - Global step 1650 Train loss 0.13 Rouge-L 0.8686114427580847 on epoch=824
+02/24/2022 15:37:23 - INFO - __main__ - Step 1660 Global step 1660 Train loss 0.12 on epoch=829
+02/24/2022 15:37:25 - INFO - __main__ - Step 1670 Global step 1670 Train loss 0.12 on epoch=834
+02/24/2022 15:37:27 - INFO - __main__ - Step 1680 Global step 1680 Train loss 0.12 on epoch=839
+02/24/2022 15:37:30 - INFO - __main__ - Step 1690 Global step 1690 Train loss 0.12 on epoch=844
+02/24/2022 15:37:32 - INFO - __main__ - Step 1700 Global step 1700 Train loss 0.11 on epoch=849
+02/24/2022 15:37:43 - INFO - __main__ - Global step 1700 Train loss 0.12 Rouge-L 0.8603269657974021 on epoch=849
+02/24/2022 15:37:45 - INFO - __main__ - Step 1710 Global step 1710 Train loss 0.11 on epoch=854
+02/24/2022 15:37:48 - INFO - __main__ - Step 1720 Global step 1720 Train loss 0.12 on epoch=859
+02/24/2022 15:37:50 - INFO - __main__ - Step 1730 Global step 1730 Train loss 0.12 on epoch=864
+02/24/2022 15:37:52 - INFO - __main__ - Step 1740 Global step 1740 Train loss 0.11 on epoch=869
+02/24/2022 15:37:54 - INFO - __main__ - Step 1750 Global step 1750 Train loss 0.11 on epoch=874
+02/24/2022 15:38:07 - INFO - __main__ - Global step 1750 Train loss 0.11 Rouge-L 0.8666548312063961 on epoch=874
+02/24/2022 15:38:09 - INFO - __main__ - Step 1760 Global step 1760 Train loss 0.12 on epoch=879
+02/24/2022 15:38:11 - INFO - __main__ - Step 1770 Global step 1770 Train loss 0.12 on epoch=884
+02/24/2022 15:38:14 - INFO - __main__ - Step 1780 Global step 1780 Train loss 0.10 on epoch=889
+02/24/2022 15:38:16 - INFO - __main__ - Step 1790 Global step 1790 Train loss 0.11 on epoch=894
+02/24/2022 15:38:18 - INFO - __main__ - Step 1800 Global step 1800 Train loss 0.11 on epoch=899
+02/24/2022 15:38:29 - INFO - __main__ - Global step 1800 Train loss 0.11 Rouge-L 0.8770753620538285 on epoch=899
+02/24/2022 15:38:31 - INFO - __main__ - Step 1810 Global step 1810 Train loss 0.09 on epoch=904
+02/24/2022 15:38:34 - INFO - __main__ - Step 1820 Global step 1820 Train loss 0.11 on epoch=909
+02/24/2022 15:38:36 - INFO - __main__ - Step 1830 Global step 1830 Train loss 0.11 on epoch=914
+02/24/2022 15:38:38 - INFO - __main__ - Step 1840 Global step 1840 Train loss 0.10 on epoch=919
+02/24/2022 15:38:40 - INFO - __main__ - Step 1850 Global step 1850 Train loss 0.10 on epoch=924
+02/24/2022 15:38:55 - INFO - __main__ - Global step 1850 Train loss 0.10 Rouge-L 0.8662054743528288 on epoch=924
+02/24/2022 15:38:57 - INFO - __main__ - Step 1860 Global step 1860 Train loss 0.10 on epoch=929
+02/24/2022 15:38:59 - INFO - __main__ - Step 1870 Global step 1870 Train loss 0.11 on epoch=934
+02/24/2022 15:39:02 - INFO - __main__ - Step 1880 Global step 1880 Train loss 0.09 on epoch=939
+02/24/2022 15:39:04 - INFO - __main__ - Step 1890 Global step 1890 Train loss 0.11 on epoch=944
+02/24/2022 15:39:06 - INFO - __main__ - Step 1900 Global step 1900 Train loss 0.10 on epoch=949
+02/24/2022 15:39:17 - INFO - __main__ - Global step 1900 Train loss 0.10 Rouge-L 0.8639375268877503 on epoch=949
+02/24/2022 15:39:19 - INFO - __main__ - Step 1910 Global step 1910 Train loss 0.09 on epoch=954
+02/24/2022 15:39:22 - INFO - __main__ - Step 1920 Global step 1920 Train loss 0.09 on epoch=959
+02/24/2022 15:39:24 - INFO - __main__ - Step 1930 Global step 1930 Train loss 0.11 on epoch=964
+02/24/2022 15:39:26 - INFO - __main__ - Step 1940 Global step 1940 Train loss 0.10 on epoch=969
+02/24/2022 15:39:28 - INFO - __main__ - Step 1950 Global step 1950 Train loss 0.08 on epoch=974
+02/24/2022 15:39:40 - INFO - __main__ - Global step 1950 Train loss 0.09 Rouge-L 0.8695753637474208 on epoch=974
+02/24/2022 15:39:42 - INFO - __main__ - Step 1960 Global step 1960 Train loss 0.10 on epoch=979
+02/24/2022 15:39:44 - INFO - __main__ - Step 1970 Global step 1970 Train loss 0.09 on epoch=984
+02/24/2022 15:39:47 - INFO - __main__ - Step 1980 Global step 1980 Train loss 0.09 on epoch=989
+02/24/2022 15:39:49 - INFO - __main__ - Step 1990 Global step 1990 Train loss 0.09 on epoch=994
+02/24/2022 15:39:51 - INFO - __main__ - Step 2000 Global step 2000 Train loss 0.10 on epoch=999
+02/24/2022 15:39:52 - INFO - __main__ - Start tokenizing ... 32 instances
+02/24/2022 15:39:52 - INFO - __main__ - Printing 3 examples
+02/24/2022 15:39:52 - INFO - __main__ -  [wiki_split] sentence 1: KHOTOUM is a Costume Design ( installation & photography ) exhibition , Opened on November 20th , 2014 in Cairo , Egypt .  [SEP] sentence 2:  Khotoum exhibition is inspired by Egyptian Painter , Abd El - Hady el Gazzar .
+02/24/2022 15:39:52 - INFO - __main__ - ['KHOTOUM is a Costume Design ( installation & photography ) exhibition that is inspired by the great Egyptian Painter , Abd El - Hady el Gazzar .']
+02/24/2022 15:39:52 - INFO - __main__ -  [wiki_split] sentence 1: The instrument is not dodecaphonically tempered , instead using the Istrian scale .  [SEP] sentence 2:  Its sound is distinct and unusual .
+02/24/2022 15:39:52 - INFO - __main__ - ['The instrument is not dodecaphonically tempered , it uses the Istrian scale and its sound is distinct and unusual .']
+02/24/2022 15:39:52 - INFO - __main__ -  [wiki_split] sentence 1: Male Tapanuli orangutans produce loud , long distance calls that can last for up to two minutes .  [SEP] sentence 2:  Their calls have a higher frequency and a higher number of pulses than those of other orangutan species .
+02/24/2022 15:39:52 - INFO - __main__ - ['Male Tapanuli orangutans produce loud , long distance calls with a high frequency and a high number of pulses distinct from those of other orangutan species .']
+02/24/2022 15:39:52 - INFO - __main__ - Tokenizing Input ...
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+02/24/2022 15:39:52 - INFO - __main__ - Tokenizing Output ...
+02/24/2022 15:39:52 - INFO - __main__ - Loaded 32 examples from train data
+use DistributedSampler
+02/24/2022 15:39:52 - INFO - __main__ - Start tokenizing ... 32 instances
+02/24/2022 15:39:52 - INFO - __main__ - Printing 3 examples
+02/24/2022 15:39:52 - INFO - __main__ -  [wiki_split] sentence 1: Under the name '' J.J. Solari '' , he became a writer of short stories .  [SEP] sentence 2:  They were collected in a 2007 anthology called '' When Bikers Meet Humans '' .
+02/24/2022 15:39:52 - INFO - __main__ - ["Under the name '' J.J. Solari '' , he became a writer of short stories for biker magazines such as , which were collected in a 2007 anthology called '' When Bikers Meet Humans '' ."]
+02/24/2022 15:39:52 - INFO - __main__ -  [wiki_split] sentence 1: It featured others , notables like David Tyree who was a free agent due to the lack of depth on the New York Giants .  [SEP] sentence 2:  The most notable being Brett Favre of the New York Jets after coming out of retirement .
+02/24/2022 15:39:52 - INFO - __main__ - ['It featured others , notables like David Tyree who was a free agent due to the lack of depth on the New York Giants , with the most notable being Favre of the Jets after coming out of retirement .']
+02/24/2022 15:39:52 - INFO - __main__ -  [wiki_split] sentence 1: LED lamps are made that replace screw - in incandescent or compact fluorescent light bulbs .  [SEP] sentence 2:  Most LED lamps replace incandescent bulbs rated from 5 to 60 watts .
+02/24/2022 15:39:52 - INFO - __main__ - ['LED lamps are made that replace screw - in incandescent or compact fluorescent light bulbs , mostly replacing incandescent bulbs rated from 5 to 60 watts .']
+02/24/2022 15:39:52 - INFO - __main__ - Tokenizing Input ...
+02/24/2022 15:39:52 - INFO - __main__ - Tokenizing Output ...
+02/24/2022 15:39:53 - INFO - __main__ - Loaded 32 examples from dev data
+02/24/2022 15:40:02 - INFO - __main__ - Global step 2000 Train loss 0.09 Rouge-L 0.8693945158742733 on epoch=999
+02/24/2022 15:40:02 - INFO - __main__ - save last model!
+02/24/2022 15:40:02 - INFO - __main__ - Loading checkpoint from best ckpt on the fly
+02/24/2022 15:40:02 - INFO - __main__ - Start tokenizing ... 5000 instances
+02/24/2022 15:40:02 - INFO - __main__ - Printing 3 examples
+02/24/2022 15:40:02 - INFO - __main__ -  [wiki_split] sentence 1: ' Lauren Rose Crace ' , born 25th of May 1986 in Birmingham , England , is the daughter of Jim Crace who is a contemporary English writer .  [SEP] sentence 2:  Crace currently plays the part of '' Ronnie Mitchell 's '' long lost daughter Danielle Jones ( Amy ) in the soap opera '' EastEnders '' .
+02/24/2022 15:40:02 - INFO - __main__ - ["' Lauren Rose Crace ' , born 25th of May 1986 in Birmingham , England , currently plays the part of '' Ronnie Mitchell 's '' long lost daughter Danielle Jones ( Amy ) in the soap opera '' EastEnders '' ."]
+02/24/2022 15:40:02 - INFO - __main__ -  [wiki_split] sentence 1: '' A Living Library '' was Sherk 's work that consisted of transforming buried urban streams and asphalted public spaces into thriving art gardens .  [SEP] sentence 2:  She transformed these spaces for to build educations centers for children in communities in San Francisco and New York City .
+02/24/2022 15:40:02 - INFO - __main__ - ["'' A Living Library '' was Bonnie Sherk 's work of transforming buried urban streams and asphalted public spaces into thriving educational art gardens for communities in San Francisco and New York City ."]
+02/24/2022 15:40:02 - INFO - __main__ -  [wiki_split] sentence 1: '' All Singing , All Dancing '' is the eleventh episode of '' The Simpsons '' ' ninth season .  [SEP] sentence 2:  It originally aired on the Fox network in the United States on January 4 , 1998 .
+02/24/2022 15:40:02 - INFO - __main__ - ["'' All Singing , All Dancing '' is the eleventh episode of '' The Simpsons '' ' ninth season and originally aired on the Fox network on January 4 , 1998 ."]
+02/24/2022 15:40:02 - INFO - __main__ - Tokenizing Input ...
+02/24/2022 15:40:05 - INFO - __main__ - Tokenizing Output ...
+02/24/2022 15:40:07 - INFO - __main__ - load prompt embedding from ckpt
+02/24/2022 15:40:07 - INFO - root - ShardedDDP bucket size: 8.00M parameters, model size 746.97M parameters
+02/24/2022 15:40:07 - INFO - __main__ - Starting training!
+02/24/2022 15:40:10 - INFO - __main__ - Loaded 5000 examples from test data
+02/24/2022 16:08:28 - INFO - __main__ - Saved prediction in models/T5-large-maml-random-3e-5-2-5000-5e-1/singletask-wiki_split/wiki_split_32_100_0.4_8_predictions.txt
+02/24/2022 16:08:34 - INFO - __main__ - Rouge-L on test data: 0.8707
+02/24/2022 16:08:34 - INFO - __main__ - prefix=wiki_split_32_100, lr=0.4, bsz=8, dev_performance=0.882064520344348, test_performance=0.8706791290964444
+02/24/2022 16:08:34 - INFO - __main__ - Running ... prefix=wiki_split_32_100, lr=0.3, bsz=8 ...
+02/24/2022 16:08:35 - INFO - __main__ - Start tokenizing ... 32 instances
+02/24/2022 16:08:35 - INFO - __main__ - Printing 3 examples
+02/24/2022 16:08:35 - INFO - __main__ -  [wiki_split] sentence 1: KHOTOUM is a Costume Design ( installation & photography ) exhibition , Opened on November 20th , 2014 in Cairo , Egypt .  [SEP] sentence 2:  Khotoum exhibition is inspired by Egyptian Painter , Abd El - Hady el Gazzar .
+02/24/2022 16:08:35 - INFO - __main__ - ['KHOTOUM is a Costume Design ( installation & photography ) exhibition that is inspired by the great Egyptian Painter , Abd El - Hady el Gazzar .']
+02/24/2022 16:08:35 - INFO - __main__ -  [wiki_split] sentence 1: The instrument is not dodecaphonically tempered , instead using the Istrian scale .  [SEP] sentence 2:  Its sound is distinct and unusual .
+02/24/2022 16:08:35 - INFO - __main__ - ['The instrument is not dodecaphonically tempered , it uses the Istrian scale and its sound is distinct and unusual .']
+02/24/2022 16:08:35 - INFO - __main__ -  [wiki_split] sentence 1: Male Tapanuli orangutans produce loud , long distance calls that can last for up to two minutes .  [SEP] sentence 2:  Their calls have a higher frequency and a higher number of pulses than those of other orangutan species .
+02/24/2022 16:08:35 - INFO - __main__ - ['Male Tapanuli orangutans produce loud , long distance calls with a high frequency and a high number of pulses distinct from those of other orangutan species .']
+02/24/2022 16:08:35 - INFO - __main__ - Tokenizing Input ...
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+/opt/conda/envs/meta/lib/python3.9/site-packages/transformers/tokenization_utils_base.py:2105: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+02/24/2022 16:08:35 - INFO - __main__ - Tokenizing Output ...
+02/24/2022 16:08:35 - INFO - __main__ - Loaded 32 examples from train data
+use DistributedSampler
+02/24/2022 16:08:35 - INFO - __main__ - Start tokenizing ... 32 instances
+02/24/2022 16:08:35 - INFO - __main__ - Printing 3 examples
+02/24/2022 16:08:35 - INFO - __main__ -  [wiki_split] sentence 1: Under the name '' J.J. Solari '' , he became a writer of short stories .  [SEP] sentence 2:  They were collected in a 2007 anthology called '' When Bikers Meet Humans '' .
+02/24/2022 16:08:35 - INFO - __main__ - ["Under the name '' J.J. Solari '' , he became a writer of short stories for biker magazines such as , which were collected in a 2007 anthology called '' When Bikers Meet Humans '' ."]
+02/24/2022 16:08:35 - INFO - __main__ -  [wiki_split] sentence 1: It featured others , notables like David Tyree who was a free agent due to the lack of depth on the New York Giants .  [SEP] sentence 2:  The most notable being Brett Favre of the New York Jets after coming out of retirement .
+02/24/2022 16:08:35 - INFO - __main__ - ['It featured others , notables like David Tyree who was a free agent due to the lack of depth on the New York Giants , with the most notable being Favre of the Jets after coming out of retirement .']
+02/24/2022 16:08:35 - INFO - __main__ -  [wiki_split] sentence 1: LED lamps are made that replace screw - in incandescent or compact fluorescent light bulbs .  [SEP] sentence 2:  Most LED lamps replace incandescent bulbs rated from 5 to 60 watts .
+02/24/2022 16:08:35 - INFO - __main__ - ['LED lamps are made that replace screw - in incandescent or compact fluorescent light bulbs , mostly replacing incandescent bulbs rated from 5 to 60 watts .']
+02/24/2022 16:08:35 - INFO - __main__ - Tokenizing Input ...
+02/24/2022 16:08:35 - INFO - __main__ - Tokenizing Output ...
+02/24/2022 16:08:35 - INFO - __main__ - Loaded 32 examples from dev data
+02/24/2022 16:08:47 - INFO - __main__ - load prompt embedding from ckpt
+02/24/2022 16:08:48 - INFO - root - ShardedDDP bucket size: 8.00M parameters, model size 746.97M parameters
+02/24/2022 16:08:48 - INFO - __main__ - Starting training!
+02/24/2022 16:08:51 - INFO - __main__ - Step 10 Global step 10 Train loss 0.85 on epoch=4
+02/24/2022 16:08:53 - INFO - __main__ - Step 20 Global step 20 Train loss 0.74 on epoch=9
+02/24/2022 16:08:55 - INFO - __main__ - Step 30 Global step 30 Train loss 0.69 on epoch=14
+02/24/2022 16:08:58 - INFO - __main__ - Step 40 Global step 40 Train loss 0.65 on epoch=19
+02/24/2022 16:09:00 - INFO - __main__ - Step 50 Global step 50 Train loss 0.62 on epoch=24
+02/24/2022 16:09:10 - INFO - __main__ - Global step 50 Train loss 0.71 Rouge-L 0.6703325722708713 on epoch=24
+02/24/2022 16:09:10 - INFO - __main__ - Saving model with best Rouge-L: -1.0 -> 0.6703325722708713 on epoch=24, global_step=50
+02/24/2022 16:09:13 - INFO - __main__ - Step 60 Global step 60 Train loss 0.60 on epoch=29
+02/24/2022 16:09:15 - INFO - __main__ - Step 70 Global step 70 Train loss 0.58 on epoch=34
+02/24/2022 16:09:17 - INFO - __main__ - Step 80 Global step 80 Train loss 0.57 on epoch=39
+02/24/2022 16:09:19 - INFO - __main__ - Step 90 Global step 90 Train loss 0.56 on epoch=44
+02/24/2022 16:09:22 - INFO - __main__ - Step 100 Global step 100 Train loss 0.56 on epoch=49
+02/24/2022 16:09:33 - INFO - __main__ - Global step 100 Train loss 0.57 Rouge-L 0.8379783155956653 on epoch=49
+02/24/2022 16:09:33 - INFO - __main__ - Saving model with best Rouge-L: 0.6703325722708713 -> 0.8379783155956653 on epoch=49, global_step=100
+02/24/2022 16:09:35 - INFO - __main__ - Step 110 Global step 110 Train loss 0.55 on epoch=54
+02/24/2022 16:09:37 - INFO - __main__ - Step 120 Global step 120 Train loss 0.54 on epoch=59
+02/24/2022 16:09:40 - INFO - __main__ - Step 130 Global step 130 Train loss 0.52 on epoch=64
+02/24/2022 16:09:42 - INFO - __main__ - Step 140 Global step 140 Train loss 0.53 on epoch=69
+02/24/2022 16:09:44 - INFO - __main__ - Step 150 Global step 150 Train loss 0.52 on epoch=74
+02/24/2022 16:09:56 - INFO - __main__ - Global step 150 Train loss 0.53 Rouge-L 0.8575625991161984 on epoch=74
+02/24/2022 16:09:56 - INFO - __main__ - Saving model with best Rouge-L: 0.8379783155956653 -> 0.8575625991161984 on epoch=74, global_step=150
+02/24/2022 16:09:58 - INFO - __main__ - Step 160 Global step 160 Train loss 0.51 on epoch=79
+02/24/2022 16:10:00 - INFO - __main__ - Step 170 Global step 170 Train loss 0.50 on epoch=84
+02/24/2022 16:10:02 - INFO - __main__ - Step 180 Global step 180 Train loss 0.50 on epoch=89
+02/24/2022 16:10:05 - INFO - __main__ - Step 190 Global step 190 Train loss 0.49 on epoch=94
+02/24/2022 16:10:07 - INFO - __main__ - Step 200 Global step 200 Train loss 0.49 on epoch=99
+02/24/2022 16:10:19 - INFO - __main__ - Global step 200 Train loss 0.50 Rouge-L 0.8577389373418454 on epoch=99
+02/24/2022 16:10:19 - INFO - __main__ - Saving model with best Rouge-L: 0.8575625991161984 -> 0.8577389373418454 on epoch=99, global_step=200
+02/24/2022 16:10:22 - INFO - __main__ - Step 210 Global step 210 Train loss 0.48 on epoch=104
+02/24/2022 16:10:24 - INFO - __main__ - Step 220 Global step 220 Train loss 0.48 on epoch=109
+02/24/2022 16:10:26 - INFO - __main__ - Step 230 Global step 230 Train loss 0.46 on epoch=114
+02/24/2022 16:10:28 - INFO - __main__ - Step 240 Global step 240 Train loss 0.46 on epoch=119
+02/24/2022 16:10:31 - INFO - __main__ - Step 250 Global step 250 Train loss 0.46 on epoch=124
+02/24/2022 16:10:42 - INFO - __main__ - Global step 250 Train loss 0.47 Rouge-L 0.8562694228958173 on epoch=124
+02/24/2022 16:10:44 - INFO - __main__ - Step 260 Global step 260 Train loss 0.46 on epoch=129
+02/24/2022 16:10:46 - INFO - __main__ - Step 270 Global step 270 Train loss 0.46 on epoch=134
+02/24/2022 16:10:49 - INFO - __main__ - Step 280 Global step 280 Train loss 0.45 on epoch=139
+02/24/2022 16:10:51 - INFO - __main__ - Step 290 Global step 290 Train loss 0.44 on epoch=144
+02/24/2022 16:10:53 - INFO - __main__ - Step 300 Global step 300 Train loss 0.43 on epoch=149
+02/24/2022 16:11:06 - INFO - __main__ - Global step 300 Train loss 0.45 Rouge-L 0.8706854936599691 on epoch=149
+02/24/2022 16:11:06 - INFO - __main__ - Saving model with best Rouge-L: 0.8577389373418454 -> 0.8706854936599691 on epoch=149, global_step=300
+02/24/2022 16:11:08 - INFO - __main__ - Step 310 Global step 310 Train loss 0.42 on epoch=154
+02/24/2022 16:11:11 - INFO - __main__ - Step 320 Global step 320 Train loss 0.41 on epoch=159
+02/24/2022 16:11:13 - INFO - __main__ - Step 330 Global step 330 Train loss 0.41 on epoch=164
+02/24/2022 16:11:15 - INFO - __main__ - Step 340 Global step 340 Train loss 0.41 on epoch=169
+02/24/2022 16:11:17 - INFO - __main__ - Step 350 Global step 350 Train loss 0.41 on epoch=174
+02/24/2022 16:11:29 - INFO - __main__ - Global step 350 Train loss 0.42 Rouge-L 0.8736456346265205 on epoch=174
+02/24/2022 16:11:29 - INFO - __main__ - Saving model with best Rouge-L: 0.8706854936599691 -> 0.8736456346265205 on epoch=174, global_step=350
+02/24/2022 16:11:31 - INFO - __main__ - Step 360 Global step 360 Train loss 0.42 on epoch=179
+02/24/2022 16:11:33 - INFO - __main__ - Step 370 Global step 370 Train loss 0.40 on epoch=184
+02/24/2022 16:11:36 - INFO - __main__ - Step 380 Global step 380 Train loss 0.40 on epoch=189
+02/24/2022 16:11:38 - INFO - __main__ - Step 390 Global step 390 Train loss 0.40 on epoch=194
+02/24/2022 16:11:40 - INFO - __main__ - Step 400 Global step 400 Train loss 0.39 on epoch=199
+02/24/2022 16:11:52 - INFO - __main__ - Global step 400 Train loss 0.40 Rouge-L 0.8608427202567708 on epoch=199
+02/24/2022 16:11:54 - INFO - __main__ - Step 410 Global step 410 Train loss 0.39 on epoch=204
+02/24/2022 16:11:57 - INFO - __main__ - Step 420 Global step 420 Train loss 0.39 on epoch=209
+02/24/2022 16:11:59 - INFO - __main__ - Step 430 Global step 430 Train loss 0.38 on epoch=214
+02/24/2022 16:12:01 - INFO - __main__ - Step 440 Global step 440 Train loss 0.37 on epoch=219
+02/24/2022 16:12:03 - INFO - __main__ - Step 450 Global step 450 Train loss 0.36 on epoch=224
+02/24/2022 16:12:16 - INFO - __main__ - Global step 450 Train loss 0.38 Rouge-L 0.8602764349476679 on epoch=224
+02/24/2022 16:12:18 - INFO - __main__ - Step 460 Global step 460 Train loss 0.38 on epoch=229
+02/24/2022 16:12:20 - INFO - __main__ - Step 470 Global step 470 Train loss 0.36 on epoch=234
+02/24/2022 16:12:22 - INFO - __main__ - Step 480 Global step 480 Train loss 0.38 on epoch=239
+02/24/2022 16:12:25 - INFO - __main__ - Step 490 Global step 490 Train loss 0.36 on epoch=244
+02/24/2022 16:12:27 - INFO - __main__ - Step 500 Global step 500 Train loss 0.35 on epoch=249
+02/24/2022 16:12:38 - INFO - __main__ - Global step 500 Train loss 0.37 Rouge-L 0.8609840802008331 on epoch=249
+02/24/2022 16:12:40 - INFO - __main__ - Step 510 Global step 510 Train loss 0.36 on epoch=254
+02/24/2022 16:12:43 - INFO - __main__ - Step 520 Global step 520 Train loss 0.36 on epoch=259
+02/24/2022 16:12:45 - INFO - __main__ - Step 530 Global step 530 Train loss 0.33 on epoch=264
+02/24/2022 16:12:47 - INFO - __main__ - Step 540 Global step 540 Train loss 0.35 on epoch=269
+02/24/2022 16:12:49 - INFO - __main__ - Step 550 Global step 550 Train loss 0.34 on epoch=274
+02/24/2022 16:13:01 - INFO - __main__ - Global step 550 Train loss 0.35 Rouge-L 0.8592322201298236 on epoch=274
+02/24/2022 16:13:03 - INFO - __main__ - Step 560 Global step 560 Train loss 0.33 on epoch=279
+02/24/2022 16:13:05 - INFO - __main__ - Step 570 Global step 570 Train loss 0.32 on epoch=284
+02/24/2022 16:13:08 - INFO - __main__ - Step 580 Global step 580 Train loss 0.34 on epoch=289
+02/24/2022 16:13:10 - INFO - __main__ - Step 590 Global step 590 Train loss 0.33 on epoch=294
+02/24/2022 16:13:12 - INFO - __main__ - Step 600 Global step 600 Train loss 0.33 on epoch=299
+02/24/2022 16:13:24 - INFO - __main__ - Global step 600 Train loss 0.33 Rouge-L 0.8564343710891305 on epoch=299
+02/24/2022 16:13:26 - INFO - __main__ - Step 610 Global step 610 Train loss 0.32 on epoch=304
+02/24/2022 16:13:28 - INFO - __main__ - Step 620 Global step 620 Train loss 0.32 on epoch=309
+02/24/2022 16:13:30 - INFO - __main__ - Step 630 Global step 630 Train loss 0.30 on epoch=314
+02/24/2022 16:13:33 - INFO - __main__ - Step 640 Global step 640 Train loss 0.32 on epoch=319
+02/24/2022 16:13:35 - INFO - __main__ - Step 650 Global step 650 Train loss 0.31 on epoch=324
+02/24/2022 16:13:47 - INFO - __main__ - Global step 650 Train loss 0.31 Rouge-L 0.8615583861579461 on epoch=324
+02/24/2022 16:13:49 - INFO - __main__ - Step 660 Global step 660 Train loss 0.30 on epoch=329
+02/24/2022 16:13:52 - INFO - __main__ - Step 670 Global step 670 Train loss 0.31 on epoch=334
+02/24/2022 16:13:54 - INFO - __main__ - Step 680 Global step 680 Train loss 0.31 on epoch=339
+02/24/2022 16:13:56 - INFO - __main__ - Step 690 Global step 690 Train loss 0.29 on epoch=344
+02/24/2022 16:13:58 - INFO - __main__ - Step 700 Global step 700 Train loss 0.30 on epoch=349
+02/24/2022 16:14:10 - INFO - __main__ - Global step 700 Train loss 0.30 Rouge-L 0.8657239116197821 on epoch=349
+02/24/2022 16:14:12 - INFO - __main__ - Step 710 Global step 710 Train loss 0.29 on epoch=354
+02/24/2022 16:14:14 - INFO - __main__ - Step 720 Global step 720 Train loss 0.28 on epoch=359
+02/24/2022 16:14:17 - INFO - __main__ - Step 730 Global step 730 Train loss 0.30 on epoch=364
+02/24/2022 16:14:19 - INFO - __main__ - Step 740 Global step 740 Train loss 0.31 on epoch=369
+02/24/2022 16:14:21 - INFO - __main__ - Step 750 Global step 750 Train loss 0.29 on epoch=374
+02/24/2022 16:14:33 - INFO - __main__ - Global step 750 Train loss 0.29 Rouge-L 0.874322890126205 on epoch=374
+02/24/2022 16:14:33 - INFO - __main__ - Saving model with best Rouge-L: 0.8736456346265205 -> 0.874322890126205 on epoch=374, global_step=750
+02/24/2022 16:14:35 - INFO - __main__ - Step 760 Global step 760 Train loss 0.29 on epoch=379
+02/24/2022 16:14:37 - INFO - __main__ - Step 770 Global step 770 Train loss 0.28 on epoch=384
+02/24/2022 16:14:39 - INFO - __main__ - Step 780 Global step 780 Train loss 0.28 on epoch=389
+02/24/2022 16:14:42 - INFO - __main__ - Step 790 Global step 790 Train loss 0.29 on epoch=394
+02/24/2022 16:14:44 - INFO - __main__ - Step 800 Global step 800 Train loss 0.28 on epoch=399
+02/24/2022 16:14:56 - INFO - __main__ - Global step 800 Train loss 0.28 Rouge-L 0.8714501663335025 on epoch=399
+02/24/2022 16:14:58 - INFO - __main__ - Step 810 Global step 810 Train loss 0.28 on epoch=404
+02/24/2022 16:15:01 - INFO - __main__ - Step 820 Global step 820 Train loss 0.27 on epoch=409
+02/24/2022 16:15:03 - INFO - __main__ - Step 830 Global step 830 Train loss 0.27 on epoch=414
+02/24/2022 16:15:05 - INFO - __main__ - Step 840 Global step 840 Train loss 0.28 on epoch=419
+02/24/2022 16:15:07 - INFO - __main__ - Step 850 Global step 850 Train loss 0.26 on epoch=424
+02/24/2022 16:15:19 - INFO - __main__ - Global step 850 Train loss 0.27 Rouge-L 0.8691017735280061 on epoch=424
+02/24/2022 16:15:21 - INFO - __main__ - Step 860 Global step 860 Train loss 0.26 on epoch=429
+02/24/2022 16:15:23 - INFO - __main__ - Step 870 Global step 870 Train loss 0.26 on epoch=434
+02/24/2022 16:15:26 - INFO - __main__ - Step 880 Global step 880 Train loss 0.27 on epoch=439
+02/24/2022 16:15:28 - INFO - __main__ - Step 890 Global step 890 Train loss 0.26 on epoch=444
+02/24/2022 16:15:30 - INFO - __main__ - Step 900 Global step 900 Train loss 0.26 on epoch=449
+02/24/2022 16:15:42 - INFO - __main__ - Global step 900 Train loss 0.26 Rouge-L 0.8589428101351071 on epoch=449
+02/24/2022 16:15:44 - INFO - __main__ - Step 910 Global step 910 Train loss 0.26 on epoch=454
+02/24/2022 16:15:46 - INFO - __main__ - Step 920 Global step 920 Train loss 0.26 on epoch=459
+02/24/2022 16:15:48 - INFO - __main__ - Step 930 Global step 930 Train loss 0.26 on epoch=464
+02/24/2022 16:15:51 - INFO - __main__ - Step 940 Global step 940 Train loss 0.25 on epoch=469
+02/24/2022 16:15:53 - INFO - __main__ - Step 950 Global step 950 Train loss 0.26 on epoch=474
+02/24/2022 16:16:04 - INFO - __main__ - Global step 950 Train loss 0.26 Rouge-L 0.8561298829975514 on epoch=474
+02/24/2022 16:16:07 - INFO - __main__ - Step 960 Global step 960 Train loss 0.26 on epoch=479
+02/24/2022 16:16:09 - INFO - __main__ - Step 970 Global step 970 Train loss 0.24 on epoch=484
+02/24/2022 16:16:11 - INFO - __main__ - Step 980 Global step 980 Train loss 0.25 on epoch=489
+02/24/2022 16:16:13 - INFO - __main__ - Step 990 Global step 990 Train loss 0.24 on epoch=494
+02/24/2022 16:16:16 - INFO - __main__ - Step 1000 Global step 1000 Train loss 0.24 on epoch=499
+02/24/2022 16:16:27 - INFO - __main__ - Global step 1000 Train loss 0.25 Rouge-L 0.8902086325135342 on epoch=499
+02/24/2022 16:16:27 - INFO - __main__ - Saving model with best Rouge-L: 0.874322890126205 -> 0.8902086325135342 on epoch=499, global_step=1000
+02/24/2022 16:16:29 - INFO - __main__ - Step 1010 Global step 1010 Train loss 0.23 on epoch=504
+02/24/2022 16:16:32 - INFO - __main__ - Step 1020 Global step 1020 Train loss 0.23 on epoch=509
+02/24/2022 16:16:34 - INFO - __main__ - Step 1030 Global step 1030 Train loss 0.25 on epoch=514
+02/24/2022 16:16:36 - INFO - __main__ - Step 1040 Global step 1040 Train loss 0.23 on epoch=519
+02/24/2022 16:16:38 - INFO - __main__ - Step 1050 Global step 1050 Train loss 0.23 on epoch=524
+02/24/2022 16:16:50 - INFO - __main__ - Global step 1050 Train loss 0.23 Rouge-L 0.8801406716523484 on epoch=524
+02/24/2022 16:16:52 - INFO - __main__ - Step 1060 Global step 1060 Train loss 0.22 on epoch=529
+02/24/2022 16:16:55 - INFO - __main__ - Step 1070 Global step 1070 Train loss 0.24 on epoch=534
+02/24/2022 16:16:57 - INFO - __main__ - Step 1080 Global step 1080 Train loss 0.22 on epoch=539
+02/24/2022 16:16:59 - INFO - __main__ - Step 1090 Global step 1090 Train loss 0.23 on epoch=544
+02/24/2022 16:17:01 - INFO - __main__ - Step 1100 Global step 1100 Train loss 0.24 on epoch=549
+02/24/2022 16:17:13 - INFO - __main__ - Global step 1100 Train loss 0.23 Rouge-L 0.882680091620462 on epoch=549
+02/24/2022 16:17:15 - INFO - __main__ - Step 1110 Global step 1110 Train loss 0.22 on epoch=554
+02/24/2022 16:17:17 - INFO - __main__ - Step 1120 Global step 1120 Train loss 0.23 on epoch=559
+02/24/2022 16:17:20 - INFO - __main__ - Step 1130 Global step 1130 Train loss 0.23 on epoch=564
+02/24/2022 16:17:22 - INFO - __main__ - Step 1140 Global step 1140 Train loss 0.23 on epoch=569
+02/24/2022 16:17:24 - INFO - __main__ - Step 1150 Global step 1150 Train loss 0.22 on epoch=574
+02/24/2022 16:17:36 - INFO - __main__ - Global step 1150 Train loss 0.22 Rouge-L 0.8723348514661294 on epoch=574
+02/24/2022 16:17:38 - INFO - __main__ - Step 1160 Global step 1160 Train loss 0.22 on epoch=579
+02/24/2022 16:17:40 - INFO - __main__ - Step 1170 Global step 1170 Train loss 0.22 on epoch=584
+02/24/2022 16:17:42 - INFO - __main__ - Step 1180 Global step 1180 Train loss 0.22 on epoch=589
+02/24/2022 16:17:45 - INFO - __main__ - Step 1190 Global step 1190 Train loss 0.20 on epoch=594
+02/24/2022 16:17:47 - INFO - __main__ - Step 1200 Global step 1200 Train loss 0.21 on epoch=599
+02/24/2022 16:17:59 - INFO - __main__ - Global step 1200 Train loss 0.21 Rouge-L 0.8794352755116706 on epoch=599
+02/24/2022 16:18:01 - INFO - __main__ - Step 1210 Global step 1210 Train loss 0.22 on epoch=604
+02/24/2022 16:18:03 - INFO - __main__ - Step 1220 Global step 1220 Train loss 0.21 on epoch=609
+02/24/2022 16:18:05 - INFO - __main__ - Step 1230 Global step 1230 Train loss 0.20 on epoch=614
+02/24/2022 16:18:07 - INFO - __main__ - Step 1240 Global step 1240 Train loss 0.20 on epoch=619
+02/24/2022 16:18:10 - INFO - __main__ - Step 1250 Global step 1250 Train loss 0.21 on epoch=624
+02/24/2022 16:18:21 - INFO - __main__ - Global step 1250 Train loss 0.21 Rouge-L 0.8782213899179967 on epoch=624
+02/24/2022 16:18:24 - INFO - __main__ - Step 1260 Global step 1260 Train loss 0.20 on epoch=629
+02/24/2022 16:18:26 - INFO - __main__ - Step 1270 Global step 1270 Train loss 0.20 on epoch=634
+02/24/2022 16:18:28 - INFO - __main__ - Step 1280 Global step 1280 Train loss 0.19 on epoch=639
+02/24/2022 16:18:30 - INFO - __main__ - Step 1290 Global step 1290 Train loss 0.21 on epoch=644
+02/24/2022 16:18:33 - INFO - __main__ - Step 1300 Global step 1300 Train loss 0.19 on epoch=649
+02/24/2022 16:18:44 - INFO - __main__ - Global step 1300 Train loss 0.20 Rouge-L 0.8611688927690472 on epoch=649
+02/24/2022 16:18:46 - INFO - __main__ - Step 1310 Global step 1310 Train loss 0.20 on epoch=654
+02/24/2022 16:18:48 - INFO - __main__ - Step 1320 Global step 1320 Train loss 0.20 on epoch=659
+02/24/2022 16:18:51 - INFO - __main__ - Step 1330 Global step 1330 Train loss 0.20 on epoch=664
+02/24/2022 16:18:53 - INFO - __main__ - Step 1340 Global step 1340 Train loss 0.20 on epoch=669
+02/24/2022 16:18:55 - INFO - __main__ - Step 1350 Global step 1350 Train loss 0.19 on epoch=674
+02/24/2022 16:19:07 - INFO - __main__ - Global step 1350 Train loss 0.20 Rouge-L 0.8679885128685927 on epoch=674
+02/24/2022 16:19:09 - INFO - __main__ - Step 1360 Global step 1360 Train loss 0.19 on epoch=679
+02/24/2022 16:19:11 - INFO - __main__ - Step 1370 Global step 1370 Train loss 0.18 on epoch=684
+02/24/2022 16:19:13 - INFO - __main__ - Step 1380 Global step 1380 Train loss 0.19 on epoch=689
+02/24/2022 16:19:16 - INFO - __main__ - Step 1390 Global step 1390 Train loss 0.19 on epoch=694
+02/24/2022 16:19:18 - INFO - __main__ - Step 1400 Global step 1400 Train loss 0.19 on epoch=699
+02/24/2022 16:19:29 - INFO - __main__ - Global step 1400 Train loss 0.19 Rouge-L 0.8702048853540544 on epoch=699
+02/24/2022 16:19:32 - INFO - __main__ - Step 1410 Global step 1410 Train loss 0.19 on epoch=704
+02/24/2022 16:19:34 - INFO - __main__ - Step 1420 Global step 1420 Train loss 0.18 on epoch=709
+02/24/2022 16:19:36 - INFO - __main__ - Step 1430 Global step 1430 Train loss 0.19 on epoch=714
+02/24/2022 16:19:38 - INFO - __main__ - Step 1440 Global step 1440 Train loss 0.18 on epoch=719
+02/24/2022 16:19:41 - INFO - __main__ - Step 1450 Global step 1450 Train loss 0.19 on epoch=724
+02/24/2022 16:19:52 - INFO - __main__ - Global step 1450 Train loss 0.18 Rouge-L 0.8495710405673885 on epoch=724
+02/24/2022 16:19:54 - INFO - __main__ - Step 1460 Global step 1460 Train loss 0.19 on epoch=729
+02/24/2022 16:19:57 - INFO - __main__ - Step 1470 Global step 1470 Train loss 0.18 on epoch=734
+02/24/2022 16:19:59 - INFO - __main__ - Step 1480 Global step 1480 Train loss 0.18 on epoch=739
+02/24/2022 16:20:01 - INFO - __main__ - Step 1490 Global step 1490 Train loss 0.18 on epoch=744
+02/24/2022 16:20:03 - INFO - __main__ - Step 1500 Global step 1500 Train loss 0.18 on epoch=749
+02/24/2022 16:20:15 - INFO - __main__ - Global step 1500 Train loss 0.18 Rouge-L 0.8587021298705381 on epoch=749
+02/24/2022 16:20:17 - INFO - __main__ - Step 1510 Global step 1510 Train loss 0.17 on epoch=754
+02/24/2022 16:20:20 - INFO - __main__ - Step 1520 Global step 1520 Train loss 0.16 on epoch=759
+02/24/2022 16:20:22 - INFO - __main__ - Step 1530 Global step 1530 Train loss 0.17 on epoch=764
+02/24/2022 16:20:24 - INFO - __main__ - Step 1540 Global step 1540 Train loss 0.17 on epoch=769
+02/24/2022 16:20:26 - INFO - __main__ - Step 1550 Global step 1550 Train loss 0.18 on epoch=774
+02/24/2022 16:20:38 - INFO - __main__ - Global step 1550 Train loss 0.17 Rouge-L 0.8531892199315451 on epoch=774
+02/24/2022 16:20:40 - INFO - __main__ - Step 1560 Global step 1560 Train loss 0.16 on epoch=779
+02/24/2022 16:20:43 - INFO - __main__ - Step 1570 Global step 1570 Train loss 0.16 on epoch=784
+02/24/2022 16:20:45 - INFO - __main__ - Step 1580 Global step 1580 Train loss 0.16 on epoch=789
+02/24/2022 16:20:47 - INFO - __main__ - Step 1590 Global step 1590 Train loss 0.16 on epoch=794
+02/24/2022 16:20:49 - INFO - __main__ - Step 1600 Global step 1600 Train loss 0.16 on epoch=799
+02/24/2022 16:21:01 - INFO - __main__ - Global step 1600 Train loss 0.16 Rouge-L 0.8707788575602984 on epoch=799
+02/24/2022 16:21:03 - INFO - __main__ - Step 1610 Global step 1610 Train loss 0.15 on epoch=804
+02/24/2022 16:21:06 - INFO - __main__ - Step 1620 Global step 1620 Train loss 0.16 on epoch=809
+02/24/2022 16:21:08 - INFO - __main__ - Step 1630 Global step 1630 Train loss 0.15 on epoch=814
+02/24/2022 16:21:10 - INFO - __main__ - Step 1640 Global step 1640 Train loss 0.16 on epoch=819
+02/24/2022 16:21:12 - INFO - __main__ - Step 1650 Global step 1650 Train loss 0.16 on epoch=824
+02/24/2022 16:21:24 - INFO - __main__ - Global step 1650 Train loss 0.16 Rouge-L 0.8611901903332222 on epoch=824
+02/24/2022 16:21:26 - INFO - __main__ - Step 1660 Global step 1660 Train loss 0.15 on epoch=829
+02/24/2022 16:21:29 - INFO - __main__ - Step 1670 Global step 1670 Train loss 0.16 on epoch=834
+02/24/2022 16:21:31 - INFO - __main__ - Step 1680 Global step 1680 Train loss 0.15 on epoch=839
+02/24/2022 16:21:33 - INFO - __main__ - Step 1690 Global step 1690 Train loss 0.15 on epoch=844
+02/24/2022 16:21:35 - INFO - __main__ - Step 1700 Global step 1700 Train loss 0.16 on epoch=849
+02/24/2022 16:21:47 - INFO - __main__ - Global step 1700 Train loss 0.15 Rouge-L 0.868878162315733 on epoch=849
+02/24/2022 16:21:49 - INFO - __main__ - Step 1710 Global step 1710 Train loss 0.16 on epoch=854
+02/24/2022 16:21:51 - INFO - __main__ - Step 1720 Global step 1720 Train loss 0.14 on epoch=859
+02/24/2022 16:21:53 - INFO - __main__ - Step 1730 Global step 1730 Train loss 0.15 on epoch=864
+02/24/2022 16:21:56 - INFO - __main__ - Step 1740 Global step 1740 Train loss 0.15 on epoch=869
+02/24/2022 16:21:58 - INFO - __main__ - Step 1750 Global step 1750 Train loss 0.15 on epoch=874
+02/24/2022 16:22:09 - INFO - __main__ - Global step 1750 Train loss 0.15 Rouge-L 0.8604285251484705 on epoch=874
+02/24/2022 16:22:12 - INFO - __main__ - Step 1760 Global step 1760 Train loss 0.14 on epoch=879
+02/24/2022 16:22:14 - INFO - __main__ - Step 1770 Global step 1770 Train loss 0.14 on epoch=884
+02/24/2022 16:22:16 - INFO - __main__ - Step 1780 Global step 1780 Train loss 0.14 on epoch=889
+02/24/2022 16:22:18 - INFO - __main__ - Step 1790 Global step 1790 Train loss 0.14 on epoch=894
+02/24/2022 16:22:21 - INFO - __main__ - Step 1800 Global step 1800 Train loss 0.14 on epoch=899
+02/24/2022 16:22:32 - INFO - __main__ - Global step 1800 Train loss 0.14 Rouge-L 0.8558655711346017 on epoch=899
+02/24/2022 16:22:34 - INFO - __main__ - Step 1810 Global step 1810 Train loss 0.14 on epoch=904
+02/24/2022 16:22:37 - INFO - __main__ - Step 1820 Global step 1820 Train loss 0.14 on epoch=909
+02/24/2022 16:22:39 - INFO - __main__ - Step 1830 Global step 1830 Train loss 0.14 on epoch=914
+02/24/2022 16:22:41 - INFO - __main__ - Step 1840 Global step 1840 Train loss 0.13 on epoch=919
+02/24/2022 16:22:43 - INFO - __main__ - Step 1850 Global step 1850 Train loss 0.14 on epoch=924
+02/24/2022 16:22:55 - INFO - __main__ - Global step 1850 Train loss 0.14 Rouge-L 0.8781082314035675 on epoch=924
+02/24/2022 16:22:57 - INFO - __main__ - Step 1860 Global step 1860 Train loss 0.13 on epoch=929
+02/24/2022 16:23:00 - INFO - __main__ - Step 1870 Global step 1870 Train loss 0.12 on epoch=934
+02/24/2022 16:23:02 - INFO - __main__ - Step 1880 Global step 1880 Train loss 0.13 on epoch=939
+02/24/2022 16:23:04 - INFO - __main__ - Step 1890 Global step 1890 Train loss 0.13 on epoch=944
+02/24/2022 16:23:06 - INFO - __main__ - Step 1900 Global step 1900 Train loss 0.13 on epoch=949
+02/24/2022 16:23:18 - INFO - __main__ - Global step 1900 Train loss 0.13 Rouge-L 0.853573338602069 on epoch=949
+02/24/2022 16:23:20 - INFO - __main__ - Step 1910 Global step 1910 Train loss 0.13 on epoch=954
+02/24/2022 16:23:23 - INFO - __main__ - Step 1920 Global step 1920 Train loss 0.13 on epoch=959
+02/24/2022 16:23:25 - INFO - __main__ - Step 1930 Global step 1930 Train loss 0.14 on epoch=964
+02/24/2022 16:23:27 - INFO - __main__ - Step 1940 Global step 1940 Train loss 0.13 on epoch=969
+02/24/2022 16:23:29 - INFO - __main__ - Step 1950 Global step 1950 Train loss 0.13 on epoch=974
+02/24/2022 16:23:41 - INFO - __main__ - Global step 1950 Train loss 0.13 Rouge-L 0.8734796721818749 on epoch=974
+02/24/2022 16:23:43 - INFO - __main__ - Step 1960 Global step 1960 Train loss 0.12 on epoch=979
+02/24/2022 16:23:45 - INFO - __main__ - Step 1970 Global step 1970 Train loss 0.12 on epoch=984
+02/24/2022 16:23:48 - INFO - __main__ - Step 1980 Global step 1980 Train loss 0.12 on epoch=989
+02/24/2022 16:23:50 - INFO - __main__ - Step 1990 Global step 1990 Train loss 0.13 on epoch=994
+02/24/2022 16:23:52 - INFO - __main__ - Step 2000 Global step 2000 Train loss 0.12 on epoch=999
+02/24/2022 16:23:53 - INFO - __main__ - Start tokenizing ... 32 instances
+02/24/2022 16:23:53 - INFO - __main__ - Printing 3 examples
+02/24/2022 16:23:53 - INFO - __main__ -  [wiki_split] sentence 1: KHOTOUM is a Costume Design ( installation & photography ) exhibition , Opened on November 20th , 2014 in Cairo , Egypt .  [SEP] sentence 2:  Khotoum exhibition is inspired by Egyptian Painter , Abd El - Hady el Gazzar .
+02/24/2022 16:23:53 - INFO - __main__ - ['KHOTOUM is a Costume Design ( installation & photography ) exhibition that is inspired by the great Egyptian Painter , Abd El - Hady el Gazzar .']
+02/24/2022 16:23:53 - INFO - __main__ -  [wiki_split] sentence 1: The instrument is not dodecaphonically tempered , instead using the Istrian scale .  [SEP] sentence 2:  Its sound is distinct and unusual .
+02/24/2022 16:23:53 - INFO - __main__ - ['The instrument is not dodecaphonically tempered , it uses the Istrian scale and its sound is distinct and unusual .']
+02/24/2022 16:23:53 - INFO - __main__ -  [wiki_split] sentence 1: Male Tapanuli orangutans produce loud , long distance calls that can last for up to two minutes .  [SEP] sentence 2:  Their calls have a higher frequency and a higher number of pulses than those of other orangutan species .
+02/24/2022 16:23:53 - INFO - __main__ - ['Male Tapanuli orangutans produce loud , long distance calls with a high frequency and a high number of pulses distinct from those of other orangutan species .']
+02/24/2022 16:23:53 - INFO - __main__ - Tokenizing Input ...
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+02/24/2022 16:23:53 - INFO - __main__ - Tokenizing Output ...
+02/24/2022 16:23:54 - INFO - __main__ - Loaded 32 examples from train data
+use DistributedSampler
+02/24/2022 16:23:54 - INFO - __main__ - Start tokenizing ... 32 instances
+02/24/2022 16:23:54 - INFO - __main__ - Printing 3 examples
+02/24/2022 16:23:54 - INFO - __main__ -  [wiki_split] sentence 1: Under the name '' J.J. Solari '' , he became a writer of short stories .  [SEP] sentence 2:  They were collected in a 2007 anthology called '' When Bikers Meet Humans '' .
+02/24/2022 16:23:54 - INFO - __main__ - ["Under the name '' J.J. Solari '' , he became a writer of short stories for biker magazines such as , which were collected in a 2007 anthology called '' When Bikers Meet Humans '' ."]
+02/24/2022 16:23:54 - INFO - __main__ -  [wiki_split] sentence 1: It featured others , notables like David Tyree who was a free agent due to the lack of depth on the New York Giants .  [SEP] sentence 2:  The most notable being Brett Favre of the New York Jets after coming out of retirement .
+02/24/2022 16:23:54 - INFO - __main__ - ['It featured others , notables like David Tyree who was a free agent due to the lack of depth on the New York Giants , with the most notable being Favre of the Jets after coming out of retirement .']
+02/24/2022 16:23:54 - INFO - __main__ -  [wiki_split] sentence 1: LED lamps are made that replace screw - in incandescent or compact fluorescent light bulbs .  [SEP] sentence 2:  Most LED lamps replace incandescent bulbs rated from 5 to 60 watts .
+02/24/2022 16:23:54 - INFO - __main__ - ['LED lamps are made that replace screw - in incandescent or compact fluorescent light bulbs , mostly replacing incandescent bulbs rated from 5 to 60 watts .']
+02/24/2022 16:23:54 - INFO - __main__ - Tokenizing Input ...
+02/24/2022 16:23:54 - INFO - __main__ - Tokenizing Output ...
+02/24/2022 16:23:54 - INFO - __main__ - Loaded 32 examples from dev data
+02/24/2022 16:24:04 - INFO - __main__ - Global step 2000 Train loss 0.12 Rouge-L 0.8610201734986361 on epoch=999
+02/24/2022 16:24:04 - INFO - __main__ - save last model!
+02/24/2022 16:24:04 - INFO - __main__ - Loading checkpoint from best ckpt on the fly
+02/24/2022 16:24:04 - INFO - __main__ - Start tokenizing ... 5000 instances
+02/24/2022 16:24:04 - INFO - __main__ - Printing 3 examples
+02/24/2022 16:24:04 - INFO - __main__ -  [wiki_split] sentence 1: ' Lauren Rose Crace ' , born 25th of May 1986 in Birmingham , England , is the daughter of Jim Crace who is a contemporary English writer .  [SEP] sentence 2:  Crace currently plays the part of '' Ronnie Mitchell 's '' long lost daughter Danielle Jones ( Amy ) in the soap opera '' EastEnders '' .
+02/24/2022 16:24:04 - INFO - __main__ - ["' Lauren Rose Crace ' , born 25th of May 1986 in Birmingham , England , currently plays the part of '' Ronnie Mitchell 's '' long lost daughter Danielle Jones ( Amy ) in the soap opera '' EastEnders '' ."]
+02/24/2022 16:24:04 - INFO - __main__ -  [wiki_split] sentence 1: '' A Living Library '' was Sherk 's work that consisted of transforming buried urban streams and asphalted public spaces into thriving art gardens .  [SEP] sentence 2:  She transformed these spaces for to build educations centers for children in communities in San Francisco and New York City .
+02/24/2022 16:24:04 - INFO - __main__ - ["'' A Living Library '' was Bonnie Sherk 's work of transforming buried urban streams and asphalted public spaces into thriving educational art gardens for communities in San Francisco and New York City ."]
+02/24/2022 16:24:04 - INFO - __main__ -  [wiki_split] sentence 1: '' All Singing , All Dancing '' is the eleventh episode of '' The Simpsons '' ' ninth season .  [SEP] sentence 2:  It originally aired on the Fox network in the United States on January 4 , 1998 .
+02/24/2022 16:24:04 - INFO - __main__ - ["'' All Singing , All Dancing '' is the eleventh episode of '' The Simpsons '' ' ninth season and originally aired on the Fox network on January 4 , 1998 ."]
+02/24/2022 16:24:04 - INFO - __main__ - Tokenizing Input ...
+02/24/2022 16:24:07 - INFO - __main__ - Tokenizing Output ...
+02/24/2022 16:24:08 - INFO - __main__ - load prompt embedding from ckpt
+02/24/2022 16:24:08 - INFO - root - ShardedDDP bucket size: 8.00M parameters, model size 746.97M parameters
+02/24/2022 16:24:08 - INFO - __main__ - Starting training!
+02/24/2022 16:24:12 - INFO - __main__ - Loaded 5000 examples from test data
+02/24/2022 16:53:26 - INFO - __main__ - Saved prediction in models/T5-large-maml-random-3e-5-2-5000-5e-1/singletask-wiki_split/wiki_split_32_100_0.3_8_predictions.txt
+02/24/2022 16:53:32 - INFO - __main__ - Rouge-L on test data: 0.8720
+02/24/2022 16:53:32 - INFO - __main__ - prefix=wiki_split_32_100, lr=0.3, bsz=8, dev_performance=0.8902086325135342, test_performance=0.8719526484565373
+02/24/2022 16:53:32 - INFO - __main__ - Running ... prefix=wiki_split_32_100, lr=0.2, bsz=8 ...
+02/24/2022 16:53:33 - INFO - __main__ - Start tokenizing ... 32 instances
+02/24/2022 16:53:33 - INFO - __main__ - Printing 3 examples
+02/24/2022 16:53:33 - INFO - __main__ -  [wiki_split] sentence 1: KHOTOUM is a Costume Design ( installation & photography ) exhibition , Opened on November 20th , 2014 in Cairo , Egypt .  [SEP] sentence 2:  Khotoum exhibition is inspired by Egyptian Painter , Abd El - Hady el Gazzar .
+02/24/2022 16:53:33 - INFO - __main__ - ['KHOTOUM is a Costume Design ( installation & photography ) exhibition that is inspired by the great Egyptian Painter , Abd El - Hady el Gazzar .']
+02/24/2022 16:53:33 - INFO - __main__ -  [wiki_split] sentence 1: The instrument is not dodecaphonically tempered , instead using the Istrian scale .  [SEP] sentence 2:  Its sound is distinct and unusual .
+02/24/2022 16:53:33 - INFO - __main__ - ['The instrument is not dodecaphonically tempered , it uses the Istrian scale and its sound is distinct and unusual .']
+02/24/2022 16:53:33 - INFO - __main__ -  [wiki_split] sentence 1: Male Tapanuli orangutans produce loud , long distance calls that can last for up to two minutes .  [SEP] sentence 2:  Their calls have a higher frequency and a higher number of pulses than those of other orangutan species .
+02/24/2022 16:53:33 - INFO - __main__ - ['Male Tapanuli orangutans produce loud , long distance calls with a high frequency and a high number of pulses distinct from those of other orangutan species .']
+02/24/2022 16:53:33 - INFO - __main__ - Tokenizing Input ...
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+/opt/conda/envs/meta/lib/python3.9/site-packages/transformers/tokenization_utils_base.py:2105: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+02/24/2022 16:53:33 - INFO - __main__ - Tokenizing Output ...
+02/24/2022 16:53:33 - INFO - __main__ - Loaded 32 examples from train data
+use DistributedSampler
+02/24/2022 16:53:33 - INFO - __main__ - Start tokenizing ... 32 instances
+02/24/2022 16:53:33 - INFO - __main__ - Printing 3 examples
+02/24/2022 16:53:33 - INFO - __main__ -  [wiki_split] sentence 1: Under the name '' J.J. Solari '' , he became a writer of short stories .  [SEP] sentence 2:  They were collected in a 2007 anthology called '' When Bikers Meet Humans '' .
+02/24/2022 16:53:33 - INFO - __main__ - ["Under the name '' J.J. Solari '' , he became a writer of short stories for biker magazines such as , which were collected in a 2007 anthology called '' When Bikers Meet Humans '' ."]
+02/24/2022 16:53:33 - INFO - __main__ -  [wiki_split] sentence 1: It featured others , notables like David Tyree who was a free agent due to the lack of depth on the New York Giants .  [SEP] sentence 2:  The most notable being Brett Favre of the New York Jets after coming out of retirement .
+02/24/2022 16:53:33 - INFO - __main__ - ['It featured others , notables like David Tyree who was a free agent due to the lack of depth on the New York Giants , with the most notable being Favre of the Jets after coming out of retirement .']
+02/24/2022 16:53:33 - INFO - __main__ -  [wiki_split] sentence 1: LED lamps are made that replace screw - in incandescent or compact fluorescent light bulbs .  [SEP] sentence 2:  Most LED lamps replace incandescent bulbs rated from 5 to 60 watts .
+02/24/2022 16:53:33 - INFO - __main__ - ['LED lamps are made that replace screw - in incandescent or compact fluorescent light bulbs , mostly replacing incandescent bulbs rated from 5 to 60 watts .']
+02/24/2022 16:53:33 - INFO - __main__ - Tokenizing Input ...
+02/24/2022 16:53:33 - INFO - __main__ - Tokenizing Output ...
+02/24/2022 16:53:33 - INFO - __main__ - Loaded 32 examples from dev data
+02/24/2022 16:53:45 - INFO - __main__ - load prompt embedding from ckpt
+02/24/2022 16:53:46 - INFO - root - ShardedDDP bucket size: 8.00M parameters, model size 746.97M parameters
+02/24/2022 16:53:46 - INFO - __main__ - Starting training!
+02/24/2022 16:53:49 - INFO - __main__ - Step 10 Global step 10 Train loss 0.85 on epoch=4
+02/24/2022 16:53:51 - INFO - __main__ - Step 20 Global step 20 Train loss 0.76 on epoch=9
+02/24/2022 16:53:53 - INFO - __main__ - Step 30 Global step 30 Train loss 0.71 on epoch=14
+02/24/2022 16:53:56 - INFO - __main__ - Step 40 Global step 40 Train loss 0.67 on epoch=19
+02/24/2022 16:53:58 - INFO - __main__ - Step 50 Global step 50 Train loss 0.65 on epoch=24
+02/24/2022 16:54:06 - INFO - __main__ - Global step 50 Train loss 0.73 Rouge-L 0.6393399104402411 on epoch=24
+02/24/2022 16:54:06 - INFO - __main__ - Saving model with best Rouge-L: -1.0 -> 0.6393399104402411 on epoch=24, global_step=50
+02/24/2022 16:54:08 - INFO - __main__ - Step 60 Global step 60 Train loss 0.64 on epoch=29
+02/24/2022 16:54:11 - INFO - __main__ - Step 70 Global step 70 Train loss 0.62 on epoch=34
+02/24/2022 16:54:13 - INFO - __main__ - Step 80 Global step 80 Train loss 0.59 on epoch=39
+02/24/2022 16:54:15 - INFO - __main__ - Step 90 Global step 90 Train loss 0.59 on epoch=44
+02/24/2022 16:54:17 - INFO - __main__ - Step 100 Global step 100 Train loss 0.57 on epoch=49
+02/24/2022 16:54:29 - INFO - __main__ - Global step 100 Train loss 0.60 Rouge-L 0.8223550208826764 on epoch=49
+02/24/2022 16:54:29 - INFO - __main__ - Saving model with best Rouge-L: 0.6393399104402411 -> 0.8223550208826764 on epoch=49, global_step=100
+02/24/2022 16:54:31 - INFO - __main__ - Step 110 Global step 110 Train loss 0.57 on epoch=54
+02/24/2022 16:54:33 - INFO - __main__ - Step 120 Global step 120 Train loss 0.55 on epoch=59
+02/24/2022 16:54:36 - INFO - __main__ - Step 130 Global step 130 Train loss 0.54 on epoch=64
+02/24/2022 16:54:38 - INFO - __main__ - Step 140 Global step 140 Train loss 0.54 on epoch=69
+02/24/2022 16:54:40 - INFO - __main__ - Step 150 Global step 150 Train loss 0.56 on epoch=74
+02/24/2022 16:54:52 - INFO - __main__ - Global step 150 Train loss 0.55 Rouge-L 0.8412343878140167 on epoch=74
+02/24/2022 16:54:52 - INFO - __main__ - Saving model with best Rouge-L: 0.8223550208826764 -> 0.8412343878140167 on epoch=74, global_step=150
+02/24/2022 16:54:54 - INFO - __main__ - Step 160 Global step 160 Train loss 0.53 on epoch=79
+02/24/2022 16:54:57 - INFO - __main__ - Step 170 Global step 170 Train loss 0.53 on epoch=84
+02/24/2022 16:54:59 - INFO - __main__ - Step 180 Global step 180 Train loss 0.52 on epoch=89
+02/24/2022 16:55:01 - INFO - __main__ - Step 190 Global step 190 Train loss 0.52 on epoch=94
+02/24/2022 16:55:03 - INFO - __main__ - Step 200 Global step 200 Train loss 0.51 on epoch=99
+02/24/2022 16:55:16 - INFO - __main__ - Global step 200 Train loss 0.52 Rouge-L 0.8636847386532296 on epoch=99
+02/24/2022 16:55:16 - INFO - __main__ - Saving model with best Rouge-L: 0.8412343878140167 -> 0.8636847386532296 on epoch=99, global_step=200
+02/24/2022 16:55:18 - INFO - __main__ - Step 210 Global step 210 Train loss 0.52 on epoch=104
+02/24/2022 16:55:20 - INFO - __main__ - Step 220 Global step 220 Train loss 0.51 on epoch=109
+02/24/2022 16:55:22 - INFO - __main__ - Step 230 Global step 230 Train loss 0.50 on epoch=114
+02/24/2022 16:55:25 - INFO - __main__ - Step 240 Global step 240 Train loss 0.50 on epoch=119
+02/24/2022 16:55:27 - INFO - __main__ - Step 250 Global step 250 Train loss 0.49 on epoch=124
+02/24/2022 16:55:39 - INFO - __main__ - Global step 250 Train loss 0.50 Rouge-L 0.8584411886215023 on epoch=124
+02/24/2022 16:55:41 - INFO - __main__ - Step 260 Global step 260 Train loss 0.48 on epoch=129
+02/24/2022 16:55:43 - INFO - __main__ - Step 270 Global step 270 Train loss 0.48 on epoch=134
+02/24/2022 16:55:45 - INFO - __main__ - Step 280 Global step 280 Train loss 0.47 on epoch=139
+02/24/2022 16:55:48 - INFO - __main__ - Step 290 Global step 290 Train loss 0.48 on epoch=144
+02/24/2022 16:55:50 - INFO - __main__ - Step 300 Global step 300 Train loss 0.46 on epoch=149
+02/24/2022 16:56:02 - INFO - __main__ - Global step 300 Train loss 0.48 Rouge-L 0.8593177004737184 on epoch=149
+02/24/2022 16:56:04 - INFO - __main__ - Step 310 Global step 310 Train loss 0.45 on epoch=154
+02/24/2022 16:56:06 - INFO - __main__ - Step 320 Global step 320 Train loss 0.46 on epoch=159
+02/24/2022 16:56:08 - INFO - __main__ - Step 330 Global step 330 Train loss 0.46 on epoch=164
+02/24/2022 16:56:10 - INFO - __main__ - Step 340 Global step 340 Train loss 0.45 on epoch=169
+02/24/2022 16:56:13 - INFO - __main__ - Step 350 Global step 350 Train loss 0.46 on epoch=174
+02/24/2022 16:56:24 - INFO - __main__ - Global step 350 Train loss 0.46 Rouge-L 0.868066789941753 on epoch=174
+02/24/2022 16:56:24 - INFO - __main__ - Saving model with best Rouge-L: 0.8636847386532296 -> 0.868066789941753 on epoch=174, global_step=350
+02/24/2022 16:56:26 - INFO - __main__ - Step 360 Global step 360 Train loss 0.47 on epoch=179
+02/24/2022 16:56:29 - INFO - __main__ - Step 370 Global step 370 Train loss 0.45 on epoch=184
+02/24/2022 16:56:31 - INFO - __main__ - Step 380 Global step 380 Train loss 0.45 on epoch=189
+02/24/2022 16:56:33 - INFO - __main__ - Step 390 Global step 390 Train loss 0.44 on epoch=194
+02/24/2022 16:56:35 - INFO - __main__ - Step 400 Global step 400 Train loss 0.44 on epoch=199
+02/24/2022 16:56:46 - INFO - __main__ - Global step 400 Train loss 0.45 Rouge-L 0.8553051815483416 on epoch=199
+02/24/2022 16:56:48 - INFO - __main__ - Step 410 Global step 410 Train loss 0.42 on epoch=204
+02/24/2022 16:56:50 - INFO - __main__ - Step 420 Global step 420 Train loss 0.43 on epoch=209
+02/24/2022 16:56:52 - INFO - __main__ - Step 430 Global step 430 Train loss 0.43 on epoch=214
+02/24/2022 16:56:55 - INFO - __main__ - Step 440 Global step 440 Train loss 0.42 on epoch=219
+02/24/2022 16:56:57 - INFO - __main__ - Step 450 Global step 450 Train loss 0.43 on epoch=224
+02/24/2022 16:57:07 - INFO - __main__ - Global step 450 Train loss 0.43 Rouge-L 0.8701628099600061 on epoch=224
+02/24/2022 16:57:07 - INFO - __main__ - Saving model with best Rouge-L: 0.868066789941753 -> 0.8701628099600061 on epoch=224, global_step=450
+02/24/2022 16:57:10 - INFO - __main__ - Step 460 Global step 460 Train loss 0.41 on epoch=229
+02/24/2022 16:57:12 - INFO - __main__ - Step 470 Global step 470 Train loss 0.43 on epoch=234
+02/24/2022 16:57:14 - INFO - __main__ - Step 480 Global step 480 Train loss 0.41 on epoch=239
+02/24/2022 16:57:16 - INFO - __main__ - Step 490 Global step 490 Train loss 0.41 on epoch=244
+02/24/2022 16:57:19 - INFO - __main__ - Step 500 Global step 500 Train loss 0.40 on epoch=249
+02/24/2022 16:57:29 - INFO - __main__ - Global step 500 Train loss 0.41 Rouge-L 0.8703770672612197 on epoch=249
+02/24/2022 16:57:29 - INFO - __main__ - Saving model with best Rouge-L: 0.8701628099600061 -> 0.8703770672612197 on epoch=249, global_step=500
+02/24/2022 16:57:31 - INFO - __main__ - Step 510 Global step 510 Train loss 0.40 on epoch=254
+02/24/2022 16:57:34 - INFO - __main__ - Step 520 Global step 520 Train loss 0.40 on epoch=259
+02/24/2022 16:57:36 - INFO - __main__ - Step 530 Global step 530 Train loss 0.40 on epoch=264
+02/24/2022 16:57:38 - INFO - __main__ - Step 540 Global step 540 Train loss 0.40 on epoch=269
+02/24/2022 16:57:40 - INFO - __main__ - Step 550 Global step 550 Train loss 0.38 on epoch=274
+02/24/2022 16:57:51 - INFO - __main__ - Global step 550 Train loss 0.40 Rouge-L 0.8695557638256068 on epoch=274
+02/24/2022 16:57:53 - INFO - __main__ - Step 560 Global step 560 Train loss 0.40 on epoch=279
+02/24/2022 16:57:56 - INFO - __main__ - Step 570 Global step 570 Train loss 0.39 on epoch=284
+02/24/2022 16:57:58 - INFO - __main__ - Step 580 Global step 580 Train loss 0.38 on epoch=289
+02/24/2022 16:58:00 - INFO - __main__ - Step 590 Global step 590 Train loss 0.38 on epoch=294
+02/24/2022 16:58:02 - INFO - __main__ - Step 600 Global step 600 Train loss 0.37 on epoch=299
+02/24/2022 16:58:13 - INFO - __main__ - Global step 600 Train loss 0.39 Rouge-L 0.8720955995126379 on epoch=299
+02/24/2022 16:58:13 - INFO - __main__ - Saving model with best Rouge-L: 0.8703770672612197 -> 0.8720955995126379 on epoch=299, global_step=600
+02/24/2022 16:58:15 - INFO - __main__ - Step 610 Global step 610 Train loss 0.39 on epoch=304
+02/24/2022 16:58:17 - INFO - __main__ - Step 620 Global step 620 Train loss 0.37 on epoch=309
+02/24/2022 16:58:19 - INFO - __main__ - Step 630 Global step 630 Train loss 0.36 on epoch=314
+02/24/2022 16:58:22 - INFO - __main__ - Step 640 Global step 640 Train loss 0.37 on epoch=319
+02/24/2022 16:58:24 - INFO - __main__ - Step 650 Global step 650 Train loss 0.36 on epoch=324
+02/24/2022 16:58:34 - INFO - __main__ - Global step 650 Train loss 0.37 Rouge-L 0.871827423471669 on epoch=324
+02/24/2022 16:58:37 - INFO - __main__ - Step 660 Global step 660 Train loss 0.37 on epoch=329
+02/24/2022 16:58:39 - INFO - __main__ - Step 670 Global step 670 Train loss 0.36 on epoch=334
+02/24/2022 16:58:41 - INFO - __main__ - Step 680 Global step 680 Train loss 0.36 on epoch=339
+02/24/2022 16:58:43 - INFO - __main__ - Step 690 Global step 690 Train loss 0.36 on epoch=344
+02/24/2022 16:58:45 - INFO - __main__ - Step 700 Global step 700 Train loss 0.35 on epoch=349
+02/24/2022 16:58:56 - INFO - __main__ - Global step 700 Train loss 0.36 Rouge-L 0.870109175613839 on epoch=349
+02/24/2022 16:58:58 - INFO - __main__ - Step 710 Global step 710 Train loss 0.34 on epoch=354
+02/24/2022 16:59:00 - INFO - __main__ - Step 720 Global step 720 Train loss 0.36 on epoch=359
+02/24/2022 16:59:02 - INFO - __main__ - Step 730 Global step 730 Train loss 0.35 on epoch=364
+02/24/2022 16:59:05 - INFO - __main__ - Step 740 Global step 740 Train loss 0.36 on epoch=369
+02/24/2022 16:59:07 - INFO - __main__ - Step 750 Global step 750 Train loss 0.34 on epoch=374
+02/24/2022 16:59:17 - INFO - __main__ - Global step 750 Train loss 0.35 Rouge-L 0.8721939125667949 on epoch=374
+02/24/2022 16:59:17 - INFO - __main__ - Saving model with best Rouge-L: 0.8720955995126379 -> 0.8721939125667949 on epoch=374, global_step=750
+02/24/2022 16:59:20 - INFO - __main__ - Step 760 Global step 760 Train loss 0.35 on epoch=379
+02/24/2022 16:59:22 - INFO - __main__ - Step 770 Global step 770 Train loss 0.32 on epoch=384
+02/24/2022 16:59:24 - INFO - __main__ - Step 780 Global step 780 Train loss 0.34 on epoch=389
+02/24/2022 16:59:27 - INFO - __main__ - Step 790 Global step 790 Train loss 0.33 on epoch=394
+02/24/2022 16:59:29 - INFO - __main__ - Step 800 Global step 800 Train loss 0.32 on epoch=399
+02/24/2022 16:59:39 - INFO - __main__ - Global step 800 Train loss 0.33 Rouge-L 0.8615386535836759 on epoch=399
+02/24/2022 16:59:42 - INFO - __main__ - Step 810 Global step 810 Train loss 0.33 on epoch=404
+02/24/2022 16:59:44 - INFO - __main__ - Step 820 Global step 820 Train loss 0.32 on epoch=409
+02/24/2022 16:59:47 - INFO - __main__ - Step 830 Global step 830 Train loss 0.32 on epoch=414
+02/24/2022 16:59:49 - INFO - __main__ - Step 840 Global step 840 Train loss 0.31 on epoch=419
+02/24/2022 16:59:52 - INFO - __main__ - Step 850 Global step 850 Train loss 0.34 on epoch=424
+02/24/2022 17:00:02 - INFO - __main__ - Global step 850 Train loss 0.32 Rouge-L 0.859919978006345 on epoch=424
+02/24/2022 17:00:05 - INFO - __main__ - Step 860 Global step 860 Train loss 0.31 on epoch=429
+02/24/2022 17:00:07 - INFO - __main__ - Step 870 Global step 870 Train loss 0.31 on epoch=434
+02/24/2022 17:00:09 - INFO - __main__ - Step 880 Global step 880 Train loss 0.32 on epoch=439
+02/24/2022 17:00:11 - INFO - __main__ - Step 890 Global step 890 Train loss 0.31 on epoch=444
+02/24/2022 17:00:14 - INFO - __main__ - Step 900 Global step 900 Train loss 0.31 on epoch=449
+02/24/2022 17:00:24 - INFO - __main__ - Global step 900 Train loss 0.31 Rouge-L 0.8590451221147513 on epoch=449
+02/24/2022 17:00:27 - INFO - __main__ - Step 910 Global step 910 Train loss 0.30 on epoch=454
+02/24/2022 17:00:29 - INFO - __main__ - Step 920 Global step 920 Train loss 0.31 on epoch=459
+02/24/2022 17:00:31 - INFO - __main__ - Step 930 Global step 930 Train loss 0.30 on epoch=464
+02/24/2022 17:00:33 - INFO - __main__ - Step 940 Global step 940 Train loss 0.31 on epoch=469
+02/24/2022 17:00:36 - INFO - __main__ - Step 950 Global step 950 Train loss 0.30 on epoch=474
+02/24/2022 17:00:46 - INFO - __main__ - Global step 950 Train loss 0.30 Rouge-L 0.856634687664731 on epoch=474
+02/24/2022 17:00:48 - INFO - __main__ - Step 960 Global step 960 Train loss 0.29 on epoch=479
+02/24/2022 17:00:51 - INFO - __main__ - Step 970 Global step 970 Train loss 0.29 on epoch=484
+02/24/2022 17:00:53 - INFO - __main__ - Step 980 Global step 980 Train loss 0.29 on epoch=489
+02/24/2022 17:00:55 - INFO - __main__ - Step 990 Global step 990 Train loss 0.30 on epoch=494
+02/24/2022 17:00:58 - INFO - __main__ - Step 1000 Global step 1000 Train loss 0.29 on epoch=499
+02/24/2022 17:01:08 - INFO - __main__ - Global step 1000 Train loss 0.29 Rouge-L 0.8558298577801192 on epoch=499
+02/24/2022 17:01:10 - INFO - __main__ - Step 1010 Global step 1010 Train loss 0.29 on epoch=504
+02/24/2022 17:01:13 - INFO - __main__ - Step 1020 Global step 1020 Train loss 0.28 on epoch=509
+02/24/2022 17:01:15 - INFO - __main__ - Step 1030 Global step 1030 Train loss 0.27 on epoch=514
+02/24/2022 17:01:17 - INFO - __main__ - Step 1040 Global step 1040 Train loss 0.27 on epoch=519
+02/24/2022 17:01:20 - INFO - __main__ - Step 1050 Global step 1050 Train loss 0.27 on epoch=524
+02/24/2022 17:01:31 - INFO - __main__ - Global step 1050 Train loss 0.28 Rouge-L 0.8544624849458257 on epoch=524
+02/24/2022 17:01:33 - INFO - __main__ - Step 1060 Global step 1060 Train loss 0.28 on epoch=529
+02/24/2022 17:01:35 - INFO - __main__ - Step 1070 Global step 1070 Train loss 0.26 on epoch=534
+02/24/2022 17:01:38 - INFO - __main__ - Step 1080 Global step 1080 Train loss 0.27 on epoch=539
+02/24/2022 17:01:40 - INFO - __main__ - Step 1090 Global step 1090 Train loss 0.27 on epoch=544
+02/24/2022 17:01:43 - INFO - __main__ - Step 1100 Global step 1100 Train loss 0.27 on epoch=549
+02/24/2022 17:01:54 - INFO - __main__ - Global step 1100 Train loss 0.27 Rouge-L 0.8530507514045123 on epoch=549
+02/24/2022 17:01:56 - INFO - __main__ - Step 1110 Global step 1110 Train loss 0.27 on epoch=554
+02/24/2022 17:01:58 - INFO - __main__ - Step 1120 Global step 1120 Train loss 0.26 on epoch=559
+02/24/2022 17:02:00 - INFO - __main__ - Step 1130 Global step 1130 Train loss 0.26 on epoch=564
+02/24/2022 17:02:03 - INFO - __main__ - Step 1140 Global step 1140 Train loss 0.27 on epoch=569
+02/24/2022 17:02:05 - INFO - __main__ - Step 1150 Global step 1150 Train loss 0.27 on epoch=574
+02/24/2022 17:02:15 - INFO - __main__ - Global step 1150 Train loss 0.27 Rouge-L 0.8512818696729929 on epoch=574
+02/24/2022 17:02:18 - INFO - __main__ - Step 1160 Global step 1160 Train loss 0.26 on epoch=579
+02/24/2022 17:02:20 - INFO - __main__ - Step 1170 Global step 1170 Train loss 0.28 on epoch=584
+02/24/2022 17:02:22 - INFO - __main__ - Step 1180 Global step 1180 Train loss 0.26 on epoch=589
+02/24/2022 17:02:24 - INFO - __main__ - Step 1190 Global step 1190 Train loss 0.25 on epoch=594
+02/24/2022 17:02:27 - INFO - __main__ - Step 1200 Global step 1200 Train loss 0.26 on epoch=599
+02/24/2022 17:02:38 - INFO - __main__ - Global step 1200 Train loss 0.26 Rouge-L 0.8548074775998629 on epoch=599
+02/24/2022 17:02:40 - INFO - __main__ - Step 1210 Global step 1210 Train loss 0.26 on epoch=604
+02/24/2022 17:02:43 - INFO - __main__ - Step 1220 Global step 1220 Train loss 0.25 on epoch=609
+02/24/2022 17:02:45 - INFO - __main__ - Step 1230 Global step 1230 Train loss 0.23 on epoch=614
+02/24/2022 17:02:47 - INFO - __main__ - Step 1240 Global step 1240 Train loss 0.25 on epoch=619
+02/24/2022 17:02:49 - INFO - __main__ - Step 1250 Global step 1250 Train loss 0.24 on epoch=624
+02/24/2022 17:03:00 - INFO - __main__ - Global step 1250 Train loss 0.25 Rouge-L 0.8556730336986016 on epoch=624
+02/24/2022 17:03:02 - INFO - __main__ - Step 1260 Global step 1260 Train loss 0.24 on epoch=629
+02/24/2022 17:03:04 - INFO - __main__ - Step 1270 Global step 1270 Train loss 0.24 on epoch=634
+02/24/2022 17:03:06 - INFO - __main__ - Step 1280 Global step 1280 Train loss 0.23 on epoch=639
+02/24/2022 17:03:09 - INFO - __main__ - Step 1290 Global step 1290 Train loss 0.25 on epoch=644
+02/24/2022 17:03:11 - INFO - __main__ - Step 1300 Global step 1300 Train loss 0.24 on epoch=649
+02/24/2022 17:03:22 - INFO - __main__ - Global step 1300 Train loss 0.24 Rouge-L 0.8610916762679379 on epoch=649
+02/24/2022 17:03:24 - INFO - __main__ - Step 1310 Global step 1310 Train loss 0.24 on epoch=654
+02/24/2022 17:03:26 - INFO - __main__ - Step 1320 Global step 1320 Train loss 0.24 on epoch=659
+02/24/2022 17:03:28 - INFO - __main__ - Step 1330 Global step 1330 Train loss 0.24 on epoch=664
+02/24/2022 17:03:31 - INFO - __main__ - Step 1340 Global step 1340 Train loss 0.24 on epoch=669
+02/24/2022 17:03:33 - INFO - __main__ - Step 1350 Global step 1350 Train loss 0.24 on epoch=674
+02/24/2022 17:03:44 - INFO - __main__ - Global step 1350 Train loss 0.24 Rouge-L 0.8595965796555449 on epoch=674
+02/24/2022 17:03:46 - INFO - __main__ - Step 1360 Global step 1360 Train loss 0.23 on epoch=679
+02/24/2022 17:03:48 - INFO - __main__ - Step 1370 Global step 1370 Train loss 0.24 on epoch=684
+02/24/2022 17:03:51 - INFO - __main__ - Step 1380 Global step 1380 Train loss 0.23 on epoch=689
+02/24/2022 17:03:53 - INFO - __main__ - Step 1390 Global step 1390 Train loss 0.23 on epoch=694
+02/24/2022 17:03:55 - INFO - __main__ - Step 1400 Global step 1400 Train loss 0.25 on epoch=699
+02/24/2022 17:04:06 - INFO - __main__ - Global step 1400 Train loss 0.23 Rouge-L 0.8650036953963482 on epoch=699
+02/24/2022 17:04:08 - INFO - __main__ - Step 1410 Global step 1410 Train loss 0.22 on epoch=704
+02/24/2022 17:04:10 - INFO - __main__ - Step 1420 Global step 1420 Train loss 0.24 on epoch=709
+02/24/2022 17:04:13 - INFO - __main__ - Step 1430 Global step 1430 Train loss 0.23 on epoch=714
+02/24/2022 17:04:15 - INFO - __main__ - Step 1440 Global step 1440 Train loss 0.22 on epoch=719
+02/24/2022 17:04:17 - INFO - __main__ - Step 1450 Global step 1450 Train loss 0.23 on epoch=724
+02/24/2022 17:04:28 - INFO - __main__ - Global step 1450 Train loss 0.23 Rouge-L 0.8531217436517281 on epoch=724
+02/24/2022 17:04:30 - INFO - __main__ - Step 1460 Global step 1460 Train loss 0.22 on epoch=729
+02/24/2022 17:04:33 - INFO - __main__ - Step 1470 Global step 1470 Train loss 0.21 on epoch=734
+02/24/2022 17:04:35 - INFO - __main__ - Step 1480 Global step 1480 Train loss 0.22 on epoch=739
+02/24/2022 17:04:37 - INFO - __main__ - Step 1490 Global step 1490 Train loss 0.23 on epoch=744
+02/24/2022 17:04:40 - INFO - __main__ - Step 1500 Global step 1500 Train loss 0.24 on epoch=749
+02/24/2022 17:04:51 - INFO - __main__ - Global step 1500 Train loss 0.22 Rouge-L 0.8489676062237576 on epoch=749
+02/24/2022 17:04:53 - INFO - __main__ - Step 1510 Global step 1510 Train loss 0.23 on epoch=754
+02/24/2022 17:04:55 - INFO - __main__ - Step 1520 Global step 1520 Train loss 0.23 on epoch=759
+02/24/2022 17:04:57 - INFO - __main__ - Step 1530 Global step 1530 Train loss 0.22 on epoch=764
+02/24/2022 17:05:00 - INFO - __main__ - Step 1540 Global step 1540 Train loss 0.22 on epoch=769
+02/24/2022 17:05:02 - INFO - __main__ - Step 1550 Global step 1550 Train loss 0.22 on epoch=774
+02/24/2022 17:05:13 - INFO - __main__ - Global step 1550 Train loss 0.22 Rouge-L 0.8608459154839629 on epoch=774
+02/24/2022 17:05:15 - INFO - __main__ - Step 1560 Global step 1560 Train loss 0.22 on epoch=779
+02/24/2022 17:05:17 - INFO - __main__ - Step 1570 Global step 1570 Train loss 0.21 on epoch=784
+02/24/2022 17:05:19 - INFO - __main__ - Step 1580 Global step 1580 Train loss 0.21 on epoch=789
+02/24/2022 17:05:22 - INFO - __main__ - Step 1590 Global step 1590 Train loss 0.21 on epoch=794
+02/24/2022 17:05:24 - INFO - __main__ - Step 1600 Global step 1600 Train loss 0.21 on epoch=799
+02/24/2022 17:05:35 - INFO - __main__ - Global step 1600 Train loss 0.21 Rouge-L 0.8573842347029749 on epoch=799
+02/24/2022 17:05:37 - INFO - __main__ - Step 1610 Global step 1610 Train loss 0.21 on epoch=804
+02/24/2022 17:05:39 - INFO - __main__ - Step 1620 Global step 1620 Train loss 0.21 on epoch=809
+02/24/2022 17:05:42 - INFO - __main__ - Step 1630 Global step 1630 Train loss 0.22 on epoch=814
+02/24/2022 17:05:44 - INFO - __main__ - Step 1640 Global step 1640 Train loss 0.20 on epoch=819
+02/24/2022 17:05:46 - INFO - __main__ - Step 1650 Global step 1650 Train loss 0.20 on epoch=824
+02/24/2022 17:05:56 - INFO - __main__ - Global step 1650 Train loss 0.21 Rouge-L 0.8603758005203995 on epoch=824
+02/24/2022 17:05:59 - INFO - __main__ - Step 1660 Global step 1660 Train loss 0.21 on epoch=829
+02/24/2022 17:06:01 - INFO - __main__ - Step 1670 Global step 1670 Train loss 0.20 on epoch=834
+02/24/2022 17:06:03 - INFO - __main__ - Step 1680 Global step 1680 Train loss 0.21 on epoch=839
+02/24/2022 17:06:05 - INFO - __main__ - Step 1690 Global step 1690 Train loss 0.21 on epoch=844
+02/24/2022 17:06:08 - INFO - __main__ - Step 1700 Global step 1700 Train loss 0.20 on epoch=849
+02/24/2022 17:06:18 - INFO - __main__ - Global step 1700 Train loss 0.21 Rouge-L 0.8641385237462085 on epoch=849
+02/24/2022 17:06:21 - INFO - __main__ - Step 1710 Global step 1710 Train loss 0.21 on epoch=854
+02/24/2022 17:06:23 - INFO - __main__ - Step 1720 Global step 1720 Train loss 0.19 on epoch=859
+02/24/2022 17:06:25 - INFO - __main__ - Step 1730 Global step 1730 Train loss 0.21 on epoch=864
+02/24/2022 17:06:27 - INFO - __main__ - Step 1740 Global step 1740 Train loss 0.20 on epoch=869
+02/24/2022 17:06:30 - INFO - __main__ - Step 1750 Global step 1750 Train loss 0.18 on epoch=874
+02/24/2022 17:06:40 - INFO - __main__ - Global step 1750 Train loss 0.20 Rouge-L 0.8544976664023172 on epoch=874
+02/24/2022 17:06:42 - INFO - __main__ - Step 1760 Global step 1760 Train loss 0.20 on epoch=879
+02/24/2022 17:06:45 - INFO - __main__ - Step 1770 Global step 1770 Train loss 0.20 on epoch=884
+02/24/2022 17:06:47 - INFO - __main__ - Step 1780 Global step 1780 Train loss 0.18 on epoch=889
+02/24/2022 17:06:49 - INFO - __main__ - Step 1790 Global step 1790 Train loss 0.20 on epoch=894
+02/24/2022 17:06:51 - INFO - __main__ - Step 1800 Global step 1800 Train loss 0.18 on epoch=899
+02/24/2022 17:07:02 - INFO - __main__ - Global step 1800 Train loss 0.19 Rouge-L 0.8608941768095064 on epoch=899
+02/24/2022 17:07:04 - INFO - __main__ - Step 1810 Global step 1810 Train loss 0.19 on epoch=904
+02/24/2022 17:07:07 - INFO - __main__ - Step 1820 Global step 1820 Train loss 0.18 on epoch=909
+02/24/2022 17:07:09 - INFO - __main__ - Step 1830 Global step 1830 Train loss 0.18 on epoch=914
+02/24/2022 17:07:11 - INFO - __main__ - Step 1840 Global step 1840 Train loss 0.19 on epoch=919
+02/24/2022 17:07:13 - INFO - __main__ - Step 1850 Global step 1850 Train loss 0.18 on epoch=924
+02/24/2022 17:07:25 - INFO - __main__ - Global step 1850 Train loss 0.18 Rouge-L 0.8585158533006867 on epoch=924
+02/24/2022 17:07:27 - INFO - __main__ - Step 1860 Global step 1860 Train loss 0.19 on epoch=929
+02/24/2022 17:07:29 - INFO - __main__ - Step 1870 Global step 1870 Train loss 0.19 on epoch=934
+02/24/2022 17:07:32 - INFO - __main__ - Step 1880 Global step 1880 Train loss 0.19 on epoch=939
+02/24/2022 17:07:34 - INFO - __main__ - Step 1890 Global step 1890 Train loss 0.18 on epoch=944
+02/24/2022 17:07:36 - INFO - __main__ - Step 1900 Global step 1900 Train loss 0.18 on epoch=949
+02/24/2022 17:07:46 - INFO - __main__ - Global step 1900 Train loss 0.18 Rouge-L 0.8606859352121912 on epoch=949
+02/24/2022 17:07:49 - INFO - __main__ - Step 1910 Global step 1910 Train loss 0.18 on epoch=954
+02/24/2022 17:07:51 - INFO - __main__ - Step 1920 Global step 1920 Train loss 0.19 on epoch=959
+02/24/2022 17:07:53 - INFO - __main__ - Step 1930 Global step 1930 Train loss 0.19 on epoch=964
+02/24/2022 17:07:55 - INFO - __main__ - Step 1940 Global step 1940 Train loss 0.18 on epoch=969
+02/24/2022 17:07:58 - INFO - __main__ - Step 1950 Global step 1950 Train loss 0.18 on epoch=974
+02/24/2022 17:08:09 - INFO - __main__ - Global step 1950 Train loss 0.18 Rouge-L 0.8623625037367153 on epoch=974
+02/24/2022 17:08:12 - INFO - __main__ - Step 1960 Global step 1960 Train loss 0.18 on epoch=979
+02/24/2022 17:08:14 - INFO - __main__ - Step 1970 Global step 1970 Train loss 0.18 on epoch=984
+02/24/2022 17:08:16 - INFO - __main__ - Step 1980 Global step 1980 Train loss 0.18 on epoch=989
+02/24/2022 17:08:18 - INFO - __main__ - Step 1990 Global step 1990 Train loss 0.17 on epoch=994
+02/24/2022 17:08:21 - INFO - __main__ - Step 2000 Global step 2000 Train loss 0.17 on epoch=999
+02/24/2022 17:08:22 - INFO - __main__ - Start tokenizing ... 32 instances
+02/24/2022 17:08:22 - INFO - __main__ - Printing 3 examples
+02/24/2022 17:08:22 - INFO - __main__ -  [wiki_split] sentence 1: It was the last game of the year .  [SEP] sentence 2:  Lenhovda was taking on ? on their home ground in front of 1,100 attendants .
+02/24/2022 17:08:22 - INFO - __main__ - ['It was the last game of the year , when Lenhovda played a game on their home ground in front of 1,100 attendants .']
+02/24/2022 17:08:22 - INFO - __main__ -  [wiki_split] sentence 1: His father Dr. Sachinand Tiwari was a Professor at Indian Institute of Technology , Kanpur .  [SEP] sentence 2:  Naveen completed his Bachelor 's degree in Mechanical Engineering from Indian Institute of Technology , Kanpur ( IIT ) in 2000 .
+02/24/2022 17:08:22 - INFO - __main__ - ["His father Dr. Sachinand Tiwari was a Professor at Indian Institute of Technology , Kanpur India and completed his Bachelor 's degree in Mechanical Engineering from Indian Institute of Technology , Kanpur ( IIT ) in 2000 ."]
+02/24/2022 17:08:22 - INFO - __main__ -  [wiki_split] sentence 1: The Desolation of Smaug '' is a 2013 epic fantasy adventure film directed by Peter Jackson .  [SEP] sentence 2:  It was produced by New Line Cinema and Metro - Goldwyn - Mayer in collaboration with Wingnut Films .
+02/24/2022 17:08:22 - INFO - __main__ - ["The Desolation of Smaug '' is a 2013 epic fantasy adventure film produced by New Line Cinema and Metro - Goldwyn - Mayer in collaboration with Wingnut Films ."]
+02/24/2022 17:08:22 - INFO - __main__ - Tokenizing Input ...
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+02/24/2022 17:08:22 - INFO - __main__ - Tokenizing Output ...
+02/24/2022 17:08:22 - INFO - __main__ - Loaded 32 examples from train data
+use DistributedSampler
+02/24/2022 17:08:22 - INFO - __main__ - Start tokenizing ... 32 instances
+02/24/2022 17:08:22 - INFO - __main__ - Printing 3 examples
+02/24/2022 17:08:22 - INFO - __main__ -  [wiki_split] sentence 1: She becomes angry and files a divorce petition in court .  [SEP] sentence 2:  However , the next court hearing takes place in six months , and meanwhile Aastha is ordered to stay with Shlok .
+02/24/2022 17:08:22 - INFO - __main__ - ['She becomes angry and files a divorce petition in the court and the next hearing in court is delayed to six months , and Aastha is ordered to stay with Shlok .']
+02/24/2022 17:08:22 - INFO - __main__ -  [wiki_split] sentence 1: He narrowly avoids being seen by a crowd of pale - skinned humanoids .  [SEP] sentence 2:  These creatures possess heightened senses of smell and strength and wield primitive spears .
+02/24/2022 17:08:22 - INFO - __main__ - ['He narrowly avoids being seen by a crowd of pale - skinned humanoids with heightened senses of smell and strength and wield primitive spears .']
+02/24/2022 17:08:22 - INFO - __main__ -  [wiki_split] sentence 1: In Draschwitz , Bessler received a visit from the eminent mathematician Gottfried Wilhelm Leibniz .  [SEP] sentence 2:  In a letter to Robert Erskine , physician and advisor to Russian Tsar Peter the Great , Leibniz later wrote that Bessler was '' one of my friends '' and that he believed Bessler 's wheel to be a valuable invention .
+02/24/2022 17:08:22 - INFO - __main__ - ["In Draschwitz , Bessler received a visit from the eminent mathematician Gottfried Wilhelm Leibniz , who later wrote to Russian Tsar Peter the Great 's physician that Bessler was '' one of my friends '' and that he believed Bessler 's wheel to be a valuable invention ."]
+02/24/2022 17:08:22 - INFO - __main__ - Tokenizing Input ...
+02/24/2022 17:08:22 - INFO - __main__ - Tokenizing Output ...
+02/24/2022 17:08:22 - INFO - __main__ - Loaded 32 examples from dev data
+02/24/2022 17:08:32 - INFO - __main__ - Global step 2000 Train loss 0.18 Rouge-L 0.8577783318937383 on epoch=999
+02/24/2022 17:08:32 - INFO - __main__ - save last model!
+02/24/2022 17:08:32 - INFO - __main__ - Loading checkpoint from best ckpt on the fly
+02/24/2022 17:08:32 - INFO - __main__ - Start tokenizing ... 5000 instances
+02/24/2022 17:08:32 - INFO - __main__ - Printing 3 examples
+02/24/2022 17:08:32 - INFO - __main__ -  [wiki_split] sentence 1: ' Lauren Rose Crace ' , born 25th of May 1986 in Birmingham , England , is the daughter of Jim Crace who is a contemporary English writer .  [SEP] sentence 2:  Crace currently plays the part of '' Ronnie Mitchell 's '' long lost daughter Danielle Jones ( Amy ) in the soap opera '' EastEnders '' .
+02/24/2022 17:08:32 - INFO - __main__ - ["' Lauren Rose Crace ' , born 25th of May 1986 in Birmingham , England , currently plays the part of '' Ronnie Mitchell 's '' long lost daughter Danielle Jones ( Amy ) in the soap opera '' EastEnders '' ."]
+02/24/2022 17:08:32 - INFO - __main__ -  [wiki_split] sentence 1: '' A Living Library '' was Sherk 's work that consisted of transforming buried urban streams and asphalted public spaces into thriving art gardens .  [SEP] sentence 2:  She transformed these spaces for to build educations centers for children in communities in San Francisco and New York City .
+02/24/2022 17:08:32 - INFO - __main__ - ["'' A Living Library '' was Bonnie Sherk 's work of transforming buried urban streams and asphalted public spaces into thriving educational art gardens for communities in San Francisco and New York City ."]
+02/24/2022 17:08:32 - INFO - __main__ -  [wiki_split] sentence 1: '' All Singing , All Dancing '' is the eleventh episode of '' The Simpsons '' ' ninth season .  [SEP] sentence 2:  It originally aired on the Fox network in the United States on January 4 , 1998 .
+02/24/2022 17:08:32 - INFO - __main__ - ["'' All Singing , All Dancing '' is the eleventh episode of '' The Simpsons '' ' ninth season and originally aired on the Fox network on January 4 , 1998 ."]
+02/24/2022 17:08:32 - INFO - __main__ - Tokenizing Input ...
+02/24/2022 17:08:35 - INFO - __main__ - Tokenizing Output ...
+02/24/2022 17:08:36 - INFO - __main__ - load prompt embedding from ckpt
+02/24/2022 17:08:37 - INFO - root - ShardedDDP bucket size: 8.00M parameters, model size 746.97M parameters
+02/24/2022 17:08:37 - INFO - __main__ - Starting training!
+02/24/2022 17:08:41 - INFO - __main__ - Loaded 5000 examples from test data
+02/24/2022 17:37:30 - INFO - __main__ - Saved prediction in models/T5-large-maml-random-3e-5-2-5000-5e-1/singletask-wiki_split/wiki_split_32_100_0.2_8_predictions.txt
+02/24/2022 17:37:35 - INFO - __main__ - Rouge-L on test data: 0.8681
+02/24/2022 17:37:36 - INFO - __main__ - prefix=wiki_split_32_100, lr=0.2, bsz=8, dev_performance=0.8721939125667949, test_performance=0.8680701494132711
+02/24/2022 17:37:36 - INFO - __main__ - Running ... prefix=wiki_split_32_13, lr=0.5, bsz=8 ...
+02/24/2022 17:37:37 - INFO - __main__ - Start tokenizing ... 32 instances
+02/24/2022 17:37:37 - INFO - __main__ - Printing 3 examples
+02/24/2022 17:37:37 - INFO - __main__ -  [wiki_split] sentence 1: It was the last game of the year .  [SEP] sentence 2:  Lenhovda was taking on ? on their home ground in front of 1,100 attendants .
+02/24/2022 17:37:37 - INFO - __main__ - ['It was the last game of the year , when Lenhovda played a game on their home ground in front of 1,100 attendants .']
+02/24/2022 17:37:37 - INFO - __main__ -  [wiki_split] sentence 1: His father Dr. Sachinand Tiwari was a Professor at Indian Institute of Technology , Kanpur .  [SEP] sentence 2:  Naveen completed his Bachelor 's degree in Mechanical Engineering from Indian Institute of Technology , Kanpur ( IIT ) in 2000 .
+02/24/2022 17:37:37 - INFO - __main__ - ["His father Dr. Sachinand Tiwari was a Professor at Indian Institute of Technology , Kanpur India and completed his Bachelor 's degree in Mechanical Engineering from Indian Institute of Technology , Kanpur ( IIT ) in 2000 ."]
+02/24/2022 17:37:37 - INFO - __main__ -  [wiki_split] sentence 1: The Desolation of Smaug '' is a 2013 epic fantasy adventure film directed by Peter Jackson .  [SEP] sentence 2:  It was produced by New Line Cinema and Metro - Goldwyn - Mayer in collaboration with Wingnut Films .
+02/24/2022 17:37:37 - INFO - __main__ - ["The Desolation of Smaug '' is a 2013 epic fantasy adventure film produced by New Line Cinema and Metro - Goldwyn - Mayer in collaboration with Wingnut Films ."]
+02/24/2022 17:37:37 - INFO - __main__ - Tokenizing Input ...
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+/opt/conda/envs/meta/lib/python3.9/site-packages/transformers/tokenization_utils_base.py:2105: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+02/24/2022 17:37:37 - INFO - __main__ - Tokenizing Output ...
+02/24/2022 17:37:37 - INFO - __main__ - Loaded 32 examples from train data
+use DistributedSampler
+02/24/2022 17:37:37 - INFO - __main__ - Start tokenizing ... 32 instances
+02/24/2022 17:37:37 - INFO - __main__ - Printing 3 examples
+02/24/2022 17:37:37 - INFO - __main__ -  [wiki_split] sentence 1: She becomes angry and files a divorce petition in court .  [SEP] sentence 2:  However , the next court hearing takes place in six months , and meanwhile Aastha is ordered to stay with Shlok .
+02/24/2022 17:37:37 - INFO - __main__ - ['She becomes angry and files a divorce petition in the court and the next hearing in court is delayed to six months , and Aastha is ordered to stay with Shlok .']
+02/24/2022 17:37:37 - INFO - __main__ -  [wiki_split] sentence 1: He narrowly avoids being seen by a crowd of pale - skinned humanoids .  [SEP] sentence 2:  These creatures possess heightened senses of smell and strength and wield primitive spears .
+02/24/2022 17:37:37 - INFO - __main__ - ['He narrowly avoids being seen by a crowd of pale - skinned humanoids with heightened senses of smell and strength and wield primitive spears .']
+02/24/2022 17:37:37 - INFO - __main__ -  [wiki_split] sentence 1: In Draschwitz , Bessler received a visit from the eminent mathematician Gottfried Wilhelm Leibniz .  [SEP] sentence 2:  In a letter to Robert Erskine , physician and advisor to Russian Tsar Peter the Great , Leibniz later wrote that Bessler was '' one of my friends '' and that he believed Bessler 's wheel to be a valuable invention .
+02/24/2022 17:37:37 - INFO - __main__ - ["In Draschwitz , Bessler received a visit from the eminent mathematician Gottfried Wilhelm Leibniz , who later wrote to Russian Tsar Peter the Great 's physician that Bessler was '' one of my friends '' and that he believed Bessler 's wheel to be a valuable invention ."]
+02/24/2022 17:37:37 - INFO - __main__ - Tokenizing Input ...
+02/24/2022 17:37:37 - INFO - __main__ - Tokenizing Output ...
+02/24/2022 17:37:37 - INFO - __main__ - Loaded 32 examples from dev data
+02/24/2022 17:37:49 - INFO - __main__ - load prompt embedding from ckpt
+02/24/2022 17:37:49 - INFO - root - ShardedDDP bucket size: 8.00M parameters, model size 746.97M parameters
+02/24/2022 17:37:49 - INFO - __main__ - Starting training!
+02/24/2022 17:37:52 - INFO - __main__ - Step 10 Global step 10 Train loss 0.73 on epoch=4
+02/24/2022 17:37:55 - INFO - __main__ - Step 20 Global step 20 Train loss 0.62 on epoch=9
+02/24/2022 17:37:57 - INFO - __main__ - Step 30 Global step 30 Train loss 0.56 on epoch=14
+02/24/2022 17:37:59 - INFO - __main__ - Step 40 Global step 40 Train loss 0.52 on epoch=19
+02/24/2022 17:38:01 - INFO - __main__ - Step 50 Global step 50 Train loss 0.51 on epoch=24
+02/24/2022 17:38:11 - INFO - __main__ - Global step 50 Train loss 0.59 Rouge-L 0.8469553800994757 on epoch=24
+02/24/2022 17:38:11 - INFO - __main__ - Saving model with best Rouge-L: -1.0 -> 0.8469553800994757 on epoch=24, global_step=50
+02/24/2022 17:38:14 - INFO - __main__ - Step 60 Global step 60 Train loss 0.48 on epoch=29
+02/24/2022 17:38:16 - INFO - __main__ - Step 70 Global step 70 Train loss 0.47 on epoch=34
+02/24/2022 17:38:18 - INFO - __main__ - Step 80 Global step 80 Train loss 0.46 on epoch=39
+02/24/2022 17:38:20 - INFO - __main__ - Step 90 Global step 90 Train loss 0.45 on epoch=44
+02/24/2022 17:38:22 - INFO - __main__ - Step 100 Global step 100 Train loss 0.43 on epoch=49
+02/24/2022 17:38:33 - INFO - __main__ - Global step 100 Train loss 0.46 Rouge-L 0.8487788063971275 on epoch=49
+02/24/2022 17:38:33 - INFO - __main__ - Saving model with best Rouge-L: 0.8469553800994757 -> 0.8487788063971275 on epoch=49, global_step=100
+02/24/2022 17:38:35 - INFO - __main__ - Step 110 Global step 110 Train loss 0.44 on epoch=54
+02/24/2022 17:38:37 - INFO - __main__ - Step 120 Global step 120 Train loss 0.41 on epoch=59
+02/24/2022 17:38:39 - INFO - __main__ - Step 130 Global step 130 Train loss 0.42 on epoch=64
+02/24/2022 17:38:41 - INFO - __main__ - Step 140 Global step 140 Train loss 0.40 on epoch=69
+02/24/2022 17:38:43 - INFO - __main__ - Step 150 Global step 150 Train loss 0.38 on epoch=74
+02/24/2022 17:38:55 - INFO - __main__ - Global step 150 Train loss 0.41 Rouge-L 0.8483581180911076 on epoch=74
+02/24/2022 17:38:57 - INFO - __main__ - Step 160 Global step 160 Train loss 0.37 on epoch=79
+02/24/2022 17:38:59 - INFO - __main__ - Step 170 Global step 170 Train loss 0.37 on epoch=84
+02/24/2022 17:39:01 - INFO - __main__ - Step 180 Global step 180 Train loss 0.35 on epoch=89
+02/24/2022 17:39:03 - INFO - __main__ - Step 190 Global step 190 Train loss 0.35 on epoch=94
+02/24/2022 17:39:05 - INFO - __main__ - Step 200 Global step 200 Train loss 0.35 on epoch=99
+02/24/2022 17:39:17 - INFO - __main__ - Global step 200 Train loss 0.36 Rouge-L 0.8565549150086744 on epoch=99
+02/24/2022 17:39:17 - INFO - __main__ - Saving model with best Rouge-L: 0.8487788063971275 -> 0.8565549150086744 on epoch=99, global_step=200
+02/24/2022 17:39:19 - INFO - __main__ - Step 210 Global step 210 Train loss 0.33 on epoch=104
+02/24/2022 17:39:21 - INFO - __main__ - Step 220 Global step 220 Train loss 0.32 on epoch=109
+02/24/2022 17:39:23 - INFO - __main__ - Step 230 Global step 230 Train loss 0.31 on epoch=114
+02/24/2022 17:39:25 - INFO - __main__ - Step 240 Global step 240 Train loss 0.30 on epoch=119
+02/24/2022 17:39:28 - INFO - __main__ - Step 250 Global step 250 Train loss 0.31 on epoch=124
+02/24/2022 17:39:39 - INFO - __main__ - Global step 250 Train loss 0.32 Rouge-L 0.8746627096990172 on epoch=124
+02/24/2022 17:39:39 - INFO - __main__ - Saving model with best Rouge-L: 0.8565549150086744 -> 0.8746627096990172 on epoch=124, global_step=250
+02/24/2022 17:39:42 - INFO - __main__ - Step 260 Global step 260 Train loss 0.28 on epoch=129
+02/24/2022 17:39:44 - INFO - __main__ - Step 270 Global step 270 Train loss 0.29 on epoch=134
+02/24/2022 17:39:46 - INFO - __main__ - Step 280 Global step 280 Train loss 0.26 on epoch=139
+02/24/2022 17:39:48 - INFO - __main__ - Step 290 Global step 290 Train loss 0.25 on epoch=144
+02/24/2022 17:39:50 - INFO - __main__ - Step 300 Global step 300 Train loss 0.26 on epoch=149
+02/24/2022 17:40:02 - INFO - __main__ - Global step 300 Train loss 0.27 Rouge-L 0.8631375610003581 on epoch=149
+02/24/2022 17:40:04 - INFO - __main__ - Step 310 Global step 310 Train loss 0.26 on epoch=154
+02/24/2022 17:40:06 - INFO - __main__ - Step 320 Global step 320 Train loss 0.25 on epoch=159
+02/24/2022 17:40:09 - INFO - __main__ - Step 330 Global step 330 Train loss 0.24 on epoch=164
+02/24/2022 17:40:11 - INFO - __main__ - Step 340 Global step 340 Train loss 0.23 on epoch=169
+02/24/2022 17:40:13 - INFO - __main__ - Step 350 Global step 350 Train loss 0.22 on epoch=174
+02/24/2022 17:40:25 - INFO - __main__ - Global step 350 Train loss 0.24 Rouge-L 0.8663581223899564 on epoch=174
+02/24/2022 17:40:27 - INFO - __main__ - Step 360 Global step 360 Train loss 0.21 on epoch=179
+02/24/2022 17:40:29 - INFO - __main__ - Step 370 Global step 370 Train loss 0.21 on epoch=184
+02/24/2022 17:40:31 - INFO - __main__ - Step 380 Global step 380 Train loss 0.21 on epoch=189
+02/24/2022 17:40:33 - INFO - __main__ - Step 390 Global step 390 Train loss 0.20 on epoch=194
+02/24/2022 17:40:35 - INFO - __main__ - Step 400 Global step 400 Train loss 0.20 on epoch=199
+02/24/2022 17:40:47 - INFO - __main__ - Global step 400 Train loss 0.21 Rouge-L 0.8608990873575485 on epoch=199
+02/24/2022 17:40:49 - INFO - __main__ - Step 410 Global step 410 Train loss 0.19 on epoch=204
+02/24/2022 17:40:51 - INFO - __main__ - Step 420 Global step 420 Train loss 0.18 on epoch=209
+02/24/2022 17:40:54 - INFO - __main__ - Step 430 Global step 430 Train loss 0.19 on epoch=214
+02/24/2022 17:40:56 - INFO - __main__ - Step 440 Global step 440 Train loss 0.19 on epoch=219
+02/24/2022 17:40:58 - INFO - __main__ - Step 450 Global step 450 Train loss 0.19 on epoch=224
+02/24/2022 17:41:10 - INFO - __main__ - Global step 450 Train loss 0.19 Rouge-L 0.8499094452934937 on epoch=224
+02/24/2022 17:41:12 - INFO - __main__ - Step 460 Global step 460 Train loss 0.17 on epoch=229
+02/24/2022 17:41:14 - INFO - __main__ - Step 470 Global step 470 Train loss 0.17 on epoch=234
+02/24/2022 17:41:16 - INFO - __main__ - Step 480 Global step 480 Train loss 0.17 on epoch=239
+02/24/2022 17:41:18 - INFO - __main__ - Step 490 Global step 490 Train loss 0.16 on epoch=244
+02/24/2022 17:41:20 - INFO - __main__ - Step 500 Global step 500 Train loss 0.16 on epoch=249
+02/24/2022 17:41:32 - INFO - __main__ - Global step 500 Train loss 0.17 Rouge-L 0.8586514537695256 on epoch=249
+02/24/2022 17:41:34 - INFO - __main__ - Step 510 Global step 510 Train loss 0.15 on epoch=254
+02/24/2022 17:41:36 - INFO - __main__ - Step 520 Global step 520 Train loss 0.14 on epoch=259
+02/24/2022 17:41:39 - INFO - __main__ - Step 530 Global step 530 Train loss 0.15 on epoch=264
+02/24/2022 17:41:41 - INFO - __main__ - Step 540 Global step 540 Train loss 0.15 on epoch=269
+02/24/2022 17:41:43 - INFO - __main__ - Step 550 Global step 550 Train loss 0.15 on epoch=274
+02/24/2022 17:41:54 - INFO - __main__ - Global step 550 Train loss 0.15 Rouge-L 0.855160609366467 on epoch=274
+02/24/2022 17:41:56 - INFO - __main__ - Step 560 Global step 560 Train loss 0.14 on epoch=279
+02/24/2022 17:41:58 - INFO - __main__ - Step 570 Global step 570 Train loss 0.14 on epoch=284
+02/24/2022 17:42:01 - INFO - __main__ - Step 580 Global step 580 Train loss 0.15 on epoch=289
+02/24/2022 17:42:03 - INFO - __main__ - Step 590 Global step 590 Train loss 0.15 on epoch=294
+02/24/2022 17:42:05 - INFO - __main__ - Step 600 Global step 600 Train loss 0.14 on epoch=299
+02/24/2022 17:42:16 - INFO - __main__ - Global step 600 Train loss 0.14 Rouge-L 0.8723136163859937 on epoch=299
+02/24/2022 17:42:19 - INFO - __main__ - Step 610 Global step 610 Train loss 0.14 on epoch=304
+02/24/2022 17:42:21 - INFO - __main__ - Step 620 Global step 620 Train loss 0.12 on epoch=309
+02/24/2022 17:42:23 - INFO - __main__ - Step 630 Global step 630 Train loss 0.13 on epoch=314
+02/24/2022 17:42:25 - INFO - __main__ - Step 640 Global step 640 Train loss 0.12 on epoch=319
+02/24/2022 17:42:27 - INFO - __main__ - Step 650 Global step 650 Train loss 0.12 on epoch=324
+02/24/2022 17:42:39 - INFO - __main__ - Global step 650 Train loss 0.13 Rouge-L 0.8669944207233078 on epoch=324
+02/24/2022 17:42:41 - INFO - __main__ - Step 660 Global step 660 Train loss 0.13 on epoch=329
+02/24/2022 17:42:43 - INFO - __main__ - Step 670 Global step 670 Train loss 0.12 on epoch=334
+02/24/2022 17:42:45 - INFO - __main__ - Step 680 Global step 680 Train loss 0.13 on epoch=339
+02/24/2022 17:42:47 - INFO - __main__ - Step 690 Global step 690 Train loss 0.10 on epoch=344
+02/24/2022 17:42:50 - INFO - __main__ - Step 700 Global step 700 Train loss 0.12 on epoch=349
+02/24/2022 17:43:02 - INFO - __main__ - Global step 700 Train loss 0.12 Rouge-L 0.8581095535062648 on epoch=349
+02/24/2022 17:43:04 - INFO - __main__ - Step 710 Global step 710 Train loss 0.10 on epoch=354
+02/24/2022 17:43:06 - INFO - __main__ - Step 720 Global step 720 Train loss 0.10 on epoch=359
+02/24/2022 17:43:09 - INFO - __main__ - Step 730 Global step 730 Train loss 0.10 on epoch=364
+02/24/2022 17:43:11 - INFO - __main__ - Step 740 Global step 740 Train loss 0.10 on epoch=369
+02/24/2022 17:43:13 - INFO - __main__ - Step 750 Global step 750 Train loss 0.11 on epoch=374
+02/24/2022 17:43:25 - INFO - __main__ - Global step 750 Train loss 0.10 Rouge-L 0.8605126620979242 on epoch=374
+02/24/2022 17:43:27 - INFO - __main__ - Step 760 Global step 760 Train loss 0.10 on epoch=379
+02/24/2022 17:43:30 - INFO - __main__ - Step 770 Global step 770 Train loss 0.10 on epoch=384
+02/24/2022 17:43:32 - INFO - __main__ - Step 780 Global step 780 Train loss 0.10 on epoch=389
+02/24/2022 17:43:34 - INFO - __main__ - Step 790 Global step 790 Train loss 0.10 on epoch=394
+02/24/2022 17:43:36 - INFO - __main__ - Step 800 Global step 800 Train loss 0.10 on epoch=399
+02/24/2022 17:43:48 - INFO - __main__ - Global step 800 Train loss 0.10 Rouge-L 0.8541254493372906 on epoch=399
+02/24/2022 17:43:50 - INFO - __main__ - Step 810 Global step 810 Train loss 0.11 on epoch=404
+02/24/2022 17:43:52 - INFO - __main__ - Step 820 Global step 820 Train loss 0.11 on epoch=409
+02/24/2022 17:43:54 - INFO - __main__ - Step 830 Global step 830 Train loss 0.10 on epoch=414
+02/24/2022 17:43:56 - INFO - __main__ - Step 840 Global step 840 Train loss 0.10 on epoch=419
+02/24/2022 17:43:58 - INFO - __main__ - Step 850 Global step 850 Train loss 0.09 on epoch=424
+02/24/2022 17:44:10 - INFO - __main__ - Global step 850 Train loss 0.10 Rouge-L 0.8565112613618402 on epoch=424
+02/24/2022 17:44:12 - INFO - __main__ - Step 860 Global step 860 Train loss 0.09 on epoch=429
+02/24/2022 17:44:15 - INFO - __main__ - Step 870 Global step 870 Train loss 0.09 on epoch=434
+02/24/2022 17:44:17 - INFO - __main__ - Step 880 Global step 880 Train loss 0.09 on epoch=439
+02/24/2022 17:44:19 - INFO - __main__ - Step 890 Global step 890 Train loss 0.08 on epoch=444
+02/24/2022 17:44:21 - INFO - __main__ - Step 900 Global step 900 Train loss 0.10 on epoch=449
+02/24/2022 17:44:33 - INFO - __main__ - Global step 900 Train loss 0.09 Rouge-L 0.8701506912007463 on epoch=449
+02/24/2022 17:44:35 - INFO - __main__ - Step 910 Global step 910 Train loss 0.11 on epoch=454
+02/24/2022 17:44:37 - INFO - __main__ - Step 920 Global step 920 Train loss 0.12 on epoch=459
+02/24/2022 17:44:40 - INFO - __main__ - Step 930 Global step 930 Train loss 0.10 on epoch=464
+02/24/2022 17:44:42 - INFO - __main__ - Step 940 Global step 940 Train loss 0.10 on epoch=469
+02/24/2022 17:44:44 - INFO - __main__ - Step 950 Global step 950 Train loss 0.09 on epoch=474
+02/24/2022 17:44:56 - INFO - __main__ - Global step 950 Train loss 0.10 Rouge-L 0.8520600948942088 on epoch=474
+02/24/2022 17:44:58 - INFO - __main__ - Step 960 Global step 960 Train loss 0.08 on epoch=479
+02/24/2022 17:45:00 - INFO - __main__ - Step 970 Global step 970 Train loss 0.09 on epoch=484
+02/24/2022 17:45:02 - INFO - __main__ - Step 980 Global step 980 Train loss 0.09 on epoch=489
+02/24/2022 17:45:04 - INFO - __main__ - Step 990 Global step 990 Train loss 0.08 on epoch=494
+02/24/2022 17:45:07 - INFO - __main__ - Step 1000 Global step 1000 Train loss 0.07 on epoch=499
+02/24/2022 17:45:18 - INFO - __main__ - Global step 1000 Train loss 0.08 Rouge-L 0.8333182761430193 on epoch=499
+02/24/2022 17:45:20 - INFO - __main__ - Step 1010 Global step 1010 Train loss 0.08 on epoch=504
+02/24/2022 17:45:23 - INFO - __main__ - Step 1020 Global step 1020 Train loss 0.08 on epoch=509
+02/24/2022 17:45:25 - INFO - __main__ - Step 1030 Global step 1030 Train loss 0.08 on epoch=514
+02/24/2022 17:45:27 - INFO - __main__ - Step 1040 Global step 1040 Train loss 0.08 on epoch=519
+02/24/2022 17:45:29 - INFO - __main__ - Step 1050 Global step 1050 Train loss 0.08 on epoch=524
+02/24/2022 17:45:41 - INFO - __main__ - Global step 1050 Train loss 0.08 Rouge-L 0.8630173432831745 on epoch=524
+02/24/2022 17:45:43 - INFO - __main__ - Step 1060 Global step 1060 Train loss 0.08 on epoch=529
+02/24/2022 17:45:45 - INFO - __main__ - Step 1070 Global step 1070 Train loss 0.08 on epoch=534
+02/24/2022 17:45:47 - INFO - __main__ - Step 1080 Global step 1080 Train loss 0.08 on epoch=539
+02/24/2022 17:45:50 - INFO - __main__ - Step 1090 Global step 1090 Train loss 0.08 on epoch=544
+02/24/2022 17:45:52 - INFO - __main__ - Step 1100 Global step 1100 Train loss 0.07 on epoch=549
+02/24/2022 17:46:03 - INFO - __main__ - Global step 1100 Train loss 0.08 Rouge-L 0.860142033258366 on epoch=549
+02/24/2022 17:46:06 - INFO - __main__ - Step 1110 Global step 1110 Train loss 0.07 on epoch=554
+02/24/2022 17:46:08 - INFO - __main__ - Step 1120 Global step 1120 Train loss 0.07 on epoch=559
+02/24/2022 17:46:10 - INFO - __main__ - Step 1130 Global step 1130 Train loss 0.06 on epoch=564
+02/24/2022 17:46:12 - INFO - __main__ - Step 1140 Global step 1140 Train loss 0.07 on epoch=569
+02/24/2022 17:46:14 - INFO - __main__ - Step 1150 Global step 1150 Train loss 0.06 on epoch=574
+02/24/2022 17:46:26 - INFO - __main__ - Global step 1150 Train loss 0.07 Rouge-L 0.8559285519510859 on epoch=574
+02/24/2022 17:46:28 - INFO - __main__ - Step 1160 Global step 1160 Train loss 0.07 on epoch=579
+02/24/2022 17:46:31 - INFO - __main__ - Step 1170 Global step 1170 Train loss 0.07 on epoch=584
+02/24/2022 17:46:33 - INFO - __main__ - Step 1180 Global step 1180 Train loss 0.07 on epoch=589
+02/24/2022 17:46:35 - INFO - __main__ - Step 1190 Global step 1190 Train loss 0.07 on epoch=594
+02/24/2022 17:46:37 - INFO - __main__ - Step 1200 Global step 1200 Train loss 0.06 on epoch=599
+02/24/2022 17:46:49 - INFO - __main__ - Global step 1200 Train loss 0.07 Rouge-L 0.8613238896618562 on epoch=599
+02/24/2022 17:46:51 - INFO - __main__ - Step 1210 Global step 1210 Train loss 0.06 on epoch=604
+02/24/2022 17:46:53 - INFO - __main__ - Step 1220 Global step 1220 Train loss 0.07 on epoch=609
+02/24/2022 17:46:55 - INFO - __main__ - Step 1230 Global step 1230 Train loss 0.07 on epoch=614
+02/24/2022 17:46:58 - INFO - __main__ - Step 1240 Global step 1240 Train loss 0.06 on epoch=619
+02/24/2022 17:47:00 - INFO - __main__ - Step 1250 Global step 1250 Train loss 0.07 on epoch=624
+02/24/2022 17:47:12 - INFO - __main__ - Global step 1250 Train loss 0.07 Rouge-L 0.8664646596822145 on epoch=624
+02/24/2022 17:47:14 - INFO - __main__ - Step 1260 Global step 1260 Train loss 0.07 on epoch=629
+02/24/2022 17:47:16 - INFO - __main__ - Step 1270 Global step 1270 Train loss 0.05 on epoch=634
+02/24/2022 17:47:18 - INFO - __main__ - Step 1280 Global step 1280 Train loss 0.06 on epoch=639
+02/24/2022 17:47:20 - INFO - __main__ - Step 1290 Global step 1290 Train loss 0.06 on epoch=644
+02/24/2022 17:47:22 - INFO - __main__ - Step 1300 Global step 1300 Train loss 0.05 on epoch=649
+02/24/2022 17:47:34 - INFO - __main__ - Global step 1300 Train loss 0.06 Rouge-L 0.8627395861152345 on epoch=649
+02/24/2022 17:47:36 - INFO - __main__ - Step 1310 Global step 1310 Train loss 0.05 on epoch=654
+02/24/2022 17:47:39 - INFO - __main__ - Step 1320 Global step 1320 Train loss 0.06 on epoch=659
+02/24/2022 17:47:41 - INFO - __main__ - Step 1330 Global step 1330 Train loss 0.06 on epoch=664
+02/24/2022 17:47:43 - INFO - __main__ - Step 1340 Global step 1340 Train loss 0.06 on epoch=669
+02/24/2022 17:47:45 - INFO - __main__ - Step 1350 Global step 1350 Train loss 0.05 on epoch=674
+02/24/2022 17:47:57 - INFO - __main__ - Global step 1350 Train loss 0.06 Rouge-L 0.8638126603197451 on epoch=674
+02/24/2022 17:47:59 - INFO - __main__ - Step 1360 Global step 1360 Train loss 0.06 on epoch=679
+02/24/2022 17:48:01 - INFO - __main__ - Step 1370 Global step 1370 Train loss 0.06 on epoch=684
+02/24/2022 17:48:04 - INFO - __main__ - Step 1380 Global step 1380 Train loss 0.06 on epoch=689
+02/24/2022 17:48:06 - INFO - __main__ - Step 1390 Global step 1390 Train loss 0.06 on epoch=694
+02/24/2022 17:48:08 - INFO - __main__ - Step 1400 Global step 1400 Train loss 0.05 on epoch=699
+02/24/2022 17:48:20 - INFO - __main__ - Global step 1400 Train loss 0.06 Rouge-L 0.8559935303265951 on epoch=699
+02/24/2022 17:48:22 - INFO - __main__ - Step 1410 Global step 1410 Train loss 0.05 on epoch=704
+02/24/2022 17:48:24 - INFO - __main__ - Step 1420 Global step 1420 Train loss 0.06 on epoch=709
+02/24/2022 17:48:26 - INFO - __main__ - Step 1430 Global step 1430 Train loss 0.05 on epoch=714
+02/24/2022 17:48:28 - INFO - __main__ - Step 1440 Global step 1440 Train loss 0.06 on epoch=719
+02/24/2022 17:48:31 - INFO - __main__ - Step 1450 Global step 1450 Train loss 0.07 on epoch=724
+02/24/2022 17:48:42 - INFO - __main__ - Global step 1450 Train loss 0.06 Rouge-L 0.851728436437093 on epoch=724
+02/24/2022 17:48:45 - INFO - __main__ - Step 1460 Global step 1460 Train loss 0.04 on epoch=729
+02/24/2022 17:48:47 - INFO - __main__ - Step 1470 Global step 1470 Train loss 0.05 on epoch=734
+02/24/2022 17:48:49 - INFO - __main__ - Step 1480 Global step 1480 Train loss 0.04 on epoch=739
+02/24/2022 17:48:51 - INFO - __main__ - Step 1490 Global step 1490 Train loss 0.06 on epoch=744
+02/24/2022 17:48:53 - INFO - __main__ - Step 1500 Global step 1500 Train loss 0.05 on epoch=749
+02/24/2022 17:49:05 - INFO - __main__ - Global step 1500 Train loss 0.05 Rouge-L 0.8441742815104072 on epoch=749
+02/24/2022 17:49:07 - INFO - __main__ - Step 1510 Global step 1510 Train loss 0.05 on epoch=754
+02/24/2022 17:49:10 - INFO - __main__ - Step 1520 Global step 1520 Train loss 0.05 on epoch=759
+02/24/2022 17:49:12 - INFO - __main__ - Step 1530 Global step 1530 Train loss 0.05 on epoch=764
+02/24/2022 17:49:14 - INFO - __main__ - Step 1540 Global step 1540 Train loss 0.05 on epoch=769
+02/24/2022 17:49:16 - INFO - __main__ - Step 1550 Global step 1550 Train loss 0.05 on epoch=774
+02/24/2022 17:49:28 - INFO - __main__ - Global step 1550 Train loss 0.05 Rouge-L 0.8443926899839347 on epoch=774
+02/24/2022 17:49:30 - INFO - __main__ - Step 1560 Global step 1560 Train loss 0.04 on epoch=779
+02/24/2022 17:49:32 - INFO - __main__ - Step 1570 Global step 1570 Train loss 0.05 on epoch=784
+02/24/2022 17:49:34 - INFO - __main__ - Step 1580 Global step 1580 Train loss 0.05 on epoch=789
+02/24/2022 17:49:37 - INFO - __main__ - Step 1590 Global step 1590 Train loss 0.04 on epoch=794
+02/24/2022 17:49:39 - INFO - __main__ - Step 1600 Global step 1600 Train loss 0.04 on epoch=799
+02/24/2022 17:49:51 - INFO - __main__ - Global step 1600 Train loss 0.05 Rouge-L 0.8547234897238972 on epoch=799
+02/24/2022 17:49:53 - INFO - __main__ - Step 1610 Global step 1610 Train loss 0.05 on epoch=804
+02/24/2022 17:49:55 - INFO - __main__ - Step 1620 Global step 1620 Train loss 0.05 on epoch=809
+02/24/2022 17:49:57 - INFO - __main__ - Step 1630 Global step 1630 Train loss 0.05 on epoch=814
+02/24/2022 17:49:59 - INFO - __main__ - Step 1640 Global step 1640 Train loss 0.04 on epoch=819
+02/24/2022 17:50:01 - INFO - __main__ - Step 1650 Global step 1650 Train loss 0.05 on epoch=824
+02/24/2022 17:50:13 - INFO - __main__ - Global step 1650 Train loss 0.05 Rouge-L 0.8613921715377725 on epoch=824
+02/24/2022 17:50:15 - INFO - __main__ - Step 1660 Global step 1660 Train loss 0.04 on epoch=829
+02/24/2022 17:50:18 - INFO - __main__ - Step 1670 Global step 1670 Train loss 0.05 on epoch=834
+02/24/2022 17:50:20 - INFO - __main__ - Step 1680 Global step 1680 Train loss 0.05 on epoch=839
+02/24/2022 17:50:22 - INFO - __main__ - Step 1690 Global step 1690 Train loss 0.04 on epoch=844
+02/24/2022 17:50:24 - INFO - __main__ - Step 1700 Global step 1700 Train loss 0.04 on epoch=849
+02/24/2022 17:50:36 - INFO - __main__ - Global step 1700 Train loss 0.04 Rouge-L 0.8643284913320297 on epoch=849
+02/24/2022 17:50:38 - INFO - __main__ - Step 1710 Global step 1710 Train loss 0.05 on epoch=854
+02/24/2022 17:50:40 - INFO - __main__ - Step 1720 Global step 1720 Train loss 0.04 on epoch=859
+02/24/2022 17:50:42 - INFO - __main__ - Step 1730 Global step 1730 Train loss 0.04 on epoch=864
+02/24/2022 17:50:44 - INFO - __main__ - Step 1740 Global step 1740 Train loss 0.03 on epoch=869
+02/24/2022 17:50:47 - INFO - __main__ - Step 1750 Global step 1750 Train loss 0.04 on epoch=874
+02/24/2022 17:50:58 - INFO - __main__ - Global step 1750 Train loss 0.04 Rouge-L 0.8584651111246736 on epoch=874
+02/24/2022 17:51:00 - INFO - __main__ - Step 1760 Global step 1760 Train loss 0.05 on epoch=879
+02/24/2022 17:51:02 - INFO - __main__ - Step 1770 Global step 1770 Train loss 0.04 on epoch=884
+02/24/2022 17:51:04 - INFO - __main__ - Step 1780 Global step 1780 Train loss 0.05 on epoch=889
+02/24/2022 17:51:07 - INFO - __main__ - Step 1790 Global step 1790 Train loss 0.04 on epoch=894
+02/24/2022 17:51:09 - INFO - __main__ - Step 1800 Global step 1800 Train loss 0.04 on epoch=899
+02/24/2022 17:51:20 - INFO - __main__ - Global step 1800 Train loss 0.04 Rouge-L 0.8545563709672606 on epoch=899
+02/24/2022 17:51:23 - INFO - __main__ - Step 1810 Global step 1810 Train loss 0.04 on epoch=904
+02/24/2022 17:51:25 - INFO - __main__ - Step 1820 Global step 1820 Train loss 0.05 on epoch=909
+02/24/2022 17:51:27 - INFO - __main__ - Step 1830 Global step 1830 Train loss 0.05 on epoch=914
+02/24/2022 17:51:29 - INFO - __main__ - Step 1840 Global step 1840 Train loss 0.04 on epoch=919
+02/24/2022 17:51:31 - INFO - __main__ - Step 1850 Global step 1850 Train loss 0.04 on epoch=924
+02/24/2022 17:51:43 - INFO - __main__ - Global step 1850 Train loss 0.04 Rouge-L 0.8638618591660923 on epoch=924
+02/24/2022 17:51:45 - INFO - __main__ - Step 1860 Global step 1860 Train loss 0.04 on epoch=929
+02/24/2022 17:51:47 - INFO - __main__ - Step 1870 Global step 1870 Train loss 0.04 on epoch=934
+02/24/2022 17:51:49 - INFO - __main__ - Step 1880 Global step 1880 Train loss 0.04 on epoch=939
+02/24/2022 17:51:51 - INFO - __main__ - Step 1890 Global step 1890 Train loss 0.03 on epoch=944
+02/24/2022 17:51:53 - INFO - __main__ - Step 1900 Global step 1900 Train loss 0.04 on epoch=949
+02/24/2022 17:52:05 - INFO - __main__ - Global step 1900 Train loss 0.04 Rouge-L 0.8470480907223514 on epoch=949
+02/24/2022 17:52:08 - INFO - __main__ - Step 1910 Global step 1910 Train loss 0.03 on epoch=954
+02/24/2022 17:52:10 - INFO - __main__ - Step 1920 Global step 1920 Train loss 0.03 on epoch=959
+02/24/2022 17:52:12 - INFO - __main__ - Step 1930 Global step 1930 Train loss 0.04 on epoch=964
+02/24/2022 17:52:14 - INFO - __main__ - Step 1940 Global step 1940 Train loss 0.04 on epoch=969
+02/24/2022 17:52:16 - INFO - __main__ - Step 1950 Global step 1950 Train loss 0.04 on epoch=974
+02/24/2022 17:52:28 - INFO - __main__ - Global step 1950 Train loss 0.03 Rouge-L 0.8554069455495148 on epoch=974
+02/24/2022 17:52:30 - INFO - __main__ - Step 1960 Global step 1960 Train loss 0.03 on epoch=979
+02/24/2022 17:52:33 - INFO - __main__ - Step 1970 Global step 1970 Train loss 0.03 on epoch=984
+02/24/2022 17:52:35 - INFO - __main__ - Step 1980 Global step 1980 Train loss 0.04 on epoch=989
+02/24/2022 17:52:37 - INFO - __main__ - Step 1990 Global step 1990 Train loss 0.03 on epoch=994
+02/24/2022 17:52:39 - INFO - __main__ - Step 2000 Global step 2000 Train loss 0.03 on epoch=999
+02/24/2022 17:52:40 - INFO - __main__ - Start tokenizing ... 32 instances
+02/24/2022 17:52:40 - INFO - __main__ - Printing 3 examples
+02/24/2022 17:52:40 - INFO - __main__ -  [wiki_split] sentence 1: It was the last game of the year .  [SEP] sentence 2:  Lenhovda was taking on ? on their home ground in front of 1,100 attendants .
+02/24/2022 17:52:40 - INFO - __main__ - ['It was the last game of the year , when Lenhovda played a game on their home ground in front of 1,100 attendants .']
+02/24/2022 17:52:40 - INFO - __main__ -  [wiki_split] sentence 1: His father Dr. Sachinand Tiwari was a Professor at Indian Institute of Technology , Kanpur .  [SEP] sentence 2:  Naveen completed his Bachelor 's degree in Mechanical Engineering from Indian Institute of Technology , Kanpur ( IIT ) in 2000 .
+02/24/2022 17:52:40 - INFO - __main__ - ["His father Dr. Sachinand Tiwari was a Professor at Indian Institute of Technology , Kanpur India and completed his Bachelor 's degree in Mechanical Engineering from Indian Institute of Technology , Kanpur ( IIT ) in 2000 ."]
+02/24/2022 17:52:40 - INFO - __main__ -  [wiki_split] sentence 1: The Desolation of Smaug '' is a 2013 epic fantasy adventure film directed by Peter Jackson .  [SEP] sentence 2:  It was produced by New Line Cinema and Metro - Goldwyn - Mayer in collaboration with Wingnut Films .
+02/24/2022 17:52:40 - INFO - __main__ - ["The Desolation of Smaug '' is a 2013 epic fantasy adventure film produced by New Line Cinema and Metro - Goldwyn - Mayer in collaboration with Wingnut Films ."]
+02/24/2022 17:52:40 - INFO - __main__ - Tokenizing Input ...
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+02/24/2022 17:52:40 - INFO - __main__ - Tokenizing Output ...
+02/24/2022 17:52:40 - INFO - __main__ - Loaded 32 examples from train data
+use DistributedSampler
+02/24/2022 17:52:40 - INFO - __main__ - Start tokenizing ... 32 instances
+02/24/2022 17:52:40 - INFO - __main__ - Printing 3 examples
+02/24/2022 17:52:40 - INFO - __main__ -  [wiki_split] sentence 1: She becomes angry and files a divorce petition in court .  [SEP] sentence 2:  However , the next court hearing takes place in six months , and meanwhile Aastha is ordered to stay with Shlok .
+02/24/2022 17:52:40 - INFO - __main__ - ['She becomes angry and files a divorce petition in the court and the next hearing in court is delayed to six months , and Aastha is ordered to stay with Shlok .']
+02/24/2022 17:52:40 - INFO - __main__ -  [wiki_split] sentence 1: He narrowly avoids being seen by a crowd of pale - skinned humanoids .  [SEP] sentence 2:  These creatures possess heightened senses of smell and strength and wield primitive spears .
+02/24/2022 17:52:40 - INFO - __main__ - ['He narrowly avoids being seen by a crowd of pale - skinned humanoids with heightened senses of smell and strength and wield primitive spears .']
+02/24/2022 17:52:40 - INFO - __main__ -  [wiki_split] sentence 1: In Draschwitz , Bessler received a visit from the eminent mathematician Gottfried Wilhelm Leibniz .  [SEP] sentence 2:  In a letter to Robert Erskine , physician and advisor to Russian Tsar Peter the Great , Leibniz later wrote that Bessler was '' one of my friends '' and that he believed Bessler 's wheel to be a valuable invention .
+02/24/2022 17:52:40 - INFO - __main__ - ["In Draschwitz , Bessler received a visit from the eminent mathematician Gottfried Wilhelm Leibniz , who later wrote to Russian Tsar Peter the Great 's physician that Bessler was '' one of my friends '' and that he believed Bessler 's wheel to be a valuable invention ."]
+02/24/2022 17:52:40 - INFO - __main__ - Tokenizing Input ...
+02/24/2022 17:52:40 - INFO - __main__ - Tokenizing Output ...
+02/24/2022 17:52:40 - INFO - __main__ - Loaded 32 examples from dev data
+02/24/2022 17:52:51 - INFO - __main__ - Global step 2000 Train loss 0.03 Rouge-L 0.863770815652483 on epoch=999
+02/24/2022 17:52:51 - INFO - __main__ - save last model!
+02/24/2022 17:52:51 - INFO - __main__ - Loading checkpoint from best ckpt on the fly
+02/24/2022 17:52:51 - INFO - __main__ - Start tokenizing ... 5000 instances
+02/24/2022 17:52:51 - INFO - __main__ - Printing 3 examples
+02/24/2022 17:52:51 - INFO - __main__ -  [wiki_split] sentence 1: ' Lauren Rose Crace ' , born 25th of May 1986 in Birmingham , England , is the daughter of Jim Crace who is a contemporary English writer .  [SEP] sentence 2:  Crace currently plays the part of '' Ronnie Mitchell 's '' long lost daughter Danielle Jones ( Amy ) in the soap opera '' EastEnders '' .
+02/24/2022 17:52:51 - INFO - __main__ - ["' Lauren Rose Crace ' , born 25th of May 1986 in Birmingham , England , currently plays the part of '' Ronnie Mitchell 's '' long lost daughter Danielle Jones ( Amy ) in the soap opera '' EastEnders '' ."]
+02/24/2022 17:52:51 - INFO - __main__ -  [wiki_split] sentence 1: '' A Living Library '' was Sherk 's work that consisted of transforming buried urban streams and asphalted public spaces into thriving art gardens .  [SEP] sentence 2:  She transformed these spaces for to build educations centers for children in communities in San Francisco and New York City .
+02/24/2022 17:52:51 - INFO - __main__ - ["'' A Living Library '' was Bonnie Sherk 's work of transforming buried urban streams and asphalted public spaces into thriving educational art gardens for communities in San Francisco and New York City ."]
+02/24/2022 17:52:51 - INFO - __main__ -  [wiki_split] sentence 1: '' All Singing , All Dancing '' is the eleventh episode of '' The Simpsons '' ' ninth season .  [SEP] sentence 2:  It originally aired on the Fox network in the United States on January 4 , 1998 .
+02/24/2022 17:52:51 - INFO - __main__ - ["'' All Singing , All Dancing '' is the eleventh episode of '' The Simpsons '' ' ninth season and originally aired on the Fox network on January 4 , 1998 ."]
+02/24/2022 17:52:51 - INFO - __main__ - Tokenizing Input ...
+02/24/2022 17:52:53 - INFO - __main__ - Tokenizing Output ...
+02/24/2022 17:52:54 - INFO - __main__ - load prompt embedding from ckpt
+02/24/2022 17:52:55 - INFO - root - ShardedDDP bucket size: 8.00M parameters, model size 746.97M parameters
+02/24/2022 17:52:55 - INFO - __main__ - Starting training!
+02/24/2022 17:52:59 - INFO - __main__ - Loaded 5000 examples from test data

@@ -1,0 +1,3 @@
+bash singletask_from_multi_nocls2nocls.sh
+bash singletask_from_multi_cls2nocls.sh
+bash singletask_from_multi_both2nocls.sh

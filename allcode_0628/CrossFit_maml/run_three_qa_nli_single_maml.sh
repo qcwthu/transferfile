@@ -1,0 +1,3 @@
+bash singletask_from_meta_noqa2qa.sh
+#bash singletask_from_meta_qa2qa.sh
+#bash singletask_from_meta_nonli2nli.sh

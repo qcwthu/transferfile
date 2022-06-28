@@ -1,0 +1,371 @@
+nohup: ignoring input
+Task: superglue-cb, Checkpoint: models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt, Identifier: T5-large-maml-nocls2cls-3e-5-2-5000-5e-1
+Traceback (most recent call last):
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 227, in <module>
+    main()
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 142, in main
+    handlers=[logging.FileHandler(os.path.join(args.output_dir, log_filename)),
+  File "/opt/conda/envs/meta/lib/python3.9/logging/__init__.py", line 1146, in __init__
+    StreamHandler.__init__(self, self._open())
+  File "/opt/conda/envs/meta/lib/python3.9/logging/__init__.py", line 1175, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding,
+FileNotFoundError: [Errno 2] No such file or directory: '/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-superglue-cb/log.txt'
+03/21/2022 15:48:00 - INFO - __main__ - Namespace(task_dir='data/superglue-cb/', task_name='superglue-cb', identifier='T5-large-maml-nocls2cls-3e-5-2-5000-5e-1', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-superglue-cb', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=0, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='6,7')
+03/21/2022 15:48:00 - INFO - __main__ - models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-superglue-cb
+Traceback (most recent call last):
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 227, in <module>
+    main()
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 147, in main
+    exit - 1
+TypeError: unsupported operand type(s) for -: 'Quitter' and 'int'
+Traceback (most recent call last):
+  File "/opt/conda/envs/meta/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/conda/envs/meta/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 340, in <module>
+    main()
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 326, in main
+    sigkill_handler(signal.SIGTERM, None)  # not coming back
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 301, in sigkill_handler
+    raise subprocess.CalledProcessError(returncode=last_return_code, cmd=cmd)
+subprocess.CalledProcessError: Command '['/opt/conda/envs/meta/bin/python', '-u', 'singletask_from_meta_nocls2cls.py', '--local_rank=1', '--task_dir', 'data/superglue-cb/', '--task_name', 'superglue-cb', '--identifier', 'T5-large-maml-nocls2cls-3e-5-2-5000-5e-1', '--checkpoint', 'models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt', '--do_train', '--do_predict', '--learning_rate_list', '5e-1', '4e-1', '3e-1', '2e-1', '--bsz_list', '8', '--predict_batch_size', '16', '--total_steps', '3000', '--eval_period', '50', '--warmup_steps', '50', '--num_train_epochs', '1000.0', '--gradient_accumulation_steps', '1', '--output_dir', 'models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-superglue-cb', '--cuda', '6,7', '--lm_adapted_path', '/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', '--model', 'google/t5-v1_1-large', '--prompt_number', '100']' returned non-zero exit status 1.
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+Killing subprocess 23969
+Killing subprocess 23970
+++++++++++++++++++++++++++++++
+kill: (23974): No such process
+Task: dbpedia_14, Checkpoint: models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt, Identifier: T5-large-maml-nocls2cls-3e-5-2-5000-5e-1
+Traceback (most recent call last):
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 227, in <module>
+    main()
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 142, in main
+    handlers=[logging.FileHandler(os.path.join(args.output_dir, log_filename)),
+  File "/opt/conda/envs/meta/lib/python3.9/logging/__init__.py", line 1146, in __init__
+    StreamHandler.__init__(self, self._open())
+  File "/opt/conda/envs/meta/lib/python3.9/logging/__init__.py", line 1175, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding,
+FileNotFoundError: [Errno 2] No such file or directory: '/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-dbpedia_14/log.txt'
+03/21/2022 15:48:04 - INFO - __main__ - Namespace(task_dir='data/dbpedia_14/', task_name='dbpedia_14', identifier='T5-large-maml-nocls2cls-3e-5-2-5000-5e-1', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-dbpedia_14', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=0, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='6,7')
+03/21/2022 15:48:04 - INFO - __main__ - models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-dbpedia_14
+Traceback (most recent call last):
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 227, in <module>
+    main()
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 147, in main
+    exit - 1
+TypeError: unsupported operand type(s) for -: 'Quitter' and 'int'
+Traceback (most recent call last):
+  File "/opt/conda/envs/meta/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/conda/envs/meta/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 340, in <module>
+    main()
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 326, in main
+    sigkill_handler(signal.SIGTERM, None)  # not coming back
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 301, in sigkill_handler
+    raise subprocess.CalledProcessError(returncode=last_return_code, cmd=cmd)
+subprocess.CalledProcessError: Command '['/opt/conda/envs/meta/bin/python', '-u', 'singletask_from_meta_nocls2cls.py', '--local_rank=1', '--task_dir', 'data/dbpedia_14/', '--task_name', 'dbpedia_14', '--identifier', 'T5-large-maml-nocls2cls-3e-5-2-5000-5e-1', '--checkpoint', 'models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt', '--do_train', '--do_predict', '--learning_rate_list', '5e-1', '4e-1', '3e-1', '2e-1', '--bsz_list', '8', '--predict_batch_size', '16', '--total_steps', '3000', '--eval_period', '50', '--warmup_steps', '50', '--num_train_epochs', '1000.0', '--gradient_accumulation_steps', '1', '--output_dir', 'models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-dbpedia_14', '--cuda', '6,7', '--lm_adapted_path', '/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', '--model', 'google/t5-v1_1-large', '--prompt_number', '100']' returned non-zero exit status 1.
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+Killing subprocess 23979
+Killing subprocess 23980
+++++++++++++++++++++++++++++++
+kill: (23984): No such process
+Task: wiki_qa, Checkpoint: models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt, Identifier: T5-large-maml-nocls2cls-3e-5-2-5000-5e-1
+03/21/2022 15:48:09 - INFO - __main__ - Namespace(task_dir='data/wiki_qa/', task_name='wiki_qa', identifier='T5-large-maml-nocls2cls-3e-5-2-5000-5e-1', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-wiki_qa', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=0, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='6,7')
+03/21/2022 15:48:09 - INFO - __main__ - models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-wiki_qa
+Traceback (most recent call last):
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 227, in <module>
+    main()
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 147, in main
+    exit - 1
+TypeError: unsupported operand type(s) for -: 'Quitter' and 'int'
+03/21/2022 15:48:09 - INFO - __main__ - Namespace(task_dir='data/wiki_qa/', task_name='wiki_qa', identifier='T5-large-maml-nocls2cls-3e-5-2-5000-5e-1', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-wiki_qa', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=1, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='6,7')
+03/21/2022 15:48:09 - INFO - __main__ - models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-wiki_qa
+Traceback (most recent call last):
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 227, in <module>
+    main()
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 147, in main
+    exit - 1
+TypeError: unsupported operand type(s) for -: 'Quitter' and 'int'
+Traceback (most recent call last):
+  File "/opt/conda/envs/meta/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/conda/envs/meta/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 340, in <module>
+    main()
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 326, in main
+    sigkill_handler(signal.SIGTERM, None)  # not coming back
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 301, in sigkill_handler
+    raise subprocess.CalledProcessError(returncode=last_return_code, cmd=cmd)
+subprocess.CalledProcessError: Command '['/opt/conda/envs/meta/bin/python', '-u', 'singletask_from_meta_nocls2cls.py', '--local_rank=1', '--task_dir', 'data/wiki_qa/', '--task_name', 'wiki_qa', '--identifier', 'T5-large-maml-nocls2cls-3e-5-2-5000-5e-1', '--checkpoint', 'models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt', '--do_train', '--do_predict', '--learning_rate_list', '5e-1', '4e-1', '3e-1', '2e-1', '--bsz_list', '8', '--predict_batch_size', '16', '--total_steps', '3000', '--eval_period', '50', '--warmup_steps', '50', '--num_train_epochs', '1000.0', '--gradient_accumulation_steps', '1', '--output_dir', 'models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-wiki_qa', '--cuda', '6,7', '--lm_adapted_path', '/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', '--model', 'google/t5-v1_1-large', '--prompt_number', '100']' returned non-zero exit status 1.
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+Killing subprocess 23989
+Killing subprocess 23990
+++++++++++++++++++++++++++++++
+kill: (23994): No such process
+Task: emo, Checkpoint: models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt, Identifier: T5-large-maml-nocls2cls-3e-5-2-5000-5e-1
+03/21/2022 15:48:13 - INFO - __main__ - Namespace(task_dir='data/emo/', task_name='emo', identifier='T5-large-maml-nocls2cls-3e-5-2-5000-5e-1', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-emo', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=0, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='6,7')
+03/21/2022 15:48:13 - INFO - __main__ - models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-emo
+Traceback (most recent call last):
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 227, in <module>
+    main()
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 147, in main
+    exit - 1
+TypeError: unsupported operand type(s) for -: 'Quitter' and 'int'
+03/21/2022 15:48:13 - INFO - __main__ - Namespace(task_dir='data/emo/', task_name='emo', identifier='T5-large-maml-nocls2cls-3e-5-2-5000-5e-1', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-emo', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=1, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='6,7')
+03/21/2022 15:48:13 - INFO - __main__ - models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-emo
+Traceback (most recent call last):
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 227, in <module>
+    main()
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 147, in main
+    exit - 1
+TypeError: unsupported operand type(s) for -: 'Quitter' and 'int'
+Traceback (most recent call last):
+  File "/opt/conda/envs/meta/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/conda/envs/meta/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 340, in <module>
+    main()
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 326, in main
+    sigkill_handler(signal.SIGTERM, None)  # not coming back
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 301, in sigkill_handler
+    raise subprocess.CalledProcessError(returncode=last_return_code, cmd=cmd)
+subprocess.CalledProcessError: Command '['/opt/conda/envs/meta/bin/python', '-u', 'singletask_from_meta_nocls2cls.py', '--local_rank=1', '--task_dir', 'data/emo/', '--task_name', 'emo', '--identifier', 'T5-large-maml-nocls2cls-3e-5-2-5000-5e-1', '--checkpoint', 'models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt', '--do_train', '--do_predict', '--learning_rate_list', '5e-1', '4e-1', '3e-1', '2e-1', '--bsz_list', '8', '--predict_batch_size', '16', '--total_steps', '3000', '--eval_period', '50', '--warmup_steps', '50', '--num_train_epochs', '1000.0', '--gradient_accumulation_steps', '1', '--output_dir', 'models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-emo', '--cuda', '6,7', '--lm_adapted_path', '/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', '--model', 'google/t5-v1_1-large', '--prompt_number', '100']' returned non-zero exit status 1.
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+Killing subprocess 23999
+Killing subprocess 24000
+++++++++++++++++++++++++++++++
+kill: (24004): No such process
+Task: yelp_polarity, Checkpoint: models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt, Identifier: T5-large-maml-nocls2cls-3e-5-2-5000-5e-1
+03/21/2022 15:48:17 - INFO - __main__ - Namespace(task_dir='data/yelp_polarity/', task_name='yelp_polarity', identifier='T5-large-maml-nocls2cls-3e-5-2-5000-5e-1', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-yelp_polarity', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=0, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='6,7')
+03/21/2022 15:48:17 - INFO - __main__ - models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-yelp_polarity
+Traceback (most recent call last):
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 227, in <module>
+    main()
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 147, in main
+    exit - 1
+TypeError: unsupported operand type(s) for -: 'Quitter' and 'int'
+03/21/2022 15:48:17 - INFO - __main__ - Namespace(task_dir='data/yelp_polarity/', task_name='yelp_polarity', identifier='T5-large-maml-nocls2cls-3e-5-2-5000-5e-1', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-yelp_polarity', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=1, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='6,7')
+03/21/2022 15:48:17 - INFO - __main__ - models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-yelp_polarity
+Traceback (most recent call last):
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 227, in <module>
+    main()
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 147, in main
+    exit - 1
+TypeError: unsupported operand type(s) for -: 'Quitter' and 'int'
+Traceback (most recent call last):
+  File "/opt/conda/envs/meta/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/conda/envs/meta/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 340, in <module>
+    main()
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 326, in main
+    sigkill_handler(signal.SIGTERM, None)  # not coming back
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 301, in sigkill_handler
+    raise subprocess.CalledProcessError(returncode=last_return_code, cmd=cmd)
+subprocess.CalledProcessError: Command '['/opt/conda/envs/meta/bin/python', '-u', 'singletask_from_meta_nocls2cls.py', '--local_rank=1', '--task_dir', 'data/yelp_polarity/', '--task_name', 'yelp_polarity', '--identifier', 'T5-large-maml-nocls2cls-3e-5-2-5000-5e-1', '--checkpoint', 'models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt', '--do_train', '--do_predict', '--learning_rate_list', '5e-1', '4e-1', '3e-1', '2e-1', '--bsz_list', '8', '--predict_batch_size', '16', '--total_steps', '3000', '--eval_period', '50', '--warmup_steps', '50', '--num_train_epochs', '1000.0', '--gradient_accumulation_steps', '1', '--output_dir', 'models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-yelp_polarity', '--cuda', '6,7', '--lm_adapted_path', '/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', '--model', 'google/t5-v1_1-large', '--prompt_number', '100']' returned non-zero exit status 1.
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+Killing subprocess 24009
+Killing subprocess 24010
+++++++++++++++++++++++++++++++
+kill: (24014): No such process
+Task: ethos-religion, Checkpoint: models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt, Identifier: T5-large-maml-nocls2cls-3e-5-2-5000-5e-1
+Traceback (most recent call last):
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 227, in <module>
+    main()
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 142, in main
+    handlers=[logging.FileHandler(os.path.join(args.output_dir, log_filename)),
+  File "/opt/conda/envs/meta/lib/python3.9/logging/__init__.py", line 1146, in __init__
+    StreamHandler.__init__(self, self._open())
+  File "/opt/conda/envs/meta/lib/python3.9/logging/__init__.py", line 1175, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding,
+FileNotFoundError: [Errno 2] No such file or directory: '/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-ethos-religion/log.txt'
+03/21/2022 15:48:22 - INFO - __main__ - Namespace(task_dir='data/ethos-religion/', task_name='ethos-religion', identifier='T5-large-maml-nocls2cls-3e-5-2-5000-5e-1', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-ethos-religion', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=0, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='6,7')
+03/21/2022 15:48:22 - INFO - __main__ - models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-ethos-religion
+Traceback (most recent call last):
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 227, in <module>
+    main()
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 147, in main
+    exit - 1
+TypeError: unsupported operand type(s) for -: 'Quitter' and 'int'
+Traceback (most recent call last):
+  File "/opt/conda/envs/meta/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/conda/envs/meta/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 340, in <module>
+    main()
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 326, in main
+    sigkill_handler(signal.SIGTERM, None)  # not coming back
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 301, in sigkill_handler
+    raise subprocess.CalledProcessError(returncode=last_return_code, cmd=cmd)
+subprocess.CalledProcessError: Command '['/opt/conda/envs/meta/bin/python', '-u', 'singletask_from_meta_nocls2cls.py', '--local_rank=1', '--task_dir', 'data/ethos-religion/', '--task_name', 'ethos-religion', '--identifier', 'T5-large-maml-nocls2cls-3e-5-2-5000-5e-1', '--checkpoint', 'models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt', '--do_train', '--do_predict', '--learning_rate_list', '5e-1', '4e-1', '3e-1', '2e-1', '--bsz_list', '8', '--predict_batch_size', '16', '--total_steps', '3000', '--eval_period', '50', '--warmup_steps', '50', '--num_train_epochs', '1000.0', '--gradient_accumulation_steps', '1', '--output_dir', 'models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-ethos-religion', '--cuda', '6,7', '--lm_adapted_path', '/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', '--model', 'google/t5-v1_1-large', '--prompt_number', '100']' returned non-zero exit status 1.
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+Killing subprocess 24019
+Killing subprocess 24020
+++++++++++++++++++++++++++++++
+kill: (24024): No such process
+Task: amazon_polarity, Checkpoint: models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt, Identifier: T5-large-maml-nocls2cls-3e-5-2-5000-5e-1
+Traceback (most recent call last):
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 227, in <module>
+    main()
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 142, in main
+    handlers=[logging.FileHandler(os.path.join(args.output_dir, log_filename)),
+  File "/opt/conda/envs/meta/lib/python3.9/logging/__init__.py", line 1146, in __init__
+    StreamHandler.__init__(self, self._open())
+  File "/opt/conda/envs/meta/lib/python3.9/logging/__init__.py", line 1175, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding,
+FileNotFoundError: [Errno 2] No such file or directory: '/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-amazon_polarity/log.txt'
+03/21/2022 15:48:26 - INFO - __main__ - Namespace(task_dir='data/amazon_polarity/', task_name='amazon_polarity', identifier='T5-large-maml-nocls2cls-3e-5-2-5000-5e-1', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-amazon_polarity', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=0, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='6,7')
+03/21/2022 15:48:26 - INFO - __main__ - models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-amazon_polarity
+Traceback (most recent call last):
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 227, in <module>
+    main()
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 147, in main
+    exit - 1
+TypeError: unsupported operand type(s) for -: 'Quitter' and 'int'
+Traceback (most recent call last):
+  File "/opt/conda/envs/meta/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/conda/envs/meta/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 340, in <module>
+    main()
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 326, in main
+    sigkill_handler(signal.SIGTERM, None)  # not coming back
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 301, in sigkill_handler
+    raise subprocess.CalledProcessError(returncode=last_return_code, cmd=cmd)
+subprocess.CalledProcessError: Command '['/opt/conda/envs/meta/bin/python', '-u', 'singletask_from_meta_nocls2cls.py', '--local_rank=1', '--task_dir', 'data/amazon_polarity/', '--task_name', 'amazon_polarity', '--identifier', 'T5-large-maml-nocls2cls-3e-5-2-5000-5e-1', '--checkpoint', 'models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt', '--do_train', '--do_predict', '--learning_rate_list', '5e-1', '4e-1', '3e-1', '2e-1', '--bsz_list', '8', '--predict_batch_size', '16', '--total_steps', '3000', '--eval_period', '50', '--warmup_steps', '50', '--num_train_epochs', '1000.0', '--gradient_accumulation_steps', '1', '--output_dir', 'models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-amazon_polarity', '--cuda', '6,7', '--lm_adapted_path', '/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', '--model', 'google/t5-v1_1-large', '--prompt_number', '100']' returned non-zero exit status 1.
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+Killing subprocess 24029
+Killing subprocess 24030
+++++++++++++++++++++++++++++++
+kill: (24034): No such process
+Task: tab_fact, Checkpoint: models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt, Identifier: T5-large-maml-nocls2cls-3e-5-2-5000-5e-1
+03/21/2022 15:48:30 - INFO - __main__ - Namespace(task_dir='data/tab_fact/', task_name='tab_fact', identifier='T5-large-maml-nocls2cls-3e-5-2-5000-5e-1', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-tab_fact', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=0, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='6,7')
+03/21/2022 15:48:30 - INFO - __main__ - models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-tab_fact
+Traceback (most recent call last):
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 227, in <module>
+    main()
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 147, in main
+    exit - 1
+TypeError: unsupported operand type(s) for -: 'Quitter' and 'int'
+03/21/2022 15:48:30 - INFO - __main__ - Namespace(task_dir='data/tab_fact/', task_name='tab_fact', identifier='T5-large-maml-nocls2cls-3e-5-2-5000-5e-1', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-tab_fact', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=1, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='6,7')
+03/21/2022 15:48:30 - INFO - __main__ - models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-tab_fact
+Traceback (most recent call last):
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 227, in <module>
+    main()
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 147, in main
+    exit - 1
+TypeError: unsupported operand type(s) for -: 'Quitter' and 'int'
+Traceback (most recent call last):
+  File "/opt/conda/envs/meta/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/conda/envs/meta/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 340, in <module>
+    main()
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 326, in main
+    sigkill_handler(signal.SIGTERM, None)  # not coming back
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 301, in sigkill_handler
+    raise subprocess.CalledProcessError(returncode=last_return_code, cmd=cmd)
+subprocess.CalledProcessError: Command '['/opt/conda/envs/meta/bin/python', '-u', 'singletask_from_meta_nocls2cls.py', '--local_rank=1', '--task_dir', 'data/tab_fact/', '--task_name', 'tab_fact', '--identifier', 'T5-large-maml-nocls2cls-3e-5-2-5000-5e-1', '--checkpoint', 'models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt', '--do_train', '--do_predict', '--learning_rate_list', '5e-1', '4e-1', '3e-1', '2e-1', '--bsz_list', '8', '--predict_batch_size', '16', '--total_steps', '3000', '--eval_period', '50', '--warmup_steps', '50', '--num_train_epochs', '1000.0', '--gradient_accumulation_steps', '1', '--output_dir', 'models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-tab_fact', '--cuda', '6,7', '--lm_adapted_path', '/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', '--model', 'google/t5-v1_1-large', '--prompt_number', '100']' returned non-zero exit status 1.
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+Killing subprocess 24039
+Killing subprocess 24040
+++++++++++++++++++++++++++++++
+kill: (24044): No such process
+Task: anli, Checkpoint: models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt, Identifier: T5-large-maml-nocls2cls-3e-5-2-5000-5e-1
+03/21/2022 15:48:34 - INFO - __main__ - Namespace(task_dir='data/anli/', task_name='anli', identifier='T5-large-maml-nocls2cls-3e-5-2-5000-5e-1', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-anli', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=0, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='6,7')
+03/21/2022 15:48:34 - INFO - __main__ - models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-anli
+Traceback (most recent call last):
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 227, in <module>
+    main()
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 147, in main
+    exit - 1
+TypeError: unsupported operand type(s) for -: 'Quitter' and 'int'
+03/21/2022 15:48:34 - INFO - __main__ - Namespace(task_dir='data/anli/', task_name='anli', identifier='T5-large-maml-nocls2cls-3e-5-2-5000-5e-1', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-anli', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=1, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='6,7')
+03/21/2022 15:48:34 - INFO - __main__ - models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-anli
+Traceback (most recent call last):
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 227, in <module>
+    main()
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 147, in main
+    exit - 1
+TypeError: unsupported operand type(s) for -: 'Quitter' and 'int'
+Traceback (most recent call last):
+  File "/opt/conda/envs/meta/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/conda/envs/meta/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 340, in <module>
+    main()
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 326, in main
+    sigkill_handler(signal.SIGTERM, None)  # not coming back
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 301, in sigkill_handler
+    raise subprocess.CalledProcessError(returncode=last_return_code, cmd=cmd)
+subprocess.CalledProcessError: Command '['/opt/conda/envs/meta/bin/python', '-u', 'singletask_from_meta_nocls2cls.py', '--local_rank=1', '--task_dir', 'data/anli/', '--task_name', 'anli', '--identifier', 'T5-large-maml-nocls2cls-3e-5-2-5000-5e-1', '--checkpoint', 'models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt', '--do_train', '--do_predict', '--learning_rate_list', '5e-1', '4e-1', '3e-1', '2e-1', '--bsz_list', '8', '--predict_batch_size', '16', '--total_steps', '3000', '--eval_period', '50', '--warmup_steps', '50', '--num_train_epochs', '1000.0', '--gradient_accumulation_steps', '1', '--output_dir', 'models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-anli', '--cuda', '6,7', '--lm_adapted_path', '/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', '--model', 'google/t5-v1_1-large', '--prompt_number', '100']' returned non-zero exit status 1.
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+Killing subprocess 24049
+Killing subprocess 24050
+++++++++++++++++++++++++++++++
+kill: (24054): No such process
+Task: ethos-race, Checkpoint: models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt, Identifier: T5-large-maml-nocls2cls-3e-5-2-5000-5e-1
+Traceback (most recent call last):
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 227, in <module>
+    main()
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 142, in main
+    handlers=[logging.FileHandler(os.path.join(args.output_dir, log_filename)),
+  File "/opt/conda/envs/meta/lib/python3.9/logging/__init__.py", line 1146, in __init__
+    StreamHandler.__init__(self, self._open())
+  File "/opt/conda/envs/meta/lib/python3.9/logging/__init__.py", line 1175, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding,
+FileNotFoundError: [Errno 2] No such file or directory: '/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-ethos-race/log.txt'
+03/21/2022 15:48:39 - INFO - __main__ - Namespace(task_dir='data/ethos-race/', task_name='ethos-race', identifier='T5-large-maml-nocls2cls-3e-5-2-5000-5e-1', train_file='data', dev_file='data', test_file='data', dataset='nlp_forest_single', output_dir='models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-ethos-race', do_train=True, do_predict=True, predict_checkpoint='best-model.pt', checkpoint='models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt', do_lowercase=False, freeze_embeds=False, max_input_length=512, max_output_length=128, num_beams=4, append_another_bos=False, train_batch_size=4, predict_batch_size=16, learning_rate=0.5, weight_decay=1e-05, adam_epsilon=1e-08, max_grad_norm=1.0, gradient_accumulation_steps=1, num_train_epochs=1000.0, warmup_steps=50, total_steps=3000, wait_step=10000000000, quiet=False, eval_period=50, prefix='', debug=False, seed=42, learning_rate_list=[0.5, 0.4, 0.3, 0.2], bsz_list=[8], cache_dir='/export/share/sjoty/continual-learning/cache/', local_rank=0, log_step=10, lm_adapted_path='/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', model='google/t5-v1_1-large', prompt_number=100, cuda='6,7')
+03/21/2022 15:48:39 - INFO - __main__ - models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-ethos-race
+Traceback (most recent call last):
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 227, in <module>
+    main()
+  File "/export/share/sjoty/continual-learning/MetaPromptTuning/CrossFit_maml/singletask_from_meta_nocls2cls.py", line 147, in main
+    exit - 1
+TypeError: unsupported operand type(s) for -: 'Quitter' and 'int'
+Traceback (most recent call last):
+  File "/opt/conda/envs/meta/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/conda/envs/meta/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 340, in <module>
+    main()
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 326, in main
+    sigkill_handler(signal.SIGTERM, None)  # not coming back
+  File "/opt/conda/envs/meta/lib/python3.9/site-packages/torch/distributed/launch.py", line 301, in sigkill_handler
+    raise subprocess.CalledProcessError(returncode=last_return_code, cmd=cmd)
+subprocess.CalledProcessError: Command '['/opt/conda/envs/meta/bin/python', '-u', 'singletask_from_meta_nocls2cls.py', '--local_rank=1', '--task_dir', 'data/ethos-race/', '--task_name', 'ethos-race', '--identifier', 'T5-large-maml-nocls2cls-3e-5-2-5000-5e-1', '--checkpoint', 'models/upstream-maml-nocls2cls-3e-5-2-5000-5e-1/last-model.pt', '--do_train', '--do_predict', '--learning_rate_list', '5e-1', '4e-1', '3e-1', '2e-1', '--bsz_list', '8', '--predict_batch_size', '16', '--total_steps', '3000', '--eval_period', '50', '--warmup_steps', '50', '--num_train_epochs', '1000.0', '--gradient_accumulation_steps', '1', '--output_dir', 'models/T5-large-maml-nocls2cls-3e-5-2-5000-5e-1/singletask-ethos-race', '--cuda', '6,7', '--lm_adapted_path', '/export/share/sjoty/continual-learning/lm_adapted_model/torch_ckpt/large/pytorch_model.bin', '--model', 'google/t5-v1_1-large', '--prompt_number', '100']' returned non-zero exit status 1.
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+Killing subprocess 24059
+Killing subprocess 24060
+++++++++++++++++++++++++++++++
+kill: (24064): No such process

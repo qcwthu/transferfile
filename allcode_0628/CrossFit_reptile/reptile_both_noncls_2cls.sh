@@ -1,0 +1,2 @@
+bash cli_reptile_ddp_prompt_nocls2cls.sh
+bash cli_reptile_ddp_prompt_both2cls.sh

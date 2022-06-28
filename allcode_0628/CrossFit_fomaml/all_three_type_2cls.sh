@@ -1,0 +1,3 @@
+bash singletask_from_fomaml_cls2cls.sh
+bash singletask_from_fomaml_nocls2cls.sh
+bash singletask_from_fomaml_both2cls.sh

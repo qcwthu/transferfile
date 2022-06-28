@@ -1,0 +1,2 @@
+bash cli_maml_ddp_prompt_nocls2cls.sh
+bash cli_maml_ddp_prompt_both2cls.sh

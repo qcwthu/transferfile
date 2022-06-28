@@ -1,0 +1,2 @@
+bash tune_singletask_qa2qa.sh
+bash tune_singletask_nonli2nli.sh
